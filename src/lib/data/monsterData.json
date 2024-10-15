@@ -1,0 +1,8440 @@
+[
+  {
+    "id": 0,
+    "name": "Giant ant",
+    "level": 0,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "animal/critter",
+      "beast"
+    ],
+    "page": 206,
+    "source": "13th age"
+  },
+  {
+    "id": 1,
+    "name": "Decrepit skeleton",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "skeleton",
+      "undead"
+    ],
+    "page": 246,
+    "source": "13th age"
+  },
+  {
+    "id": 2,
+    "name": "Dire rat",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "animal/critter",
+      "beast",
+      "dire"
+    ],
+    "page": 206,
+    "source": "13th age"
+  },
+  {
+    "id": 3,
+    "name": "Giant scorpion",
+    "level": 1,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "animal/critter",
+      "beast"
+    ],
+    "page": 206,
+    "source": "13th age"
+  },
+  {
+    "id": 4,
+    "name": "Goblin grunt",
+    "level": 1,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "goblin",
+      "humanoid"
+    ],
+    "page": 229,
+    "source": "13th age"
+  },
+  {
+    "id": 5,
+    "name": "Goblin scum",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "goblin",
+      "humanoid"
+    ],
+    "page": 229,
+    "source": "13th age"
+  },
+  {
+    "id": 6,
+    "name": "Human thug",
+    "level": 1,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "human",
+      "humanoid"
+    ],
+    "page": 235,
+    "source": "13th age"
+  },
+  {
+    "id": 7,
+    "name": "Kobold archer",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 237,
+    "source": "13th age"
+  },
+  {
+    "id": 8,
+    "name": "Kobold warrior",
+    "level": 1,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 237,
+    "source": "13th age"
+  },
+  {
+    "id": 9,
+    "name": "Orc warrior",
+    "level": 1,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 242,
+    "source": "13th age"
+  },
+  {
+    "id": 10,
+    "name": "Skeleton archer",
+    "level": 1,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "skeleton",
+      "undead"
+    ],
+    "page": 246,
+    "source": "13th age"
+  },
+  {
+    "id": 11,
+    "name": "Skeletal hound",
+    "level": 1,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "skeleton",
+      "undead"
+    ],
+    "page": 246,
+    "source": "13th age"
+  },
+  {
+    "id": 12,
+    "name": "Wolf",
+    "level": 1,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "animal/critter",
+      "beast"
+    ],
+    "page": 207,
+    "source": "13th age"
+  },
+  {
+    "id": 13,
+    "name": "Zombie shuffler",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "undead",
+      "zombie"
+    ],
+    "page": 251,
+    "source": "13th age"
+  },
+  {
+    "id": 14,
+    "name": "Ankheg",
+    "level": 2,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast"
+    ],
+    "page": 208,
+    "source": "13th age"
+  },
+  {
+    "id": 15,
+    "name": "Bear",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "animal/critter",
+      "beast"
+    ],
+    "page": 207,
+    "source": "13th age"
+  },
+  {
+    "id": 16,
+    "name": "Giant web spider",
+    "level": 2,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "animal/critter",
+      "beast"
+    ],
+    "page": 207,
+    "source": "13th age"
+  },
+  {
+    "id": 17,
+    "name": "Goblin shaman",
+    "level": 2,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "goblin",
+      "humanoid"
+    ],
+    "page": 229,
+    "source": "13th age"
+  },
+  {
+    "id": 18,
+    "name": "Hobgoblin warrior",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "goblin",
+      "humanoid"
+    ],
+    "page": 230,
+    "source": "13th age"
+  },
+  {
+    "id": 19,
+    "name": "Human zombie",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "undead",
+      "zombie"
+    ],
+    "page": 251,
+    "source": "13th age"
+  },
+  {
+    "id": 20,
+    "name": "Hunting spider",
+    "level": 2,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "animal/critter",
+      "beast"
+    ],
+    "page": 206,
+    "source": "13th age"
+  },
+  {
+    "id": 21,
+    "name": "Kobold hero",
+    "level": 2,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 237,
+    "source": "13th age"
+  },
+  {
+    "id": 22,
+    "name": "Lizardman savage",
+    "level": 2,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "humanoid",
+      "lizardman"
+    ],
+    "page": 237,
+    "source": "13th age"
+  },
+  {
+    "id": 23,
+    "name": "Medium white dragon",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "dragon",
+      "white"
+    ],
+    "page": 218,
+    "source": "13th age"
+  },
+  {
+    "id": 24,
+    "name": "Newly-risen ghoul",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "ghoul",
+      "undead"
+    ],
+    "page": 225,
+    "source": "13th age"
+  },
+  {
+    "id": 25,
+    "name": "Orc berserker",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 242,
+    "source": "13th age"
+  },
+  {
+    "id": 26,
+    "name": "Orc shaman",
+    "level": 2,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 242,
+    "source": "13th age"
+  },
+  {
+    "id": 27,
+    "name": "Skeleton warrior",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "skeleton",
+      "undead"
+    ],
+    "page": 246,
+    "source": "13th age"
+  },
+  {
+    "id": 28,
+    "name": "Trog",
+    "level": 2,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "humanoid",
+      "troglodyte"
+    ],
+    "page": 247,
+    "source": "13th age"
+  },
+  {
+    "id": 29,
+    "name": "Bugbear",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "goblin",
+      "humanoid"
+    ],
+    "page": 230,
+    "source": "13th age"
+  },
+  {
+    "id": 30,
+    "name": "Dire wolf",
+    "level": 3,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "animal/critter",
+      "beast",
+      "dire"
+    ],
+    "page": 207,
+    "source": "13th age"
+  },
+  {
+    "id": 31,
+    "name": "Dretch",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "demon"
+    ],
+    "page": 210,
+    "source": "13th age"
+  },
+  {
+    "id": 32,
+    "name": "Ghoul",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "ghoul",
+      "undead"
+    ],
+    "page": 225,
+    "source": "13th age"
+  },
+  {
+    "id": 33,
+    "name": "Gnoll ranger",
+    "level": 3,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "gnoll",
+      "humanoid"
+    ],
+    "page": 229,
+    "source": "13th age"
+  },
+  {
+    "id": 34,
+    "name": "Gnoll savage",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "gnoll",
+      "humanoid"
+    ],
+    "page": 228,
+    "source": "13th age"
+  },
+  {
+    "id": 35,
+    "name": "Hellhound",
+    "level": 3,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 234,
+    "source": "13th age"
+  },
+  {
+    "id": 36,
+    "name": "Hungry star",
+    "level": 3,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "aberration"
+    ],
+    "page": 235,
+    "source": "13th age"
+  },
+  {
+    "id": 37,
+    "name": "Imp",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "demon"
+    ],
+    "page": 210,
+    "source": "13th age"
+  },
+  {
+    "id": 38,
+    "name": "Medium black dragon",
+    "level": 3,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "black",
+      "dragon"
+    ],
+    "page": 218,
+    "source": "13th age"
+  },
+  {
+    "id": 39,
+    "name": "Ochre jelly",
+    "level": 3,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "ooze"
+    ],
+    "page": 241,
+    "source": "13th age"
+  },
+  {
+    "id": 40,
+    "name": "Ogre",
+    "level": 3,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "giant",
+      "ogre"
+    ],
+    "page": 240,
+    "source": "13th age"
+  },
+  {
+    "id": 41,
+    "name": "Otyugh",
+    "level": 3,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "aberration"
+    ],
+    "page": 243,
+    "source": "13th age"
+  },
+  {
+    "id": 42,
+    "name": "Trog chanter",
+    "level": 3,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "humanoid",
+      "troglodyte"
+    ],
+    "page": 247,
+    "source": "13th age"
+  },
+  {
+    "id": 43,
+    "name": "Big zombie",
+    "level": 4,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "undead",
+      "zombie"
+    ],
+    "page": 251,
+    "source": "13th age"
+  },
+  {
+    "id": 44,
+    "name": "Blackamber skeletal legionnaire",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "skeleton",
+      "undead"
+    ],
+    "page": 246,
+    "source": "13th age"
+  },
+  {
+    "id": 45,
+    "name": "Derro maniac",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "derro",
+      "dwarf",
+      "humanoid"
+    ],
+    "page": 216,
+    "source": "13th age"
+  },
+  {
+    "id": 46,
+    "name": "Derro sage",
+    "level": 4,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "derro",
+      "dwarf",
+      "humanoid"
+    ],
+    "page": 216,
+    "source": "13th age"
+  },
+  {
+    "id": 47,
+    "name": "Despoiler",
+    "level": 4,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "demon"
+    ],
+    "page": 210,
+    "source": "13th age"
+  },
+  {
+    "id": 48,
+    "name": "Dire bear",
+    "level": 4,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "animal/critter",
+      "beast",
+      "dire"
+    ],
+    "page": 207,
+    "source": "13th age"
+  },
+  {
+    "id": 49,
+    "name": "Flesh golem",
+    "level": 4,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "construct",
+      "golem"
+    ],
+    "page": 231,
+    "source": "13th age"
+  },
+  {
+    "id": 50,
+    "name": "Gnoll war leader",
+    "level": 4,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "gnoll",
+      "humanoid"
+    ],
+    "page": 229,
+    "source": "13th age"
+  },
+  {
+    "id": 51,
+    "name": "Half-orc legionnaire",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "half-orc",
+      "humanoid"
+    ],
+    "page": 233,
+    "source": "13th age"
+  },
+  {
+    "id": 52,
+    "name": "Harpy",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "humanoid"
+    ],
+    "page": 234,
+    "source": "13th age"
+  },
+  {
+    "id": 53,
+    "name": "Hobgoblin captain",
+    "level": 4,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "goblin",
+      "humanoid"
+    ],
+    "page": 230,
+    "source": "13th age"
+  },
+  {
+    "id": 54,
+    "name": "Large white dragon",
+    "level": 4,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "dragon",
+      "white"
+    ],
+    "page": 218,
+    "source": "13th age"
+  },
+  {
+    "id": 55,
+    "name": "Medium green dragon",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "dragon",
+      "green"
+    ],
+    "page": 219,
+    "source": "13th age"
+  },
+  {
+    "id": 56,
+    "name": "Minotaur",
+    "level": 4,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "minotaur"
+    ],
+    "page": 239,
+    "source": "13th age"
+  },
+  {
+    "id": 57,
+    "name": "Owlbear",
+    "level": 4,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "owlbear"
+    ],
+    "page": 243,
+    "source": "13th age"
+  },
+  {
+    "id": 58,
+    "name": "Troll",
+    "level": 4,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "giant"
+    ],
+    "page": 248,
+    "source": "13th age"
+  },
+  {
+    "id": 59,
+    "name": "Wight",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "undead"
+    ],
+    "page": 249,
+    "source": "13th age"
+  },
+  {
+    "id": 60,
+    "name": "Bulette",
+    "level": 5,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "bulette"
+    ],
+    "page": 208,
+    "source": "13th age"
+  },
+  {
+    "id": 61,
+    "name": "Demon-touched human ranger",
+    "level": 5,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "demon",
+      "human",
+      "humanoid"
+    ],
+    "page": 235,
+    "source": "13th age"
+  },
+  {
+    "id": 62,
+    "name": "Ettin",
+    "level": 5,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "giant"
+    ],
+    "page": 224,
+    "source": "13th age"
+  },
+  {
+    "id": 63,
+    "name": "Frenzy demon",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "demon"
+    ],
+    "page": 211,
+    "source": "13th age"
+  },
+  {
+    "id": 64,
+    "name": "Gargoyle",
+    "level": 5,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "construct"
+    ],
+    "page": 224,
+    "source": "13th age"
+  },
+  {
+    "id": 65,
+    "name": "Gelatinous cube",
+    "level": 5,
+    "size": "huge",
+    "role": "blocker",
+    "types": [
+      "ooze"
+    ],
+    "page": 241,
+    "source": "13th age"
+  },
+  {
+    "id": 66,
+    "name": "Half-orc tribal champion",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "half-orc",
+      "humanoid"
+    ],
+    "page": 233,
+    "source": "13th age"
+  },
+  {
+    "id": 67,
+    "name": "Hobgoblin warmage",
+    "level": 5,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "goblin",
+      "humanoid"
+    ],
+    "page": 230,
+    "source": "13th age"
+  },
+  {
+    "id": 68,
+    "name": "Huge white dragon",
+    "level": 5,
+    "size": "huge",
+    "role": "troop",
+    "types": [
+      "dragon",
+      "white"
+    ],
+    "page": 219,
+    "source": "13th age"
+  },
+  {
+    "id": 69,
+    "name": "Hydra, 5 heads",
+    "level": 5,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "hydra"
+    ],
+    "page": 236,
+    "source": "13th age"
+  },
+  {
+    "id": 70,
+    "name": "Medium blue dragon",
+    "level": 5,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "blue",
+      "dragon"
+    ],
+    "page": 219,
+    "source": "13th age"
+  },
+  {
+    "id": 71,
+    "name": "Sahuagin",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "humanoid",
+      "sahuagin"
+    ],
+    "page": 245,
+    "source": "13th age"
+  },
+  {
+    "id": 72,
+    "name": "Wraith",
+    "level": 5,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "undead"
+    ],
+    "page": 250,
+    "source": "13th age"
+  },
+  {
+    "id": 73,
+    "name": "Wyvern",
+    "level": 5,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 250,
+    "source": "13th age"
+  },
+  {
+    "id": 74,
+    "name": "Clay golem",
+    "level": 6,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "construct",
+      "golem"
+    ],
+    "page": 231,
+    "source": "13th age"
+  },
+  {
+    "id": 75,
+    "name": "Drider",
+    "level": 6,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "aberration"
+    ],
+    "page": 223,
+    "source": "13th age"
+  },
+  {
+    "id": 76,
+    "name": "Hill giant",
+    "level": 6,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "giant"
+    ],
+    "page": 225,
+    "source": "13th age"
+  },
+  {
+    "id": 77,
+    "name": "Large black dragon",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "black",
+      "dragon"
+    ],
+    "page": 220,
+    "source": "13th age"
+  },
+  {
+    "id": 78,
+    "name": "Manticore",
+    "level": 6,
+    "size": "large",
+    "role": "archer",
+    "types": [
+      "beast",
+      "manticore"
+    ],
+    "page": 238,
+    "source": "13th age"
+  },
+  {
+    "id": 79,
+    "name": "Medium red dragon",
+    "level": 6,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "dragon",
+      "red"
+    ],
+    "page": 220,
+    "source": "13th age"
+  },
+  {
+    "id": 80,
+    "name": "Medusa outlaw",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "humanoid",
+      "medusa"
+    ],
+    "page": 238,
+    "source": "13th age"
+  },
+  {
+    "id": 81,
+    "name": "Vampire spawn",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "undead",
+      "vampire"
+    ],
+    "page": 249,
+    "source": "13th age"
+  },
+  {
+    "id": 82,
+    "name": "Vrock",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "demon"
+    ],
+    "page": 211,
+    "source": "13th age"
+  },
+  {
+    "id": 83,
+    "name": "Frost giant",
+    "level": 7,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "giant"
+    ],
+    "page": 226,
+    "source": "13th age"
+  },
+  {
+    "id": 84,
+    "name": "Hezrou",
+    "level": 7,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "demon"
+    ],
+    "page": 212,
+    "source": "13th age"
+  },
+  {
+    "id": 85,
+    "name": "Hydra, 7 heads",
+    "level": 7,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "hydra"
+    ],
+    "page": 236,
+    "source": "13th age"
+  },
+  {
+    "id": 86,
+    "name": "Large green dragon",
+    "level": 7,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "dragon",
+      "green"
+    ],
+    "page": 220,
+    "source": "13th age"
+  },
+  {
+    "id": 87,
+    "name": "Ogre mage",
+    "level": 7,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "giant",
+      "ogre mage"
+    ],
+    "page": 240,
+    "source": "13th age"
+  },
+  {
+    "id": 88,
+    "name": "Orc rager",
+    "level": 7,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 242,
+    "source": "13th age"
+  },
+  {
+    "id": 89,
+    "name": "Phase spider",
+    "level": 7,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "beast"
+    ],
+    "page": 244,
+    "source": "13th age"
+  },
+  {
+    "id": 90,
+    "name": "Fire giant",
+    "level": 8,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "giant"
+    ],
+    "page": 227,
+    "source": "13th age"
+  },
+  {
+    "id": 91,
+    "name": "Glabrezou",
+    "level": 8,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "demon"
+    ],
+    "page": 212,
+    "source": "13th age"
+  },
+  {
+    "id": 92,
+    "name": "Half-orc commander",
+    "level": 8,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "half-orc",
+      "humanoid"
+    ],
+    "page": 233,
+    "source": "13th age"
+  },
+  {
+    "id": 93,
+    "name": "Large blue dragon",
+    "level": 8,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "blue",
+      "dragon"
+    ],
+    "page": 221,
+    "source": "13th age"
+  },
+  {
+    "id": 94,
+    "name": "Rakshasa",
+    "level": 8,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "humanoid"
+    ],
+    "page": 245,
+    "source": "13th age"
+  },
+  {
+    "id": 95,
+    "name": "Stone giant",
+    "level": 8,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "giant"
+    ],
+    "page": 226,
+    "source": "13th age"
+  },
+  {
+    "id": 96,
+    "name": "Stone golem",
+    "level": 8,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "construct",
+      "golem"
+    ],
+    "page": 232,
+    "source": "13th age"
+  },
+  {
+    "id": 97,
+    "name": "Trog underling",
+    "level": 8,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "troglodyte"
+    ],
+    "page": 247,
+    "source": "13th age"
+  },
+  {
+    "id": 98,
+    "name": "Black pudding",
+    "level": 9,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "ooze"
+    ],
+    "page": 241,
+    "source": "13th age"
+  },
+  {
+    "id": 99,
+    "name": "Chimera",
+    "level": 9,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "chimera",
+      "beast"
+    ],
+    "page": 209,
+    "source": "13th age"
+  },
+  {
+    "id": 100,
+    "name": "Despoiler mage",
+    "level": 9,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "demon"
+    ],
+    "page": 213,
+    "source": "13th age"
+  },
+  {
+    "id": 101,
+    "name": "Fire giant warlord",
+    "level": 9,
+    "size": "large",
+    "role": "leader",
+    "types": [
+      "giant"
+    ],
+    "page": 227,
+    "source": "13th age"
+  },
+  {
+    "id": 102,
+    "name": "Giant vrock",
+    "level": 9,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "demon"
+    ],
+    "page": 214,
+    "source": "13th age"
+  },
+  {
+    "id": 103,
+    "name": "Giant zombie",
+    "level": 9,
+    "size": "large",
+    "role": "mook",
+    "types": [
+      "undead",
+      "zombie"
+    ],
+    "page": 251,
+    "source": "13th age"
+  },
+  {
+    "id": 104,
+    "name": "Hooked demon",
+    "level": 9,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "demon"
+    ],
+    "page": 213,
+    "source": "13th age"
+  },
+  {
+    "id": 105,
+    "name": "Huge black dragon",
+    "level": 9,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "black",
+      "dragon"
+    ],
+    "page": 221,
+    "source": "13th age"
+  },
+  {
+    "id": 106,
+    "name": "Great fang cadre (orc)",
+    "level": 10,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 242,
+    "source": "13th age"
+  },
+  {
+    "id": 107,
+    "name": "Iron golem",
+    "level": 10,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "construct",
+      "golem"
+    ],
+    "page": 232,
+    "source": "13th age"
+  },
+  {
+    "id": 108,
+    "name": "Large red dragon",
+    "level": 10,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "dragon",
+      "red"
+    ],
+    "page": 222,
+    "source": "13th age"
+  },
+  {
+    "id": 109,
+    "name": "Nalfeshnee",
+    "level": 10,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "demon"
+    ],
+    "page": 214,
+    "source": "13th age"
+  },
+  {
+    "id": 110,
+    "name": "Spawn of the master (vampire)",
+    "level": 10,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "undead",
+      "vampire"
+    ],
+    "page": 249,
+    "source": "13th age"
+  },
+  {
+    "id": 111,
+    "name": "Storm giant",
+    "level": 10,
+    "size": "huge",
+    "role": "archer",
+    "types": [
+      "giant"
+    ],
+    "page": 228,
+    "source": "13th age"
+  },
+  {
+    "id": 112,
+    "name": "Vampire",
+    "level": 10,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "undead",
+      "vampire"
+    ],
+    "page": 248,
+    "source": "13th age"
+  },
+  {
+    "id": 113,
+    "name": "Huge green dragon",
+    "level": 11,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "dragon",
+      "green"
+    ],
+    "page": 222,
+    "source": "13th age"
+  },
+  {
+    "id": 114,
+    "name": "Medusa noble",
+    "level": 11,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "humanoid",
+      "medusa"
+    ],
+    "page": 239,
+    "source": "13th age"
+  },
+  {
+    "id": 115,
+    "name": "Huge blue dragon",
+    "level": 12,
+    "size": "huge",
+    "role": "caster",
+    "types": [
+      "blue",
+      "dragon"
+    ],
+    "page": 222,
+    "source": "13th age"
+  },
+  {
+    "id": 116,
+    "name": "Marilith",
+    "level": 12,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "demon"
+    ],
+    "page": 215,
+    "source": "13th age"
+  },
+  {
+    "id": 117,
+    "name": "Balor",
+    "level": 13,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "demon"
+    ],
+    "page": 215,
+    "source": "13th age"
+  },
+  {
+    "id": 118,
+    "name": "Huge red dragon",
+    "level": 13,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "dragon",
+      "red"
+    ],
+    "page": 223,
+    "source": "13th age"
+  },
+  {
+    "id": 119,
+    "name": "Medium brass dragon",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "brass",
+      "dragon"
+    ],
+    "page": 184,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 120,
+    "name": "Skin devil",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "devil"
+    ],
+    "page": 168,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 121,
+    "name": "Wererat",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "beast",
+      "were"
+    ],
+    "page": 205,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 122,
+    "name": "Zombie beast",
+    "level": 2,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "undead",
+      "zombie"
+    ],
+    "page": 207,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 123,
+    "name": "Fire bat",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "beast",
+      "fire"
+    ],
+    "page": 162,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 124,
+    "name": "Large brass dragon",
+    "level": 3,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "dragon",
+      "brass"
+    ],
+    "page": 184,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 125,
+    "name": "Lemure",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "devil"
+    ],
+    "page": 169,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 126,
+    "name": "Magma brute",
+    "level": 3,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "construct"
+    ],
+    "page": 163,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 127,
+    "name": "Medium bronze dragon",
+    "level": 3,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "dragon",
+      "bronze"
+    ],
+    "page": 184,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 128,
+    "name": "Pixie warrior",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "humanoid",
+      "fairy"
+    ],
+    "page": 198,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 129,
+    "name": "Small air elemental",
+    "level": 3,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "elemental",
+      "air"
+    ],
+    "page": 189,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 130,
+    "name": "Small earth elemental",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "elemental",
+      "earth"
+    ],
+    "page": 189,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 131,
+    "name": "Small fire elemental",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "elemental",
+      "fire"
+    ],
+    "page": 189,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 132,
+    "name": "Small water elemental",
+    "level": 3,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "elemental",
+      "water"
+    ],
+    "page": 189,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 133,
+    "name": "Werewolf",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "beast",
+      "were"
+    ],
+    "page": 205,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 134,
+    "name": "Awakened trees",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "plant"
+    ],
+    "page": 202,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 135,
+    "name": "Azer soldier",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "dwarf"
+    ],
+    "page": 162,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 136,
+    "name": "Hell imp",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "devil"
+    ],
+    "page": 170,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 137,
+    "name": "Honey devil (slime devil)",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "devil"
+    ],
+    "page": 171,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 138,
+    "name": "Huge brass dragon",
+    "level": 4,
+    "size": "huge",
+    "role": "troop",
+    "types": [
+      "dragon",
+      "brass"
+    ],
+    "page": 185,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 139,
+    "name": "Medium copper dragon",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "dragon",
+      "copper"
+    ],
+    "page": 185,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 140,
+    "name": "Wereboar",
+    "level": 4,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast",
+      "were"
+    ],
+    "page": 205,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 141,
+    "name": "Zombie of the silver rose",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "undead",
+      "zombie"
+    ],
+    "page": 207,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 142,
+    "name": "Air elemental",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "elemental",
+      "air"
+    ],
+    "page": 190,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 143,
+    "name": "Common treant",
+    "level": 5,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "plant"
+    ],
+    "page": 202,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 144,
+    "name": "Dire boar",
+    "level": 5,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast",
+      "dire"
+    ],
+    "page": 160,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 145,
+    "name": "Earth elemental",
+    "level": 5,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "elemental",
+      "earth"
+    ],
+    "page": 190,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 146,
+    "name": "Fire elemental",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "elemental",
+      "fire"
+    ],
+    "page": 190,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 147,
+    "name": "Water elemental",
+    "level": 5,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "elemental",
+      "water"
+    ],
+    "page": 190,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 148,
+    "name": "Smoke devil",
+    "level": 5,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "devil"
+    ],
+    "page": 172,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 149,
+    "name": "Werebear",
+    "level": 5,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast"
+    ],
+    "page": 206,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 150,
+    "name": "Bat demon (squishy)",
+    "level": 6,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "demon"
+    ],
+    "page": 164,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 151,
+    "name": "Bearded devil (barbazu)",
+    "level": 6,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "devil"
+    ],
+    "page": 173,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 152,
+    "name": "Blood rose",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "undead"
+    ],
+    "page": 195,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 153,
+    "name": "Death blossom",
+    "level": 6,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "undead"
+    ],
+    "page": 194,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 154,
+    "name": "Dire tiger",
+    "level": 6,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast",
+      "dire"
+    ],
+    "page": 160,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 155,
+    "name": "Large bronze dragon",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "dragon",
+      "bronze"
+    ],
+    "page": 185,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 156,
+    "name": "Lich flower",
+    "level": 6,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "undead"
+    ],
+    "page": 194,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 157,
+    "name": "Medium silver dragon",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "dragon",
+      "silver"
+    ],
+    "page": 185,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 158,
+    "name": "Poison dandelion",
+    "level": 6,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "undead"
+    ],
+    "page": 195,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 159,
+    "name": "Specter",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "undead"
+    ],
+    "page": 201,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 160,
+    "name": "Weretiger",
+    "level": 6,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast",
+      "were"
+    ],
+    "page": 206,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 161,
+    "name": "Big air elemental",
+    "level": 7,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "elemental",
+      "air"
+    ],
+    "page": 191,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 162,
+    "name": "Big earth elemental",
+    "level": 7,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "elemental",
+      "earth"
+    ],
+    "page": 191,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 163,
+    "name": "Big fire elemental",
+    "level": 7,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "elemental",
+      "fire"
+    ],
+    "page": 191,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 164,
+    "name": "Big water elemental",
+    "level": 7,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "elemental",
+      "water"
+    ],
+    "page": 191,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 165,
+    "name": "Cloud giant mage",
+    "level": 7,
+    "size": "huge",
+    "role": "caster",
+    "types": [
+      "giant",
+      "cloud"
+    ],
+    "page": 165,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 166,
+    "name": "Cloud giant thane",
+    "level": 7,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "giant",
+      "cloud"
+    ],
+    "page": 165,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 167,
+    "name": "Cloud giant warrior",
+    "level": 7,
+    "size": "huge",
+    "role": "troop",
+    "types": [
+      "giant",
+      "cloud"
+    ],
+    "page": 165,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 168,
+    "name": "Devil of the fangs",
+    "level": 7,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "devil"
+    ],
+    "page": 180,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 169,
+    "name": "Gnoll fiendfletch",
+    "level": 7,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "gnoll",
+      "humanoid"
+    ],
+    "page": 196,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 170,
+    "name": "Gnoll shredder",
+    "level": 7,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "gnoll",
+      "humanoid"
+    ],
+    "page": 196,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 171,
+    "name": "Hooded devil",
+    "level": 7,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "devil"
+    ],
+    "page": 174,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 172,
+    "name": "Medium gold dragon",
+    "level": 7,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "dragon",
+      "gold"
+    ],
+    "page": 186,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 173,
+    "name": "Carid, reseeded",
+    "level": 8,
+    "size": "huge",
+    "role": "troop",
+    "types": [
+      "plant"
+    ],
+    "page": 254,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 174,
+    "name": "Fury devil (erinyes)",
+    "level": 8,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "devil"
+    ],
+    "page": 175,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 175,
+    "name": "Giant praying mantis",
+    "level": 8,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "beast"
+    ],
+    "page": 161,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 176,
+    "name": "Mummy",
+    "level": 8,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "undead"
+    ],
+    "page": 197,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 177,
+    "name": "Bone devil (osyluth)",
+    "level": 9,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "devil"
+    ],
+    "page": 176,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 178,
+    "name": "Dread specter",
+    "level": 9,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "undead"
+    ],
+    "page": 201,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 179,
+    "name": "Epic air elemental",
+    "level": 9,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "elemental",
+      "air"
+    ],
+    "page": 192,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 180,
+    "name": "Epic earth elemental",
+    "level": 9,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "elemental",
+      "earth"
+    ],
+    "page": 192,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 181,
+    "name": "Epic fire elemental",
+    "level": 9,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "elemental",
+      "fire"
+    ],
+    "page": 193,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 182,
+    "name": "Epic water elemental",
+    "level": 9,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "elemental",
+      "water"
+    ],
+    "page": 193,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 183,
+    "name": "Headless zombie",
+    "level": 9,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "undead",
+      "zombie"
+    ],
+    "page": 207,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 184,
+    "name": "Huge bronze dragon",
+    "level": 9,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "dragon",
+      "bronze"
+    ],
+    "page": 186,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 185,
+    "name": "Large copper dragon",
+    "level": 9,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "dragon",
+      "copper"
+    ],
+    "page": 186,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 186,
+    "name": "Soul flenser",
+    "level": 9,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "aberration"
+    ],
+    "page": 199,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 187,
+    "name": "The flensed",
+    "level": 9,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "aberration"
+    ],
+    "page": 200,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 188,
+    "name": "Barbed devil (hamatula)",
+    "level": 10,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "devil"
+    ],
+    "page": 176,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 189,
+    "name": "Large silver dragon",
+    "level": 10,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "dragon",
+      "silver"
+    ],
+    "page": 187,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 190,
+    "name": "River devil",
+    "level": 10,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "devil"
+    ],
+    "page": 180,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 191,
+    "name": "Treant titan",
+    "level": 10,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "plant"
+    ],
+    "page": 203,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 192,
+    "name": "Huge copper dragon",
+    "level": 11,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "dragon",
+      "copper"
+    ],
+    "page": 187,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 193,
+    "name": "Ice devil (gelugon)",
+    "level": 11,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "devil"
+    ],
+    "page": 177,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 194,
+    "name": "Large gold dragon",
+    "level": 11,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "dragon",
+      "gold"
+    ],
+    "page": 187,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 195,
+    "name": "Horned devil (cornugon)",
+    "level": 12,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "devil"
+    ],
+    "page": 177,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 196,
+    "name": "Huge silver dragon",
+    "level": 13,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "dragon",
+      "silver"
+    ],
+    "page": 188,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 197,
+    "name": "River devil minion",
+    "level": 13,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "devil"
+    ],
+    "page": 181,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 198,
+    "name": "The final devil",
+    "level": 13,
+    "size": "huge",
+    "role": "leader",
+    "types": [
+      "devil"
+    ],
+    "page": 181,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 199,
+    "name": "Huge gold dragon",
+    "level": 14,
+    "size": "huge",
+    "role": "caster",
+    "types": [
+      "dragon",
+      "gold"
+    ],
+    "page": 188,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 200,
+    "name": "Pit fiend",
+    "level": 14,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "devil"
+    ],
+    "page": 178,
+    "source": "13 True Ways"
+  },
+  {
+    "id": 201,
+    "name": "Kobold grand wizard",
+    "level": 0,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 123,
+    "source": "Bestiary"
+  },
+  {
+    "id": 202,
+    "name": "Squib swarm",
+    "level": 0,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "beast"
+    ],
+    "page": 179,
+    "source": "Bestiary"
+  },
+  {
+    "id": 203,
+    "name": "Stirge",
+    "level": 0,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "beast",
+      "stirge"
+    ],
+    "page": 197,
+    "source": "Bestiary"
+  },
+  {
+    "id": 204,
+    "name": "Stirgelings",
+    "level": 0,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "beast",
+      "stirge"
+    ],
+    "page": 197,
+    "source": "Bestiary"
+  },
+  {
+    "id": 205,
+    "name": "Archer stirge",
+    "level": 1,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "beast",
+      "stirge"
+    ],
+    "page": 197,
+    "source": "Bestiary"
+  },
+  {
+    "id": 206,
+    "name": "Cobbler stirge",
+    "level": 1,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "beast",
+      "stirge"
+    ],
+    "page": 197,
+    "source": "Bestiary"
+  },
+  {
+    "id": 207,
+    "name": "Ettercap acolyte",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "ettercap"
+    ],
+    "page": 73,
+    "source": "Bestiary"
+  },
+  {
+    "id": 208,
+    "name": "Fungaloid creeper",
+    "level": 1,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "plant",
+      "fungaloid"
+    ],
+    "page": 83,
+    "source": "Bestiary"
+  },
+  {
+    "id": 209,
+    "name": "Gravemeat",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "undead"
+    ],
+    "page": 97,
+    "source": "Bestiary"
+  },
+  {
+    "id": 210,
+    "name": "Swarm of bats",
+    "level": 1,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "beast"
+    ],
+    "page": 13,
+    "source": "Bestiary"
+  },
+  {
+    "id": 211,
+    "name": "Watch skull",
+    "level": 1,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "undead",
+      "skeleton"
+    ],
+    "page": 109,
+    "source": "Bestiary"
+  },
+  {
+    "id": 212,
+    "name": "White dragon hatchling",
+    "level": 1,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "dragon",
+      "white"
+    ],
+    "page": 219,
+    "source": "Bestiary"
+  },
+  {
+    "id": 213,
+    "name": "Wibble",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "construct"
+    ],
+    "page": 223,
+    "source": "Bestiary"
+  },
+  {
+    "id": 214,
+    "name": "Aerial spore",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "plant"
+    ],
+    "page": 83,
+    "source": "Bestiary"
+  },
+  {
+    "id": 215,
+    "name": "Avenging orb",
+    "level": 2,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "humanoid"
+    ],
+    "page": 204,
+    "source": "Bestiary"
+  },
+  {
+    "id": 216,
+    "name": "Bat cavalry",
+    "level": 2,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "humanoid"
+    ],
+    "page": 14,
+    "source": "Bestiary"
+  },
+  {
+    "id": 217,
+    "name": "Boombug",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "beast"
+    ],
+    "page": 113,
+    "source": "Bestiary"
+  },
+  {
+    "id": 218,
+    "name": "Bugbear scout",
+    "level": 2,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "goblin"
+    ],
+    "page": 24,
+    "source": "Bestiary"
+  },
+  {
+    "id": 219,
+    "name": "Claw flower",
+    "level": 2,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "plant"
+    ],
+    "page": 161,
+    "source": "Bestiary"
+  },
+  {
+    "id": 220,
+    "name": "Destroying sword",
+    "level": 2,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "humanoid"
+    ],
+    "page": 204,
+    "source": "Bestiary"
+  },
+  {
+    "id": 221,
+    "name": "Dire bat",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "beast"
+    ],
+    "page": 14,
+    "source": "Bestiary"
+  },
+  {
+    "id": 222,
+    "name": "Enduring shield",
+    "level": 2,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "humanoid"
+    ],
+    "page": 204,
+    "source": "Bestiary"
+  },
+  {
+    "id": 223,
+    "name": "Ettercap hunter",
+    "level": 2,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "humanoid",
+      "ettercap"
+    ],
+    "page": 73,
+    "source": "Bestiary"
+  },
+  {
+    "id": 224,
+    "name": "Feral warbanner",
+    "level": 2,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "construct"
+    ],
+    "page": 207,
+    "source": "Bestiary"
+  },
+  {
+    "id": 225,
+    "name": "Hellwasp",
+    "level": 2,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "beast"
+    ],
+    "page": 113,
+    "source": "Bestiary"
+  },
+  {
+    "id": 226,
+    "name": "Hook scuttler",
+    "level": 2,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "beast"
+    ],
+    "page": 113,
+    "source": "Bestiary"
+  },
+  {
+    "id": 227,
+    "name": "Human rabble",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid"
+    ],
+    "page": 208,
+    "source": "Bestiary"
+  },
+  {
+    "id": 228,
+    "name": "Kobold skyclaw",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 124,
+    "source": "Bestiary"
+  },
+  {
+    "id": 229,
+    "name": "Orc archer",
+    "level": 2,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 156,
+    "source": "Bestiary"
+  },
+  {
+    "id": 230,
+    "name": "Pit-spawn orc",
+    "level": 2,
+    "size": "large",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 156,
+    "source": "Bestiary"
+  },
+  {
+    "id": 231,
+    "name": "Razor shark",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "beast"
+    ],
+    "page": 187,
+    "source": "Bestiary"
+  },
+  {
+    "id": 232,
+    "name": "Sahuagin raider",
+    "level": 2,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "sahuagin"
+    ],
+    "page": 187,
+    "source": "Bestiary"
+  },
+  {
+    "id": 233,
+    "name": "Splotchcap",
+    "level": 2,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "humanoid"
+    ],
+    "page": 175,
+    "source": "Bestiary"
+  },
+  {
+    "id": 234,
+    "name": "Sporrior",
+    "level": 2,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "plant"
+    ],
+    "page": 84,
+    "source": "Bestiary"
+  },
+  {
+    "id": 235,
+    "name": "Swarming maw",
+    "level": 2,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 113,
+    "source": "Bestiary"
+  },
+  {
+    "id": 236,
+    "name": "Barbellite",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "beast"
+    ],
+    "page": 179,
+    "source": "Bestiary"
+  },
+  {
+    "id": 237,
+    "name": "Blue sorcerer",
+    "level": 3,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "humanoid",
+      "blue"
+    ],
+    "page": 21,
+    "source": "Bestiary"
+  },
+  {
+    "id": 238,
+    "name": "Braincap",
+    "level": 3,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "plant"
+    ],
+    "page": 84,
+    "source": "Bestiary"
+  },
+  {
+    "id": 239,
+    "name": "Bugbear schemer",
+    "level": 3,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "humanoid",
+      "goblin"
+    ],
+    "page": 25,
+    "source": "Bestiary"
+  },
+  {
+    "id": 240,
+    "name": "Catacomb dragon",
+    "level": 3,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "dragon"
+    ],
+    "page": 17,
+    "source": "Bestiary"
+  },
+  {
+    "id": 241,
+    "name": "Cave orc",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 156,
+    "source": "Bestiary"
+  },
+  {
+    "id": 242,
+    "name": "Cenotaph dragon",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "dragon"
+    ],
+    "page": 219,
+    "source": "Bestiary"
+  },
+  {
+    "id": 243,
+    "name": "Crusader warbanner",
+    "level": 3,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "construct"
+    ],
+    "page": 208,
+    "source": "Bestiary"
+  },
+  {
+    "id": 244,
+    "name": "Dawn zorigami",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "construct"
+    ],
+    "page": 225,
+    "source": "Bestiary"
+  },
+  {
+    "id": 245,
+    "name": "Death-plague orc",
+    "level": 3,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 158,
+    "source": "Bestiary"
+  },
+  {
+    "id": 246,
+    "name": "Drow spider-mage",
+    "level": 3,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "humanoid"
+    ],
+    "page": 58,
+    "source": "Bestiary"
+  },
+  {
+    "id": 247,
+    "name": "Ettercap supplicant",
+    "level": 3,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "humanoid"
+    ],
+    "page": 73,
+    "source": "Bestiary"
+  },
+  {
+    "id": 248,
+    "name": "Ettercap warrior",
+    "level": 3,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "humanoid"
+    ],
+    "page": 74,
+    "source": "Bestiary"
+  },
+  {
+    "id": 249,
+    "name": "Fungaloid drudge",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "plant",
+      "fungaloid"
+    ],
+    "page": 84,
+    "source": "Bestiary"
+  },
+  {
+    "id": 250,
+    "name": "Goblin bat mage",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "beast",
+      "humanoid",
+      "goblin"
+    ],
+    "page": 14,
+    "source": "Bestiary"
+  },
+  {
+    "id": 251,
+    "name": "Intellect devourer",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "aberration"
+    ],
+    "page": 116,
+    "source": "Bestiary"
+  },
+  {
+    "id": 252,
+    "name": "Kobold dog rider",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 124,
+    "source": "Bestiary"
+  },
+  {
+    "id": 253,
+    "name": "Kobold engineer",
+    "level": 3,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 124,
+    "source": "Bestiary"
+  },
+  {
+    "id": 254,
+    "name": "Ogre penitent",
+    "level": 3,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "giant"
+    ],
+    "page": 149,
+    "source": "Bestiary"
+  },
+  {
+    "id": 255,
+    "name": "Orc battle screamer",
+    "level": 3,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 157,
+    "source": "Bestiary"
+  },
+  {
+    "id": 256,
+    "name": "Orc lord warbanner",
+    "level": 3,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "construct",
+      "orc"
+    ],
+    "page": 209,
+    "source": "Bestiary"
+  },
+  {
+    "id": 257,
+    "name": "Orc tusker",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "orc"
+    ],
+    "page": 157,
+    "source": "Bestiary"
+  },
+  {
+    "id": 258,
+    "name": "Pixie pod",
+    "level": 3,
+    "size": "large",
+    "role": "leader",
+    "types": [
+      "plant"
+    ],
+    "page": 161,
+    "source": "Bestiary"
+  },
+  {
+    "id": 259,
+    "name": "Podling",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "plant"
+    ],
+    "page": 161,
+    "source": "Bestiary"
+  },
+  {
+    "id": 260,
+    "name": "Redcap",
+    "level": 3,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "humanoid"
+    ],
+    "page": 175,
+    "source": "Bestiary"
+  },
+  {
+    "id": 261,
+    "name": "Rust monster",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "aberration"
+    ],
+    "page": 184,
+    "source": "Bestiary"
+  },
+  {
+    "id": 262,
+    "name": "Slime skull",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "undead"
+    ],
+    "page": 109,
+    "source": "Bestiary"
+  },
+  {
+    "id": 263,
+    "name": "Spinneret doxy",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "humanoid"
+    ],
+    "page": 120,
+    "source": "Bestiary"
+  },
+  {
+    "id": 264,
+    "name": "Weaver swarm",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "beast"
+    ],
+    "page": 61,
+    "source": "Bestiary"
+  },
+  {
+    "id": 265,
+    "name": "Barbarous bugbear",
+    "level": 4,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "humanoid",
+      "goblin"
+    ],
+    "page": 25,
+    "source": "Bestiary"
+  },
+  {
+    "id": 266,
+    "name": "Basilisk",
+    "level": 4,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 10,
+    "source": "Bestiary"
+  },
+  {
+    "id": 267,
+    "name": "Cambion dirk",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "demon"
+    ],
+    "page": 31,
+    "source": "Bestiary"
+  },
+  {
+    "id": 268,
+    "name": "Centaur lancer",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid"
+    ],
+    "page": 35,
+    "source": "Bestiary"
+  },
+  {
+    "id": 269,
+    "name": "Chaos beast",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "aberration",
+      "chaos"
+    ],
+    "page": 39,
+    "source": "Bestiary"
+  },
+  {
+    "id": 270,
+    "name": "Chaos behemoth",
+    "level": 4,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "aberration",
+      "chaos"
+    ],
+    "page": 40,
+    "source": "Bestiary"
+  },
+  {
+    "id": 271,
+    "name": "Chaos brute",
+    "level": 4,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "aberration",
+      "chaos"
+    ],
+    "page": 39,
+    "source": "Bestiary"
+  },
+  {
+    "id": 272,
+    "name": "Chaos glorp",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "aberration",
+      "chaos"
+    ],
+    "page": 39,
+    "source": "Bestiary"
+  },
+  {
+    "id": 273,
+    "name": "Chuulish slave",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "aberration",
+      "chuul"
+    ],
+    "page": 51,
+    "source": "Bestiary"
+  },
+  {
+    "id": 274,
+    "name": "Demonic ogre",
+    "level": 4,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "giant"
+    ],
+    "page": 149,
+    "source": "Bestiary"
+  },
+  {
+    "id": 275,
+    "name": "Drow soldier",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "drow"
+    ],
+    "page": 58,
+    "source": "Bestiary"
+  },
+  {
+    "id": 276,
+    "name": "Elder spore",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "plant"
+    ],
+    "page": 85,
+    "source": "Bestiary"
+  },
+  {
+    "id": 277,
+    "name": "Ettercap keeper",
+    "level": 4,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "humanoid",
+      "ettercap"
+    ],
+    "page": 74,
+    "source": "Bestiary"
+  },
+  {
+    "id": 278,
+    "name": "Fungaloid empress",
+    "level": 4,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "plant",
+      "fungaloid"
+    ],
+    "page": 85,
+    "source": "Bestiary"
+  },
+  {
+    "id": 279,
+    "name": "Fungaloid monarch",
+    "level": 4,
+    "size": "large",
+    "role": "leader",
+    "types": [
+      "plant",
+      "fungaloid"
+    ],
+    "page": 84,
+    "source": "Bestiary"
+  },
+  {
+    "id": 280,
+    "name": "Gelatinous tetrahedron",
+    "level": 4,
+    "size": "huge",
+    "role": "blocker",
+    "types": [
+      "ooze"
+    ],
+    "page": 88,
+    "source": "Bestiary"
+  },
+  {
+    "id": 281,
+    "name": "Ghoul fleshripper",
+    "level": 4,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "undead",
+      "ghoul"
+    ],
+    "page": 97,
+    "source": "Bestiary"
+  },
+  {
+    "id": 282,
+    "name": "Ghoul licklash",
+    "level": 4,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "undead",
+      "ghoul"
+    ],
+    "page": 97,
+    "source": "Bestiary"
+  },
+  {
+    "id": 283,
+    "name": "Ghoul pusbuster",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "undead",
+      "ghoul"
+    ],
+    "page": 97,
+    "source": "Bestiary"
+  },
+  {
+    "id": 284,
+    "name": "Jest bones",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "undead"
+    ],
+    "page": 109,
+    "source": "Bestiary"
+  },
+  {
+    "id": 285,
+    "name": "Kobold bravescale",
+    "level": 4,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 125,
+    "source": "Bestiary"
+  },
+  {
+    "id": 286,
+    "name": "Kobold dungeon-shaman",
+    "level": 4,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 125,
+    "source": "Bestiary"
+  },
+  {
+    "id": 287,
+    "name": "Kobold shadow-warrior",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 125,
+    "source": "Bestiary"
+  },
+  {
+    "id": 288,
+    "name": "Lethal lothario",
+    "level": 4,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "humanoid"
+    ],
+    "page": 121,
+    "source": "Bestiary"
+  },
+  {
+    "id": 289,
+    "name": "Lich baroness",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "undead",
+      "lich"
+    ],
+    "page": 135,
+    "source": "Bestiary"
+  },
+  {
+    "id": 290,
+    "name": "Lich king warbanner",
+    "level": 4,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "construct",
+      "lich"
+    ],
+    "page": 210,
+    "source": "Bestiary"
+  },
+  {
+    "id": 291,
+    "name": "Ogre berserker",
+    "level": 4,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "giant"
+    ],
+    "page": 149,
+    "source": "Bestiary"
+  },
+  {
+    "id": 292,
+    "name": "Ogre crusader",
+    "level": 4,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "giant"
+    ],
+    "page": 150,
+    "source": "Bestiary"
+  },
+  {
+    "id": 293,
+    "name": "Ravenous cannibal",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid"
+    ],
+    "page": 212,
+    "source": "Bestiary"
+  },
+  {
+    "id": 294,
+    "name": "Screaming skull",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "undead"
+    ],
+    "page": 110,
+    "source": "Bestiary"
+  },
+  {
+    "id": 295,
+    "name": "Woven",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid"
+    ],
+    "page": 121,
+    "source": "Bestiary"
+  },
+  {
+    "id": 296,
+    "name": "Binding bride",
+    "level": 5,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "humanoid"
+    ],
+    "page": 121,
+    "source": "Bestiary"
+  },
+  {
+    "id": 297,
+    "name": "Cambion sickle",
+    "level": 5,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "demon"
+    ],
+    "page": 31,
+    "source": "Bestiary"
+  },
+  {
+    "id": 298,
+    "name": "Centaur raider",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "humanoid"
+    ],
+    "page": 35,
+    "source": "Bestiary"
+  },
+  {
+    "id": 299,
+    "name": "Drow sword maiden",
+    "level": 5,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "drow"
+    ],
+    "page": 58,
+    "source": "Bestiary"
+  },
+  {
+    "id": 300,
+    "name": "Flaming skull",
+    "level": 5,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "undead"
+    ],
+    "page": 110,
+    "source": "Bestiary"
+  },
+  {
+    "id": 301,
+    "name": "Gelatinous cubahedron",
+    "level": 5,
+    "size": "huge",
+    "role": "blocker",
+    "types": [
+      "ooze"
+    ],
+    "page": 89,
+    "source": "Bestiary"
+  },
+  {
+    "id": 302,
+    "name": "Ghast",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "undead"
+    ],
+    "page": 98,
+    "source": "Bestiary"
+  },
+  {
+    "id": 303,
+    "name": "Gorge dragon",
+    "level": 5,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "dragon"
+    ],
+    "page": 17,
+    "source": "Bestiary"
+  },
+  {
+    "id": 304,
+    "name": "Green bulette",
+    "level": 5,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 27,
+    "source": "Bestiary"
+  },
+  {
+    "id": 305,
+    "name": "Iron sea shark",
+    "level": 5,
+    "size": "large",
+    "role": "mook",
+    "types": [
+      "beast"
+    ],
+    "page": 188,
+    "source": "Bestiary"
+  },
+  {
+    "id": 306,
+    "name": "Kobold dragon-soul",
+    "level": 5,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "kobold"
+    ],
+    "page": 125,
+    "source": "Bestiary"
+  },
+  {
+    "id": 307,
+    "name": "Lumberland dirt-fisher",
+    "level": 5,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 28,
+    "source": "Bestiary"
+  },
+  {
+    "id": 308,
+    "name": "Manticore bard",
+    "level": 5,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "beast"
+    ],
+    "page": 139,
+    "source": "Bestiary"
+  },
+  {
+    "id": 309,
+    "name": "Mantikumhar",
+    "level": 5,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "beast"
+    ],
+    "page": 139,
+    "source": "Bestiary"
+  },
+  {
+    "id": 310,
+    "name": "Mausoleum dragon",
+    "level": 5,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "dragon"
+    ],
+    "page": 219,
+    "source": "Bestiary"
+  },
+  {
+    "id": 311,
+    "name": "Ogre champion",
+    "level": 5,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "giant"
+    ],
+    "page": 150,
+    "source": "Bestiary"
+  },
+  {
+    "id": 312,
+    "name": "Ravenous bumoorah",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 28,
+    "source": "Bestiary"
+  },
+  {
+    "id": 313,
+    "name": "Rust monster obliterator",
+    "level": 5,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "demon"
+    ],
+    "page": 184,
+    "source": "Bestiary"
+  },
+  {
+    "id": 314,
+    "name": "Sahuagin glow priest",
+    "level": 5,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "humanoid",
+      "sahuagin"
+    ],
+    "page": 188,
+    "source": "Bestiary"
+  },
+  {
+    "id": 315,
+    "name": "Swarm prince",
+    "level": 5,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "humanoid"
+    ],
+    "page": 121,
+    "source": "Bestiary"
+  },
+  {
+    "id": 316,
+    "name": "Swaysong naga",
+    "level": 5,
+    "size": "large",
+    "role": "leader",
+    "types": [
+      "beast",
+      "naga"
+    ],
+    "page": 143,
+    "source": "Bestiary"
+  },
+  {
+    "id": 317,
+    "name": "Thunder bat",
+    "level": 5,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "beast"
+    ],
+    "page": 15,
+    "source": "Bestiary"
+  },
+  {
+    "id": 318,
+    "name": "Warped beast",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "aberration"
+    ],
+    "page": 70,
+    "source": "Bestiary"
+  },
+  {
+    "id": 319,
+    "name": "Wendigo spirit",
+    "level": 5,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "undead"
+    ],
+    "page": 212,
+    "source": "Bestiary"
+  },
+  {
+    "id": 320,
+    "name": "Whispering prophet",
+    "level": 5,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "aberration"
+    ],
+    "page": 216,
+    "source": "Bestiary"
+  },
+  {
+    "id": 321,
+    "name": "Apex zorigami",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "construct"
+    ],
+    "page": 225,
+    "source": "Bestiary"
+  },
+  {
+    "id": 322,
+    "name": "Blizzard dragon",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "dragon"
+    ],
+    "page": 220,
+    "source": "Bestiary"
+  },
+  {
+    "id": 323,
+    "name": "Cambion katar",
+    "level": 6,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "demon"
+    ],
+    "page": 31,
+    "source": "Bestiary"
+  },
+  {
+    "id": 324,
+    "name": "Centaur champion",
+    "level": 6,
+    "size": "large",
+    "role": "leader",
+    "types": [
+      "humanoid"
+    ],
+    "page": 36,
+    "source": "Bestiary"
+  },
+  {
+    "id": 325,
+    "name": "Centaur ranger",
+    "level": 6,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "humanoid"
+    ],
+    "page": 35,
+    "source": "Bestiary"
+  },
+  {
+    "id": 326,
+    "name": "Chuul",
+    "level": 6,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "aberration",
+      "chuul"
+    ],
+    "page": 47,
+    "source": "Bestiary"
+  },
+  {
+    "id": 327,
+    "name": "Chuulish swarm",
+    "level": 6,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "aberration",
+      "chuul"
+    ],
+    "page": 47,
+    "source": "Bestiary"
+  },
+  {
+    "id": 328,
+    "name": "Corpse dybbuk",
+    "level": 6,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "demon"
+    ],
+    "page": 64,
+    "source": "Bestiary"
+  },
+  {
+    "id": 329,
+    "name": "Coursing manticore",
+    "level": 6,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "beast"
+    ],
+    "page": 140,
+    "source": "Bestiary"
+  },
+  {
+    "id": 330,
+    "name": "Crimsoncap",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "humanoid"
+    ],
+    "page": 175,
+    "source": "Bestiary"
+  },
+  {
+    "id": 331,
+    "name": "Drow spider-sorceress",
+    "level": 6,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "humanoid",
+      "drow"
+    ],
+    "page": 59,
+    "source": "Bestiary"
+  },
+  {
+    "id": 332,
+    "name": "Frost-würm",
+    "level": 6,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast"
+    ],
+    "page": 180,
+    "source": "Bestiary"
+  },
+  {
+    "id": 333,
+    "name": "Gelatinous octahedron",
+    "level": 6,
+    "size": "huge",
+    "role": "blocker",
+    "types": [
+      "ooze"
+    ],
+    "page": 89,
+    "source": "Bestiary"
+  },
+  {
+    "id": 334,
+    "name": "Hag",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "humanoid"
+    ],
+    "page": 105,
+    "source": "Bestiary"
+  },
+  {
+    "id": 335,
+    "name": "Ice zombie",
+    "level": 6,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "undead",
+      "zombie"
+    ],
+    "page": 79,
+    "source": "Bestiary"
+  },
+  {
+    "id": 336,
+    "name": "Intellect assassin",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "aberration"
+    ],
+    "page": 118,
+    "source": "Bestiary"
+  },
+  {
+    "id": 337,
+    "name": "Jotun auroch",
+    "level": 6,
+    "size": "huge",
+    "role": "mook",
+    "types": [
+      "beast"
+    ],
+    "page": 78,
+    "source": "Bestiary"
+  },
+  {
+    "id": 338,
+    "name": "Lokkris",
+    "level": 6,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "beast"
+    ],
+    "page": 61,
+    "source": "Bestiary"
+  },
+  {
+    "id": 339,
+    "name": "Ogre mage knight",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "giant"
+    ],
+    "page": 152,
+    "source": "Bestiary"
+  },
+  {
+    "id": 340,
+    "name": "Parasitic dybbuk",
+    "level": 6,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "demon"
+    ],
+    "page": 64,
+    "source": "Bestiary"
+  },
+  {
+    "id": 341,
+    "name": "Sahuagin mutant",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "humanoid",
+      "sahuagin"
+    ],
+    "page": 189,
+    "source": "Bestiary"
+  },
+  {
+    "id": 342,
+    "name": "Sparkscale naga",
+    "level": 6,
+    "size": "large",
+    "role": "leader",
+    "types": [
+      "beast",
+      "naga"
+    ],
+    "page": 144,
+    "source": "Bestiary"
+  },
+  {
+    "id": 343,
+    "name": "Spider mount",
+    "level": 6,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast"
+    ],
+    "page": 60,
+    "source": "Bestiary"
+  },
+  {
+    "id": 344,
+    "name": "Winter beast",
+    "level": 6,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast"
+    ],
+    "page": 79,
+    "source": "Bestiary"
+  },
+  {
+    "id": 345,
+    "name": "Bergship raider",
+    "level": 7,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "giant"
+    ],
+    "page": 77,
+    "source": "Bestiary"
+  },
+  {
+    "id": 346,
+    "name": "Bronze golem",
+    "level": 7,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "construct",
+      "bronze"
+    ],
+    "page": 100,
+    "source": "Bestiary"
+  },
+  {
+    "id": 347,
+    "name": "Crustycap",
+    "level": 7,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "humanoid"
+    ],
+    "page": 176,
+    "source": "Bestiary"
+  },
+  {
+    "id": 348,
+    "name": "Drow darkbolt",
+    "level": 7,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "humanoid",
+      "drow"
+    ],
+    "page": 59,
+    "source": "Bestiary"
+  },
+  {
+    "id": 349,
+    "name": "Ethereal dybbuk",
+    "level": 7,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "demon"
+    ],
+    "page": 65,
+    "source": "Bestiary"
+  },
+  {
+    "id": 350,
+    "name": "Fallen lammasu",
+    "level": 7,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 131,
+    "source": "Bestiary"
+  },
+  {
+    "id": 351,
+    "name": "Gelatinous dodecahedron",
+    "level": 7,
+    "size": "huge",
+    "role": "blocker",
+    "types": [
+      "ooze"
+    ],
+    "page": 90,
+    "source": "Bestiary"
+  },
+  {
+    "id": 352,
+    "name": "Ice sorceress",
+    "level": 7,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "giant"
+    ],
+    "page": 77,
+    "source": "Bestiary"
+  },
+  {
+    "id": 353,
+    "name": "Lammasu warrior",
+    "level": 7,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast"
+    ],
+    "page": 131,
+    "source": "Bestiary"
+  },
+  {
+    "id": 354,
+    "name": "Manafang naga",
+    "level": 7,
+    "size": "large",
+    "role": "leader",
+    "types": [
+      "beast",
+      "naga"
+    ],
+    "page": 144,
+    "source": "Bestiary"
+  },
+  {
+    "id": 355,
+    "name": "Moon dragon",
+    "level": 7,
+    "size": "huge",
+    "role": "troop",
+    "types": [
+      "dragon"
+    ],
+    "page": 220,
+    "source": "Bestiary"
+  },
+  {
+    "id": 356,
+    "name": "Umluppuk",
+    "level": 7,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "aberration"
+    ],
+    "page": 69,
+    "source": "Bestiary"
+  },
+  {
+    "id": 357,
+    "name": "Void dragon",
+    "level": 7,
+    "size": "huge",
+    "role": "caster",
+    "types": [
+      "dragon"
+    ],
+    "page": 18,
+    "source": "Bestiary"
+  },
+  {
+    "id": 358,
+    "name": "Volcano dragon",
+    "level": 7,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "dragon"
+    ],
+    "page": 168,
+    "source": "Bestiary"
+  },
+  {
+    "id": 359,
+    "name": "Adult remorhaz",
+    "level": 8,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 180,
+    "source": "Bestiary"
+  },
+  {
+    "id": 360,
+    "name": "Black skull",
+    "level": 8,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "undead"
+    ],
+    "page": 110,
+    "source": "Bestiary"
+  },
+  {
+    "id": 361,
+    "name": "Cambion hellblade",
+    "level": 8,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "demon"
+    ],
+    "page": 32,
+    "source": "Bestiary"
+  },
+  {
+    "id": 362,
+    "name": "Couatl",
+    "level": 8,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "beast"
+    ],
+    "page": 52,
+    "source": "Bestiary"
+  },
+  {
+    "id": 363,
+    "name": "Elder swaysong naga",
+    "level": 8,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "beast",
+      "naga"
+    ],
+    "page": 144,
+    "source": "Bestiary"
+  },
+  {
+    "id": 364,
+    "name": "Frost giant adventurer",
+    "level": 8,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "giant"
+    ],
+    "page": 78,
+    "source": "Bestiary"
+  },
+  {
+    "id": 365,
+    "name": "Iconic chimera",
+    "level": 8,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 42,
+    "source": "Bestiary"
+  },
+  {
+    "id": 366,
+    "name": "Lammasu wizard",
+    "level": 8,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "beast"
+    ],
+    "page": 132,
+    "source": "Bestiary"
+  },
+  {
+    "id": 367,
+    "name": "Lich count",
+    "level": 8,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "undead",
+      "lich"
+    ],
+    "page": 135,
+    "source": "Bestiary"
+  },
+  {
+    "id": 368,
+    "name": "Marble golem",
+    "level": 8,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "construct"
+    ],
+    "page": 101,
+    "source": "Bestiary"
+  },
+  {
+    "id": 369,
+    "name": "Ogre lightning mage",
+    "level": 8,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "giant"
+    ],
+    "page": 152,
+    "source": "Bestiary"
+  },
+  {
+    "id": 370,
+    "name": "Parasitic lightning beetle",
+    "level": 8,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "beast"
+    ],
+    "page": 164,
+    "source": "Bestiary"
+  },
+  {
+    "id": 371,
+    "name": "Purple larvae",
+    "level": 8,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "beast"
+    ],
+    "page": 165,
+    "source": "Bestiary"
+  },
+  {
+    "id": 372,
+    "name": "Purple worm",
+    "level": 8,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 164,
+    "source": "Bestiary"
+  },
+  {
+    "id": 373,
+    "name": "Shadow dragon",
+    "level": 8,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "dragon",
+      "shadow"
+    ],
+    "page": 193,
+    "source": "Bestiary"
+  },
+  {
+    "id": 374,
+    "name": "Shadow thief",
+    "level": 8,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "dragon",
+      "shadow"
+    ],
+    "page": 193,
+    "source": "Bestiary"
+  },
+  {
+    "id": 375,
+    "name": "Deep bulette",
+    "level": 9,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 28,
+    "source": "Bestiary"
+  },
+  {
+    "id": 376,
+    "name": "Djinn",
+    "level": 9,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "giant"
+    ],
+    "page": 93,
+    "source": "Bestiary"
+  },
+  {
+    "id": 377,
+    "name": "Drow cavalry",
+    "level": 9,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "humanoid",
+      "drow"
+    ],
+    "page": 59,
+    "source": "Bestiary"
+  },
+  {
+    "id": 378,
+    "name": "Elder sparkscale naga",
+    "level": 9,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "beast",
+      "naga"
+    ],
+    "page": 145,
+    "source": "Bestiary"
+  },
+  {
+    "id": 379,
+    "name": "Elder wendigo",
+    "level": 9,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "demon"
+    ],
+    "page": 212,
+    "source": "Bestiary"
+  },
+  {
+    "id": 380,
+    "name": "Empyrean dragon",
+    "level": 9,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "dragon"
+    ],
+    "page": 18,
+    "source": "Bestiary"
+  },
+  {
+    "id": 381,
+    "name": "Hoard spirit",
+    "level": 9,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "construct"
+    ],
+    "page": 169,
+    "source": "Bestiary"
+  },
+  {
+    "id": 382,
+    "name": "Hoardsong dragon",
+    "level": 9,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "dragon"
+    ],
+    "page": 169,
+    "source": "Bestiary"
+  },
+  {
+    "id": 383,
+    "name": "Lammasu priest",
+    "level": 9,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "beast"
+    ],
+    "page": 132,
+    "source": "Bestiary"
+  },
+  {
+    "id": 384,
+    "name": "Ogre minion",
+    "level": 9,
+    "size": "large",
+    "role": "mook",
+    "types": [
+      "giant"
+    ],
+    "page": 150,
+    "source": "Bestiary"
+  },
+  {
+    "id": 385,
+    "name": "Prismatic ogre mage",
+    "level": 9,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "giant"
+    ],
+    "page": 153,
+    "source": "Bestiary"
+  },
+  {
+    "id": 386,
+    "name": "Skull of the beast",
+    "level": 9,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "undead"
+    ],
+    "page": 110,
+    "source": "Bestiary"
+  },
+  {
+    "id": 387,
+    "name": "Wraith bat",
+    "level": 9,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "undead"
+    ],
+    "page": 15,
+    "source": "Bestiary"
+  },
+  {
+    "id": 388,
+    "name": "Dusk zorigami",
+    "level": 10,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "construct"
+    ],
+    "page": 225,
+    "source": "Bestiary"
+  },
+  {
+    "id": 389,
+    "name": "Efreet",
+    "level": 10,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "giant"
+    ],
+    "page": 93,
+    "source": "Bestiary"
+  },
+  {
+    "id": 390,
+    "name": "Elder manafang naga",
+    "level": 10,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "beast",
+      "naga"
+    ],
+    "page": 145,
+    "source": "Bestiary"
+  },
+  {
+    "id": 391,
+    "name": "Massive mutant chuul",
+    "level": 10,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "aberration",
+      "chuul"
+    ],
+    "page": 48,
+    "source": "Bestiary"
+  },
+  {
+    "id": 392,
+    "name": "Elder couatl",
+    "level": 11,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "beast"
+    ],
+    "page": 53,
+    "source": "Bestiary"
+  },
+  {
+    "id": 393,
+    "name": "Greathoard elder",
+    "level": 11,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "dragon"
+    ],
+    "page": 170,
+    "source": "Bestiary"
+  },
+  {
+    "id": 394,
+    "name": "Remorhaz queen",
+    "level": 11,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 180,
+    "source": "Bestiary"
+  },
+  {
+    "id": 395,
+    "name": "Ancient purple worm",
+    "level": 12,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 164,
+    "source": "Bestiary"
+  },
+  {
+    "id": 396,
+    "name": "Flamewreathed dragon",
+    "level": 12,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "dragon"
+    ],
+    "page": 170,
+    "source": "Bestiary"
+  },
+  {
+    "id": 397,
+    "name": "Lich prince",
+    "level": 12,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "undead",
+      "lich"
+    ],
+    "page": 136,
+    "source": "Bestiary"
+  },
+  {
+    "id": 398,
+    "name": "Smoke minions",
+    "level": 12,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "construct"
+    ],
+    "page": 171,
+    "source": "Bestiary"
+  },
+  {
+    "id": 399,
+    "name": "Hagunemnon",
+    "level": 13,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "aberration"
+    ],
+    "page": 69,
+    "source": "Bestiary"
+  },
+  {
+    "id": 400,
+    "name": "Tarrasque",
+    "level": 15,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "beast"
+    ],
+    "page": 201,
+    "source": "Bestiary"
+  },
+  {
+    "id": 401,
+    "name": "Fast xombie",
+    "level": 0,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "xombie",
+      "star-mask",
+      "aberration"
+    ],
+    "page": 257,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 402,
+    "name": "Dainty lizard",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "beast",
+      "thunder lizard"
+    ],
+    "page": 270,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 403,
+    "name": "Meteorite xombie",
+    "level": 1,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "xombie",
+      "star-mask",
+      "aberration"
+    ],
+    "page": 257,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 404,
+    "name": "Rat swarm",
+    "level": 1,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "swarm",
+      "beast",
+      "elemental"
+    ],
+    "page": 55,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 405,
+    "name": "Eidolon in human form",
+    "level": 1,
+    "size": "triple strength",
+    "role": "troop",
+    "types": [
+      "eidolon",
+      "spirit",
+      "humanoid"
+    ],
+    "page": 46,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 406,
+    "name": "Venomous snake",
+    "level": 1,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "beast",
+      "elemental"
+    ],
+    "page": 55,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 407,
+    "name": "Badger",
+    "level": 1,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "elemental"
+    ],
+    "page": 55,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 408,
+    "name": "Golden Demon warrior",
+    "level": 2,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "kobold",
+      "golden demon",
+      "gold",
+      "humanoid"
+    ],
+    "page": 159,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 409,
+    "name": "Bloody shade",
+    "level": 2,
+    "size": "double strength",
+    "role": "mook",
+    "types": [
+      "undead",
+      "shade",
+      "spirit"
+    ],
+    "page": 10,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 410,
+    "name": "Bone imp mage-eater",
+    "level": 2,
+    "size": "weakling",
+    "role": "mook",
+    "types": [
+      "demon",
+      "bone imp",
+      "imp"
+    ],
+    "page": 20,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 411,
+    "name": "Broken shade",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "undead",
+      "shade",
+      "spirit"
+    ],
+    "page": 10,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 412,
+    "name": "Coin zombie",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "undead",
+      "zombie",
+      "coin zombie"
+    ],
+    "page": 33,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 413,
+    "name": "Conglomerate",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "taranar",
+      "elemental"
+    ],
+    "page": 283,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 414,
+    "name": "Frogspawn grunt",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "frogfolk",
+      "humanoid"
+    ],
+    "page": 96,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 415,
+    "name": "Hell Marsh fanatic",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "humanoid",
+      "hell marsh",
+      "diabolist"
+    ],
+    "page": 135,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 416,
+    "name": "Jackal gravedigger",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "jackal",
+      "humanoid",
+      "great ghoul"
+    ],
+    "page": 122,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 417,
+    "name": "Silver Hand cultist",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "cultist",
+      "silver hand",
+      "lich king",
+      "humanoid"
+    ],
+    "page": 248,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 418,
+    "name": "Xombie egg swarm",
+    "level": 2,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "xombie",
+      "star-mask",
+      "aberration"
+    ],
+    "page": 257,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 419,
+    "name": "Faun troubadour",
+    "level": 2,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "faun",
+      "humanoid"
+    ],
+    "page": 59,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 420,
+    "name": "Sadsack",
+    "level": 2,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "ghost",
+      "spirit",
+      "undead"
+    ],
+    "page": 106,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 421,
+    "name": "Skull crab xombie",
+    "level": 2,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "star-mask",
+      "aberration",
+      "xombie"
+    ],
+    "page": 258,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 422,
+    "name": "Wood nymph (dryad)",
+    "level": 2,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "fey",
+      "nymph"
+    ],
+    "page": 206,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 423,
+    "name": "Blueflame salamander",
+    "level": 2,
+    "size": "huge",
+    "role": "troop",
+    "types": [
+      "elemental",
+      "salamander",
+      "fire"
+    ],
+    "page": 234,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 424,
+    "name": "Archer shade",
+    "level": 3,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "shade",
+      "spirit",
+      "undead"
+    ],
+    "page": 11,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 425,
+    "name": "Bone imp archer",
+    "level": 3,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "bone imp",
+      "imp",
+      "demon"
+    ],
+    "page": 20,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 426,
+    "name": "Clasterian minotaur guard",
+    "level": 3,
+    "size": "large",
+    "role": "archer",
+    "types": [
+      "minotaur",
+      "humanoid"
+    ],
+    "page": 196,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 427,
+    "name": "Greenscale wild stalker",
+    "level": 3,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 175,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 428,
+    "name": "Taranar coryphée",
+    "level": 3,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "taranar",
+      "elemental"
+    ],
+    "page": 283,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 429,
+    "name": "Xombie spiders",
+    "level": 3,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "xombie",
+      "star-mask",
+      "aberration"
+    ],
+    "page": 258,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 430,
+    "name": "Hell marsh priest",
+    "level": 3,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "humanoid",
+      "hell marsh",
+      "diabolist"
+    ],
+    "page": 135,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 431,
+    "name": "Golden Demon priest",
+    "level": 3,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "kobold",
+      "golden demon",
+      "gold",
+      "humanoid"
+    ],
+    "page": 159,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 432,
+    "name": "Fallen derro",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "dwarf",
+      "humanoid",
+      "derro"
+    ],
+    "page": 36,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 433,
+    "name": "Kobold berserker",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "kobold",
+      "berseker",
+      "red",
+      "humanoid"
+    ],
+    "page": 156,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 434,
+    "name": "Golden Demon cultist",
+    "level": 3,
+    "size": "large",
+    "role": "mook",
+    "types": [
+      "kobold",
+      "golden demon",
+      "cultist",
+      "gold",
+      "humanoid"
+    ],
+    "page": 159,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 435,
+    "name": "Lesser haunting",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "ghost",
+      "spirit",
+      "undead"
+    ],
+    "page": 106,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 436,
+    "name": "Bone imp tormentor",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "bone imp",
+      "imp",
+      "demon"
+    ],
+    "page": 20,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 437,
+    "name": "Frogspawn monk",
+    "level": 3,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "frogspawn"
+    ],
+    "page": 96,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 438,
+    "name": "River nymph (naiad)",
+    "level": 3,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "fey",
+      "nymph"
+    ],
+    "page": 206,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 439,
+    "name": "Snowy owlbear",
+    "level": 3,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "beast",
+      "owlbear"
+    ],
+    "page": 212,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 440,
+    "name": "Snowy owlbear cub",
+    "level": 3,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast",
+      "owlbear"
+    ],
+    "page": 212,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 441,
+    "name": "Attached eidolon",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "eidolon",
+      "spirit",
+      "humanoid",
+      "beast"
+    ],
+    "page": 46,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 442,
+    "name": "Blade shade",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "shade",
+      "spirit",
+      "undead"
+    ],
+    "page": 10,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 443,
+    "name": "Clubtail",
+    "level": 3,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast",
+      "thunder lizard"
+    ],
+    "page": 270,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 444,
+    "name": "Derro berserker",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "dwarf",
+      "humanoid",
+      "derro",
+      "berserker"
+    ],
+    "page": 36,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 445,
+    "name": "Drudge citizen",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "silver hand",
+      "lich king",
+      "undead"
+    ],
+    "page": 248,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 446,
+    "name": "Really angry kobold",
+    "level": 3,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "kobold",
+      "red",
+      "humanoid"
+    ],
+    "page": 157,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 447,
+    "name": "Bonded hero",
+    "level": 3,
+    "size": "triple strength",
+    "role": "wrecker",
+    "types": [
+      "bonded",
+      "construct"
+    ],
+    "page": 14,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 448,
+    "name": "Flamebird phoenix",
+    "level": 3,
+    "size": "double strength",
+    "role": "wrecker",
+    "types": [
+      "elemental",
+      "phoenix"
+    ],
+    "page": 216,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 449,
+    "name": "Great cat",
+    "level": 3,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "elemental"
+    ],
+    "page": 55,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 450,
+    "name": "Grey hoarder",
+    "level": 3,
+    "size": "double strength",
+    "role": "wrecker",
+    "types": [
+      "gold king",
+      "undead"
+    ],
+    "page": 113,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 451,
+    "name": "Horned azinth calf",
+    "level": 3,
+    "size": "double strength",
+    "role": "wrecker",
+    "types": [
+      "azinth",
+      "beast"
+    ],
+    "page": 145,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 452,
+    "name": "Red haze berserker",
+    "level": 3,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "berserker",
+      "red",
+      "kobold",
+      "humanoid"
+    ],
+    "page": 157,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 453,
+    "name": "Wild dryad",
+    "level": 3,
+    "size": "double strength",
+    "role": "wrecker",
+    "types": [
+      "fey"
+    ],
+    "page": 206,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 454,
+    "name": "The Rascal",
+    "level": 3,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "fey",
+      "humanoid"
+    ],
+    "page": 65,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 455,
+    "name": "Derro whisperer",
+    "level": 4,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "dwarf",
+      "humanoid",
+      "derro"
+    ],
+    "page": 37,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 456,
+    "name": "Faun harrier",
+    "level": 4,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "faun",
+      "humanoid"
+    ],
+    "page": 59,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 457,
+    "name": "Doomlantern salamander",
+    "level": 4,
+    "size": "huge",
+    "role": "blocker",
+    "types": [
+      "elemental",
+      "salamander",
+      "fire"
+    ],
+    "page": 234,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 458,
+    "name": "Bluescale lightning caller",
+    "level": 4,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 175,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 459,
+    "name": "Brain-absorber xombie",
+    "level": 4,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "xombie",
+      "star-mask",
+      "aberration"
+    ],
+    "page": 258,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 460,
+    "name": "Hell Marsh wizard",
+    "level": 4,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "humanoid",
+      "hell marsh",
+      "diabolist"
+    ],
+    "page": 136,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 461,
+    "name": "The purple dragon (adventurer)",
+    "level": 4,
+    "size": "huge",
+    "role": "caster",
+    "types": [
+      "dragon",
+      "purple"
+    ],
+    "page": 186,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 462,
+    "name": "Sprite",
+    "level": 4,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "fey",
+      "humanoid"
+    ],
+    "page": 66,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 463,
+    "name": "Derro seer",
+    "level": 4,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "dwarf",
+      "humanoid",
+      "derro"
+    ],
+    "page": 37,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 464,
+    "name": "Frogspawn spellcroaker",
+    "level": 4,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "frogfolk",
+      "humanoid"
+    ],
+    "page": 96,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 465,
+    "name": "Kelplets",
+    "level": 4,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "naiad",
+      "plant"
+    ],
+    "page": 199,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 466,
+    "name": "Giant bird of prey",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "beast",
+      "elemental"
+    ],
+    "page": 56,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 467,
+    "name": "Gibbering mouther",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "aberration",
+      "gibbering mouther"
+    ],
+    "page": 109,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 468,
+    "name": "Hill nymph (oread)",
+    "level": 4,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "humanoid",
+      "naiad",
+      "nymph"
+    ],
+    "page": 207,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 469,
+    "name": "Kobold assassin",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "kobold",
+      "black",
+      "humanoid"
+    ],
+    "page": 156,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 470,
+    "name": "Shadow mongoose destroyer of fate",
+    "level": 4,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "spirit",
+      "shadow mongoose"
+    ],
+    "page": 239,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 471,
+    "name": "Taranar hunter",
+    "level": 4,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "taranar",
+      "elemental"
+    ],
+    "page": 282,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 472,
+    "name": "Lesser xorn",
+    "level": 4,
+    "size": "elite",
+    "role": "spoiler",
+    "types": [
+      "xorn",
+      "elemental"
+    ],
+    "page": 290,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 473,
+    "name": "Beautific gargoyle",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "gargoyle",
+      "hallowed gargoyle",
+      "construct",
+      "priestess"
+    ],
+    "page": 128,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 474,
+    "name": "Bonded veil",
+    "level": 4,
+    "size": "triple strength",
+    "role": "troop",
+    "types": [
+      "bonded",
+      "construct"
+    ],
+    "page": 15,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 475,
+    "name": "Bone imp skullbiter",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "bone imp",
+      "imp",
+      "demon"
+    ],
+    "page": 20,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 476,
+    "name": "Broken taranar",
+    "level": 4,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "taranar",
+      "elemental"
+    ],
+    "page": 283,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 477,
+    "name": "Ebon gauntlet sword",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "ebon gauntlet",
+      "humanoid"
+    ],
+    "page": 40,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 478,
+    "name": "Eidolon in war form",
+    "level": 4,
+    "size": "triple strength",
+    "role": "troop",
+    "types": [
+      "eidolon",
+      "spirit"
+    ],
+    "page": 47,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 479,
+    "name": "Ember imp",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "devil",
+      "imp",
+      "hellcat"
+    ],
+    "page": 133,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 480,
+    "name": "Demon-drake",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "drake",
+      "golden demon",
+      "demon"
+    ],
+    "page": 159,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 481,
+    "name": "Phantomaton",
+    "level": 4,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "undead",
+      "silver hand",
+      "lich king"
+    ],
+    "page": 0,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 482,
+    "name": "Trihorn",
+    "level": 4,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast",
+      "thunder lizard"
+    ],
+    "page": 271,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 483,
+    "name": "Slaughter pit shade",
+    "level": 4,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "shade",
+      "spirit",
+      "undead"
+    ],
+    "page": 11,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 484,
+    "name": "Spiketail",
+    "level": 4,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "thunder lizard"
+    ],
+    "page": 271,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 485,
+    "name": "Jackal scout",
+    "level": 5,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "jackal",
+      "humanoid",
+      "great ghoul"
+    ],
+    "page": 122,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 486,
+    "name": "Star-mask cultist",
+    "level": 5,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "star-mask",
+      "cultist",
+      "aberration"
+    ],
+    "page": 259,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 487,
+    "name": "Bronze errant",
+    "level": 5,
+    "size": "triple strength",
+    "role": "blocker",
+    "types": [
+      "gold king",
+      "undead"
+    ],
+    "page": 144,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 488,
+    "name": "Faun keeper",
+    "level": 5,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "faun",
+      "humanoid"
+    ],
+    "page": 59,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 489,
+    "name": "Frog knight",
+    "level": 5,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "frogfolk",
+      "humanoid"
+    ],
+    "page": 98,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 490,
+    "name": "Hungry mouth ghost",
+    "level": 5,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "ghost",
+      "spirit",
+      "undead"
+    ],
+    "page": 106,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 491,
+    "name": "Kohwa messenger",
+    "level": 5,
+    "size": "large",
+    "role": "blocker",
+    "types": [
+      "kohwa",
+      "beast"
+    ],
+    "page": 162,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 492,
+    "name": "Minotaur adept",
+    "level": 5,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "minotaur",
+      "humanoid"
+    ],
+    "page": 192,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 493,
+    "name": "Petulant never-was",
+    "level": 5,
+    "size": "double strength",
+    "role": "caster",
+    "types": [
+      "ghost",
+      "spirit",
+      "undead"
+    ],
+    "page": 107,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 494,
+    "name": "Taranar bugler",
+    "level": 5,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "taranar",
+      "elemental"
+    ],
+    "page": 282,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 495,
+    "name": "Faun bandleader",
+    "level": 5,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "faun",
+      "humanoid"
+    ],
+    "page": 59,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 496,
+    "name": "Fomorian brute",
+    "level": 5,
+    "size": "large",
+    "role": "mook",
+    "types": [
+      "fomorian",
+      "fomori",
+      "giant"
+    ],
+    "page": 83,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 497,
+    "name": "Jackal bearer",
+    "level": 5,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "jackal",
+      "humanoid",
+      "great ghoul"
+    ],
+    "page": 122,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 498,
+    "name": "Jackpot zombie",
+    "level": 5,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "undead",
+      "zombie",
+      "coin zombie"
+    ],
+    "page": 33,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 499,
+    "name": "Kobold Glinter",
+    "level": 5,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "kobold",
+      "glinter",
+      "red",
+      "humanoid"
+    ],
+    "page": 158,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 500,
+    "name": "Scuttling star-mask",
+    "level": 5,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "star-mask",
+      "aberration"
+    ],
+    "page": 259,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 501,
+    "name": "Earthshaker",
+    "level": 5,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "beast",
+      "thunder lizard"
+    ],
+    "page": 271,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 502,
+    "name": "Frogspawn deceiver",
+    "level": 5,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "frogfolk",
+      "humanoid"
+    ],
+    "page": 97,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 503,
+    "name": "Great horned owlbear",
+    "level": 5,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "owlbear",
+      "beast"
+    ],
+    "page": 211,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 504,
+    "name": "Sea nymph (nereid)",
+    "level": 5,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "nymph",
+      "humanoid",
+      "naiad"
+    ],
+    "page": 208,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 505,
+    "name": "Trog fouler",
+    "level": 5,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "troglodyte",
+      "humanoid"
+    ],
+    "page": 275,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 506,
+    "name": "Wild naiad",
+    "level": 5,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "elemental",
+      "naiad"
+    ],
+    "page": 207,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 507,
+    "name": "Stalker",
+    "level": 5,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "beast",
+      "thunder lizard"
+    ],
+    "page": 272,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 508,
+    "name": "Flux elemental",
+    "level": 5,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "elemental",
+      "flux"
+    ],
+    "page": 77,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 509,
+    "name": "Tribal minotaur berserker",
+    "level": 5,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "minotaur",
+      "berserker",
+      "humanoid"
+    ],
+    "page": 192,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 510,
+    "name": "Whitescale rime walker",
+    "level": 5,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 175,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 511,
+    "name": "Ebon gauntlet adjudicator",
+    "level": 5,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "ebon gauntlet",
+      "humanoid"
+    ],
+    "page": 40,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 512,
+    "name": "Great hound",
+    "level": 5,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "fey"
+    ],
+    "page": 67,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 513,
+    "name": "Gray raider",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "gold king",
+      "undead"
+    ],
+    "page": 113,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 514,
+    "name": "Kelplings",
+    "level": 5,
+    "size": "double strength",
+    "role": "wrecker",
+    "types": [
+      "naiad",
+      "plant"
+    ],
+    "page": 199,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 515,
+    "name": "Koruku larva",
+    "level": 5,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "koruku",
+      "beast"
+    ],
+    "page": 165,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 516,
+    "name": "Mutant bullfrong",
+    "level": 5,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "frogfolk",
+      "beast"
+    ],
+    "page": 98,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 517,
+    "name": "Resurgent phoenix",
+    "level": 5,
+    "size": "large",
+    "role": "leader",
+    "types": [
+      "elemental",
+      "phoenix"
+    ],
+    "page": 216,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 518,
+    "name": "Coin collector zombie",
+    "level": 6,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "undead",
+      "zombie",
+      "coin zombie"
+    ],
+    "page": 34,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 519,
+    "name": "Gauntlet’s mascot",
+    "level": 6,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "ebon gauntlet",
+      "humanoid",
+      "beast",
+      "demon"
+    ],
+    "page": 41,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 520,
+    "name": "Spell golem warder",
+    "level": 6,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "golem",
+      "spell golem",
+      "construct"
+    ],
+    "page": 252,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 521,
+    "name": "Spriggan",
+    "level": 6,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "fey",
+      "humanoid"
+    ],
+    "page": 68,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 522,
+    "name": "Ebon gauntlet eye",
+    "level": 6,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "ebon gauntlet",
+      "humanoid"
+    ],
+    "page": 41,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 523,
+    "name": "Glittering bearer",
+    "level": 6,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "gold king",
+      "undead"
+    ],
+    "page": 114,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 524,
+    "name": "Jackal mage",
+    "level": 6,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "jackal",
+      "humanoid",
+      "great ghoul"
+    ],
+    "page": 122,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 525,
+    "name": "Rakshasa sybarite",
+    "level": 6,
+    "size": "double strength",
+    "role": "caster",
+    "types": [
+      "rakshasa",
+      "humanoid"
+    ],
+    "page": 224,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 526,
+    "name": "Cackling demon",
+    "level": 6,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "demon",
+      "laughing demon"
+    ],
+    "page": 181,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 527,
+    "name": "Hallowed gargoyle",
+    "level": 6,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "gargoyle",
+      "hallowed gargoyle",
+      "construct",
+      "priestess"
+    ],
+    "page": 128,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 528,
+    "name": "Star-mask cult leader",
+    "level": 6,
+    "size": "double strength",
+    "role": "leader",
+    "types": [
+      "star-mask",
+      "cultist",
+      "aberration"
+    ],
+    "page": 260,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 529,
+    "name": "Trog shaman",
+    "level": 6,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "troglodyte",
+      "humanoid"
+    ],
+    "page": 276,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 530,
+    "name": "Death marker",
+    "level": 6,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "reaver",
+      "undead"
+    ],
+    "page": 230,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 531,
+    "name": "Forge wolf",
+    "level": 6,
+    "size": "large",
+    "role": "mook",
+    "types": [
+      "fire giant",
+      "fire",
+      "construct"
+    ],
+    "page": 73,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 532,
+    "name": "Frogspawn thug",
+    "level": 6,
+    "size": "double strength",
+    "role": "mook",
+    "types": [
+      "frogfolk",
+      "humanoid"
+    ],
+    "page": 98,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 533,
+    "name": "Giggling demon",
+    "level": 6,
+    "size": "weakling",
+    "role": "mook",
+    "types": [
+      "demon",
+      "laughing demon"
+    ],
+    "page": 180,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 534,
+    "name": "Major haunting",
+    "level": 6,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "ghost",
+      "spirit",
+      "undead"
+    ],
+    "page": 107,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 535,
+    "name": "Atrocious gibbering mouther",
+    "level": 6,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "aberration",
+      "gibbering mouther"
+    ],
+    "page": 110,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 536,
+    "name": "Faun enchanter",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "faun",
+      "humanoid"
+    ],
+    "page": 60,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 537,
+    "name": "Phantom",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "undead",
+      "silver hand",
+      "lich king"
+    ],
+    "page": 248,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 538,
+    "name": "Shadow mongoose subverter of fate",
+    "level": 6,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "spirit",
+      "shadow mongoose"
+    ],
+    "page": 240,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 539,
+    "name": "Waterhorse",
+    "level": 6,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "humanoid",
+      "naiad"
+    ],
+    "page": 199,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 540,
+    "name": "Wild oread",
+    "level": 6,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "elemental",
+      "naiad"
+    ],
+    "page": 207,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 541,
+    "name": "Blackscale shadow dancer",
+    "level": 6,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 176,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 542,
+    "name": "Briar elf slayer",
+    "level": 6,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "elf",
+      "briar elf"
+    ],
+    "page": 26,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 543,
+    "name": "Disgraced legionnaire",
+    "level": 6,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "ghost",
+      "spirit",
+      "undead"
+    ],
+    "page": 107,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 544,
+    "name": "Eidolon in hunting form",
+    "level": 6,
+    "size": "triple strength",
+    "role": "troop",
+    "types": [
+      "eidolon",
+      "spirit"
+    ],
+    "page": 47,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 545,
+    "name": "Fomorian bully",
+    "level": 6,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "fomorian",
+      "fomori",
+      "giant"
+    ],
+    "page": 83,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 546,
+    "name": "Frogspawn champion",
+    "level": 6,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "frogfolk",
+      "humanoid"
+    ],
+    "page": 98,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 547,
+    "name": "Hellcat (bezekira)",
+    "level": 6,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "devil",
+      "hellcat"
+    ],
+    "page": 132,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 548,
+    "name": "Pixie knight",
+    "level": 6,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "fey",
+      "humanoid"
+    ],
+    "page": 67,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 549,
+    "name": "Star-mask cult puppet",
+    "level": 6,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "star-mask",
+      "aberration"
+    ],
+    "page": 260,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 550,
+    "name": "Hellwarped spawn",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "aberration",
+      "hellwarped"
+    ],
+    "page": 142,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 551,
+    "name": "Horned azinth adult",
+    "level": 6,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "azinth",
+      "beast"
+    ],
+    "page": 145,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 552,
+    "name": "Taranar avalanche",
+    "level": 6,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "taranar",
+      "elemental"
+    ],
+    "page": 284,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 553,
+    "name": "Bonded arcane archer",
+    "level": 7,
+    "size": "triple strength",
+    "role": "archer",
+    "types": [
+      "bonded",
+      "construct"
+    ],
+    "page": 15,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 554,
+    "name": "Bronze errant",
+    "level": 7,
+    "size": "triple strength",
+    "role": "blocker",
+    "types": [
+      "gold king",
+      "construct"
+    ],
+    "page": 114,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 555,
+    "name": "Tempter",
+    "level": 7,
+    "size": "double strength",
+    "role": "blocker",
+    "types": [
+      "undead",
+      "silver hand",
+      "lich king"
+    ],
+    "page": 249,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 556,
+    "name": "Fire giant smith",
+    "level": 7,
+    "size": "large",
+    "role": "caster",
+    "types": [
+      "fire",
+      "giant",
+      "fire giant"
+    ],
+    "page": 74,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 557,
+    "name": "Rakshasa, devourer of wizards",
+    "level": 7,
+    "size": "double strength",
+    "role": "caster",
+    "types": [
+      "rakshasa",
+      "humanoid"
+    ],
+    "page": 225,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 558,
+    "name": "Ebon gauntlet inquisitor",
+    "level": 7,
+    "size": "double strength",
+    "role": "leader",
+    "types": [
+      "ebon gauntlet",
+      "humanoid"
+    ],
+    "page": 41,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 559,
+    "name": "Frogspawn old-one",
+    "level": 7,
+    "size": "elite",
+    "role": "leader",
+    "types": [
+      "frogfolk",
+      "humanoid"
+    ],
+    "page": 100,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 560,
+    "name": "Trog chieftain",
+    "level": 7,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "troglodyte",
+      "humanoid"
+    ],
+    "page": 276,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 561,
+    "name": "Barbed vines",
+    "level": 7,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "plant",
+      "briar elf"
+    ],
+    "page": 25,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 562,
+    "name": "Death shade",
+    "level": 7,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "shade",
+      "spirit",
+      "reaver",
+      "undead"
+    ],
+    "page": 230,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 563,
+    "name": "Summoned ghoul",
+    "level": 7,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "ghoul",
+      "undead",
+      "great ghoul"
+    ],
+    "page": 123,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 564,
+    "name": "Koruku symbiont",
+    "level": 7,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "koruku",
+      "humanoid"
+    ],
+    "page": 165,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 565,
+    "name": "Melusine",
+    "level": 7,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "humanoid",
+      "naiad"
+    ],
+    "page": 200,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 566,
+    "name": "Reaver",
+    "level": 7,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "reaver",
+      "undead"
+    ],
+    "page": 230,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 567,
+    "name": "River-spirit",
+    "level": 7,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [],
+    "page": 68,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 568,
+    "name": "Star-mask brainbuster",
+    "level": 7,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "star-mask",
+      "aberration"
+    ],
+    "page": 260,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 569,
+    "name": "Twisted soul",
+    "level": 7,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "ghost",
+      "spirit",
+      "undead"
+    ],
+    "page": 107,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 570,
+    "name": "Weird nereid",
+    "level": 7,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "naiad",
+      "elemental"
+    ],
+    "page": 208,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 571,
+    "name": "Big flux elemental",
+    "level": 7,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "elemental",
+      "flux"
+    ],
+    "page": 78,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 572,
+    "name": "Bonded hexknight",
+    "level": 7,
+    "size": "triple strength",
+    "role": "troop",
+    "types": [
+      "bonded",
+      "construct"
+    ],
+    "page": 15,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 573,
+    "name": "Faun outlaw",
+    "level": 7,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "faun",
+      "humanoid"
+    ],
+    "page": 60,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 574,
+    "name": "Fire giant holy warrior",
+    "level": 7,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "giant",
+      "fire",
+      "fire giant"
+    ],
+    "page": 73,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 575,
+    "name": "Greater ebon gauntlet sword",
+    "level": 7,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "ebon gauntlet",
+      "humanoid"
+    ],
+    "page": 42,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 576,
+    "name": "Kohwa enforcer",
+    "level": 7,
+    "size": "large",
+    "role": "troop",
+    "types": [
+      "kohwa",
+      "beast"
+    ],
+    "page": 162,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 577,
+    "name": "Screaming hoardling",
+    "level": 7,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "gold king",
+      "undead"
+    ],
+    "page": 114,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 578,
+    "name": "Formorian top-cannibal",
+    "level": 7,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "fomorian",
+      "fomori",
+      "giant"
+    ],
+    "page": 84,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 579,
+    "name": "Hellstone gargoyle",
+    "level": 7,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "gargoyle",
+      "hellstone gargoyle",
+      "construct",
+      "crusader"
+    ],
+    "page": 139,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 580,
+    "name": "Jackal priest",
+    "level": 7,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "jackal",
+      "humanoid",
+      "great ghoul"
+    ],
+    "page": 123,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 581,
+    "name": "Redscale fiery vanquisher",
+    "level": 7,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 176,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 582,
+    "name": "Star-mask brute",
+    "level": 7,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "star-mask",
+      "aberration"
+    ],
+    "page": 261,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 583,
+    "name": "Temple lion",
+    "level": 7,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "hallowed gargoyle",
+      "construct",
+      "priestess"
+    ],
+    "page": 130,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 584,
+    "name": "Tyrant lizard",
+    "level": 7,
+    "size": "large",
+    "role": "wrecker",
+    "types": [
+      "beast",
+      "thunder lizard"
+    ],
+    "page": 272,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 585,
+    "name": "Wandering hubris devil",
+    "level": 7,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "devil",
+      "hubris devil"
+    ],
+    "page": 149,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 586,
+    "name": "Briar elf stalker",
+    "level": 8,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "humanoid",
+      "elf",
+      "briar elf"
+    ],
+    "page": 27,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 587,
+    "name": "Sunder wraith",
+    "level": 8,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "undead",
+      "sunder wraith"
+    ],
+    "page": 267,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 588,
+    "name": "Bonded warlock",
+    "level": 8,
+    "size": "triple strength",
+    "role": "caster",
+    "types": [
+      "bonded",
+      "construct"
+    ],
+    "page": 16,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 589,
+    "name": "The purple dragon (champion)",
+    "level": 8,
+    "size": "huge",
+    "role": "caster",
+    "types": [
+      "purple",
+      "dragon"
+    ],
+    "page": 186,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 590,
+    "name": "Rakshasa delver",
+    "level": 8,
+    "size": "double strength",
+    "role": "caster",
+    "types": [
+      "Rakshasa"
+    ],
+    "page": 225,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 591,
+    "name": "Golden eye necromancer",
+    "level": 8,
+    "size": "triple strength",
+    "role": "caster",
+    "types": [
+      "undead",
+      "humanoid",
+      "silver hand",
+      "lich king"
+    ],
+    "page": 249,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 592,
+    "name": "Bonded prophet",
+    "level": 8,
+    "size": "triple strength",
+    "role": "leader",
+    "types": [
+      "bonded",
+      "construct"
+    ],
+    "page": 16,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 593,
+    "name": "Fire giant priest-general",
+    "level": 8,
+    "size": "large elite",
+    "role": "caster",
+    "types": [
+      "giant",
+      "fire",
+      "fire giant"
+    ],
+    "page": 74,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 594,
+    "name": "Koruku landkiller",
+    "level": 8,
+    "size": "huge",
+    "role": "leader",
+    "types": [
+      "koruku",
+      "beast"
+    ],
+    "page": 166,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 595,
+    "name": "Whitescale blighter",
+    "level": 8,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 176,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 596,
+    "name": "Koruku servitor",
+    "level": 8,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "koruku",
+      "spirit"
+    ],
+    "page": 166,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 597,
+    "name": "Great xorn",
+    "level": 8,
+    "size": "elite",
+    "role": "spoiler",
+    "types": [
+      "xorn",
+      "elemental"
+    ],
+    "page": 290,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 598,
+    "name": "Nix",
+    "level": 8,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "naiad",
+      "humanoid"
+    ],
+    "page": 200,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 599,
+    "name": "Shadow mongoose thief of fate",
+    "level": 8,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "spirit",
+      "shadow mongoose"
+    ],
+    "page": 241,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 600,
+    "name": "Taranar great stone",
+    "level": 8,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "taranar",
+      "elemental"
+    ],
+    "page": 284,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 601,
+    "name": "Void phoenix",
+    "level": 8,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "elemental",
+      "phoenix"
+    ],
+    "page": 217,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 602,
+    "name": "Horned salamander",
+    "level": 8,
+    "size": "huge",
+    "role": "troop",
+    "types": [
+      "elemental",
+      "salamander",
+      "fire"
+    ],
+    "page": 234,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 603,
+    "name": "Laughing demon",
+    "level": 8,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "demon",
+      "laughing demon"
+    ],
+    "page": 181,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 604,
+    "name": "Chaos hydra",
+    "level": 8,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "hydra",
+      "beast"
+    ],
+    "page": 153,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 605,
+    "name": "Death knight",
+    "level": 8,
+    "size": "double strength",
+    "role": "wrecker",
+    "types": [
+      "undead",
+      "silver hand",
+      "lich king"
+    ],
+    "page": 249,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 606,
+    "name": "Taranar warrior",
+    "level": 8,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "taranar",
+      "elemental"
+    ],
+    "page": 284,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 607,
+    "name": "Jackal high mage",
+    "level": 9,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "jackal",
+      "humanoid",
+      "great ghoul"
+    ],
+    "page": 123,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 608,
+    "name": "Rakshasa mastermind",
+    "level": 9,
+    "size": "double strength",
+    "role": "caster",
+    "types": [
+      "rakshasa"
+    ],
+    "page": 225,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 609,
+    "name": "Briar tree",
+    "level": 9,
+    "size": "normal",
+    "role": "leader",
+    "types": [
+      "plant",
+      "briar elf"
+    ],
+    "page": 25,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 610,
+    "name": "Epic haunting",
+    "level": 9,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "ghost",
+      "spirit",
+      "undead"
+    ],
+    "page": 108,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 611,
+    "name": "Greenscale spine-back",
+    "level": 9,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 177,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 612,
+    "name": "Spell golem mage hunter",
+    "level": 9,
+    "size": "large",
+    "role": "spoiler",
+    "types": [
+      "golem",
+      "spell golem",
+      "construct"
+    ],
+    "page": 253,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 613,
+    "name": "Briar elf warrior",
+    "level": 9,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "humanoid",
+      "elf",
+      "briar elf"
+    ],
+    "page": 28,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 614,
+    "name": "Eidolon in gaurdian form",
+    "level": 9,
+    "size": "triple strength",
+    "role": "troop",
+    "types": [
+      "eidolon",
+      "spirit"
+    ],
+    "page": 48,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 615,
+    "name": "Greater flux elemental",
+    "level": 9,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "elemental",
+      "flux"
+    ],
+    "page": 78,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 616,
+    "name": "Great hubris devil",
+    "level": 9,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "hubris devil",
+      "devil"
+    ],
+    "page": 149,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 617,
+    "name": "Blackscale light-killer",
+    "level": 10,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 177,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 618,
+    "name": "Bronze kingsguard",
+    "level": 10,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "gold king",
+      "construct"
+    ],
+    "page": 115,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 619,
+    "name": "Most hungry ghost",
+    "level": 10,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "ghost",
+      "spirit",
+      "undead"
+    ],
+    "page": 108,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 620,
+    "name": "Briar elf sorcerer",
+    "level": 10,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "humanoid",
+      "elf",
+      "briar elf"
+    ],
+    "page": 27,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 621,
+    "name": "Grandmother",
+    "level": 10,
+    "size": "triple strength",
+    "role": "caster",
+    "types": [
+      "fey",
+      "humanoid"
+    ],
+    "page": 69,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 622,
+    "name": "Rakshasa saint",
+    "level": 10,
+    "size": "double strength",
+    "role": "caster",
+    "types": [],
+    "page": 227,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 623,
+    "name": "Royal bearer",
+    "level": 10,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "gold king",
+      "undead"
+    ],
+    "page": 115,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 624,
+    "name": "Jackal high priest",
+    "level": 10,
+    "size": "double strength",
+    "role": "leader",
+    "types": [
+      "jackal",
+      "humanoid",
+      "great ghoul"
+    ],
+    "page": 124,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 625,
+    "name": "Frenzied wolf pack",
+    "level": 10,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "the forest that walks",
+      "beast"
+    ],
+    "page": 92,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 626,
+    "name": "Greater summoned ghoul",
+    "level": 10,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "ghoul",
+      "undead",
+      "great ghoul"
+    ],
+    "page": 125,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 627,
+    "name": "Gruesome death shade",
+    "level": 10,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "shade",
+      "spirit",
+      "reaver",
+      "undead"
+    ],
+    "page": 231,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 628,
+    "name": "Loyal gatherer",
+    "level": 10,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "gold king",
+      "undead"
+    ],
+    "page": 115,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 629,
+    "name": "Opportunistic orc band",
+    "level": 10,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "orc",
+      "the forest that walks",
+      "humanoid"
+    ],
+    "page": 92,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 630,
+    "name": "Star-mask floating brain",
+    "level": 10,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "star-mask",
+      "aberration"
+    ],
+    "page": 26,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 631,
+    "name": "Fomori tyrant",
+    "level": 10,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "fomori",
+      "true-fomori",
+      "aberration"
+    ],
+    "page": 85,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 632,
+    "name": "Gruesome reaver",
+    "level": 10,
+    "size": "double strength",
+    "role": "spoiler",
+    "types": [
+      "reaver",
+      "undead"
+    ],
+    "page": 231,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 633,
+    "name": "Hellwarped brute",
+    "level": 10,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "hellwarped",
+      "aberration"
+    ],
+    "page": 142,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 634,
+    "name": "Briar elf assassin",
+    "level": 11,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "humanoid",
+      "elf",
+      "briar elf"
+    ],
+    "page": 28,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 635,
+    "name": "Epic sunder wraith",
+    "level": 11,
+    "size": "normal",
+    "role": "blocker",
+    "types": [
+      "sunder wraith",
+      "undead"
+    ],
+    "page": 267,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 636,
+    "name": "Bluescale orb-bearer",
+    "level": 11,
+    "size": "normal",
+    "role": "caster",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 178,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 637,
+    "name": "Rakshasa magician",
+    "level": 11,
+    "size": "normal",
+    "role": "caster",
+    "types": [],
+    "page": 227,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 638,
+    "name": "Fanatical druid circle",
+    "level": 11,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "the forest that walks",
+      "humanoid"
+    ],
+    "page": 92,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 639,
+    "name": "Militant ranger squad",
+    "level": 11,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "the forest that walks",
+      "humanoid"
+    ],
+    "page": 92,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 640,
+    "name": "Barrier beast",
+    "level": 11,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "the forest that walks",
+      "beast"
+    ],
+    "page": 90,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 641,
+    "name": "Epic flux elemental",
+    "level": 11,
+    "size": "normal",
+    "role": "troop",
+    "types": [
+      "elemental",
+      "flux"
+    ],
+    "page": 79,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 642,
+    "name": "Star-mask brain zealot",
+    "level": 12,
+    "size": "normal",
+    "role": "archer",
+    "types": [
+      "star-mask",
+      "aberration",
+      "star-brain"
+    ],
+    "page": 262,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 643,
+    "name": "The purple dragon (epic)",
+    "level": 12,
+    "size": "huge",
+    "role": "caster",
+    "types": [
+      "purple",
+      "dragon"
+    ],
+    "page": 187,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 644,
+    "name": "Solar phoenix",
+    "level": 12,
+    "size": "huge",
+    "role": "caster",
+    "types": [
+      "elemental",
+      "phoenix"
+    ],
+    "page": 218,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 645,
+    "name": "Star-mask omnipotent brain",
+    "level": 12,
+    "size": "huge",
+    "role": "caster",
+    "types": [
+      "star-mask",
+      "aberration",
+      "star-brain"
+    ],
+    "page": 262,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 646,
+    "name": "Briar elf sovereign",
+    "level": 12,
+    "size": "double strength",
+    "role": "leader",
+    "types": [
+      "humanoid",
+      "elf",
+      "briar elf"
+    ],
+    "page": 29,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 647,
+    "name": "Treant avenger",
+    "level": 12,
+    "size": "normal",
+    "role": "mook",
+    "types": [
+      "the forest that walks",
+      "plant"
+    ],
+    "page": 92,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 648,
+    "name": "Fomori torturer",
+    "level": 12,
+    "size": "normal",
+    "role": "spoiler",
+    "types": [
+      "fomori",
+      "true-fomori",
+      "aberration"
+    ],
+    "page": 86,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 649,
+    "name": "Pyroclastic salamander",
+    "level": 12,
+    "size": "huge",
+    "role": "troop",
+    "types": [
+      "elemental",
+      "salamander",
+      "fire"
+    ],
+    "page": 235,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 650,
+    "name": "Great Ghoul's Maw",
+    "level": 12,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "great ghoul",
+      "fallen icon",
+      "undead"
+    ],
+    "page": 124,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 651,
+    "name": "Omniversal hubris devil",
+    "level": 12,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "devil",
+      "hubris devil"
+    ],
+    "page": 149,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 652,
+    "name": "Redscale flamewing",
+    "level": 12,
+    "size": "normal",
+    "role": "wrecker",
+    "types": [
+      "kroma dragonic",
+      "humanoid"
+    ],
+    "page": 178,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 653,
+    "name": "The Gold King",
+    "level": 13,
+    "size": "triple strength",
+    "role": "wrecker",
+    "types": [
+      "fallen icon",
+      "gold king",
+      "aberration"
+    ],
+    "page": 116,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 654,
+    "name": "The Forest that Walks",
+    "level": 14,
+    "size": "huge",
+    "role": "spoiler",
+    "types": [
+      "fallen icon",
+      "the forest that walks",
+      "beast"
+    ],
+    "page": 91,
+    "source": "Bestiary 2"
+  },
+  {
+    "id": 655,
+    "name": "Star-brain dungeon heart",
+    "level": 14,
+    "size": "huge",
+    "role": "wrecker",
+    "types": [
+      "star-mask",
+      "aberration",
+      "star-brain"
+    ],
+    "page": 262,
+    "source": "Bestiary 2"
+  }
+]

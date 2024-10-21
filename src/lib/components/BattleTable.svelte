@@ -1,6 +1,5 @@
 <script>
-    export let battleTable;
-
+    import { battleTable } from "$lib/stores.js"
 </script>
 
 <div class="table-container">
@@ -13,7 +12,7 @@
         <th>3x / huge / 15 mook</th>
         </thead>
         <tbody>
-        {#each battleTable as row}
+        {#each $battleTable as row}
             <tr>
                 <td><span class="text-xl font-bold">{row.level}</span></td>
                 <td>{row.normal.value}{row.normal.asterisk}</td>

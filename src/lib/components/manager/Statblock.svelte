@@ -1,13 +1,13 @@
 <script lang="ts">
     import type { Combatant } from "$lib/types";
     import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
+    import ActionCards from "$lib/components/manager/ActionCards.svelte";
+    import TraitCards from "$lib/components/manager/TraitCards.svelte";
 
     export let combatant: Combatant;
 
-    console.log(combatant.actions[0].name);
-
     const blockCSS = "-indent-5 ml-5";
-    const divCSS = "flex flex-wrap variant-ghost-surface p-2 rounded-xl w-full";
+    const divCSS = "flex flex-wrap variant-ghost-surface p-2 my-1 gap-1 rounded-xl w-full";
     const textCSS = "text-xl";
 </script>
 
@@ -21,7 +21,7 @@
             </span>
             <span class="p">Initiative: {combatant.initiative}</span>
         </div>
-        <div class="flex justify-around items-center text-xl variant-ghost-surface rounded-xl grow">
+        <div class="flex justify-around items-center text-xl variant-ghost-surface rounded-3xl grow">
             <div class="flex flex-col">
                 <span>AC {combatant.ac}</span>
                 <span>PD {combatant.pd}</span>
@@ -39,55 +39,12 @@
                 </svelte:fragment>
                 <svelte:fragment slot="content">
                     {#if combatant.actions}
-                        <ul class="list">
-                            {#each combatant.actions as action}
-                                <li>
-                                    <div class={divCSS}>
-                                        <p class={blockCSS}>
-                                            <span class="font-bold">{action.name}</span> - <span>{action.desc}</span>
-                                        </p>
-                                        {#if action.traits}
-                                            <ul class="list">
-                                                {#each action.traits as trait}
-                                                    <li>
-                                                        <p class={blockCSS}>
-                                                            <span class="italic">{trait.name}:</span>
-                                                            <span>{trait.desc}</span>
-                                                        </p>
-                                                    </li>
-                                                {/each}
-                                            </ul>
-                                        {/if}
-                                    </div>
-                                </li>
-                            {/each}
-                        </ul>
+                        <ActionCards actions={combatant.actions} {divCSS} {blockCSS}/>
                     {/if}
+
                     {#if combatant.triggered_actions}
-                        <ul class="list">
-                            {#each combatant.triggered_actions as action}
-                                <li>
-                                    <div class={divCSS}>
-                                        <p class={blockCSS}>
-                                            <span class="italic">[Special trigger]</span>
-                                            <span class="font-bold">{action.name}</span> - <span>{action.desc}</span>
-                                        </p>
-                                        {#if action.traits}
-                                            <ul class="list">
-                                                {#each action.traits as trait}
-                                                    <li>
-                                                        <p class={blockCSS}>
-                                                            <span class="italic">{trait.name}:</span>
-                                                            <span>{trait.desc}</span>
-                                                        </p>
-                                                    </li>
-                                                {/each}
-                                            </ul>
-                                        {/if}
-                                    </div>
-                                </li>
-                            {/each}
-                        </ul>
+                        <span class="{textCSS}">Special triggers</span>
+                        <ActionCards actions={combatant.triggered_actions} {divCSS} {blockCSS}/>
                     {/if}
                 </svelte:fragment>
             </AccordionItem>
@@ -99,18 +56,7 @@
                     <span class={textCSS}>Traits</span>
                 </svelte:fragment>
                 <svelte:fragment slot="content">
-                    <ul class="list">
-                        {#each combatant.traits as trait}
-                            <div class={divCSS}>
-                                <li>
-                                    <p class={blockCSS}>
-                                        <span class="italic">{trait.name}:</span>
-                                        <span>{trait.desc}</span>
-                                    </p>
-                                </li>
-                            </div>
-                        {/each}
-                    </ul>
+                    <TraitCards traits={combatant.traits} {divCSS} {blockCSS}/>
                 </svelte:fragment>
             </AccordionItem>
         {/if}
@@ -121,18 +67,7 @@
                     <span class={textCSS}>Nastier Specials</span>
                 </svelte:fragment>
                 <svelte:fragment slot="content">
-                    <ul class="list">
-                        {#each combatant.nastier_traits as trait}
-                            <div class={divCSS}>
-                                <li>
-                                    <p class={blockCSS}>
-                                        <span class="italic">{trait.name}:</span>
-                                        <span>{trait.desc}</span>
-                                    </p>
-                                </li>
-                            </div>
-                        {/each}
-                    </ul>
+                    <TraitCards traits={combatant.nastier_traits} {divCSS} {blockCSS}/>
                 </svelte:fragment>
             </AccordionItem>
         {/if}

@@ -1,24 +1,27 @@
 <script lang="ts">
-	import {battle} from "$lib/stores.ts";
+	import { battles } from "$lib/stores.ts";
 
 	// Import local datatable components
-	import ThSort from '$lib/components/ThSort.svelte';
-	import ThFilter from '$lib/components/ThFilter.svelte';
-	import Search from '$lib/components/Search.svelte';
-	import RowsPerPage from '$lib/components/RowsPerPage.svelte';
-	import RowCount from '$lib/components/RowCount.svelte';
-	import Pagination from '$lib/components/Pagination.svelte';
+	import ThSort from '$lib/components/builder/datatable/ThSort.svelte';
+	import ThFilter from '$lib/components/builder/datatable/ThFilter.svelte';
+	import Search from '$lib/components/builder/datatable/Search.svelte';
+	import RowsPerPage from '$lib/components/builder/datatable/RowsPerPage.svelte';
+	import RowCount from '$lib/components/builder/datatable/RowCount.svelte';
+	import Pagination from '$lib/components/builder/datatable/Pagination.svelte';
 
 	// Load local data
 	import data from '$lib/data/bestiarySRD.json';
 
 	// Import handler from SSD
-	import {DataHandler} from '@vincjo/datatables';
-	import type {Monster} from "$lib/types";
+	import { DataHandler } from '@vincjo/datatables';
+	import type { Monster } from "$lib/types";
+	import type { Readable } from "svelte/store";
 
 	// Init data handler - CLIENT
 	const handler = new DataHandler(data, {rowsPerPage: 5});
-	const rows = handler.getRows();
+	const rows: Readable<Monster[]> = handler.getRows();
+
+	$: battleId = $battles[0].id;
 
 </script>
 <div class="overflow-x-auto space-y-4">
@@ -48,8 +51,8 @@
 		</thead>
 		<tbody>
 		{#each $rows as row}
-			{#if $battle.combatants.find(i => i.id === row.id)}
-			<tr on:click={() => battle.addCombatant(row)} class="table-row-checked">
+			{#if $battles[0].combatants.find(i => i.id === row.id)}
+			<tr on:click={() => battles.addCombatant(battleId, row)} class="table-row-checked">
 				<td>{row.name}</td>
 				<td>{row.level}</td>
 				<td>{row.size}</td>
@@ -58,7 +61,7 @@
 				<td>{row.source} p.{row.page}</td>
 			</tr>
 			{:else}
-				<tr on:click={() => battle.addCombatant(row)}>
+				<tr on:click={() => battles.addCombatant(battleId, row)}>
 					<td>{row.name}</td>
 					<td>{row.level}</td>
 					<td>{row.size}</td>

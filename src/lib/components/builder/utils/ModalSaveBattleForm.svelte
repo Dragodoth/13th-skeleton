@@ -2,7 +2,7 @@
     import type { SvelteComponent } from 'svelte';
     // Stores
     import {getModalStore} from '@skeletonlabs/skeleton';
-    import {battleStorage} from "$lib/stores.ts";
+    import {battles} from "$lib/stores.ts";
     import type {saveBattleFormData} from "$lib/types";
 
     // Props
@@ -45,17 +45,14 @@
                 <span>Battle description</span>
                 <textarea class="textarea" rows="1" bind:value={formData.description} placeholder='First battle in ...'/>
             </label>
-            {#if $battleStorage.length > 0}
+            {#if $battles.length > 0}
                 <h1>Saved battles</h1>
                 <div>
                     <ul class="list">
-                        {#each $battleStorage as battle, i (i)}
+                        {#each $battles as battle, i (i)}
                             <li>
                                 <button class="flex-auto variant-ghost p-2">
                                     {battle.name}
-                                </button>
-                                <button on:click={() => battleStorage.removeBattle(i)}>
-                                    <i class="fa-solid fa-trash"/>
                                 </button>
                             </li>
                         {/each}

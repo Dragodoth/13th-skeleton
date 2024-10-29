@@ -1,8 +1,10 @@
 <script lang="ts">
     import { getModalStore } from "@skeletonlabs/skeleton";
     import type { ModalSettings, ModalComponent, ModalStore } from '@skeletonlabs/skeleton';
-    import { battleStorage, battle } from "$lib/stores.ts";
-    import type { saveBattleFormData } from "$lib/types";
+    import { battles } from "$lib/stores.ts";
+    import type {Battle, saveBattleFormData} from "$lib/types";
+
+    export let battleToSave: Battle;
 
     const modalStore: ModalStore = getModalStore();
 
@@ -20,10 +22,8 @@
             .then((r) => {
                 const formData = r as saveBattleFormData;
                 if (formData) {
-
-                    battleStorage.storeBattle($battle, formData.name, formData.description);
-                    battle.updateNameAndDescription(formData.name, formData.description);
-                    console.log($battleStorage);
+                    battles.saveBattle(battleToSave, formData.name, formData.description);
+                    console.log($battles);
                 }
 
             })
@@ -34,6 +34,6 @@
 </script>
 
 <button type="button" class="btn btn-sm variant-filled-success" on:click={() => handleSaveClick ()}>
-    <span><i class="fa-solid fa-briefcase"/></span>
-    <span>Store Battle</span>
+    <span><i class="fa-solid fa-floppy-disk"/></span>
+    <span>Save as new Battle</span>
 </button>

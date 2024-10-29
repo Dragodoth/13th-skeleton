@@ -1,18 +1,18 @@
 <script lang="ts">
     import type {SvelteComponent} from 'svelte';
     import {ListBox, ListBoxItem, getModalStore} from '@skeletonlabs/skeleton';
-    import {battleStorage} from "$lib/stores.ts";
+    import {battles} from "$lib/stores.ts";
     import type {Battle} from "$lib/types";
 
     export let parent: SvelteComponent;
 
     let flavor = 'chocolate';
-    let battleToImport = $battleStorage[0].id;
+    let battleToImport = $battles[0].id;
     const modalStore = getModalStore();
 
     function onFormSubmit(): void {
         // Find selected battle by name, assuming battle names are unique
-        const selectedBattle = $battleStorage.find(battle => battle.id === battleToImport);
+        const selectedBattle = $battles.find(battle => battle.id === battleToImport);
         if ($modalStore[0].response) $modalStore[0].response(selectedBattle);
         modalStore.close();
     }
@@ -27,7 +27,7 @@
         <article>{$modalStore[0].body ?? '(body missing)'}</article>
 
         <ListBox class="border border-surface-500 p-4 rounded-container-token">
-            {#each $battleStorage as battleStored, i (i)}
+            {#each $battles as battleStored, i (i)}
                 <ListBoxItem rounded="" active="variant-ghost" bind:group={battleToImport} name={battleStored.id}
                              value={battleStored.id}>
                     <div class="flex justify-between p-2 m-4">
@@ -42,9 +42,6 @@
                                 {/each}
                             </div>
                         </div>
-                        <button on:click={() => battleStorage.removeBattle(i)}>
-                            <i class="fa-solid fa-trash"/>
-                        </button>
                     </div>
                 </ListBoxItem>
             {/each}

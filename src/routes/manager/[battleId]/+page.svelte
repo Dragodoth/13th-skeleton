@@ -1,15 +1,19 @@
 <script lang="ts">
     import {TabAnchor, TabGroup} from "@skeletonlabs/skeleton";
-    import {battleStorage} from "$lib/stores";
+    import {battles} from "$lib/stores";
+    import Statblock from "$lib/components/manager/Statblock.svelte";
+    import HPManager from "$lib/components/manager/HPManager.svelte";
     export let data;
     $: battleData = data.battleData;
+
 </script>
+
 {#if battleData}
     <section class="section">
-        {#if $battleStorage.length > 0}
+        {#if $battles.length > 0}
             <TabGroup justify="justify-center">
-                {#each $battleStorage as battle}
-                    <TabAnchor href="/{battle.id}">
+                {#each $battles as battle}
+                    <TabAnchor href="/manager/{battle.id}">
                         {battle.name}
                     </TabAnchor>
                 {/each}
@@ -19,5 +23,20 @@
         {/if}
     </section>
 
-    <h1>Hello from slug {battleData.name}</h1>
+    <section class="section grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
+        {#each battleData.combatants as combatant, combatantIndex}
+            <div class="card">
+                <div class="flex justify-between items-baseline px-2">
+                    <header class="card-header h2">{combatant.name}</header>
+                    <span>{combatant.source} p.{combatant.page}</span>
+                </div>
+                <section class="card p-2 my-2 variant-ghost">
+                    <HPManager battleId={battleData.id} {combatantIndex}/>
+                    <section class=" card p-4 w-full">
+                        <Statblock {combatant}/>
+                    </section>
+                </section>
+            </div>
+        {/each}
+    </section>
 {/if}

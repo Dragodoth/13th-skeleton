@@ -1,0 +1,10 @@
+{
+	"/": [],
+	"/about": [],
+	"/manager": [
+		"src/routes/manager/+page.ts"
+	],
+	"/manager/[battleId]": [
+		"src/routes/manager/[battleId]/+page.ts"
+	]
+}

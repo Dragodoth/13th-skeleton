@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { battles } from "$lib/stores.ts";
+	import {battles, displayedBattleId} from "$lib/stores.ts";
 
 	// Import local datatable components
 	import ThSort from '$lib/components/builder/datatable/ThSort.svelte';
@@ -21,7 +21,8 @@
 	const handler = new DataHandler(data, {rowsPerPage: 5});
 	const rows: Readable<Monster[]> = handler.getRows();
 
-	$: battleId = $battles[0].id;
+	$: battleId = $displayedBattleId;
+	$: dispalyedBattle = $battles.find(b => b.id === $displayedBattleId) ?? null;
 
 </script>
 <div class="overflow-x-auto space-y-4">
@@ -51,7 +52,7 @@
 		</thead>
 		<tbody>
 		{#each $rows as row}
-			{#if $battles[0].combatants.find(i => i.id === row.id)}
+			{#if dispalyedBattle && dispalyedBattle.combatants.find(i => i.id === row.id)}
 			<tr on:click={() => battles.addCombatant(battleId, row)} class="table-row-checked">
 				<td>{row.name}</td>
 				<td>{row.level}</td>

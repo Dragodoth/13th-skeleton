@@ -69,7 +69,7 @@ export const battleTable: Readable<BattleTableRow[]> = derived(battleLevel,
     ]);
 
 function createBattles() {
-    const battles: Persisted<Battle[]> = persisted('battleStorage', [{
+    const battles: Persisted<Battle[]> = persisted('battles', [{
         id: Date.now().toString(),
         name: 'Skeleton Battle',
         description: '',
@@ -215,8 +215,6 @@ function createBattles() {
         });
     }
 
-    const displayedBattleId: string = ''
-
     return {
         ...battles,
         saveBattle,
@@ -228,7 +226,6 @@ function createBattles() {
         updateHP,
         calculateTotalCost,
         updateCombatantsCost,
-        displayedBattleId,
         removeAllBattles: () => set([{
             id: Date.now().toString(),
             name: 'Skeleton Battle',
@@ -239,3 +236,5 @@ function createBattles() {
 }
 
 export const battles = createBattles();
+
+export const displayedBattleId: Writable<string> = persisted('displayedBattleId','');

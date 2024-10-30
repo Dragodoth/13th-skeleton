@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {mEqBudget, playerNumber, battleLevel, battles} from "$lib/stores.ts";
+    import {mEqBudget, playerNumber, battleLevel, battles, displayedBattleId} from "$lib/stores.ts";
     import {ProgressBar} from "@skeletonlabs/skeleton";
     import MonsterCard from "$lib/components/builder/MonsterCard.svelte";
     import SaveBattleButton from "$lib/components/builder/utils/SaveBattleButton.svelte";
@@ -8,16 +8,16 @@
 
     console.log($battles);
 
-    let displayedBattleId: string;
-    $: console.log(displayedBattleId);
+    $: console.log($displayedBattleId);
     let displayedBattle: Battle;
 
     let totalCost = 0;
     $: {
-        displayedBattle = ($battles.find(b => b.id === displayedBattleId) ?? $battles[0]);
+        displayedBattle = ($battles.find(b => b.id === $displayedBattleId) ?? $battles[0]);
+
         if ($battleLevel && displayedBattle) {
             const updatedCombatants = battles.updateCombatantsCost(displayedBattle.combatants);
-            battles.updateCombatants(displayedBattleId, updatedCombatants)
+            battles.updateCombatants($displayedBattleId, updatedCombatants)
             totalCost = battles.calculateTotalCost(displayedBattle.combatants);
         }
     }
@@ -27,7 +27,7 @@
     <div class="flex gap-2">
         <label class="label">
             <span>Select battle to display</span>
-            <select class="select" bind:value={displayedBattleId}>
+            <select class="select" bind:value={$displayedBattleId}>
                 {#each $battles as battle}
                     <option value={battle.id}>{battle.name}</option>
                 {/each}

@@ -75,7 +75,7 @@ function createBattles() {
         description: '',
         combatants: []
     }]);
-    const { update, set } = battles;
+    const {update, set} = battles;
 
 // Battle functions
 
@@ -84,7 +84,7 @@ function createBattles() {
         update((currentBattles: Battle[]) => {
             return [
                 ...currentBattles,
-                { id: Date.now().toString(), name: newName, description: newDescription, combatants: battle.combatants }
+                {id: Date.now().toString(), name: newName, description: newDescription, combatants: battle.combatants}
             ];
         });
     };
@@ -102,7 +102,7 @@ function createBattles() {
         update((currentBattles: Battle[]) => {
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
-                return { ...battle, name: newName, description: newDescription };
+                return {...battle, name: newName, description: newDescription};
             });
         });
     };
@@ -116,7 +116,6 @@ function createBattles() {
                 if (battle.id !== battleId) return battle;
 
                 const existingCombatant = battle.combatants.find(c => c.id === newCombatant.id);
-                const row = get(battleTable).find((item: BattleTableRow) => item.level === newCombatant.level);
 
                 const updatedCombatants: Combatant[] = existingCombatant
                     ? battle.combatants.map(c =>
@@ -124,14 +123,19 @@ function createBattles() {
                             ? {
                                 ...c,
                                 count: c.count + 1,
-                                currentHP: [...c.currentHP, newCombatant.hp],
+                                currentHP: [...c.currentHP, $state(newCombatant.hp)],
                                 cost: 0
                             }
                             : c
                     )
-                    : [...battle.combatants, { ...newCombatant, count: 1, currentHP: [newCombatant.hp], cost: 0 }];
+                    : [...battle.combatants, {
+                        ...newCombatant,
+                        count: 1,
+                        currentHP: [$state(newCombatant.hp)],
+                        cost: 0
+                    }];
 
-                return { ...battle, combatants: updateCombatantsCost(updatedCombatants) };
+                return {...battle, combatants: updateCombatantsCost(updatedCombatants)};
             });
         });
     };
@@ -156,7 +160,7 @@ function createBattles() {
                     updatedCombatants = existingCombatants.slice(0, combatantIndex).concat(existingCombatants.slice(combatantIndex + 1));
                 }
 
-                return { ...battle, combatants: updateCombatantsCost(updatedCombatants) };
+                return {...battle, combatants: updateCombatantsCost(updatedCombatants)};
             });
         });
     };
@@ -167,7 +171,7 @@ function createBattles() {
             const battleIndex = currentBattles.findIndex(b => b.id === battleId);
             if (battleIndex === -1) return currentBattles;
 
-            const updatedBattle: Battle = { ...currentBattles[battleIndex], combatants };
+            const updatedBattle: Battle = {...currentBattles[battleIndex], combatants};
             const updatedBattles = [...currentBattles];
             updatedBattles[battleIndex] = updatedBattle;
             return updatedBattles;
@@ -185,11 +189,11 @@ function createBattles() {
                         if (index === combatantIndex) {
                             const updatedHPArray = [...combatant.currentHP];
                             updatedHPArray[hpIndex] = hp;
-                            return { ...combatant, currentHP: updatedHPArray };
+                            return {...combatant, currentHP: updatedHPArray};
                         }
                         return combatant;
                     });
-                    return { ...battle, combatants: updatedCombatants };
+                    return {...battle, combatants: updatedCombatants};
                 }
                 return battle;
             });
@@ -208,7 +212,9 @@ function createBattles() {
             const row = battleTableData.find((item: BattleTableRow) => item.level === combatant.level) ?? null;
             const size = combatant.size === "double strength" ? "large" : combatant.size === "triple strength" ? "huge" : combatant.size;
             combatant.cost = row && size
-                ? ((row[size as keyof BattleTableRow] as { value: number })?.value ?? 0) * (combatant.role === "mook" ? 0.2 : 1) * combatant.count
+                ? ((row[size as keyof BattleTableRow] as {
+                value: number
+            })?.value ?? 0) * (combatant.role === "mook" ? 0.2 : 1) * combatant.count
                 : 0;
 
             return combatant;
@@ -237,4 +243,4 @@ function createBattles() {
 
 export const battles = createBattles();
 
-export const displayedBattleId: Writable<string> = persisted('displayedBattleId','');
+export const displayedBattleId: Writable<string> = persisted('displayedBattleId', '');

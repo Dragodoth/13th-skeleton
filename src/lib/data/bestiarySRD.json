@@ -1,8 +1,6 @@
 [
   {
-    "id": 0,
-    
-    
+    "id": "1730368364410352",
     "name": "Adult Remorhaz",
     "size": "large",
     "level": 8,
@@ -72,15 +70,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 1,
-    
-    
+    "id": "1730368364410709",
     "name": "Aerial Spore",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "plant",
     "initiative": 1,
     "actions": [
@@ -113,9 +109,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 2,
-    
-    
+    "id": "1730368364410678",
     "name": "Air Elemental",
     "size": "normal",
     "level": 5,
@@ -175,9 +169,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 3,
-    
-    
+    "id": "1730368364410953",
     "name": "Ancient Purple Worm",
     "size": "huge",
     "level": 12,
@@ -265,9 +257,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 4,
-    
-    
+    "id": "1730368364410910",
     "name": "Ankheg",
     "size": "large",
     "level": 2,
@@ -313,9 +303,7 @@
     "source": "13th age"
   },
   {
-    "id": 5,
-    
-    
+    "id": "1730368364410960",
     "name": "Apex Zorigami",
     "size": "normal",
     "level": 6,
@@ -365,9 +353,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 6,
-    
-    
+    "id": "1730368364410851",
     "name": "Archer Shade",
     "size": "normal",
     "level": 3,
@@ -417,9 +403,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 7,
-    
-    
+    "id": "1730368364410752",
     "name": "Archer Stirge",
     "size": "normal",
     "level": 1,
@@ -459,9 +443,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 8,
-    
-    
+    "id": "1730368364410342",
     "name": "Atrocious Gibbering Mouther",
     "size": "large",
     "level": 6,
@@ -549,9 +531,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 9,
-    
-    
+    "id": "1730368364410911",
     "name": "Attached Eidolon",
     "size": "normal",
     "level": 3,
@@ -607,9 +587,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 10,
-    
-    
+    "id": "1730368364410905",
     "name": "Avenging Orb",
     "size": "normal",
     "level": 2,
@@ -659,15 +637,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 11,
-    
-    
+    "id": "1730368364410134",
     "name": "Awakened Trees",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "plant",
     "initiative": 5,
     "vulnerability": "fire",
@@ -693,9 +669,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 13,
-    
-    
+    "id": "1730368364410563",
     "name": "Azer Soldier",
     "size": "normal",
     "level": 4,
@@ -747,9 +721,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 14,
-    
-    
+    "id": "1730368364410145",
     "name": "Badger",
     "size": "normal",
     "level": 1,
@@ -807,9 +779,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 15,
-    
-    
+    "id": "1730368364410828",
     "name": "Balor (Flame Demon)",
     "size": "large",
     "level": 13,
@@ -883,9 +853,7 @@
     "basename": "Balor"
   },
   {
-    "id": 16,
-    
-    
+    "id": "1730368364410366",
     "name": "Barbarous Bugbear",
     "size": "normal",
     "level": 4,
@@ -931,9 +899,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 17,
-    
-    
+    "id": "1730368364410453",
     "name": "Barbed Devil (Hamatula)",
     "size": "normal",
     "level": 10,
@@ -1005,15 +971,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 18,
-    
-    
+    "id": "1730368364410658",
     "name": "Barbed Vines",
     "size": "normal",
     "level": 7,
     "levelOrdinal": "7th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "plant",
     "initiative": 12,
     "vulnerability": "fire",
@@ -1049,9 +1013,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 19,
-    
-    
+    "id": "1730368364410950",
     "name": "Barbellite",
     "size": "normal",
     "level": 3,
@@ -1085,9 +1047,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 20,
-    
-    
+    "id": "1730368364410344",
     "name": "Barrier Beast",
     "size": "huge",
     "level": 11,
@@ -1212,9 +1172,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 21,
-    
-    
+    "id": "1730368364410691",
     "name": "Basilisk",
     "size": "large",
     "level": 4,
@@ -1330,9 +1288,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 22,
-    
-    
+    "id": "1730368364410968",
     "name": "Bat Cavalry",
     "size": "large",
     "level": 2,
@@ -1407,15 +1363,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 23,
-    
-    
+    "id": "1730368364410262",
     "name": "Bat Demon",
     "size": "normal",
     "level": 6,
     "levelOrdinal": "6th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "demon",
     "initiative": 14,
     "actions": [
@@ -1456,9 +1410,7 @@
     "basename": "Bat-Demon"
   },
   {
-    "id": 24,
-    
-    
+    "id": "1730368364410273",
     "name": "Bear",
     "size": "normal",
     "level": 2,
@@ -1488,9 +1440,7 @@
     "source": "13th age"
   },
   {
-    "id": 25,
-    
-    
+    "id": "1730368364410519",
     "name": "Bearded Devil (Barbazu)",
     "size": "large",
     "level": 6,
@@ -1556,9 +1506,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 26,
-    
-    
+    "id": "1730368364410782",
     "name": "Beast Gauntlet's Mascot",
     "size": "normal",
     "level": 6,
@@ -1586,9 +1534,7 @@
     "basename": "Beast-Gauntlets-Mascot"
   },
   {
-    "id": 27,
-    
-    
+    "id": "1730368364410882",
     "name": "Beautific Gargoyle",
     "size": "normal",
     "level": 4,
@@ -1642,9 +1588,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 28,
-    
-    
+    "id": "1730368364410385",
     "name": "Bergship Raider (Frost)",
     "size": "large",
     "level": 7,
@@ -1703,9 +1647,7 @@
     "basename": "Bergship-Raider"
   },
   {
-    "id": 29,
-    
-    
+    "id": "1730368364410251",
     "name": "Big Air Elemental",
     "size": "normal",
     "level": 7,
@@ -1765,9 +1707,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 30,
-    
-    
+    "id": "1730368364410661",
     "name": "Big Earth Elemental",
     "size": "normal",
     "level": 7,
@@ -1817,9 +1757,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 31,
-    
-    
+    "id": "1730368364410418",
     "name": "Big Fire Elemental",
     "size": "normal",
     "level": 7,
@@ -1869,9 +1807,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 32,
-    
-    
+    "id": "1730368364410204",
     "name": "Big Flux Elemental",
     "size": "normal",
     "level": 7,
@@ -1957,9 +1893,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 33,
-    
-    
+    "id": "1730368364410409",
     "name": "Big Water Elemental",
     "size": "normal",
     "level": 7,
@@ -2003,9 +1937,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 34,
-    
-    
+    "id": "1730368364410121",
     "name": "Big Zombie",
     "size": "large",
     "level": 4,
@@ -2042,9 +1974,7 @@
     "source": "13th age"
   },
   {
-    "id": 35,
-    
-    
+    "id": "1730368364410670",
     "name": "Binding Bride",
     "size": "normal",
     "level": 5,
@@ -2104,9 +2034,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 36,
-    
-    
+    "id": "1730368364410165",
     "name": "Black Pudding",
     "size": "huge",
     "level": 9,
@@ -2146,9 +2074,7 @@
     "source": "13th age"
   },
   {
-    "id": 37,
-    
-    
+    "id": "1730368364410967",
     "name": "Black Skull",
     "size": "normal",
     "level": 8,
@@ -2192,9 +2118,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 38,
-    
-    
+    "id": "1730368364410522",
     "name": "Blackamber Skeletal Legionnaire",
     "size": "normal",
     "level": 4,
@@ -2243,9 +2167,7 @@
     "source": "13th age"
   },
   {
-    "id": 39,
-    
-    
+    "id": "1730368364410812",
     "name": "Blackscale Light-Killer",
     "size": "normal",
     "level": 10,
@@ -2317,9 +2239,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 40,
-    
-    
+    "id": "1730368364410662",
     "name": "Blade Shade",
     "size": "normal",
     "level": 3,
@@ -2373,9 +2293,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 41,
-    
-    
+    "id": "1730368364410249",
     "name": "Blizzard Dragon (White)",
     "size": "large",
     "level": 6,
@@ -2434,9 +2352,7 @@
     "basename": "Blizzard-Dragon"
   },
   {
-    "id": 42,
-    
-    
+    "id": "1730368364410786",
     "name": "Blood Rose",
     "size": "double-strength",
     "level": 6,
@@ -2481,15 +2397,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 43,
-    
-    
+    "id": "1730368364410397",
     "name": "Bloody Shade",
     "size": "double-strength",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 4,
     "traits": [
@@ -2534,9 +2448,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 44,
-    
-    
+    "id": "1730368364410990",
     "name": "Blue Sorcerer",
     "size": "normal",
     "level": 3,
@@ -2616,9 +2528,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 45,
-    
-    
+    "id": "1730368364410484",
     "name": "Blueflame Salamander",
     "size": "huge",
     "level": 2,
@@ -2654,9 +2564,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 46,
-    
-    
+    "id": "1730368364410113",
     "name": "Bluescale Lightning Caller",
     "size": "normal",
     "level": 4,
@@ -2716,9 +2624,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 47,
-    
-    
+    "id": "1730368364410877",
     "name": "Bluescale Orb-Bearer",
     "size": "normal",
     "level": 11,
@@ -2818,9 +2724,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 48,
-    
-    
+    "id": "1730368364410648",
     "name": "Bonded Arcane Archer",
     "size": "triple-strength",
     "level": 7,
@@ -2864,9 +2768,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 49,
-    
-    
+    "id": "1730368364410302",
     "name": "Bonded Hero",
     "size": "triple-strength",
     "level": 3,
@@ -2922,9 +2824,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 50,
-    
-    
+    "id": "1730368364410725",
     "name": "Bonded Hexknight",
     "size": "triple-strength",
     "level": 7,
@@ -2968,9 +2868,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 51,
-    
-    
+    "id": "1730368364410932",
     "name": "Bonded Warlock",
     "size": "triple-strength",
     "level": 8,
@@ -3036,9 +2934,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 52,
-    
-    
+    "id": "1730368364410393",
     "name": "Bone Devil (Osyluth)",
     "size": "large",
     "level": 9,
@@ -3090,9 +2986,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 53,
-    
-    
+    "id": "1730368364410999",
     "name": "Bone Imp Archer",
     "size": "normal",
     "level": 3,
@@ -3136,15 +3030,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 54,
-    
-    
+    "id": "1730368364410802",
     "name": "Bone Imp Mage-Eater",
     "size": "weakling",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "demon",
     "initiative": 10,
     "actions": [
@@ -3183,9 +3075,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 55,
-    
-    
+    "id": "1730368364410764",
     "name": "Bone Imp Skullbiter",
     "size": "normal",
     "level": 4,
@@ -3229,9 +3119,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 56,
-    
-    
+    "id": "1730368364410474",
     "name": "Bone Imp Tormenter",
     "size": "normal",
     "level": 3,
@@ -3277,9 +3165,7 @@
     "basename": "Bone-Imp-Tormenter"
   },
   {
-    "id": 56,
-    
-    
+    "id": "1730368364410879",
     "name": "Bone Imp Tormenter",
     "size": "normal",
     "level": 3,
@@ -3325,9 +3211,7 @@
     "basename": "Bone-Imp-Tormenter"
   },
   {
-    "id": 57,
-    
-    
+    "id": "1730368364410368",
     "name": "Boombug",
     "size": "normal",
     "level": 2,
@@ -3381,9 +3265,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 58,
-    
-    
+    "id": "1730368364410465",
     "name": "Brain-Absorber Xombie",
     "size": "large",
     "level": 4,
@@ -3445,9 +3327,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 59,
-    
-    
+    "id": "1730368364410312",
     "name": "Braincap",
     "size": "double-strength",
     "level": 3,
@@ -3501,9 +3381,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 60,
-    
-    
+    "id": "1730368364410895",
     "name": "Briar Elf Assassin",
     "size": "normal",
     "level": 11,
@@ -3571,9 +3449,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 61,
-    
-    
+    "id": "1730368364410136",
     "name": "Briar Elf Slayer",
     "size": "normal",
     "level": 6,
@@ -3637,9 +3513,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 62,
-    
-    
+    "id": "1730368364410582",
     "name": "Briar Elf Sorcerer",
     "size": "normal",
     "level": 10,
@@ -3713,9 +3587,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 63,
-    
-    
+    "id": "1730368364410157",
     "name": "Briar Elf Sovereign",
     "size": "double-strength",
     "level": 12,
@@ -3795,9 +3667,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 64,
-    
-    
+    "id": "1730368364410982",
     "name": "Briar Elf Stalker",
     "size": "normal",
     "level": 8,
@@ -3865,9 +3735,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 65,
-    
-    
+    "id": "1730368364410446",
     "name": "Briar Elf Warrior",
     "size": "normal",
     "level": 9,
@@ -3935,9 +3803,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 68,
-    
-    
+    "id": "1730368364410437",
     "name": "Briar Tree",
     "size": "normal",
     "level": 9,
@@ -3988,15 +3854,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 69,
-    
-    
+    "id": "1730368364410381",
     "name": "Broken Shade",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 1,
     "vulnerability": "holy",
@@ -4034,9 +3898,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 70,
-    
-    
+    "id": "1730368364410924",
     "name": "Broken Taranar",
     "size": "large",
     "level": 4,
@@ -4073,9 +3935,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 71,
-    
-    
+    "id": "1730368364410978",
     "name": "Bronze Errant",
     "size": "triple-strength",
     "level": 7,
@@ -4123,9 +3983,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 72,
-    
-    
+    "id": "1730368364410865",
     "name": "Bronze Golem",
     "size": "large",
     "level": 7,
@@ -4187,9 +4045,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 73,
-    
-    
+    "id": "1730368364410512",
     "name": "Bronze Kingsguard",
     "size": "normal",
     "level": 10,
@@ -4237,9 +4093,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 74,
-    
-    
+    "id": "1730368364410288",
     "name": "Brute's Warbanner",
     "size": "double-strength",
     "level": 3,
@@ -4315,9 +4169,7 @@
     "basename": "Brutes-Warbanner"
   },
   {
-    "id": 75,
-    
-    
+    "id": "1730368364410841",
     "name": "Bugbear Schemer",
     "size": "normal",
     "level": 3,
@@ -4393,9 +4245,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 76,
-    
-    
+    "id": "1730368364410462",
     "name": "Bugbear Scout",
     "size": "double-strength",
     "level": 2,
@@ -4445,9 +4295,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 77,
-    
-    
+    "id": "1730368364410152",
     "name": "Bugbear",
     "size": "normal",
     "level": 3,
@@ -4481,9 +4329,7 @@
     "source": "13th age"
   },
   {
-    "id": 78,
-    
-    
+    "id": "1730368364410146",
     "name": "Bulette",
     "size": "large",
     "level": 5,
@@ -4541,9 +4387,7 @@
     "source": "13th age"
   },
   {
-    "id": 79,
-    
-    
+    "id": "1730368364410324",
     "name": "Cackling Demon",
     "size": "normal",
     "level": 6,
@@ -4593,15 +4437,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 80,
-    
-    
+    "id": "1730368364410589",
     "name": "Cambion Dirk",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "demon",
     "initiative": 8,
     "actions": [
@@ -4632,9 +4474,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 81,
-    
-    
+    "id": "1730368364410881",
     "name": "Cambion Hellblade",
     "size": "normal",
     "level": 8,
@@ -4710,9 +4550,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 82,
-    
-    
+    "id": "1730368364410328",
     "name": "Cambion Katar",
     "size": "normal",
     "level": 6,
@@ -4780,9 +4618,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 83,
-    
-    
+    "id": "1730368364410418",
     "name": "Cambion Sickle",
     "size": "normal",
     "level": 5,
@@ -4832,9 +4668,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 84,
-    
-    
+    "id": "1730368364410451",
     "name": "Catacomb Dragon (Black)",
     "size": "large",
     "level": 3,
@@ -4907,15 +4741,13 @@
     "basename": "Catacomb-Dragon"
   },
   {
-    "id": 85,
-    
-    
+    "id": "1730368364410361",
     "name": "Cave Orc",
     "size": "normal",
     "level": 3,
     "levelOrdinal": "3rd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 6,
     "actions": [
@@ -4948,9 +4780,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 86,
-    
-    
+    "id": "1730368364410943",
     "name": "Cenotaph Dragon",
     "size": "normal",
     "level": 3,
@@ -5003,9 +4833,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 87,
-    
-    
+    "id": "1730368364410350",
     "name": "Centaur Champion",
     "size": "double-strength",
     "level": 6,
@@ -5063,9 +4891,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 88,
-    
-    
+    "id": "1730368364410505",
     "name": "Centaur Lancer",
     "size": "normal",
     "level": 4,
@@ -5119,9 +4945,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 89,
-    
-    
+    "id": "1730368364410360",
     "name": "Centaur Raider",
     "size": "normal",
     "level": 5,
@@ -5179,9 +5003,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 90,
-    
-    
+    "id": "1730368364410621",
     "name": "Centaur Ranger",
     "size": "normal",
     "level": 6,
@@ -5251,9 +5073,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 91,
-    
-    
+    "id": "1730368364410401",
     "name": "Chaos Beast",
     "size": "normal",
     "level": 4,
@@ -5297,9 +5117,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 92,
-    
-    
+    "id": "1730368364410592",
     "name": "Chaos Behemoth",
     "size": "huge",
     "level": 4,
@@ -5347,9 +5165,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 93,
-    
-    
+    "id": "1730368364410713",
     "name": "Chaos Brute",
     "size": "large",
     "level": 4,
@@ -5393,15 +5209,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 94,
-    
-    
+    "id": "1730368364410813",
     "name": "Chaos Glorp",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "aberration",
     "initiative": 5,
     "actions": [
@@ -5432,9 +5246,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 95,
-    
-    
+    "id": "1730368364410272",
     "name": "Chimera",
     "size": "large",
     "level": 9,
@@ -5490,9 +5302,7 @@
     "source": "13th age"
   },
   {
-    "id": 96,
-    
-    
+    "id": "1730368364410175",
     "name": "Chuul",
     "size": "large",
     "level": 6,
@@ -5560,9 +5370,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 97,
-    
-    
+    "id": "1730368364410772",
     "name": "Chuulish Slave",
     "size": "normal",
     "level": 4,
@@ -5620,9 +5428,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 98,
-    
-    
+    "id": "1730368364410776",
     "name": "Chuulish Swam",
     "size": "normal",
     "level": 6,
@@ -5682,9 +5488,7 @@
     "basename": "Chuulish-Swarm"
   },
   {
-    "id": 99,
-    
-    
+    "id": "1730368364410150",
     "name": "Claw Flower",
     "size": "normal",
     "level": 2,
@@ -5748,9 +5552,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 100,
-    
-    
+    "id": "1730368364410465",
     "name": "Clay Golem",
     "size": "large",
     "level": 6,
@@ -5790,9 +5592,7 @@
     "source": "13th age"
   },
   {
-    "id": 101,
-    
-    
+    "id": "1730368364410740",
     "name": "Cloud Giant Magician",
     "size": "huge",
     "level": 7,
@@ -5834,9 +5634,7 @@
     "basename": "Cloud-Giant-Magician"
   },
   {
-    "id": 102,
-    
-    
+    "id": "1730368364410728",
     "name": "Cloud Giant Thane",
     "size": "huge",
     "level": 7,
@@ -5880,9 +5678,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 103,
-    
-    
+    "id": "1730368364410180",
     "name": "Cloud Giant Warrior",
     "size": "huge",
     "level": 7,
@@ -5922,9 +5718,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 104,
-    
-    
+    "id": "1730368364410363",
     "name": "Clubtail",
     "size": "large",
     "level": 3,
@@ -5958,9 +5752,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 105,
-    
-    
+    "id": "1730368364410179",
     "name": "Cobbler Stirge",
     "size": "normal",
     "level": 1,
@@ -6004,9 +5796,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 106,
-    
-    
+    "id": "1730368364410905",
     "name": "Coin Collector Zombie",
     "size": "normal",
     "level": 6,
@@ -6050,15 +5840,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 107,
-    
-    
+    "id": "1730368364410821",
     "name": "Coin Zombie",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 2,
     "actions": [
@@ -6093,9 +5881,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 108,
-    
-    
+    "id": "1730368364410546",
     "name": "Common Treant",
     "size": "normal",
     "level": 5,
@@ -6140,15 +5926,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 109,
-    
-    
+    "id": "1730368364410809",
     "name": "Conglomerate",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "elemental",
     "initiative": 2,
     "vulnerability": "cold, fire",
@@ -6180,9 +5964,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 110,
-    
-    
+    "id": "1730368364410987",
     "name": "Corpse Dybbuk",
     "size": "double-strength",
     "level": 6,
@@ -6234,9 +6016,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 111,
-    
-    
+    "id": "1730368364410915",
     "name": "Couatl",
     "size": "large",
     "level": 8,
@@ -6308,9 +6088,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 112,
-    
-    
+    "id": "1730368364410394",
     "name": "Coursing Manticore",
     "size": "large",
     "level": 6,
@@ -6378,9 +6156,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 113,
-    
-    
+    "id": "1730368364410105",
     "name": "Crimsoncap",
     "size": "normal",
     "level": 6,
@@ -6434,9 +6210,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 114,
-    
-    
+    "id": "1730368364410728",
     "name": "Crustycap",
     "size": "normal",
     "level": 7,
@@ -6492,15 +6266,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 115,
-    
-    
+    "id": "1730368364410321",
     "name": "Dainty Lizard",
     "size": "normal",
     "level": 1,
     "levelOrdinal": "1st",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 5,
     "actions": [
@@ -6531,9 +6303,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 116,
-    
-    
+    "id": "1730368364410654",
     "name": "Dawn Zorigami",
     "size": "normal",
     "level": 3,
@@ -6577,9 +6347,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 117,
-    
-    
+    "id": "1730368364410896",
     "name": "Death Blossom",
     "size": "double-strength",
     "level": 6,
@@ -6630,9 +6398,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 118,
-    
-    
+    "id": "1730368364410393",
     "name": "Death Knight",
     "size": "double-strength",
     "level": 8,
@@ -6712,15 +6478,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 119,
-    
-    
+    "id": "1730368364410731",
     "name": "Death Marker",
     "size": "normal",
     "level": 6,
     "levelOrdinal": "6th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 9,
     "vulnerability": "holy",
@@ -6760,9 +6524,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 120,
-    
-    
+    "id": "1730368364410347",
     "name": "Death-Plague Orc",
     "size": "large",
     "level": 3,
@@ -6818,15 +6580,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 121,
-    
-    
+    "id": "1730368364410461",
     "name": "Death Shade",
     "size": "normal",
     "level": 7,
     "levelOrdinal": "7th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 7,
     "vulnerability": "holy",
@@ -6866,9 +6626,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 122,
-    
-    
+    "id": "1730368364410139",
     "name": "Deathly Warbanner",
     "size": "double-strength",
     "level": 4,
@@ -6944,15 +6702,13 @@
     "basename": "Deathly-Warbanner"
   },
   {
-    "id": 123,
-    
-    
+    "id": "1730368364410253",
     "name": "Decrepit Skeleton",
     "size": "normal",
     "level": 1,
     "levelOrdinal": "1st",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 6,
     "vulnerability": "holy",
@@ -6978,9 +6734,7 @@
     "source": "13th age"
   },
   {
-    "id": 124,
-    
-    
+    "id": "1730368364410701",
     "name": "Deep Bulette",
     "size": "huge",
     "level": 9,
@@ -7030,9 +6784,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 125,
-    
-    
+    "id": "1730368364410483",
     "name": "Demon Gauntlet's Mascot",
     "size": "normal",
     "level": 6,
@@ -7066,9 +6818,7 @@
     "basename": "Demon-Gauntlets-Mascot"
   },
   {
-    "id": 126,
-    
-    
+    "id": "1730368364410146",
     "name": "Demon-Touched Human Ranger",
     "size": "normal",
     "level": 5,
@@ -7104,9 +6854,7 @@
     "source": "13th age"
   },
   {
-    "id": 128,
-    
-    
+    "id": "1730368364410396",
     "name": "Demoni-Icon-Priest",
     "size": "normal",
     "level": 3,
@@ -7168,15 +6916,13 @@
     "basename": "Demoni-Icon-Priest"
   },
   {
-    "id": 129,
-    
-    
+    "id": "1730368364410413",
     "name": "Demonic-Icon-Fanatic",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 4,
     "actions": [
@@ -7219,9 +6965,7 @@
     "basename": "Demonic-Icon-Fanatic"
   },
   {
-    "id": 130,
-    
-    
+    "id": "1730368364410142",
     "name": "Demonic-Icon-Wizard",
     "size": "normal",
     "level": 4,
@@ -7327,9 +7071,7 @@
     "basename": "Demonic-Icon-Wizard"
   },
   {
-    "id": 131,
-    
-    
+    "id": "1730368364410712",
     "name": "Demonic Ogre",
     "size": "large",
     "level": 4,
@@ -7389,9 +7131,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 132,
-    
-    
+    "id": "1730368364410580",
     "name": "Derro Maniac",
     "size": "normal",
     "level": 4,
@@ -7443,9 +7183,7 @@
     "source": "13th age"
   },
   {
-    "id": 133,
-    
-    
+    "id": "1730368364410345",
     "name": "Derro Sage",
     "size": "normal",
     "level": 4,
@@ -7499,9 +7237,7 @@
     "source": "13th age"
   },
   {
-    "id": 134,
-    
-    
+    "id": "1730368364410785",
     "name": "Despoiler Mage",
     "size": "normal",
     "level": 9,
@@ -7565,9 +7301,7 @@
     "source": "13th age"
   },
   {
-    "id": 135,
-    
-    
+    "id": "1730368364410597",
     "name": "Despoiler",
     "size": "normal",
     "level": 4,
@@ -7617,9 +7351,7 @@
     "source": "13th age"
   },
   {
-    "id": 136,
-    
-    
+    "id": "1730368364410443",
     "name": "Destroying Sword",
     "size": "normal",
     "level": 2,
@@ -7659,9 +7391,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 137,
-    
-    
+    "id": "1730368364410324",
     "name": "Dire Bat",
     "size": "normal",
     "level": 2,
@@ -7724,9 +7454,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 138,
-    
-    
+    "id": "1730368364410578",
     "name": "Dire Bear",
     "size": "large",
     "level": 4,
@@ -7766,9 +7494,7 @@
     "source": "13th age"
   },
   {
-    "id": 139,
-    
-    
+    "id": "1730368364410520",
     "name": "Dire Boar",
     "size": "large",
     "level": 5,
@@ -7824,15 +7550,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 140,
-    
-    
+    "id": "1730368364410862",
     "name": "Dire Rat",
     "size": "normal",
     "level": 1,
     "levelOrdinal": "1st",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 2,
     "actions": [
@@ -7857,9 +7581,7 @@
     "source": "13th age"
   },
   {
-    "id": 141,
-    
-    
+    "id": "1730368364410566",
     "name": "Dire Tiger",
     "size": "large",
     "level": 6,
@@ -7903,9 +7625,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 142,
-    
-    
+    "id": "1730368364410866",
     "name": "Dire Wolf",
     "size": "large",
     "level": 3,
@@ -7945,9 +7665,7 @@
     "source": "13th age"
   },
   {
-    "id": 143,
-    
-    
+    "id": "1730368364410709",
     "name": "Disgraced Legionnaire",
     "size": "double-strength",
     "level": 6,
@@ -8002,9 +7720,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 144,
-    
-    
+    "id": "1730368364410812",
     "name": "Djinn",
     "size": "large",
     "level": 9,
@@ -8096,9 +7812,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 145,
-    
-    
+    "id": "1730368364410598",
     "name": "Doomlantern Salamander",
     "size": "huge",
     "level": 4,
@@ -8159,9 +7873,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 146,
-    
-    
+    "id": "1730368364410743",
     "name": "Dread Specter",
     "size": "triple-strength",
     "level": 9,
@@ -8221,15 +7933,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 147,
-    
-    
+    "id": "1730368364410867",
     "name": "Dretch",
     "size": "normal",
     "level": 3,
     "levelOrdinal": "3rd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "demon",
     "initiative": 5,
     "actions": [
@@ -8254,9 +7964,7 @@
     "source": "13th age"
   },
   {
-    "id": 148,
-    
-    
+    "id": "1730368364410247",
     "name": "Drider",
     "size": "large",
     "level": 6,
@@ -8312,9 +8020,7 @@
     "source": "13th age"
   },
   {
-    "id": 150,
-    
-    
+    "id": "1730368364410746",
     "name": "Drow Cavalry",
     "size": "double-strength",
     "level": 9,
@@ -8382,9 +8088,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 151,
-    
-    
+    "id": "1730368364410210",
     "name": "Drow Darkbolt",
     "size": "normal",
     "level": 7,
@@ -8440,15 +8144,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 152,
-    
-    
+    "id": "1730368364410264",
     "name": "Drow Soldier",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 9,
     "actions": [
@@ -8483,9 +8185,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 153,
-    
-    
+    "id": "1730368364410504",
     "name": "Drow Spider Mage",
     "size": "normal",
     "level": 3,
@@ -8537,9 +8237,7 @@
     "basename": "Drow-Spider-Mage"
   },
   {
-    "id": 154,
-    
-    
+    "id": "1730368364410340",
     "name": "Drow Spider Sorceress",
     "size": "normal",
     "level": 6,
@@ -8595,9 +8293,7 @@
     "basename": "Drow-Spider-Sorceress"
   },
   {
-    "id": 155,
-    
-    
+    "id": "1730368364410298",
     "name": "Drow Sword Maiden",
     "size": "normal",
     "level": 5,
@@ -8645,9 +8341,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 156,
-    
-    
+    "id": "1730368364410991",
     "name": "Drudge Citizen",
     "size": "normal",
     "level": 3,
@@ -8689,9 +8383,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 157,
-    
-    
+    "id": "1730368364410889",
     "name": "Dusk Zorigami",
     "size": "normal",
     "level": 10,
@@ -8749,9 +8441,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 158,
-    
-    
+    "id": "1730368364410392",
     "name": "Earth Elemental",
     "size": "normal",
     "level": 5,
@@ -8801,9 +8491,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 159,
-    
-    
+    "id": "1730368364410491",
     "name": "Earthshaker",
     "size": "huge",
     "level": 5,
@@ -8837,9 +8525,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 160,
-    
-    
+    "id": "1730368364410144",
     "name": "Ebon Gauntlet Adjudicator",
     "size": "large",
     "level": 5,
@@ -8885,9 +8571,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 161,
-    
-    
+    "id": "1730368364410709",
     "name": "Ebon Gauntlet Eye",
     "size": "normal",
     "level": 6,
@@ -8947,9 +8631,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 162,
-    
-    
+    "id": "1730368364410297",
     "name": "Ebon Gauntlet Inquisitor",
     "size": "double-strength",
     "level": 7,
@@ -9005,9 +8687,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 163,
-    
-    
+    "id": "1730368364410939",
     "name": "Ebon Gauntlet Sword",
     "size": "normal",
     "level": 4,
@@ -9037,9 +8717,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 164,
-    
-    
+    "id": "1730368364410789",
     "name": "Efreet",
     "size": "large",
     "level": 10,
@@ -9128,9 +8806,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 165,
-    
-    
+    "id": "1730368364410922",
     "name": "Eidolon in Guardian Form",
     "size": "triple-strength",
     "level": 9,
@@ -9194,9 +8870,7 @@
     "basename": "Eidolon-in-Guardian-Form"
   },
   {
-    "id": 166,
-    
-    
+    "id": "1730368364410573",
     "name": "Eidolon in Humanoid Form",
     "size": "triple-strength",
     "level": 1,
@@ -9242,9 +8916,7 @@
     "basename": "Eidolon-in-Humanoid-Form"
   },
   {
-    "id": 167,
-    
-    
+    "id": "1730368364410863",
     "name": "Eidolon in Hunting Form",
     "size": "triple-strength",
     "level": 6,
@@ -9274,9 +8946,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 168,
-    
-    
+    "id": "1730368364410311",
     "name": "Eidolon in War Form",
     "size": "triple-strength",
     "level": 4,
@@ -9326,9 +8996,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 169,
-    
-    
+    "id": "1730368364410726",
     "name": "Elder Couatl",
     "size": "large",
     "level": 11,
@@ -9400,9 +9068,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 170,
-    
-    
+    "id": "1730368364410483",
     "name": "Elder Manafang Naga",
     "size": "normal",
     "level": 10,
@@ -9472,9 +9138,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 171,
-    
-    
+    "id": "1730368364410233",
     "name": "Elder Sparkscale Naga",
     "size": "normal",
     "level": 9,
@@ -9546,15 +9210,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 172,
-    
-    
+    "id": "1730368364410725",
     "name": "Elder Spore",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "plant",
     "initiative": "Directly after the fungaloid empress in the initiative order",
     "actions": [
@@ -9573,9 +9235,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 173,
-    
-    
+    "id": "1730368364410549",
     "name": "Elder Swaysong Naga",
     "size": "normal",
     "level": 8,
@@ -9647,9 +9307,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 174,
-    
-    
+    "id": "1730368364410504",
     "name": "Elder Wendigo",
     "size": "huge",
     "level": 9,
@@ -9727,9 +9385,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 175,
-    
-    
+    "id": "1730368364410242",
     "name": "Ember Imp",
     "size": "large",
     "level": 7,
@@ -9813,9 +9469,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 176,
-    
-    
+    "id": "1730368364410936",
     "name": "Empyrean Dragon (Black)",
     "size": "huge",
     "level": 9,
@@ -9895,9 +9549,7 @@
     "basename": "Empyrean-Dragon"
   },
   {
-    "id": 177,
-    
-    
+    "id": "1730368364410428",
     "name": "Enduring Shield",
     "size": "normal",
     "level": 2,
@@ -9941,9 +9593,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 178,
-    
-    
+    "id": "1730368364410568",
     "name": "Epic Air Elemental",
     "size": "normal",
     "level": 9,
@@ -10017,9 +9667,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 179,
-    
-    
+    "id": "1730368364410718",
     "name": "Epic Earth Elemental",
     "size": "normal",
     "level": 9,
@@ -10073,9 +9721,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 180,
-    
-    
+    "id": "1730368364410303",
     "name": "Epic Fire Elemental",
     "size": "normal",
     "level": 9,
@@ -10131,15 +9777,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 181,
-    
-    
+    "id": "1730368364410635",
     "name": "Epic Haunting",
     "size": "normal",
     "level": 9,
     "levelOrdinal": "9th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 12,
     "actions": [
@@ -10172,9 +9816,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 182,
-    
-    
+    "id": "1730368364411844",
     "name": "Epic Water Elemental",
     "size": "normal",
     "level": 9,
@@ -10218,9 +9860,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 183,
-    
-    
+    "id": "1730368364411689",
     "name": "Ethereal Dybbuk",
     "size": "double-strength",
     "level": 7,
@@ -10272,15 +9912,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 184,
-    
-    
+    "id": "1730368364411408",
     "name": "Ettercap Acolyte",
     "size": "normal",
     "level": 1,
     "levelOrdinal": "1st",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 2,
     "actions": [
@@ -10309,9 +9947,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 185,
-    
-    
+    "id": "1730368364411975",
     "name": "Ettercap Hunter",
     "size": "normal",
     "level": 2,
@@ -10365,9 +10001,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 186,
-    
-    
+    "id": "1730368364411535",
     "name": "Ettercap Keeper",
     "size": "normal",
     "level": 4,
@@ -10435,9 +10069,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 187,
-    
-    
+    "id": "1730368364411276",
     "name": "Ettercap Supplicant",
     "size": "normal",
     "level": 3,
@@ -10485,9 +10117,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 188,
-    
-    
+    "id": "1730368364411959",
     "name": "Ettercap Warrior",
     "size": "normal",
     "level": 3,
@@ -10555,9 +10185,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 189,
-    
-    
+    "id": "1730368364411335",
     "name": "Ettin",
     "size": "large",
     "level": 5,
@@ -10603,9 +10231,7 @@
     "source": "13th age"
   },
   {
-    "id": 190,
-    
-    
+    "id": "1730368364411383",
     "name": "Fallen Icons Maw",
     "size": "huge",
     "level": 12,
@@ -10685,9 +10311,7 @@
     "basename": "Fallen-Icons-Maw"
   },
   {
-    "id": 191,
-    
-    
+    "id": "1730368364411444",
     "name": "Fallen Icons Shadow",
     "size": "large",
     "level": 13,
@@ -10741,9 +10365,7 @@
     "basename": "Fallen-Icons-Shadow"
   },
   {
-    "id": 192,
-    
-    
+    "id": "1730368364411256",
     "name": "Fallen Lammasu",
     "size": "large",
     "level": 7,
@@ -10831,15 +10453,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 193,
-    
-    
+    "id": "1730368364411281",
     "name": "Fanatical Druid Circle",
     "size": "normal",
     "level": 11,
     "levelOrdinal": "11th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 16,
     "actions": [
@@ -10882,9 +10502,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 194,
-    
-    
+    "id": "1730368364411709",
     "name": "Fang Devil",
     "size": "huge",
     "level": 7,
@@ -10964,9 +10582,7 @@
     "basename": "Fang-Devil"
   },
   {
-    "id": 195,
-    
-    
+    "id": "1730368364411126",
     "name": "Fast Xombie",
     "size": "normal",
     "level": 0,
@@ -11012,9 +10628,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 196,
-    
-    
+    "id": "1730368364411700",
     "name": "Faun Bandleader",
     "size": "normal",
     "level": 5,
@@ -11068,9 +10682,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 197,
-    
-    
+    "id": "1730368364411523",
     "name": "Faun Enchanter",
     "size": "normal",
     "level": 6,
@@ -11124,9 +10736,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 198,
-    
-    
+    "id": "1730368364411785",
     "name": "Faun Harrier",
     "size": "normal",
     "level": 4,
@@ -11184,9 +10794,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 199,
-    
-    
+    "id": "1730368364411952",
     "name": "Faun Keeper",
     "size": "normal",
     "level": 5,
@@ -11246,9 +10854,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 200,
-    
-    
+    "id": "1730368364411700",
     "name": "Faun Outlaw",
     "size": "normal",
     "level": 7,
@@ -11316,9 +10922,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 201,
-    
-    
+    "id": "1730368364411494",
     "name": "Faun Ranger",
     "size": "normal",
     "level": 7,
@@ -11376,9 +10980,7 @@
     "basename": "Faun-Ranger"
   },
   {
-    "id": 202,
-    
-    
+    "id": "1730368364411377",
     "name": "Faun Troubadour",
     "size": "normal",
     "level": 2,
@@ -11446,9 +11048,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 203,
-    
-    
+    "id": "1730368364411649",
     "name": "Feral Warbanner",
     "size": "double-strength",
     "level": 2,
@@ -11526,15 +11126,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 204,
-    
-    
+    "id": "1730368364411337",
     "name": "Fire Bat",
     "size": "normal",
     "level": 3,
     "levelOrdinal": "3rd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 9,
     "actions": [
@@ -11585,9 +11183,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 205,
-    
-    
+    "id": "1730368364411796",
     "name": "Fire Elemental",
     "size": "normal",
     "level": 5,
@@ -11637,9 +11233,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 206,
-    
-    
+    "id": "1730368364411705",
     "name": "Fire Giant Holy Warrior",
     "size": "large",
     "level": 7,
@@ -11690,9 +11284,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 207,
-    
-    
+    "id": "1730368364411168",
     "name": "Fire Giant Priest-General",
     "size": "large",
     "level": 8,
@@ -11773,9 +11365,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 208,
-    
-    
+    "id": "1730368364411604",
     "name": "Fire Giant Smith",
     "size": "large",
     "level": 7,
@@ -11854,9 +11444,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 209,
-    
-    
+    "id": "1730368364411835",
     "name": "Fire Giant Warlord",
     "size": "large",
     "level": 9,
@@ -11911,9 +11499,7 @@
     "source": "13th age"
   },
   {
-    "id": 210,
-    
-    
+    "id": "1730368364411158",
     "name": "Fire Giant",
     "size": "large",
     "level": 8,
@@ -11980,9 +11566,7 @@
     "source": "13th age"
   },
   {
-    "id": 211,
-    
-    
+    "id": "1730368364411689",
     "name": "Five-Headed Hydra",
     "size": "huge",
     "level": 5,
@@ -12038,9 +11622,7 @@
     "basename": "Five-Headed-Hydra"
   },
   {
-    "id": 212,
-    
-    
+    "id": "1730368364411906",
     "name": "Flamebird Phoenix",
     "size": "double-strength",
     "level": 3,
@@ -12125,9 +11707,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 213,
-    
-    
+    "id": "1730368364411169",
     "name": "Flamewreathed Dragon",
     "size": "huge",
     "level": 12,
@@ -12201,9 +11781,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 214,
-    
-    
+    "id": "1730368364411299",
     "name": "Flaming Skull",
     "size": "normal",
     "level": 5,
@@ -12252,9 +11830,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 215,
-    
-    
+    "id": "1730368364411292",
     "name": "Flesh Golem",
     "size": "large",
     "level": 4,
@@ -12302,9 +11878,7 @@
     "source": "13th age"
   },
   {
-    "id": 217,
-    
-    
+    "id": "1730368364411537",
     "name": "Flux Elemental",
     "size": "normal",
     "level": 5,
@@ -12390,15 +11964,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 218,
-    
-    
+    "id": "1730368364411655",
     "name": "Forge Wolf",
     "size": "large",
     "level": 6,
     "levelOrdinal": "6th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "construct",
     "initiative": 10,
     "vulnerability": "cold",
@@ -12444,15 +12016,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 219,
-    
-    
+    "id": "1730368364411616",
     "name": "Frenzied Wolf Pack",
     "size": "normal",
     "level": 10,
     "levelOrdinal": "10th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 14,
     "actions": [
@@ -12487,9 +12057,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 220,
-    
-    
+    "id": "1730368364411347",
     "name": "Frenzy Demon",
     "size": "normal",
     "level": 5,
@@ -12523,9 +12091,7 @@
     "source": "13th age"
   },
   {
-    "id": 221,
-    
-    
+    "id": "1730368364411690",
     "name": "Frog Knight",
     "size": "normal",
     "level": 5,
@@ -12575,9 +12141,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 222,
-    
-    
+    "id": "1730368364411219",
     "name": "Frogspawn Champion",
     "size": "normal",
     "level": 6,
@@ -12633,9 +12197,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 223,
-    
-    
+    "id": "1730368364411498",
     "name": "Frogspawn Deceiver",
     "size": "normal",
     "level": 5,
@@ -12683,15 +12245,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 224,
-    
-    
+    "id": "1730368364411488",
     "name": "Frogspawn Grunt",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 6,
     "actions": [
@@ -12716,9 +12276,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 225,
-    
-    
+    "id": "1730368364411888",
     "name": "Frogspawn Monk",
     "size": "normal",
     "level": 3,
@@ -12754,9 +12312,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 226,
-    
-    
+    "id": "1730368364411961",
     "name": "Frogspawn Old-One",
     "size": "elite",
     "level": 7,
@@ -12820,9 +12376,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 227,
-    
-    
+    "id": "1730368364411757",
     "name": "Frogspawn Spellcroaker",
     "size": "normal",
     "level": 4,
@@ -12894,15 +12448,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 228,
-    
-    
+    "id": "1730368364411676",
     "name": "Frogspawn Thug",
     "size": "double-strength",
     "level": 6,
     "levelOrdinal": "6th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 9,
     "actions": [
@@ -12933,9 +12485,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 229,
-    
-    
+    "id": "1730368364411288",
     "name": "Frost Giant Adventurer",
     "size": "large",
     "level": 8,
@@ -12980,9 +12530,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 230,
-    
-    
+    "id": "1730368364411661",
     "name": "Frost Giant",
     "size": "large",
     "level": 7,
@@ -13043,9 +12591,7 @@
     "source": "13th age"
   },
   {
-    "id": 231,
-    
-    
+    "id": "1730368364411899",
     "name": "Frost-W\u00fcrm",
     "size": "large",
     "level": 6,
@@ -13103,9 +12649,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 232,
-    
-    
+    "id": "1730368364411333",
     "name": "Fungaloid Creeper",
     "size": "normal",
     "level": 1,
@@ -13155,9 +12699,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 233,
-    
-    
+    "id": "1730368364411451",
     "name": "Fungaloid Drudge",
     "size": "normal",
     "level": 3,
@@ -13191,9 +12733,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 234,
-    
-    
+    "id": "1730368364411511",
     "name": "Fungaloid Empress",
     "size": "huge",
     "level": 4,
@@ -13227,9 +12767,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 235,
-    
-    
+    "id": "1730368364411978",
     "name": "Fungaloid Monarch",
     "size": "double-strength",
     "level": 4,
@@ -13277,9 +12815,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 236,
-    
-    
+    "id": "1730368364411340",
     "name": "Fury Devil (Erinyes)",
     "size": "normal",
     "level": 8,
@@ -13353,9 +12889,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 237,
-    
-    
+    "id": "1730368364411345",
     "name": "Gargoyle",
     "size": "normal",
     "level": 5,
@@ -13401,9 +12935,7 @@
     "source": "13th age"
   },
   {
-    "id": 238,
-    
-    
+    "id": "1730368364411214",
     "name": "Gelatinous Cube",
     "size": "huge",
     "level": 5,
@@ -13439,9 +12971,7 @@
     "source": "13th age"
   },
   {
-    "id": 239,
-    
-    
+    "id": "1730368364411816",
     "name": "Gelatinous Dodecahedron",
     "size": "huge",
     "level": 7,
@@ -13513,9 +13043,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 240,
-    
-    
+    "id": "1730368364411735",
     "name": "Gelatinous Gelahedron",
     "size": "huge",
     "level": 5,
@@ -13563,9 +13091,7 @@
     "basename": "Gelatinous-Gelahedron"
   },
   {
-    "id": 241,
-    
-    
+    "id": "1730368364411465",
     "name": "Gelatinous Octahedron",
     "size": "huge",
     "level": 6,
@@ -13653,9 +13179,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 242,
-    
-    
+    "id": "1730368364411700",
     "name": "Gelatinous Tetrahedron",
     "size": "huge",
     "level": 4,
@@ -13717,9 +13241,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 243,
-    
-    
+    "id": "1730368364411428",
     "name": "Ghast",
     "size": "normal",
     "level": 5,
@@ -13757,9 +13279,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 244,
-    
-    
+    "id": "1730368364411205",
     "name": "Ghoul Fleshripper",
     "size": "normal",
     "level": 4,
@@ -13796,9 +13316,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 245,
-    
-    
+    "id": "1730368364411175",
     "name": "Ghoul Licklash",
     "size": "normal",
     "level": 4,
@@ -13851,9 +13369,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 246,
-    
-    
+    "id": "1730368364411165",
     "name": "Ghoul Pusbuster",
     "size": "normal",
     "level": 4,
@@ -13896,9 +13412,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 247,
-    
-    
+    "id": "1730368364411547",
     "name": "Ghoul",
     "size": "normal",
     "level": 3,
@@ -13945,9 +13459,7 @@
     "source": "13th age"
   },
   {
-    "id": 248,
-    
-    
+    "id": "1730368364411601",
     "name": "Giant Ant",
     "size": "normal",
     "level": 0,
@@ -13983,9 +13495,7 @@
     "source": "13th age"
   },
   {
-    "id": 249,
-    
-    
+    "id": "1730368364411833",
     "name": "Giant Bird of Prey",
     "size": "normal",
     "level": 4,
@@ -14041,9 +13551,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 250,
-    
-    
+    "id": "1730368364411430",
     "name": "Giant Praying Mantis",
     "size": "large",
     "level": 8,
@@ -14093,9 +13601,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 251,
-    
-    
+    "id": "1730368364411267",
     "name": "Giant Scorpion",
     "size": "normal",
     "level": 1,
@@ -14129,9 +13635,7 @@
     "source": "13th age"
   },
   {
-    "id": 252,
-    
-    
+    "id": "1730368364411515",
     "name": "Giant Vrock (Vulture Demon)",
     "size": "large",
     "level": 9,
@@ -14185,9 +13689,7 @@
     "basename": "Giant-Vrock"
   },
   {
-    "id": 253,
-    
-    
+    "id": "1730368364411675",
     "name": "Giant Web Spider",
     "size": "large",
     "level": 2,
@@ -14233,15 +13735,13 @@
     "source": "13th age"
   },
   {
-    "id": 254,
-    
-    
+    "id": "1730368364411875",
     "name": "Giant Zombie",
     "size": "large",
     "level": 9,
     "levelOrdinal": "9th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 8,
     "vulnerability": "holy",
@@ -14277,9 +13777,7 @@
     "source": "13th age"
   },
   {
-    "id": 255,
-    
-    
+    "id": "1730368364411305",
     "name": "Gibbering Mouther",
     "size": "normal",
     "level": 4,
@@ -14371,15 +13869,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 256,
-    
-    
+    "id": "1730368364411592",
     "name": "Giggling Demon",
     "size": "weakling",
     "level": 6,
     "levelOrdinal": "6th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "demon",
     "initiative": 10,
     "actions": [
@@ -14414,9 +13910,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 257,
-    
-    
+    "id": "1730368364411478",
     "name": "Glabrezou (Pincer Demon)",
     "size": "large",
     "level": 8,
@@ -14466,9 +13960,7 @@
     "basename": "Glabrezou"
   },
   {
-    "id": 258,
-    
-    
+    "id": "1730368364411802",
     "name": "Glittering Bearer",
     "size": "normal",
     "level": 6,
@@ -14520,9 +14012,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 259,
-    
-    
+    "id": "1730368364411542",
     "name": "Gnoll Fiendfletch",
     "size": "normal",
     "level": 7,
@@ -14578,9 +14068,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 260,
-    
-    
+    "id": "1730368364411223",
     "name": "Gnoll Ranger",
     "size": "normal",
     "level": 3,
@@ -14632,9 +14120,7 @@
     "source": "13th age"
   },
   {
-    "id": 261,
-    
-    
+    "id": "1730368364411507",
     "name": "Gnoll Savage",
     "size": "normal",
     "level": 3,
@@ -14668,9 +14154,7 @@
     "source": "13th age"
   },
   {
-    "id": 262,
-    
-    
+    "id": "1730368364411137",
     "name": "Gnoll Shredder",
     "size": "normal",
     "level": 7,
@@ -14720,9 +14204,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 263,
-    
-    
+    "id": "1730368364411742",
     "name": "Gnoll War Leader",
     "size": "normal",
     "level": 4,
@@ -14756,9 +14238,7 @@
     "source": "13th age"
   },
   {
-    "id": 264,
-    
-    
+    "id": "1730368364411516",
     "name": "Goblin Bat Mage",
     "size": "normal",
     "level": 3,
@@ -14829,9 +14309,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 265,
-    
-    
+    "id": "1730368364411776",
     "name": "Goblin Grunt",
     "size": "normal",
     "level": 1,
@@ -14865,9 +14343,7 @@
     "source": "13th age"
   },
   {
-    "id": 266,
-    
-    
+    "id": "1730368364411682",
     "name": "Goblin Shaman",
     "size": "normal",
     "level": 2,
@@ -14907,9 +14383,7 @@
     "source": "13th age"
   },
   {
-    "id": 267,
-    
-    
+    "id": "1730368364411842",
     "name": "Golden Eye Necromancer",
     "size": "triple-strength",
     "level": 8,
@@ -14973,9 +14447,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 268,
-    
-    
+    "id": "1730368364411269",
     "name": "Gorge Dragon (Black)",
     "size": "large",
     "level": 5,
@@ -15050,9 +14522,7 @@
     "basename": "Gorge-Dragon"
   },
   {
-    "id": 269,
-    
-    
+    "id": "1730368364411171",
     "name": "Grandmother",
     "size": "triple-strength",
     "level": 10,
@@ -15114,15 +14584,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 270,
-    
-    
+    "id": "1730368364411798",
     "name": "Gravemeat",
     "size": "normal",
     "level": 1,
     "levelOrdinal": "1st",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 2,
     "vulnerability": "holy",
@@ -15148,9 +14616,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 271,
-    
-    
+    "id": "1730368364411886",
     "name": "Gray Hoarder",
     "size": "double-strength",
     "level": 3,
@@ -15194,9 +14660,7 @@
     "basename": "Gray-Hoarder"
   },
   {
-    "id": 272,
-    
-    
+    "id": "1730368364411739",
     "name": "Gray Raider",
     "size": "normal",
     "level": 5,
@@ -15232,9 +14696,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 273,
-    
-    
+    "id": "1730368364411231",
     "name": "Great Cat",
     "size": "normal",
     "level": 3,
@@ -15286,15 +14748,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 274,
-    
-    
+    "id": "1730368364411318",
     "name": "Great Fang Cadre",
     "size": "normal",
     "level": 10,
     "levelOrdinal": "10th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 13,
     "actions": [
@@ -15337,9 +14797,7 @@
     "basename": "Great-Fang-Cadre"
   },
   {
-    "id": 275,
-    
-    
+    "id": "1730368364411148",
     "name": "Great Horned Owlbear",
     "size": "large",
     "level": 5,
@@ -15381,9 +14839,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 276,
-    
-    
+    "id": "1730368364411569",
     "name": "Great Hound",
     "size": "large",
     "level": 5,
@@ -15467,9 +14923,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 277,
-    
-    
+    "id": "1730368364411330",
     "name": "Great Sunder Wraith",
     "size": "normal",
     "level": 11,
@@ -15521,9 +14975,7 @@
     "basename": "Great-Sunder-Wraith"
   },
   {
-    "id": 278,
-    
-    
+    "id": "1730368364411731",
     "name": "Great Xorn",
     "size": "elite",
     "level": 8,
@@ -15579,9 +15031,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 279,
-    
-    
+    "id": "1730368364411739",
     "name": "Greater Ebon Gauntlet Sword",
     "size": "normal",
     "level": 7,
@@ -15611,9 +15061,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 280,
-    
-    
+    "id": "1730368364411997",
     "name": "Greater Flux Elemental",
     "size": "normal",
     "level": 9,
@@ -15699,15 +15147,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 281,
-    
-    
+    "id": "1730368364411965",
     "name": "Greater Summoned Ghoul",
     "size": "normal",
     "level": 10,
     "levelOrdinal": "10th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 18,
     "vulnerability": "holy",
@@ -15727,9 +15173,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 282,
-    
-    
+    "id": "1730368364411822",
     "name": "Greathoard Elder (Red)",
     "size": "huge",
     "level": 11,
@@ -15809,9 +15253,7 @@
     "basename": "Greathoard-Elder"
   },
   {
-    "id": 283,
-    
-    
+    "id": "1730368364411610",
     "name": "Green Bulette",
     "size": "large",
     "level": 5,
@@ -15859,9 +15301,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 284,
-    
-    
+    "id": "1730368364411300",
     "name": "Greenscale Spineback'",
     "size": "normal",
     "level": 9,
@@ -15941,9 +15381,7 @@
     "basename": "Greenscale-Spineback'"
   },
   {
-    "id": 285,
-    
-    
+    "id": "1730368364411534",
     "name": "Greenscale Wild Stalker",
     "size": "normal",
     "level": 3,
@@ -15997,15 +15435,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 286,
-    
-    
+    "id": "1730368364411220",
     "name": "Gruesome Death Shade",
     "size": "normal",
     "level": 10,
     "levelOrdinal": "10th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 10,
     "vulnerability": "holy",
@@ -16045,9 +15481,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 287,
-    
-    
+    "id": "1730368364411533",
     "name": "Gruesome Reaver",
     "size": "double-strength",
     "level": 10,
@@ -16112,9 +15546,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 288,
-    
-    
+    "id": "1730368364411334",
     "name": "Hag",
     "size": "normal",
     "level": 6,
@@ -16176,9 +15608,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 289,
-    
-    
+    "id": "1730368364411770",
     "name": "Hagunemnon",
     "size": "large",
     "level": 13,
@@ -16232,9 +15662,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 290,
-    
-    
+    "id": "1730368364411260",
     "name": "Half-Orc Commander",
     "size": "normal",
     "level": 8,
@@ -16280,9 +15708,7 @@
     "source": "13th age"
   },
   {
-    "id": 291,
-    
-    
+    "id": "1730368364411301",
     "name": "Half-Orc Legionnaire",
     "size": "normal",
     "level": 4,
@@ -16328,9 +15754,7 @@
     "source": "13th age"
   },
   {
-    "id": 292,
-    
-    
+    "id": "1730368364411873",
     "name": "Half-Orc Tribal Champion",
     "size": "normal",
     "level": 4,
@@ -16376,9 +15800,7 @@
     "source": "13th age"
   },
   {
-    "id": 293,
-    
-    
+    "id": "1730368364411447",
     "name": "Hallowed Gargoyle",
     "size": "normal",
     "level": 6,
@@ -16480,9 +15902,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 294,
-    
-    
+    "id": "1730368364411640",
     "name": "Harpy",
     "size": "normal",
     "level": 4,
@@ -16536,9 +15956,7 @@
     "source": "13th age"
   },
   {
-    "id": 295,
-    
-    
+    "id": "1730368364411927",
     "name": "Headless Zombie",
     "size": "normal",
     "level": 9,
@@ -16598,9 +16016,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 296,
-    
-    
+    "id": "1730368364411443",
     "name": "Hell Imp",
     "size": "normal",
     "level": 4,
@@ -16668,9 +16084,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 297,
-    
-    
+    "id": "1730368364411304",
     "name": "Hellcat",
     "size": "large",
     "level": 6,
@@ -16744,9 +16158,7 @@
     "basename": "Hellcat"
   },
   {
-    "id": 298,
-    
-    
+    "id": "1730368364411386",
     "name": "Hellhound",
     "size": "normal",
     "level": 3,
@@ -16794,9 +16206,7 @@
     "source": "13th age"
   },
   {
-    "id": 299,
-    
-    
+    "id": "1730368364411442",
     "name": "Hellstone Gargoyle",
     "size": "normal",
     "level": 7,
@@ -16865,9 +16275,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 300,
-    
-    
+    "id": "1730368364411840",
     "name": "Hellwarped Brute",
     "size": "huge",
     "level": 10,
@@ -16959,9 +16367,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 301,
-    
-    
+    "id": "1730368364411588",
     "name": "Hellwarped Spawn",
     "size": "large",
     "level": 6,
@@ -17045,9 +16451,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 302,
-    
-    
+    "id": "1730368364411345",
     "name": "hellwasp",
     "size": "normal",
     "level": 2,
@@ -17093,9 +16497,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 303,
-    
-    
+    "id": "1730368364411874",
     "name": "Hezrou (Toad Demon)",
     "size": "large",
     "level": 7,
@@ -17143,9 +16545,7 @@
     "basename": "Hezrou"
   },
   {
-    "id": 304,
-    
-    
+    "id": "1730368364411335",
     "name": "Hill Giant",
     "size": "large",
     "level": 6,
@@ -17185,9 +16585,7 @@
     "source": "13th age"
   },
   {
-    "id": 305,
-    
-    
+    "id": "1730368364411512",
     "name": "Hill Nymph (Oread)",
     "size": "double-strength",
     "level": 4,
@@ -17252,9 +16650,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 306,
-    
-    
+    "id": "1730368364411718",
     "name": "Hoard Spirit (Red)",
     "size": "huge",
     "level": 11,
@@ -17334,9 +16730,7 @@
     "basename": "Hoard-Spirit"
   },
   {
-    "id": 307,
-    
-    
+    "id": "1730368364411324",
     "name": "Hoardsong Dragon (Red)",
     "size": "large",
     "level": 9,
@@ -17409,9 +16803,7 @@
     "basename": "Hoardsong-Dragon"
   },
   {
-    "id": 308,
-    
-    
+    "id": "1730368364411149",
     "name": "Hobgoblin Captain",
     "size": "normal",
     "level": 4,
@@ -17455,9 +16847,7 @@
     "source": "13th age"
   },
   {
-    "id": 309,
-    
-    
+    "id": "1730368364411487",
     "name": "Hobgoblin Warmage",
     "size": "normal",
     "level": 5,
@@ -17495,9 +16885,7 @@
     "source": "13th age"
   },
   {
-    "id": 310,
-    
-    
+    "id": "1730368364411541",
     "name": "Hobgoblin Warrior",
     "size": "normal",
     "level": 2,
@@ -17537,8 +16925,7 @@
     "source": "13th age"
   },
   {
-    "id": 311,
-    
+    "id": "1730368364411648",
     "name": "Honey Devil, aka Slime Devil",
     "size": "weakling",
     "level": 4,
@@ -17598,9 +16985,7 @@
     "basename": "Honey-Devil"
   },
   {
-    "id": 312,
-    
-    
+    "id": "1730368364411186",
     "name": "Hooded Devil",
     "size": "normal",
     "level": 7,
@@ -17662,9 +17047,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 313,
-    
-    
+    "id": "1730368364411697",
     "name": "Hook Skuttler",
     "size": "normal",
     "level": 2,
@@ -17698,15 +17081,13 @@
     "basename": "Hook-Skuttler"
   },
   {
-    "id": 314,
-    
-    
+    "id": "1730368364411980",
     "name": "Hooked Demon",
     "size": "normal",
     "level": 9,
     "levelOrdinal": "9th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "demon",
     "initiative": 12,
     "actions": [
@@ -17737,9 +17118,7 @@
     "source": "13th age"
   },
   {
-    "id": 315,
-    
-    
+    "id": "1730368364411895",
     "name": "Horned Azinth Adult",
     "size": "large",
     "level": 6,
@@ -17789,9 +17168,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 316,
-    
-    
+    "id": "1730368364411773",
     "name": "Horned Azinth Calf",
     "size": "double-strength",
     "level": 3,
@@ -17827,9 +17204,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 317,
-    
-    
+    "id": "1730368364411619",
     "name": "Horned Devil (Cornugon)",
     "size": "large",
     "level": 12,
@@ -17895,9 +17270,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 318,
-    
-    
+    "id": "1730368364411980",
     "name": "Horned Salamander",
     "size": "huge",
     "level": 8,
@@ -17944,9 +17317,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 319,
-    
-    
+    "id": "1730368364411201",
     "name": "Huge Black Dragon",
     "size": "huge",
     "level": 9,
@@ -18012,9 +17383,7 @@
     "source": "13th age"
   },
   {
-    "id": 320,
-    
-    
+    "id": "1730368364411800",
     "name": "Huge Blue Dragon",
     "size": "huge",
     "level": 12,
@@ -18074,9 +17443,7 @@
     "source": "13th age"
   },
   {
-    "id": 321,
-    
-    
+    "id": "1730368364411544",
     "name": "Huge Brass Dragon",
     "size": "huge",
     "level": 4,
@@ -18142,9 +17509,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 322,
-    
-    
+    "id": "1730368364411864",
     "name": "Huge Bronze Dragon",
     "size": "huge",
     "level": 9,
@@ -18202,9 +17567,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 323,
-    
-    
+    "id": "1730368364411753",
     "name": "Huge Copper Dragon",
     "size": "huge",
     "level": 11,
@@ -18268,9 +17631,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 324,
-    
-    
+    "id": "1730368364411122",
     "name": "Huge Gold Dragon",
     "size": "huge",
     "level": 14,
@@ -18342,9 +17703,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 325,
-    
-    
+    "id": "1730368364411928",
     "name": "Huge Green Dragon",
     "size": "huge",
     "level": 11,
@@ -18404,9 +17763,7 @@
     "source": "13th age"
   },
   {
-    "id": 326,
-    
-    
+    "id": "1730368364411415",
     "name": "Huge Red Dragon",
     "size": "huge",
     "level": 13,
@@ -18464,9 +17821,7 @@
     "source": "13th age"
   },
   {
-    "id": 327,
-    
-    
+    "id": "1730368364411723",
     "name": "Huge Silver Dragon",
     "size": "huge",
     "level": 13,
@@ -18526,9 +17881,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 328,
-    
-    
+    "id": "1730368364411883",
     "name": "Huge White Dragon",
     "size": "huge",
     "level": 5,
@@ -18577,15 +17930,13 @@
     "source": "13th age"
   },
   {
-    "id": 329,
-    
-    
+    "id": "1730368364411550",
     "name": "Human Rabble",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 5,
     "actions": [
@@ -18610,9 +17961,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 330,
-    
-    
+    "id": "1730368364411549",
     "name": "Human Thug",
     "size": "normal",
     "level": 1,
@@ -18642,9 +17991,7 @@
     "source": "13th age"
   },
   {
-    "id": 331,
-    
-    
+    "id": "1730368364411218",
     "name": "Human Zombie",
     "size": "normal",
     "level": 2,
@@ -18687,9 +18034,7 @@
     "source": "13th age"
   },
   {
-    "id": 332,
-    
-    
+    "id": "1730368364411327",
     "name": "Humanoid Gauntlet's Mascot",
     "size": "normal",
     "level": 6,
@@ -18717,9 +18062,7 @@
     "basename": "Humanoid-Gauntlets-Mascot"
   },
   {
-    "id": 333,
-    
-    
+    "id": "1730368364411712",
     "name": "Hungry Mouth Ghost",
     "size": "normal",
     "level": 5,
@@ -18786,9 +18129,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 334,
-    
-    
+    "id": "1730368364411978",
     "name": "Hungry Star",
     "size": "normal",
     "level": 3,
@@ -18842,9 +18183,7 @@
     "source": "13th age"
   },
   {
-    "id": 335,
-    
-    
+    "id": "1730368364411619",
     "name": "Hunting Spider",
     "size": "normal",
     "level": 2,
@@ -18884,9 +18223,7 @@
     "source": "13th age"
   },
   {
-    "id": 336,
-    
-    
+    "id": "1730368364411579",
     "name": "Ice Devil (Gelugon)",
     "size": "normal",
     "level": 11,
@@ -18942,9 +18279,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 337,
-    
-    
+    "id": "1730368364411460",
     "name": "Ice Sorceress (Frost)",
     "size": "large",
     "level": 7,
@@ -19013,15 +18348,13 @@
     "basename": "Ice-Sorceress"
   },
   {
-    "id": 338,
-    
-    
+    "id": "1730368364411161",
     "name": "Ice ombie",
     "size": "normal",
     "level": 6,
     "levelOrdinal": "6th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 5,
     "vulnerability": "fire, holy",
@@ -19053,8 +18386,7 @@
     "basename": "Ice-Zombie"
   },
   {
-    "id": 339,
-    
+    "id": "1730368364411747",
     "name": "Iconic Chimera",
     "size": "large",
     "level": 8,
@@ -19296,9 +18628,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 340,
-    
-    
+    "id": "1730368364411960",
     "name": "Imp",
     "size": "normal",
     "level": 3,
@@ -19346,9 +18676,7 @@
     "source": "13th age"
   },
   {
-    "id": 341,
-    
-    
+    "id": "1730368364411347",
     "name": "Intellect Assassin",
     "size": "normal",
     "level": 6,
@@ -19426,9 +18754,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 342,
-    
-    
+    "id": "1730368364411165",
     "name": "Intellect Devourer",
     "size": "normal",
     "level": 3,
@@ -19498,9 +18824,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 343,
-    
-    
+    "id": "1730368364411171",
     "name": "Iron Golem",
     "size": "large",
     "level": 10,
@@ -19552,15 +18876,13 @@
     "source": "13th age"
   },
   {
-    "id": 344,
-    
-    
+    "id": "1730368364411161",
     "name": "Jackal Bearer",
     "size": "normal",
     "level": 5,
     "levelOrdinal": "5th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 8,
     "actions": [
@@ -19585,15 +18907,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 345,
-    
-    
+    "id": "1730368364411753",
     "name": "Jackal Gravewrecker",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 4,
     "actions": [
@@ -19630,9 +18950,7 @@
     "basename": "Jackal-Gravewrecker"
   },
   {
-    "id": 346,
-    
-    
+    "id": "1730368364411472",
     "name": "Jackal High Mage",
     "size": "normal",
     "level": 9,
@@ -19688,9 +19006,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 347,
-    
-    
+    "id": "1730368364411667",
     "name": "Jackal High Priest",
     "size": "double-strength",
     "level": 10,
@@ -19752,9 +19068,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 348,
-    
-    
+    "id": "1730368364411351",
     "name": "Jackal Mage",
     "size": "normal",
     "level": 6,
@@ -19808,9 +19122,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 349,
-    
-    
+    "id": "1730368364411627",
     "name": "Jackal Priest",
     "size": "elite",
     "level": 7,
@@ -19866,9 +19178,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 350,
-    
-    
+    "id": "1730368364411108",
     "name": "Jackal Scout",
     "size": "normal",
     "level": 5,
@@ -19918,15 +19228,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 351,
-    
-    
+    "id": "1730368364411934",
     "name": "Jackpot Zombie",
     "size": "normal",
     "level": 5,
     "levelOrdinal": "5th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 5,
     "actions": [
@@ -19961,9 +19269,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 352,
-    
-    
+    "id": "1730368364411755",
     "name": "Jest Bones",
     "size": "normal",
     "level": 4,
@@ -20003,15 +19309,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 353,
-    
-    
+    "id": "1730368364411911",
     "name": "Jotun Auroch",
     "size": "huge",
     "level": 6,
     "levelOrdinal": "6th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 7,
     "actions": [
@@ -20048,9 +19352,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 354,
-    
-    
+    "id": "1730368364411312",
     "name": "Kelping",
     "size": "double-strength",
     "level": 5,
@@ -20096,15 +19398,13 @@
     "basename": "Kelping"
   },
   {
-    "id": 355,
-    
-    
+    "id": "1730368364411655",
     "name": "Kelplet",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "plant",
     "initiative": 7,
     "actions": [
@@ -20121,15 +19421,13 @@
     "basename": "Kelplet"
   },
   {
-    "id": 356,
-    
-    
+    "id": "1730368364411196",
     "name": "Kobold Archer",
     "size": "normal",
     "level": 1,
     "levelOrdinal": "1st",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 4,
     "actions": [
@@ -20162,9 +19460,7 @@
     "source": "13th age"
   },
   {
-    "id": 357,
-    
-    
+    "id": "1730368364411993",
     "name": "Kobold Bravescale",
     "size": "normal",
     "level": 4,
@@ -20210,9 +19506,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 358,
-    
-    
+    "id": "1730368364411437",
     "name": "Kobold Dog-Rider",
     "size": "normal",
     "level": 3,
@@ -20260,9 +19554,7 @@
     "basename": "Kobold-Dog-Rider"
   },
   {
-    "id": 359,
-    
-    
+    "id": "1730368364411663",
     "name": "Kobold Dragon-Soul",
     "size": "normal",
     "level": 5,
@@ -20312,9 +19604,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 360,
-    
-    
+    "id": "1730368364411609",
     "name": "Kobold Dungeon-Shaman",
     "size": "double-strength",
     "level": 4,
@@ -20364,9 +19654,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 361,
-    
-    
+    "id": "1730368364411304",
     "name": "Kobold Engineer",
     "size": "normal",
     "level": 3,
@@ -20412,15 +19700,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 362,
-    
-    
+    "id": "1730368364411248",
     "name": "Kobold Grand-Wizard",
     "size": "normal",
     "level": 0,
     "levelOrdinal": "0",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 8,
     "actions": [
@@ -20447,9 +19733,7 @@
     "basename": "Kobold-Grand-Wizard"
   },
   {
-    "id": 363,
-    
-    
+    "id": "1730368364411145",
     "name": "Kobold Hero",
     "size": "normal",
     "level": 2,
@@ -20485,15 +19769,13 @@
     "source": "13th age"
   },
   {
-    "id": 364,
-    
-    
+    "id": "1730368364411867",
     "name": "Kobold Shadow-Warrior",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 9,
     "actions": [
@@ -20536,15 +19818,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 365,
-    
-    
+    "id": "1730368364411281",
     "name": "Kobold Skyclaw",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 9,
     "actions": [
@@ -20599,9 +19879,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 366,
-    
-    
+    "id": "1730368364411379",
     "name": "Kobold Warrior",
     "size": "normal",
     "level": 1,
@@ -20641,9 +19919,7 @@
     "source": "13th age"
   },
   {
-    "id": 367,
-    
-    
+    "id": "1730368364411924",
     "name": "Kohwa Enforcer",
     "size": "large",
     "level": 7,
@@ -20715,9 +19991,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 368,
-    
-    
+    "id": "1730368364411254",
     "name": "Kohwa Messenger",
     "size": "large",
     "level": 5,
@@ -20805,9 +20079,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 369,
-    
-    
+    "id": "1730368364411750",
     "name": "Koruku Landkiller",
     "size": "huge",
     "level": 8,
@@ -20925,9 +20197,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 370,
-    
-    
+    "id": "1730368364411603",
     "name": "Koruku Larva",
     "size": "normal",
     "level": 5,
@@ -20977,15 +20247,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 371,
-    
-    
+    "id": "1730368364411624",
     "name": "Koruku Servitor",
     "size": "normal",
     "level": 8,
     "levelOrdinal": "8th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "spirit",
     "initiative": 16,
     "actions": [
@@ -21048,9 +20316,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 372,
-    
-    
+    "id": "1730368364411732",
     "name": "Koruku Symbiont",
     "size": "normal",
     "level": 7,
@@ -21134,9 +20400,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 373,
-    
-    
+    "id": "1730368364411205",
     "name": "Lammasu Priest",
     "size": "large",
     "level": 9,
@@ -21222,9 +20486,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 374,
-    
-    
+    "id": "1730368364411480",
     "name": "Lammasu Warrior",
     "size": "large",
     "level": 7,
@@ -21292,9 +20554,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 375,
-    
-    
+    "id": "1730368364411449",
     "name": "Lammasu Wizard",
     "size": "large",
     "level": 8,
@@ -21368,9 +20628,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 376,
-    
-    
+    "id": "1730368364411867",
     "name": "Large Black Dragon",
     "size": "large",
     "level": 6,
@@ -21433,9 +20691,7 @@
     "source": "13th age"
   },
   {
-    "id": 377,
-    
-    
+    "id": "1730368364411120",
     "name": "Large Blue Dragon",
     "size": "large",
     "level": 8,
@@ -21496,9 +20752,7 @@
     "source": "13th age"
   },
   {
-    "id": 378,
-    
-    
+    "id": "1730368364411637",
     "name": "Large Brass Dragon",
     "size": "large",
     "level": 3,
@@ -21554,9 +20808,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 379,
-    
-    
+    "id": "1730368364411759",
     "name": "Large Bronze Dragon",
     "size": "large",
     "level": 6,
@@ -21606,9 +20858,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 380,
-    
-    
+    "id": "1730368364411817",
     "name": "Large Copper Dragon",
     "size": "large",
     "level": 9,
@@ -21668,9 +20918,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 381,
-    
-    
+    "id": "1730368364411739",
     "name": "Large Gold Dragon",
     "size": "large",
     "level": 11,
@@ -21730,9 +20978,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 382,
-    
-    
+    "id": "1730368364411764",
     "name": "Large Green Dragon",
     "size": "large",
     "level": 7,
@@ -21793,9 +21039,7 @@
     "source": "13th age"
   },
   {
-    "id": 383,
-    
-    
+    "id": "1730368364411689",
     "name": "Large Red Dragon",
     "size": "large",
     "level": 10,
@@ -21850,9 +21094,7 @@
     "source": "13th age"
   },
   {
-    "id": 384,
-    
-    
+    "id": "1730368364411389",
     "name": "Large Silver Dragon",
     "size": "large",
     "level": 10,
@@ -21908,9 +21150,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 385,
-    
-    
+    "id": "1730368364411192",
     "name": "Large White Dragon",
     "size": "large",
     "level": 4,
@@ -21959,9 +21199,7 @@
     "source": "13th age"
   },
   {
-    "id": 386,
-    
-    
+    "id": "1730368364411804",
     "name": "Laughing Demon",
     "size": "normal",
     "level": 8,
@@ -22005,15 +21243,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 387,
-    
-    
+    "id": "1730368364411394",
     "name": "Lemure",
     "size": "normal",
     "level": 3,
     "levelOrdinal": "3rd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "devil",
     "initiative": 3,
     "actions": [
@@ -22064,15 +21300,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 388,
-    
-    
+    "id": "1730368364411312",
     "name": "Lesser Haunting",
     "size": "normal",
     "level": 3,
     "levelOrdinal": "3rd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 6,
     "vulnerability": "holy",
@@ -22106,9 +21340,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 389,
-    
-    
+    "id": "1730368364411365",
     "name": "Lesser Xorn",
     "size": "elite",
     "level": 4,
@@ -22148,9 +21380,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 390,
-    
-    
+    "id": "1730368364411468",
     "name": "Lethal Lothario",
     "size": "normal",
     "level": 4,
@@ -22196,9 +21426,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 391,
-    
-    
+    "id": "1730368364411796",
     "name": "Lich Baroness",
     "size": "normal",
     "level": 4,
@@ -22246,9 +21474,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 392,
-    
-    
+    "id": "1730368364411246",
     "name": "Lich Count",
     "size": "double-strength",
     "level": 8,
@@ -22332,9 +21558,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 393,
-    
-    
+    "id": "1730368364411377",
     "name": "Lich Flower",
     "size": "double-strength",
     "level": 6,
@@ -22375,9 +21599,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 394,
-    
-    
+    "id": "1730368364411380",
     "name": "Lich Prince",
     "size": "double-strength",
     "level": 12,
@@ -22461,9 +21683,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 395,
-    
-    
+    "id": "1730368364411738",
     "name": "Lizardman Savage",
     "size": "normal",
     "level": 2,
@@ -22507,15 +21727,13 @@
     "source": "13th age"
   },
   {
-    "id": 396,
-    
-    
+    "id": "1730368364411547",
     "name": "Lokkris",
     "size": "normal",
     "level": 6,
     "levelOrdinal": "6th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 16,
     "actions": [
@@ -22550,15 +21768,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 397,
-    
-    
+    "id": "1730368364411231",
     "name": "Loyal Gatherer",
     "size": "normal",
     "level": 10,
     "levelOrdinal": "10th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 15,
     "actions": [
@@ -22589,9 +21805,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 398,
-    
-    
+    "id": "1730368364411470",
     "name": "Lumberland Dirt Fisher",
     "size": "huge",
     "level": 5,
@@ -22637,9 +21851,7 @@
     "basename": "Lumberland-Dirt-Fisher"
   },
   {
-    "id": 399,
-    
-    
+    "id": "1730368364411693",
     "name": "Magma Brute",
     "size": "normal",
     "level": 3,
@@ -22690,15 +21902,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 400,
-    
-    
+    "id": "1730368364411628",
     "name": "Major Haunting",
     "size": "normal",
     "level": 6,
     "levelOrdinal": "6th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 9,
     "actions": [
@@ -22731,9 +21941,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 401,
-    
-    
+    "id": "1730368364411324",
     "name": "Manafang Naga",
     "size": "large",
     "level": 7,
@@ -22797,9 +22005,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 402,
-    
-    
+    "id": "1730368364411314",
     "name": "Manticore Bard",
     "size": "large",
     "level": 5,
@@ -22881,9 +22087,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 403,
-    
-    
+    "id": "1730368364411209",
     "name": "Manticore",
     "size": "large",
     "level": 6,
@@ -22931,9 +22135,7 @@
     "source": "13th age"
   },
   {
-    "id": 404,
-    
-    
+    "id": "1730368364411733",
     "name": "Mantikumhar",
     "size": "large",
     "level": 5,
@@ -22999,9 +22201,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 405,
-    
-    
+    "id": "1730368364411323",
     "name": "Marble Golem",
     "size": "large",
     "level": 9,
@@ -23081,9 +22281,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 406,
-    
-    
+    "id": "1730368364411801",
     "name": "Marilith (Serpent Demon)",
     "size": "large",
     "level": 12,
@@ -23125,9 +22323,7 @@
     "basename": "Marilith"
   },
   {
-    "id": 407,
-    
-    
+    "id": "1730368364411334",
     "name": "Massive Mutant Chuul",
     "size": "huge",
     "level": 10,
@@ -23231,9 +22427,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 408,
-    
-    
+    "id": "1730368364411627",
     "name": "Mausoleum Dragon (White)",
     "size": "large",
     "level": 5,
@@ -23288,9 +22482,7 @@
     "basename": "Mausoleum-Dragon"
   },
   {
-    "id": 409,
-    
-    
+    "id": "1730368364411569",
     "name": "Medium Black Dragon",
     "size": "normal",
     "level": 3,
@@ -23353,9 +22545,7 @@
     "source": "13th age"
   },
   {
-    "id": 410,
-    
-    
+    "id": "1730368364411562",
     "name": "Medium Blue Dragon",
     "size": "normal",
     "level": 5,
@@ -23416,9 +22606,7 @@
     "source": "13th age"
   },
   {
-    "id": 411,
-    
-    
+    "id": "1730368364411856",
     "name": "Medium Brass Dragon",
     "size": "normal",
     "level": 2,
@@ -23478,9 +22666,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 412,
-    
-    
+    "id": "1730368364411350",
     "name": "Medium Bronze Dragon",
     "size": "normal",
     "level": 3,
@@ -23530,9 +22716,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 413,
-    
-    
+    "id": "1730368364411936",
     "name": "Medium Copper Dragon",
     "size": "normal",
     "level": 4,
@@ -23592,9 +22776,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 414,
-    
-    
+    "id": "1730368364411178",
     "name": "Medium Gold Dragon",
     "size": "normal",
     "level": 7,
@@ -23654,9 +22836,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 415,
-    
-    
+    "id": "1730368364411950",
     "name": "Medium Green Dragon",
     "size": "normal",
     "level": 4,
@@ -23717,9 +22897,7 @@
     "source": "13th age"
   },
   {
-    "id": 416,
-    
-    
+    "id": "1730368364411209",
     "name": "Medium Red Dragon",
     "size": "normal",
     "level": 6,
@@ -23770,9 +22948,7 @@
     "source": "13th age"
   },
   {
-    "id": 417,
-    
-    
+    "id": "1730368364411748",
     "name": "Medium-Silver-Dragon",
     "size": "normal",
     "level": 6,
@@ -23826,9 +23002,7 @@
     "basename": "Medium-Silver-Dragon"
   },
   {
-    "id": 418,
-    
-    
+    "id": "1730368364411365",
     "name": "Medium White Dragon",
     "size": "normal",
     "level": 2,
@@ -23877,9 +23051,7 @@
     "source": "13th age"
   },
   {
-    "id": 419,
-    
-    
+    "id": "1730368364411796",
     "name": "Medusa Noble",
     "size": "double-strength",
     "level": 11,
@@ -23943,9 +23115,7 @@
     "source": "13th age"
   },
   {
-    "id": 420,
-    
-    
+    "id": "1730368364411231",
     "name": "Medusa Outlaw",
     "size": "double-strength",
     "level": 6,
@@ -24001,9 +23171,7 @@
     "source": "13th age"
   },
   {
-    "id": 421,
-    
-    
+    "id": "1730368364411941",
     "name": "Melusine",
     "size": "double-strength",
     "level": 7,
@@ -24055,15 +23223,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 422,
-    
-    
+    "id": "1730368364411457",
     "name": "Meteorite Xombie",
     "size": "normal",
     "level": 1,
     "levelOrdinal": "1st",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "aberration",
     "initiative": 8,
     "actions": [
@@ -24104,15 +23270,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 423,
-    
-    
+    "id": "1730368364411403",
     "name": "Militant Ranger Squad",
     "size": "normal",
     "level": 11,
     "levelOrdinal": "11th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 16,
     "actions": [
@@ -24155,9 +23319,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 424,
-    
-    
+    "id": "1730368364411813",
     "name": "Minotaur",
     "size": "large",
     "level": 4,
@@ -24203,9 +23365,7 @@
     "source": "13th age"
   },
   {
-    "id": 425,
-    
-    
+    "id": "1730368364411547",
     "name": "Moon Dragon (White)",
     "size": "huge",
     "level": 7,
@@ -24253,9 +23413,7 @@
     "basename": "Moon-Dragon"
   },
   {
-    "id": 426,
-    
-    
+    "id": "1730368364411705",
     "name": "Most Hungry Ghost",
     "size": "normal",
     "level": 10,
@@ -24322,9 +23480,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 427,
-    
-    
+    "id": "1730368364411405",
     "name": "Mummy",
     "size": "double-strength",
     "level": 8,
@@ -24399,9 +23555,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 428,
-    
-    
+    "id": "1730368364411986",
     "name": "Mutant Bullfrog",
     "size": "large",
     "level": 5,
@@ -24467,9 +23621,7 @@
     "basename": "Mutant-Bullfrog"
   },
   {
-    "id": 429,
-    
-    
+    "id": "1730368364411248",
     "name": "Nalfeshnee (Boar Demon)",
     "size": "large",
     "level": 10,
@@ -24527,15 +23679,13 @@
     "basename": "Nalfeshnee"
   },
   {
-    "id": 430,
-    
-    
+    "id": "1730368364411434",
     "name": "Newly Risen Ghoul",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 5,
     "vulnerability": "holy",
@@ -24565,9 +23715,7 @@
     "basename": "Newly-Risen-Ghoul"
   },
   {
-    "id": 431,
-    
-    
+    "id": "1730368364411107",
     "name": "Nix",
     "size": "double-strength",
     "level": 7,
@@ -24619,9 +23767,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 433,
-    
-    
+    "id": "1730368364411547",
     "name": "Ochre Jelly",
     "size": "large",
     "level": 3,
@@ -24657,9 +23803,7 @@
     "source": "13th age"
   },
   {
-    "id": 434,
-    
-    
+    "id": "1730368364411610",
     "name": "Ogre Berserker",
     "size": "large",
     "level": 4,
@@ -24707,9 +23851,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 435,
-    
-    
+    "id": "1730368364411456",
     "name": "Ogre Champion",
     "size": "large",
     "level": 5,
@@ -24769,9 +23911,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 436,
-    
-    
+    "id": "1730368364411173",
     "name": "Ogre Crusader",
     "size": "large",
     "level": 4,
@@ -24819,9 +23959,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 437,
-    
-    
+    "id": "1730368364411854",
     "name": "Ogre Lightning Mage",
     "size": "large",
     "level": 8,
@@ -24889,9 +24027,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 438,
-    
-    
+    "id": "1730368364411462",
     "name": "Ogre Mage Knight",
     "size": "large",
     "level": 6,
@@ -24977,9 +24113,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 439,
-    
-    
+    "id": "1730368364411115",
     "name": "Ogre Mage",
     "size": "large",
     "level": 8,
@@ -25047,15 +24181,13 @@
     "source": "13th age"
   },
   {
-    "id": 440,
-    
-    
+    "id": "1730368364411143",
     "name": "Ogre Minion",
     "size": "large",
     "level": 9,
     "levelOrdinal": "9th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "giant",
     "initiative": 11,
     "actions": [
@@ -25100,9 +24232,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 441,
-    
-    
+    "id": "1730368364411568",
     "name": "Ogre Penitent",
     "size": "large",
     "level": 3,
@@ -25152,9 +24282,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 442,
-    
-    
+    "id": "1730368364411763",
     "name": "Ogre",
     "size": "large",
     "level": 3,
@@ -25200,15 +24328,13 @@
     "source": "13th age"
   },
   {
-    "id": 443,
-    
-    
+    "id": "1730368364411191",
     "name": "Oppurtunistic Orc Band",
     "size": "normal",
     "level": 10,
     "levelOrdinal": "10th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 13,
     "actions": [
@@ -25241,9 +24367,7 @@
     "basename": "Oppurtunistic-Orc-Band"
   },
   {
-    "id": 444,
-    
-    
+    "id": "1730368364411742",
     "name": "Orc Battle Screamer",
     "size": "normal",
     "level": 3,
@@ -25287,9 +24411,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 445,
-    
-    
+    "id": "1730368364411857",
     "name": "Orc Berserker",
     "size": "normal",
     "level": 2,
@@ -25325,15 +24447,13 @@
     "source": "13th age"
   },
   {
-    "id": 446,
-    
-    
+    "id": "1730368364411692",
     "name": "Orc Rager",
     "size": "normal",
     "level": 7,
     "levelOrdinal": "7th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 12,
     "actions": [
@@ -25364,9 +24484,7 @@
     "source": "13th age"
   },
   {
-    "id": 447,
-    
-    
+    "id": "1730368364411282",
     "name": "Orc Shaman",
     "size": "normal",
     "level": 2,
@@ -25400,9 +24518,7 @@
     "source": "13th age"
   },
   {
-    "id": 448,
-    
-    
+    "id": "1730368364411313",
     "name": "Orc Tusker",
     "size": "normal",
     "level": 3,
@@ -25436,9 +24552,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 449,
-    
-    
+    "id": "1730368364411291",
     "name": "Orc Warrior",
     "size": "normal",
     "level": 1,
@@ -25468,9 +24582,7 @@
     "source": "13th age"
   },
   {
-    "id": 450,
-    
-    
+    "id": "1730368364411318",
     "name": "Orcish Archer",
     "size": "normal",
     "level": 2,
@@ -25508,9 +24620,7 @@
     "basename": "Orcish-Archer"
   },
   {
-    "id": 451,
-    
-    
+    "id": "1730368364411959",
     "name": "Owlbear",
     "size": "large",
     "level": 4,
@@ -25550,9 +24660,7 @@
     "source": "13th age"
   },
   {
-    "id": 452,
-    
-    
+    "id": "1730368364411682",
     "name": "Oytugh",
     "size": "large",
     "level": 3,
@@ -25598,9 +24706,7 @@
     "basename": "Oytugh"
   },
   {
-    "id": 453,
-    
-    
+    "id": "1730368364411607",
     "name": "Parasitic Dybbuk",
     "size": "double-strength",
     "level": 6,
@@ -25708,15 +24814,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 454,
-    
-    
+    "id": "1730368364411229",
     "name": "Parasitic Lightning Beetle",
     "size": "normal",
     "level": 8,
     "levelOrdinal": "8th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 14,
     "actions": [
@@ -25761,9 +24865,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 455,
-    
-    
+    "id": "1730368364411132",
     "name": "Petulant Never-Was",
     "size": "double-strength",
     "level": 5,
@@ -25822,9 +24924,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 456,
-    
-    
+    "id": "1730368364411207",
     "name": "Phantom",
     "size": "normal",
     "level": 6,
@@ -25876,9 +24976,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 457,
-    
-    
+    "id": "1730368364411836",
     "name": "Phantomaton",
     "size": "normal",
     "level": 4,
@@ -25938,9 +25036,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 458,
-    
-    
+    "id": "1730368364411764",
     "name": "Phase Spider",
     "size": "large",
     "level": 7,
@@ -26002,9 +25098,7 @@
     "source": "13th age"
   },
   {
-    "id": 459,
-    
-    
+    "id": "1730368364411177",
     "name": "Pit Fiend",
     "size": "huge",
     "level": 14,
@@ -26096,15 +25190,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 460,
-    
-    
+    "id": "1730368364411571",
     "name": "Pit-Spawn Orc",
     "size": "double-strength",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 2,
     "actions": [
@@ -26135,9 +25227,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 461,
-    
-    
+    "id": "1730368364411435",
     "name": "Pixie Knight",
     "size": "normal",
     "level": 6,
@@ -26181,9 +25271,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 462,
-    
-    
+    "id": "1730368364411499",
     "name": "Pixie Pod",
     "size": "double-strength",
     "level": 3,
@@ -26239,9 +25327,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 463,
-    
-    
+    "id": "1730368364411589",
     "name": "Pixie Warrior",
     "size": "normal",
     "level": 3,
@@ -26323,9 +25409,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 464,
-    
-    
+    "id": "1730368364411743",
     "name": "Plant Briar Elf Assassin",
     "size": "normal",
     "level": 11,
@@ -26399,9 +25483,7 @@
     "basename": "Plant-Briar-Elf-Assassin"
   },
   {
-    "id": 465,
-    
-    
+    "id": "1730368364411391",
     "name": "Plant Briar Elf Slayer",
     "size": "normal",
     "level": 6,
@@ -26463,9 +25545,7 @@
     "basename": "Plant-Briar-Elf-Slayer"
   },
   {
-    "id": 466,
-    
-    
+    "id": "1730368364411499",
     "name": "Plant Briar Elf Sorcerer",
     "size": "normal",
     "level": 10,
@@ -26537,9 +25617,7 @@
     "basename": "Plant-Briar-Elf-Sorcerer"
   },
   {
-    "id": 467,
-    
-    
+    "id": "1730368364411390",
     "name": "Plant Briar Elf Sovereign",
     "size": "double-strength",
     "level": 12,
@@ -26617,9 +25695,7 @@
     "basename": "Plant-Briar-Elf-Sovereign"
   },
   {
-    "id": 468,
-    
-    
+    "id": "1730368364411371",
     "name": "Plant Briar Elf Stalker",
     "size": "normal",
     "level": 8,
@@ -26685,9 +25761,7 @@
     "basename": "Plant-Briar-Elf-Stalker"
   },
   {
-    "id": 469,
-    
-    
+    "id": "1730368364411640",
     "name": "Plant Briar Elf Warrior",
     "size": "normal",
     "level": 9,
@@ -26753,15 +25827,13 @@
     "basename": "Plant-Briar-Elf-Warrior"
   },
   {
-    "id": 470,
-    
-    
+    "id": "1730368364411514",
     "name": "Podling",
     "size": "normal",
     "level": 3,
     "levelOrdinal": "3rd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "plant",
     "initiative": 9,
     "actions": [
@@ -26796,9 +25868,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 471,
-    
-    
+    "id": "1730368364411512",
     "name": "Poison Dandelion",
     "size": "double-strength",
     "level": 6,
@@ -26845,9 +25915,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 472,
-    
-    
+    "id": "1730368364411106",
     "name": "Prismatic Ogre Mage",
     "size": "large",
     "level": 9,
@@ -26931,15 +25999,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 473,
-    
-    
+    "id": "1730368364411190",
     "name": "Purple Larva",
     "size": "normal",
     "level": 8,
     "levelOrdinal": "8th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 9,
     "actions": [
@@ -26974,9 +26040,7 @@
     "basename": "Purple-Larva"
   },
   {
-    "id": 474,
-    
-    
+    "id": "1730368364411122",
     "name": "Purple Worm",
     "size": "huge",
     "level": 8,
@@ -27062,9 +26126,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 475,
-    
-    
+    "id": "1730368364411739",
     "name": "Pyroclastic Salamander",
     "size": "huge",
     "level": 12,
@@ -27123,9 +26185,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 476,
-    
-    
+    "id": "1730368364411888",
     "name": "Rakshasa",
     "size": "double-strength",
     "level": 8,
@@ -27185,9 +26245,7 @@
     "source": "13th age"
   },
   {
-    "id": 477,
-    
-    
+    "id": "1730368364411788",
     "name": "Rat Swarm",
     "size": "normal",
     "level": 1,
@@ -27233,9 +26291,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 478,
-    
-    
+    "id": "1730368364411927",
     "name": "Ravenous Bumoorah",
     "size": "normal",
     "level": 5,
@@ -27279,15 +26335,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 479,
-    
-    
+    "id": "1730368364411220",
     "name": "Ravenous Cannibal",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 9,
     "actions": [
@@ -27316,15 +26370,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 480,
-    
-    
+    "id": "1730368364411575",
     "name": "Razor Shark",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 6,
     "actions": [
@@ -27363,9 +26415,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 481,
-    
-    
+    "id": "1730368364411825",
     "name": "Reaver",
     "size": "double-strength",
     "level": 7,
@@ -27418,9 +26468,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 482,
-    
-    
+    "id": "1730368364411372",
     "name": "Redcap",
     "size": "normal",
     "level": 3,
@@ -27474,9 +26522,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 483,
-    
-    
+    "id": "1730368364411511",
     "name": "Redscale Fiery Vanquisher",
     "size": "normal",
     "level": 7,
@@ -27522,9 +26568,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 484,
-    
-    
+    "id": "1730368364411491",
     "name": "Redscale Flamewing",
     "size": "normal",
     "level": 12,
@@ -27600,9 +26644,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 485,
-    
-    
+    "id": "1730368364411535",
     "name": "Remorhaz Queen",
     "size": "large",
     "level": 11,
@@ -27670,9 +26712,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 486,
-    
-    
+    "id": "1730368364411195",
     "name": "Resurgent Phoenix",
     "size": "large",
     "level": 5,
@@ -27761,15 +26801,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 487,
-    
-    
+    "id": "1730368364411399",
     "name": "River Devil Minion",
     "size": "normal",
     "level": 13,
     "levelOrdinal": "13th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "devil",
     "initiative": 24,
     "actions": [
@@ -27804,9 +26842,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 488,
-    
-    
+    "id": "1730368364411547",
     "name": "River Devil",
     "size": "normal",
     "level": 10,
@@ -27868,9 +26904,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 489,
-    
-    
+    "id": "1730368364411936",
     "name": "River Nymph (Naiad)",
     "size": "double-strength",
     "level": 3,
@@ -27924,9 +26958,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 490,
-    
-    
+    "id": "1730368364411627",
     "name": "River-Spirit",
     "size": "double-strength",
     "level": 7,
@@ -27988,9 +27020,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 491,
-    
-    
+    "id": "1730368364411771",
     "name": "Royal Bearer",
     "size": "normal",
     "level": 10,
@@ -28046,9 +27076,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 492,
-    
-    
+    "id": "1730368364411946",
     "name": "Rust Monster Obliterator",
     "size": "normal",
     "level": 5,
@@ -28106,9 +27134,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 493,
-    
-    
+    "id": "1730368364411527",
     "name": "Rust Monster",
     "size": "normal",
     "level": 3,
@@ -28162,9 +27188,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 494,
-    
-    
+    "id": "1730368364411232",
     "name": "Sadsack",
     "size": "normal",
     "level": 2,
@@ -28212,9 +27236,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 495,
-    
-    
+    "id": "1730368364411685",
     "name": "Sahuagin Glow Priest",
     "size": "normal",
     "level": 5,
@@ -28272,9 +27294,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 496,
-    
-    
+    "id": "1730368364411776",
     "name": "Sahuagin Mutant",
     "size": "large",
     "level": 6,
@@ -28334,9 +27354,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 497,
-    
-    
+    "id": "1730368364411732",
     "name": "Sahuagin Raider",
     "size": "normal",
     "level": 2,
@@ -28394,9 +27412,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 498,
-    
-    
+    "id": "1730368364411680",
     "name": "Sahuagin",
     "size": "normal",
     "level": 5,
@@ -28446,9 +27462,7 @@
     "source": "13th age"
   },
   {
-    "id": 499,
-    
-    
+    "id": "1730368364411394",
     "name": "Screaming Hoardling",
     "size": "normal",
     "level": 7,
@@ -28514,9 +27528,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 500,
-    
-    
+    "id": "1730368364411623",
     "name": "Screaming Skull",
     "size": "normal",
     "level": 4,
@@ -28550,15 +27562,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 501,
-    
-    
+    "id": "1730368364411429",
     "name": "Scuttling Star-Mask",
     "size": "normal",
     "level": 5,
     "levelOrdinal": "5th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "aberration",
     "initiative": 11,
     "actions": [
@@ -28591,9 +27601,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 502,
-    
-    
+    "id": "1730368364411384",
     "name": "Sea Nymph (Nereid)",
     "size": "double-strength",
     "level": 5,
@@ -28638,9 +27646,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 503,
-    
-    
+    "id": "1730368364411429",
     "name": "Seven-Headed Hydra",
     "size": "huge",
     "level": 7,
@@ -28700,9 +27706,7 @@
     "basename": "Seven-Headed-Hydra"
   },
   {
-    "id": 504,
-    
-    
+    "id": "1730368364411312",
     "name": "Shadow Dragon",
     "size": "large",
     "level": 8,
@@ -28768,9 +27772,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 505,
-    
-    
+    "id": "1730368364411875",
     "name": "Shadow Mongoose Destroyer of Fate",
     "size": "normal",
     "level": 4,
@@ -28832,9 +27834,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 506,
-    
-    
+    "id": "1730368364411418",
     "name": "Shadow Mongoose Subverter of Fate",
     "size": "normal",
     "level": 6,
@@ -28906,9 +27906,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 507,
-    
-    
+    "id": "1730368364411213",
     "name": "Shadow Mongoose Thief of Fate",
     "size": "normal",
     "level": 8,
@@ -28980,15 +27978,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 508,
-    
-    
+    "id": "1730368364411908",
     "name": "Shadow Thief",
     "size": "normal",
     "level": 8,
     "levelOrdinal": "8th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "dragon",
     "initiative": 17,
     "actions": [
@@ -29027,9 +28023,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 509,
-    
-    
+    "id": "1730368364411704",
     "name": "Skeletal Hound",
     "size": "normal",
     "level": 1,
@@ -29074,9 +28068,7 @@
     "source": "13th age"
   },
   {
-    "id": 510,
-    
-    
+    "id": "1730368364411146",
     "name": "Skeleton Archer",
     "size": "normal",
     "level": 1,
@@ -29111,9 +28103,7 @@
     "source": "13th age"
   },
   {
-    "id": 511,
-    
-    
+    "id": "1730368364411578",
     "name": "Skeleton Warrior",
     "size": "normal",
     "level": 2,
@@ -29144,9 +28134,7 @@
     "source": "13th age"
   },
   {
-    "id": 512,
-    
-    
+    "id": "1730368364411598",
     "name": "Skin Devil",
     "size": "weakling",
     "level": 2,
@@ -29192,9 +28180,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 513,
-    
-    
+    "id": "1730368364411458",
     "name": "Skull Crab Xombie",
     "size": "normal",
     "level": 2,
@@ -29248,9 +28234,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 514,
-    
-    
+    "id": "1730368364411161",
     "name": "Skull of the Beast",
     "size": "large",
     "level": 9,
@@ -29300,9 +28284,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 515,
-    
-    
+    "id": "1730368364411572",
     "name": "Slaughter Pit Shade",
     "size": "large",
     "level": 4,
@@ -29342,9 +28324,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 516,
-    
-    
+    "id": "1730368364411330",
     "name": "Slime-Skull",
     "size": "normal",
     "level": 3,
@@ -29400,9 +28380,7 @@
     "basename": "Slime-Skull"
   },
   {
-    "id": 517,
-    
-    
+    "id": "1730368364411582",
     "name": "Small Air Elemental",
     "size": "normal",
     "level": 3,
@@ -29446,9 +28424,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 518,
-    
-    
+    "id": "1730368364411452",
     "name": "Small Earth Elemental",
     "size": "normal",
     "level": 3,
@@ -29490,9 +28466,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 519,
-    
-    
+    "id": "1730368364411851",
     "name": "Small Fire Elemental",
     "size": "normal",
     "level": 3,
@@ -29526,9 +28500,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 520,
-    
-    
+    "id": "1730368364411755",
     "name": "Small Water Elemental",
     "size": "normal",
     "level": 3,
@@ -29568,9 +28540,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 521,
-    
-    
+    "id": "1730368364411332",
     "name": "Smoke Devil",
     "size": "normal",
     "level": 5,
@@ -29638,15 +28608,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 522,
-    
-    
+    "id": "1730368364411264",
     "name": "Smoke Minions",
     "size": "normal",
     "level": 12,
     "levelOrdinal": "12th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "construct",
     "initiative": 13,
     "actions": [
@@ -29671,9 +28639,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 523,
-    
-    
+    "id": "1730368364411513",
     "name": "Snowy Owlbear Cub",
     "size": "weakling",
     "level": 3,
@@ -29711,9 +28677,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 524,
-    
-    
+    "id": "1730368364411419",
     "name": "Snowy Owlbear",
     "size": "large",
     "level": 3,
@@ -29761,9 +28725,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 525,
-    
-    
+    "id": "1730368364411758",
     "name": "Solar Phoenix",
     "size": "large",
     "level": 12,
@@ -29851,9 +28813,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 526,
-    
-    
+    "id": "1730368364411456",
     "name": "Soul Flenser",
     "size": "normal",
     "level": 9,
@@ -29929,9 +28889,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 527,
-    
-    
+    "id": "1730368364411903",
     "name": "Sparkscale Naga",
     "size": "large",
     "level": 6,
@@ -30003,15 +28961,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 528,
-    
-    
+    "id": "1730368364411295",
     "name": "Spawn of the Master",
     "size": "normal",
     "level": 10,
     "levelOrdinal": "10th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 16,
     "vulnerability": "holy",
@@ -30035,9 +28991,7 @@
     "basename": "Spawn-of-the-Master"
   },
   {
-    "id": 529,
-    
-    
+    "id": "1730368364411668",
     "name": "Specter",
     "size": "double-strength",
     "level": 6,
@@ -30081,9 +29035,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 530,
-    
-    
+    "id": "1730368364411998",
     "name": "Spell Golem Mage Hunter",
     "size": "large",
     "level": 9,
@@ -30143,9 +29095,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 531,
-    
-    
+    "id": "1730368364411607",
     "name": "Spell Golem Warder",
     "size": "normal",
     "level": 6,
@@ -30207,9 +29157,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 532,
-    
-    
+    "id": "1730368364411280",
     "name": "Spider Mount",
     "size": "normal",
     "level": 6,
@@ -30247,9 +29195,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 533,
-    
-    
+    "id": "1730368364411502",
     "name": "Spiketail",
     "size": "large",
     "level": 4,
@@ -30295,9 +29241,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 534,
-    
-    
+    "id": "1730368364411614",
     "name": "Spinneret Doxy",
     "size": "normal",
     "level": 3,
@@ -30341,9 +29285,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 535,
-    
-    
+    "id": "1730368364411414",
     "name": "Splotchcap",
     "size": "normal",
     "level": 2,
@@ -30397,9 +29339,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 536,
-    
-    
+    "id": "1730368364411462",
     "name": "Sporrior",
     "size": "normal",
     "level": 2,
@@ -30453,9 +29393,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 537,
-    
-    
+    "id": "1730368364411317",
     "name": "Spriggan",
     "size": "normal",
     "level": 6,
@@ -30527,9 +29465,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 538,
-    
-    
+    "id": "1730368364411416",
     "name": "Sprite",
     "size": "normal",
     "level": 4,
@@ -30575,15 +29511,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 539,
-    
-    
+    "id": "1730368364411787",
     "name": "Squib Swarm",
     "size": "normal",
     "level": 0,
     "levelOrdinal": "0th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 0,
     "actions": [
@@ -30608,9 +29542,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 540,
-    
-    
+    "id": "1730368364411283",
     "name": "Stalker",
     "size": "large",
     "level": 5,
@@ -30662,9 +29594,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 541,
-    
-    
+    "id": "1730368364412320",
     "name": "Star-Brain Dungeon Heart",
     "size": "huge",
     "level": 14,
@@ -30730,9 +29660,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 542,
-    
-    
+    "id": "1730368364412923",
     "name": "Star-Mask Brain Zealot",
     "size": "normal",
     "level": 12,
@@ -30766,9 +29694,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 543,
-    
-    
+    "id": "1730368364412883",
     "name": "Star-Mask Brainbuster",
     "size": "normal",
     "level": 7,
@@ -30812,9 +29738,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 544,
-    
-    
+    "id": "1730368364412531",
     "name": "Star-Mask Brute",
     "size": "large",
     "level": 7,
@@ -30858,9 +29782,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 545,
-    
-    
+    "id": "1730368364412886",
     "name": "Star-Mask Cult Leader",
     "size": "double-strength",
     "level": 6,
@@ -30898,9 +29820,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 546,
-    
-    
+    "id": "1730368364412453",
     "name": "Star-Mask Cult Puppet",
     "size": "normal",
     "level": 6,
@@ -30942,9 +29862,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 547,
-    
-    
+    "id": "1730368364412431",
     "name": "Star-Mask Cultist",
     "size": "normal",
     "level": 5,
@@ -30998,15 +29916,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 548,
-    
-    
+    "id": "1730368364412663",
     "name": "Star-Mask Floating Brain",
     "size": "normal",
     "level": 10,
     "levelOrdinal": "10th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "aberration",
     "initiative": 14,
     "actions": [
@@ -31049,9 +29965,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 549,
-    
-    
+    "id": "1730368364412192",
     "name": "Star Mask Omnipotent Brain",
     "size": "huge",
     "level": 12,
@@ -31129,9 +30043,7 @@
     "basename": "Star-Mask-Omnipotent-Brain"
   },
   {
-    "id": 550,
-    
-    
+    "id": "1730368364412847",
     "name": "Stirge",
     "size": "normal",
     "level": 0,
@@ -31173,15 +30085,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 551,
-    
-    
+    "id": "1730368364412613",
     "name": "Stirgeling",
     "size": "normal",
     "level": 0,
     "levelOrdinal": "0th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 2,
     "actions": [
@@ -31226,9 +30136,7 @@
     "basename": "Stirgeling"
   },
   {
-    "id": 552,
-    
-    
+    "id": "1730368364412610",
     "name": "Stone Giant",
     "size": "large",
     "level": 8,
@@ -31278,9 +30186,7 @@
     "source": "13th age"
   },
   {
-    "id": 553,
-    
-    
+    "id": "1730368364412188",
     "name": "Stone Golem",
     "size": "large",
     "level": 8,
@@ -31336,9 +30242,7 @@
     "source": "13th age"
   },
   {
-    "id": 554,
-    
-    
+    "id": "1730368364412408",
     "name": "Storm Giant",
     "size": "huge",
     "level": 10,
@@ -31418,15 +30322,13 @@
     "source": "13th age"
   },
   {
-    "id": 555,
-    
-    
+    "id": "1730368364412746",
     "name": "Summoned Ghoul",
     "size": "normal",
     "level": 7,
     "levelOrdinal": "7th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 14,
     "vulnerability": "holy",
@@ -31446,9 +30348,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 556,
-    
-    
+    "id": "1730368364412294",
     "name": "Sunder Wraith",
     "size": "normal",
     "level": 8,
@@ -31503,9 +30403,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 557,
-    
-    
+    "id": "1730368364412347",
     "name": "Swarm Prince",
     "size": "normal",
     "level": 5,
@@ -31565,9 +30463,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 558,
-    
-    
+    "id": "1730368364412236",
     "name": "Swarm of Bats",
     "size": "normal",
     "level": 1,
@@ -31620,9 +30516,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 559,
-    
-    
+    "id": "1730368364412876",
     "name": "Swarming Maw",
     "size": "normal",
     "level": 2,
@@ -31662,9 +30556,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 560,
-    
-    
+    "id": "1730368364412950",
     "name": "Swaysong Naga",
     "size": "large",
     "level": 5,
@@ -31736,9 +30628,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 561,
-    
-    
+    "id": "1730368364412188",
     "name": "Taranar Avalanche",
     "size": "huge",
     "level": 6,
@@ -31773,9 +30663,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 562,
-    
-    
+    "id": "1730368364412342",
     "name": "Taranar Bugler",
     "size": "large",
     "level": 5,
@@ -31838,9 +30726,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 563,
-    
-    
+    "id": "1730368364412672",
     "name": "Taranar Coryph\u00e9e",
     "size": "large",
     "level": 3,
@@ -31885,9 +30771,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 564,
-    
-    
+    "id": "1730368364412141",
     "name": "Taranar Great Stone",
     "size": "huge",
     "level": 8,
@@ -31960,9 +30844,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 565,
-    
-    
+    "id": "1730368364412328",
     "name": "Taranar Hunter",
     "size": "large",
     "level": 4,
@@ -32013,9 +30895,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 566,
-    
-    
+    "id": "1730368364412375",
     "name": "Taranar Warrior",
     "size": "large",
     "level": 8,
@@ -32060,9 +30940,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 568,
-    
-    
+    "id": "1730368364412542",
     "name": "Tarrasque",
     "size": "huge",
     "level": 15,
@@ -32202,9 +31080,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 569,
-    
-    
+    "id": "1730368364412169",
     "name": "Temple Lion",
     "size": "large",
     "level": 7,
@@ -32288,9 +31164,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 570,
-    
-    
+    "id": "1730368364412709",
     "name": "Tempter",
     "size": "double-strength",
     "level": 7,
@@ -32348,9 +31222,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 571,
-    
-    
+    "id": "1730368364412705",
     "name": "The Final Devil",
     "size": "huge",
     "level": 13,
@@ -32442,15 +31314,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 572,
-    
-    
+    "id": "1730368364412648",
     "name": "The Flensed",
     "size": "normal",
     "level": 9,
     "levelOrdinal": "9th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "aberration",
     "initiative": 12,
     "actions": [
@@ -32479,9 +31349,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 573,
-    
-    
+    "id": "1730368364412539",
     "name": "The Purple Dragon (Adventurer, Dragon form)",
     "size": "huge",
     "level": 4,
@@ -32607,9 +31475,7 @@
     "basename": "The-Purple-Dragon-Adventurer-Dragon-Form"
   },
   {
-    "id": 574,
-    
-    
+    "id": "1730368364412839",
     "name": "The Purple Dragon (Adventurer, Human form)",
     "size": "normal",
     "level": 4,
@@ -32721,9 +31587,7 @@
     "basename": "The-Purple-Dragon-Adventurer-Human-Form"
   },
   {
-    "id": 575,
-    
-    
+    "id": "1730368364412452",
     "name": "The Purple Dragon (Champion, Dragon Form)",
     "size": "huge",
     "level": 8,
@@ -32857,9 +31721,7 @@
     "basename": "The-Purple-Dragon-Champion-Dragon-Form"
   },
   {
-    "id": 576,
-    
-    
+    "id": "1730368364412707",
     "name": "The Purple Dragon (Champion, Human Form)",
     "size": "normal",
     "level": 8,
@@ -32967,9 +31829,7 @@
     "basename": "The-Purple-Dragon-Champion-Human-Form"
   },
   {
-    "id": 577,
-    
-    
+    "id": "1730368364412790",
     "name": "The Purple Dragon (Epic, Dragon Form)",
     "size": "huge",
     "level": 12,
@@ -33103,9 +31963,7 @@
     "basename": "The-Purple-Dragon-Epic-Dragon-Form"
   },
   {
-    "id": 578,
-    
-    
+    "id": "1730368364412326",
     "name": "The Purple Dragon (Epic, Human Form)",
     "size": "normal",
     "level": 12,
@@ -33225,15 +32083,13 @@
     "basename": "The-Purple-Dragon-Epic-Human-Form"
   },
   {
-    "id": 579,
-    
-    
+    "id": "1730368364412319",
     "name": "The Rascal",
     "size": "normal",
     "level": 3,
     "levelOrdinal": "3rd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 9,
     "actions": [
@@ -33274,15 +32130,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 580,
-    
-    
+    "id": "1730368364412353",
     "name": "The Woven",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 6,
     "actions": [
@@ -33303,9 +32157,7 @@
     "basename": "The-Woven"
   },
   {
-    "id": 581,
-    
-    
+    "id": "1730368364412361",
     "name": "Thunder Bat",
     "size": "normal",
     "level": 5,
@@ -33371,15 +32223,13 @@
     "source": "Bestiary"
   },
   {
-    "id": 582,
-    
-    
+    "id": "1730368364412640",
     "name": "Treant Avenger",
     "size": "normal",
     "level": 12,
     "levelOrdinal": "12th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "plant",
     "initiative": 15,
     "vulnerability": "fire",
@@ -33411,9 +32261,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 583,
-    
-    
+    "id": "1730368364412392",
     "name": "Treant Titan",
     "size": "large",
     "level": 10,
@@ -33478,9 +32326,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 584,
-    
-    
+    "id": "1730368364412586",
     "name": "Trihorn",
     "size": "large",
     "level": 4,
@@ -33516,9 +32362,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 585,
-    
-    
+    "id": "1730368364412505",
     "name": "Trog Chanter",
     "size": "normal",
     "level": 3,
@@ -33564,15 +32408,13 @@
     "source": "13th age"
   },
   {
-    "id": 586,
-    
-    
+    "id": "1730368364412621",
     "name": "Trog Underling",
     "size": "normal",
     "level": 8,
     "levelOrdinal": "8th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 10,
     "actions": [
@@ -33607,9 +32449,7 @@
     "source": "13th age"
   },
   {
-    "id": 587,
-    
-    
+    "id": "1730368364412133",
     "name": "Trog",
     "size": "normal",
     "level": 2,
@@ -33649,9 +32489,7 @@
     "source": "13th age"
   },
   {
-    "id": 588,
-    
-    
+    "id": "1730368364412319",
     "name": "Troll",
     "size": "large",
     "level": 4,
@@ -33695,9 +32533,7 @@
     "source": "13th age"
   },
   {
-    "id": 589,
-    
-    
+    "id": "1730368364412654",
     "name": "Twisted Soul",
     "size": "double-strength",
     "level": 7,
@@ -33746,9 +32582,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 590,
-    
-    
+    "id": "1730368364412230",
     "name": "Tyrant Lizard",
     "size": "large",
     "level": 7,
@@ -33798,9 +32632,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 591,
-    
-    
+    "id": "1730368364412549",
     "name": "Umluppuk",
     "size": "huge",
     "level": 7,
@@ -33862,9 +32694,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 592,
-    
-    
+    "id": "1730368364412915",
     "name": "Undead Briar Elf Assassin",
     "size": "normal",
     "level": 11,
@@ -33930,9 +32760,7 @@
     "basename": "Undead-Briar-Elf-Assassin"
   },
   {
-    "id": 593,
-    
-    
+    "id": "1730368364412677",
     "name": "Undead Briar Elf Slayer",
     "size": "normal",
     "level": 6,
@@ -33994,9 +32822,7 @@
     "basename": "Undead-Briar-Elf-Slayer"
   },
   {
-    "id": 594,
-    
-    
+    "id": "1730368364412238",
     "name": "Undead Briar Elf Sorcerer",
     "size": "normal",
     "level": 10,
@@ -34068,9 +32894,7 @@
     "basename": "Undead-Briar-Elf-Sorcerer"
   },
   {
-    "id": 595,
-    
-    
+    "id": "1730368364412516",
     "name": "Undead Briar Elf Sovereign",
     "size": "double-strength",
     "level": 12,
@@ -34148,9 +32972,7 @@
     "basename": "Undead-Briar-Elf-Sovereign"
   },
   {
-    "id": 596,
-    
-    
+    "id": "1730368364412571",
     "name": "Undead Briar Elf Stalker",
     "size": "normal",
     "level": 8,
@@ -34216,9 +33038,7 @@
     "basename": "Undead-Briar-Elf-Stalker"
   },
   {
-    "id": 597,
-    
-    
+    "id": "1730368364412280",
     "name": "Undead Briar Elf Warrior",
     "size": "normal",
     "level": 9,
@@ -34284,15 +33104,13 @@
     "basename": "Undead-Briar-Elf-Warrior"
   },
   {
-    "id": 598,
-    
-    
+    "id": "1730368364412832",
     "name": "Undead Icon Cultist",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "humanoid",
     "initiative": 6,
     "actions": [
@@ -34337,9 +33155,7 @@
     "basename": "Undead-Icon-Cultist"
   },
   {
-    "id": 599,
-    
-    
+    "id": "1730368364412305",
     "name": "Vampire Spawn",
     "size": "normal",
     "level": 6,
@@ -34374,9 +33190,7 @@
     "source": "13th age"
   },
   {
-    "id": 600,
-    
-    
+    "id": "1730368364412540",
     "name": "Vampire",
     "size": "normal",
     "level": 10,
@@ -34429,9 +33243,7 @@
     "source": "13th age"
   },
   {
-    "id": 601,
-    
-    
+    "id": "1730368364412761",
     "name": "Venomous Snake",
     "size": "normal",
     "level": 1,
@@ -34487,9 +33299,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 602,
-    
-    
+    "id": "1730368364412890",
     "name": "Void Beast",
     "size": "normal",
     "level": 6,
@@ -34523,9 +33333,7 @@
     "basename": "Void-Beast"
   },
   {
-    "id": 603,
-    
-    
+    "id": "1730368364412898",
     "name": "Void Dragon (Black)",
     "size": "huge",
     "level": 7,
@@ -34585,9 +33393,7 @@
     "basename": "Void-Dragon"
   },
   {
-    "id": 604,
-    
-    
+    "id": "1730368364412431",
     "name": "Void Phoenix",
     "size": "large",
     "level": 8,
@@ -34669,9 +33475,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 605,
-    
-    
+    "id": "1730368364412560",
     "name": "Volcanic Dragon (Red)",
     "size": "large",
     "level": 7,
@@ -34744,9 +33548,7 @@
     "basename": "Volcanic-Dragon"
   },
   {
-    "id": 606,
-    
-    
+    "id": "1730368364412898",
     "name": "Vrock (Vulture Demon)",
     "size": "normal",
     "level": 6,
@@ -34792,9 +33594,7 @@
     "basename": "Vrock"
   },
   {
-    "id": 607,
-    
-    
+    "id": "1730368364412965",
     "name": "Warped Beast",
     "size": "normal",
     "level": 5,
@@ -34878,9 +33678,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 608,
-    
-    
+    "id": "1730368364412116",
     "name": "Watch Skull",
     "size": "normal",
     "level": 1,
@@ -34938,9 +33736,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 609,
-    
-    
+    "id": "1730368364412227",
     "name": "Water Elemental",
     "size": "normal",
     "level": 5,
@@ -34984,9 +33780,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 610,
-    
-    
+    "id": "1730368364412593",
     "name": "Waterhorse",
     "size": "double-strength",
     "level": 6,
@@ -35054,15 +33848,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 611,
-    
-    
+    "id": "1730368364412255",
     "name": "Weaver-Swarm",
     "size": "normal",
     "level": 3,
     "levelOrdinal": "3rd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 9,
     "actions": [
@@ -35099,9 +33891,7 @@
     "basename": "Weaver-Swarm"
   },
   {
-    "id": 612,
-    
-    
+    "id": "1730368364412722",
     "name": "Wendigo Spirit",
     "size": "large",
     "level": 5,
@@ -35173,9 +33963,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 613,
-    
-    
+    "id": "1730368364412549",
     "name": "Werebear",
     "size": "large",
     "level": 5,
@@ -35257,9 +34045,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 614,
-    
-    
+    "id": "1730368364412263",
     "name": "Wereboar",
     "size": "double-strength",
     "level": 4,
@@ -35337,9 +34123,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 615,
-    
-    
+    "id": "1730368364412125",
     "name": "Wererat",
     "size": "normal",
     "level": 2,
@@ -35425,9 +34209,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 616,
-    
-    
+    "id": "1730368364412840",
     "name": "Weretiger",
     "size": "large",
     "level": 6,
@@ -35509,9 +34291,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 617,
-    
-    
+    "id": "1730368364412584",
     "name": "Werewolf",
     "size": "normal",
     "level": 3,
@@ -35581,9 +34361,7 @@
     "source": "13 True Ways"
   },
   {
-    "id": 618,
-    
-    
+    "id": "1730368364412490",
     "name": "Whispering Prophet",
     "size": "normal",
     "level": 5,
@@ -35645,9 +34423,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 619,
-    
-    
+    "id": "1730368364412377",
     "name": "White Dragon Hatchling",
     "size": "normal",
     "level": 1,
@@ -35700,9 +34476,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 620,
-    
-    
+    "id": "1730368364412564",
     "name": "Whitescale Blighter",
     "size": "normal",
     "level": 8,
@@ -35775,9 +34549,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 621,
-    
-    
+    "id": "1730368364412996",
     "name": "Whitescale Rime Walker",
     "size": "normal",
     "level": 5,
@@ -35831,15 +34603,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 622,
-    
-    
+    "id": "1730368364412320",
     "name": "Wibble",
     "size": "normal",
     "level": 1,
     "levelOrdinal": "1st",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "construct",
     "initiative": 1,
     "actions": [
@@ -35876,9 +34646,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 623,
-    
-    
+    "id": "1730368364412332",
     "name": "Wight",
     "size": "normal",
     "level": 4,
@@ -35915,9 +34683,7 @@
     "source": "13th age"
   },
   {
-    "id": 624,
-    
-    
+    "id": "1730368364412135",
     "name": "Wild Dryad",
     "size": "double-strength",
     "level": 3,
@@ -35972,9 +34738,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 625,
-    
-    
+    "id": "1730368364412789",
     "name": "Wild Naiad",
     "size": "double-strength",
     "level": 5,
@@ -36028,9 +34792,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 626,
-    
-    
+    "id": "1730368364412866",
     "name": "Wild Nereid",
     "size": "double-strength",
     "level": 7,
@@ -36067,9 +34829,7 @@
     "basename": "Wild-Nereid"
   },
   {
-    "id": 627,
-    
-    
+    "id": "1730368364412160",
     "name": "Wild Oread",
     "size": "double-strength",
     "level": 6,
@@ -36116,9 +34876,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 628,
-    
-    
+    "id": "1730368364412660",
     "name": "Winter Beast",
     "size": "large",
     "level": 6,
@@ -36164,9 +34922,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 629,
-    
-    
+    "id": "1730368364412690",
     "name": "Wolf",
     "size": "normal",
     "level": 1,
@@ -36196,9 +34952,7 @@
     "source": "13th age"
   },
   {
-    "id": 630,
-    
-    
+    "id": "1730368364412804",
     "name": "Wood Nymph (Dryad)",
     "size": "double-strength",
     "level": 2,
@@ -36261,15 +35015,13 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 631,
-    
-    
+    "id": "1730368364412248",
     "name": "Wraith Bat",
     "size": "normal",
     "level": 9,
     "levelOrdinal": "9th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 14,
     "actions": [
@@ -36316,9 +35068,7 @@
     "source": "Bestiary"
   },
   {
-    "id": 632,
-    
-    
+    "id": "1730368364412983",
     "name": "Wraith",
     "size": "normal",
     "level": 5,
@@ -36375,9 +35125,7 @@
     "source": "13th age"
   },
   {
-    "id": 633,
-    
-    
+    "id": "1730368364412619",
     "name": "Wyvern",
     "size": "large",
     "level": 5,
@@ -36425,15 +35173,13 @@
     "source": "13th age"
   },
   {
-    "id": 634,
-    
-    
+    "id": "1730368364412649",
     "name": "Xombie Egg Swarm",
     "size": "normal",
     "level": 2,
     "levelOrdinal": "2nd",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "aberration",
     "initiative": 5,
     "actions": [
@@ -36478,9 +35224,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 635,
-    
-    
+    "id": "1730368364412727",
     "name": "Xombie Spiders",
     "size": "normal",
     "level": 3,
@@ -36530,9 +35274,7 @@
     "source": "Bestiary 2"
   },
   {
-    "id": 636,
-    
-    
+    "id": "1730368364412851",
     "name": "Zealot's Warbanner",
     "size": "double-strength",
     "level": 3,
@@ -36590,9 +35332,7 @@
     "basename": "Zealots-Warbanner"
   },
   {
-    "id": 637,
-    
-    
+    "id": "1730368364412783",
     "name": "Zombie Beast",
     "size": "large",
     "level": 2,
@@ -36640,15 +35380,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 638,
-    
-    
+    "id": "1730368364412348",
     "name": "Zombie Shuffler",
     "size": "normal",
     "level": 1,
     "levelOrdinal": "1st",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 0,
     "vulnerability": "holy",
@@ -36680,15 +35418,13 @@
     "source": "13th age"
   },
   {
-    "id": 639,
-    
-    
+    "id": "1730368364412613",
     "name": "Zombie of the Silver Rose",
     "size": "normal",
     "level": 4,
     "levelOrdinal": "4th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "undead",
     "initiative": 7,
     "actions": [
@@ -36741,15 +35477,13 @@
     "source": "13 True Ways"
   },
   {
-    "id": 640,
-    
-    
+    "id": "1730368364412513",
     "name": "iron Sea Shark",
     "size": "double-strength",
     "level": 5,
     "levelOrdinal": "5th",
     "role": "mook",
-    "mook": "yes",
+    "mook": true,
     "type": "beast",
     "initiative": 6,
     "actions": [

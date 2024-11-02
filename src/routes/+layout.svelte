@@ -8,7 +8,7 @@
     import type {ModalComponent} from "@skeletonlabs/skeleton";
     import ModalSaveBattleForm from "$lib/components/builder/utils/ModalSaveBattleForm.svelte";
     import ModalImportBattleList from "$lib/components/builder/utils/ModalImportBattleList.svelte";
-    import {battles, use2E} from "$lib/stores.ts";
+    import {use2E} from "$lib/stores.ts";
     import {
         AppBar,
         LightSwitch,
@@ -35,7 +35,7 @@
             slotTrail="place-content-end">
         <svelte:fragment slot="lead">
 			<span>
-				<i class="fa-solid fa-skull"/>	13th Skeleton
+                <i class="fa-solid fa-skull"></i>	13th Skeleton
 			</span>
         </svelte:fragment>
 

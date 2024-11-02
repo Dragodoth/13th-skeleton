@@ -1,8 +1,14 @@
 <script lang="ts">
-    import { getModalStore, type ModalSettings } from "@skeletonlabs/skeleton";
-    import { battles } from "$lib/stores.ts";
+    import {getModalStore, type ModalSettings} from "@skeletonlabs/skeleton";
+    import {battles} from "$lib/stores.ts";
 
-    export let battleId: string;
+    interface Props {
+        battleId: string;
+    }
+
+    const {
+        battleId
+    }: Props = $props();
 
     const modalStore = getModalStore();
 
@@ -26,7 +32,7 @@
 </script>
 
 
-<button type="button" class="btn btn-sm variant-filled-error" on:click={handleRemoveCombatantsClick}>
-    <span><i class="fa-solid fa-trash"/></span>
+<button type="button" class="btn btn-sm variant-filled-error" onclick={handleRemoveCombatantsClick}>
+    <span><i class="fa-solid fa-trash"></i></span>
     <span>Delete all Monsters</span>
 </button>

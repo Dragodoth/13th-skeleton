@@ -1,5 +1,17 @@
 <script lang="ts">
-    export let traits, divCSS, blockCSS;
+    import type {Trait} from "$lib/types.ts";
+
+    interface Props {
+        traits: Trait[],
+        divCSS: string;
+        blockCSS: string;
+    }
+
+    const {
+        traits,
+        divCSS,
+        blockCSS
+    }: Props = $props();
 </script>
 
 <ul class="list">

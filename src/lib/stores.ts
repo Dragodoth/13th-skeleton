@@ -110,28 +110,29 @@ function createBattles() {
 // Combatant functions
 
 // 4. Add a new combatant or update existing combatant count in a battle
-    const addCombatant = (battleId: string, newCombatant: Combatant | Monster): void => {
+    const addCombatant = (battleId: string, newCombatant: Combatant | Monster | undefined): void => {
         update((currentBattles: Battle[]) => {
+            if (!newCombatant) return currentBattles;
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
                 const existingCombatant = battle.combatants.find(c => c.id === newCombatant.id);
 
                 const updatedCombatants: Combatant[] = existingCombatant
-                    ? battle.combatants.map(c =>
-                        c.id === newCombatant.id
+                    ? battle.combatants.map(combatant =>
+                        combatant.id === newCombatant.id
                             ? {
-                                ...c,
-                                count: c.count + 1,
-                                currentHP: [...c.currentHP, $state(newCombatant.hp)],
+                                ...combatant,
+                                count: combatant.count + 1,
+                                currentHP: combatant.mook ? [combatant.currentHP[0] + newCombatant.hp] : [...combatant.currentHP, newCombatant.hp],
                                 cost: 0
                             }
-                            : c
+                            : combatant
                     )
                     : [...battle.combatants, {
                         ...newCombatant,
                         count: 1,
-                        currentHP: [$state(newCombatant.hp)],
+                        currentHP: [newCombatant.hp],
                         cost: 0
                     }];
 
@@ -141,54 +142,69 @@ function createBattles() {
     };
 
 // 5. Remove a combatant by index in a battle
-    const removeCombatant = (battleId: string, combatantIndex: number): void => {
+    const removeCombatant = (battleId: string, combatantId: string | undefined): void => {
         update((currentBattles: Battle[]) => {
+            if (!combatantId) return currentBattles;
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
-                const existingCombatants = battle.combatants;
-                const existingCombatant = existingCombatants[combatantIndex];
+                const existingCombatant = battle.combatants.find(c => c.id === combatantId);
                 if (!existingCombatant) return battle;
 
                 let updatedCombatants: Combatant[];
 
                 if (existingCombatant.count > 1) {
-                    existingCombatant.count--;
-                    existingCombatant.currentHP.pop();
-                    updatedCombatants = [...existingCombatants];
+                    updatedCombatants = battle.combatants.map((combatant) =>
+                        combatant.id === combatantId
+                            ? {
+                                ...combatant,
+                                count: combatant.count - 1,
+                                currentHP: combatant.mook ? [combatant.currentHP[0] - combatant.hp] : combatant.currentHP.slice(0, -1)
+                            }
+                            : combatant
+                    );
                 } else {
-                    updatedCombatants = existingCombatants.slice(0, combatantIndex).concat(existingCombatants.slice(combatantIndex + 1));
+                    updatedCombatants = [
+                        ...battle.combatants.filter(c => c.id !== combatantId),
+                    ];
                 }
 
-                return {...battle, combatants: updateCombatantsCost(updatedCombatants)};
+                return {
+                    ...battle,
+                    combatants: updateCombatantsCost(updatedCombatants) // Update cost
+                };
             });
         });
     };
 
+
+
 // 6. Update combatants for a specific battle by ID
     const updateCombatants = (battleId: string, combatants: Combatant[]): void => {
-        update((currentBattles: Battle[]) => {
-            const battleIndex = currentBattles.findIndex(b => b.id === battleId);
-            if (battleIndex === -1) return currentBattles;
-
-            const updatedBattle: Battle = {...currentBattles[battleIndex], combatants};
-            const updatedBattles = [...currentBattles];
-            updatedBattles[battleIndex] = updatedBattle;
-            return updatedBattles;
-        });
+        update((currentBattles: Battle[]) =>
+            currentBattles.map(battle =>
+                battle.id === battleId
+                    ? { ...battle, combatants } // creates a new object, triggering reactivity
+                    : battle
+            )
+        );
     };
 
 // Utility functions
 
 // 7. Update HP of a combatant in a battle
-    const updateHP = (battleId: string, combatantIndex: number, hpIndex: number, hp: number): void => {
+    const updateHP = (battleId: string, combatantId: string, hpIndex: number, newHp: number): void => {
         update((battles: Battle[]) => {
             return battles.map(battle => {
                 if (battle.id === battleId) {
                     const updatedCombatants: Combatant[] = battle.combatants.map((combatant, index) => {
-                        if (index === combatantIndex) {
+                        if (combatant.id === combatantId) {
                             const updatedHPArray = [...combatant.currentHP];
-                            updatedHPArray[hpIndex] = hp;
+                            if (combatant.mook){
+                                updatedHPArray[0] = newHp;
+                            } else {
+                                updatedHPArray[hpIndex] = newHp;
+                            }
                             return {...combatant, currentHP: updatedHPArray};
                         }
                         return combatant;

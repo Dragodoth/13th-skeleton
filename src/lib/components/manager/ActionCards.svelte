@@ -1,5 +1,17 @@
 <script lang="ts">
-    export let actions, divCSS, blockCSS;
+    import type {Action} from "$lib/types.ts";
+
+    interface Props {
+        actions: Action[],
+        divCSS: string;
+        blockCSS: string;
+    }
+
+    const {
+        actions,
+        divCSS,
+        blockCSS
+    }: Props = $props();
 </script>
 
 <ul class="list">

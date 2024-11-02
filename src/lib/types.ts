@@ -23,8 +23,19 @@ export type BattleTableRow = {
     }
 };
 
+export type Trait = {
+    name: string,
+    desc: string,
+};
+
+export type Action = {
+    name: string,
+    desc: string,
+    traits?: Trait[],
+}
+
 export type Monster = {
-    id: number,
+    id: string,
     name: string,
     size: string,
     level: number,
@@ -32,30 +43,10 @@ export type Monster = {
     role: string,
     type: string,
     initiative: number | string,
-    actions?: {
-        name: string,
-        desc: string,
-        traits?: {
-            name: string,
-            desc: string,
-        }[]
-    }[],
-    traits?: {
-        name: string,
-        desc: string,
-    }[],
-    nastier_traits?: {
-        name: string,
-        desc: string,
-    }[],
-    triggered_actions?: {
-        name: string,
-        desc: string,
-        traits?: {
-            name: string,
-            desc: string,
-        }[]
-    }[],
+    actions?: Action[],
+    traits?: Trait[],
+    nastier_traits?: Trait[],
+    triggered_actions?: Action[],
     ac: number,
     pd: number,
     md: number,
@@ -70,7 +61,8 @@ export type Monster = {
 export type Combatant = Monster & {
     count: number,
     currentHP: number[],
-    cost: number
+    cost: number,
+    mobId?: string,
 };
 
 export type Battle = {

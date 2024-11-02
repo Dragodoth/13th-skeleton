@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { SvelteComponent } from 'svelte';
+    import type {SvelteComponent} from 'svelte';
     // Stores
     import {getModalStore} from '@skeletonlabs/skeleton';
     import {battles} from "$lib/stores.ts";
@@ -7,7 +7,13 @@
 
     // Props
     /** Exposes parent props to this component. */
-    export let parent: SvelteComponent;
+    interface Props {
+        parent: SvelteComponent;
+    }
+
+    const {
+        parent
+    }: Props = $props();
 
     const modalStore = getModalStore();
 
@@ -29,8 +35,6 @@
     const cForm = 'border border-surface-500 p-4 space-y-4 rounded-container-token';
 </script>
 
-<!-- @component This example creates a simple form modal. -->
-
 {#if $modalStore[0]}
     <div class="modal-example-form {cBase}">
         <header class={cHeader}>Battle Name</header>
@@ -43,28 +47,39 @@
             </label>
             <label class="label">
                 <span>Battle description</span>
-                <textarea class="textarea" rows="1" bind:value={formData.description} placeholder='First battle in ...'/>
+                <textarea class="textarea" rows="1" bind:value={formData.description}
+                          placeholder='First battle in ...'></textarea>
             </label>
+
             {#if $battles.length > 0}
-                <h1>Saved battles</h1>
-                <div>
-                    <ul class="list">
-                        {#each $battles as battle, i (i)}
-                            <li>
-                                <button class="flex-auto variant-ghost p-2">
-                                    {battle.name}
-                                </button>
-                            </li>
-                        {/each}
-                    </ul>
+                <span>{$battles.length} Saved Battles</span>
+                <div class="card flex flex-col p-4 gap-2 max-h-[200px] overflow-auto">
+                {#each $battles as battleStored, i (i)}
+                        <div class="card flex justify-between p-2 variant-ghost">
+                            <div class="flex flex-col items-center gap-1 w-full">
+                                <span class="flex flex-col items-center gap-1">
+                                    <span class="h6">{battleStored.name}</span>
+                                    <span>{battleStored.description}</span>
+                                </span>
+                                <div class="flex flex-wrap justify-center gap-1 p-2">
+                                    {#each battleStored.combatants as combatant}
+                                            <span class="variant-ghost-secondary p-1 px-2 rounded-xl text-xs">{combatant.count}
+                                                x {combatant.name}</span>
+                                    {/each}
+                                </div>
+                            </div>
+                        </div>
+                {/each}
                 </div>
+            {:else}
+                No Battles stored!
             {/if}
         </form>
 
         <!-- prettier-ignore -->
         <footer class="modal-footer {parent.regionFooter}">
-            <button class="btn {parent.buttonNeutral}" on:click={parent.onClose}>{parent.buttonTextCancel}</button>
-            <button class="btn {parent.buttonPositive}" on:click={onFormSubmit}>{parent.buttonTextSubmit}</button>
+            <button class="btn {parent.buttonNeutral}" onclick={parent.onClose}>{parent.buttonTextCancel}</button>
+            <button class="btn {parent.buttonPositive}" onclick={onFormSubmit}>{parent.buttonTextSubmit}</button>
         </footer>
     </div>
 {/if}

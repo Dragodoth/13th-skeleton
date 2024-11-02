@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import {RangeSlider} from "@skeletonlabs/skeleton";
     import {playerNumber, partyLevel, battlesPerArc, use2E} from "$lib/stores.ts"
 
-    $: gridCols = $use2E ? "lg:grid-cols-3" : "lg:grid-cols-2";
+    const gridCols = $derived($use2E ? "lg:grid-cols-3" : "lg:grid-cols-2");
 
     const labelCSS = "font-bold";
     const numberCSS = "font-bold";

@@ -1,28 +1,40 @@
 <script lang="ts">
     import type {Combatant} from "$lib/types";
-
-    export let battleId: string, combatants: Combatant[], combatant: Combatant, i: number;
     import {battles} from "$lib/stores.ts";
 
-    $: displayedCombatant = combatants.find(c => c.id === combatant.id) ?? null;
+    interface Props {
+        battleId: string;
+        combatants: Combatant[];
+        combatant: Combatant;
+        index: number;
+    }
+
+    const {
+        battleId,
+        combatants,
+        combatant,
+        index
+    }: Props = $props();
+
+    const displayedCombatant = $derived(combatants.find(c => c.id === combatant.id) ?? null);
 
 </script>
 
 {#if displayedCombatant}
-    <aside class="alert variant-ghost flex flex-row gap-2">
+    <section class="alert variant-ghost flex flex-row gap-2">
         <!-- Message -->
         <div class="alert-message">
-            <h3 class="h3">{displayedCombatant.count}x {combatant.name}</h3>
+            <h3 class="h3">{combatant.mook ? "Mob of " : ""}{displayedCombatant.count}x {combatant.name}</h3>
             <p>Cost: {parseFloat(displayedCombatant.cost.toFixed(1))}</p>
         </div>
         <!-- Actions -->
         <div class="alert-actions">
-            <button type="button" class="btn btn-sm variant-ghost"
-                    on:click={() => battles.addCombatant(battleId, combatant)}><i class="fa-solid fa-plus"/>
+            <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
+                    onclick={() => battles.addCombatant(battleId, combatant)}><i class="fa-solid fa-plus"></i>
             </button>
-            <button type="button" class="btn btn-sm variant-ghost"
-                    on:click={() => battles.removeCombatant(battleId, i)}><i class="fa-solid fa-minus"/>
+            <button aria-label="addRemoveButton" type="button" class="btn btn-sm variant-ghost"
+                    onclick={() => battles.removeCombatant(battleId, combatant.id)}><i class="fa-solid fa-minus"></i>
             </button>
         </div>
-    </aside>
+    </section>
 {/if}

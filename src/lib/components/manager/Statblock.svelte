@@ -1,10 +1,16 @@
 <script lang="ts">
-    import type { Combatant } from "$lib/types";
-    import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
+    import type {Combatant} from "$lib/types";
+    import {Accordion, AccordionItem} from "@skeletonlabs/skeleton";
     import ActionCards from "$lib/components/manager/ActionCards.svelte";
     import TraitCards from "$lib/components/manager/TraitCards.svelte";
 
-    export let combatant: Combatant;
+    interface Props {
+        combatant: Combatant
+    }
+
+    const {
+        combatant
+    }: Props = $props();
 
     const blockCSS = "-indent-5 ml-5";
     const divCSS = "flex flex-wrap variant-ghost-surface p-2 my-1 gap-1 rounded-xl w-full";

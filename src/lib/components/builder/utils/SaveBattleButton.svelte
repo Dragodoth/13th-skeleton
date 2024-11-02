@@ -1,10 +1,16 @@
 <script lang="ts">
-    import { getModalStore } from "@skeletonlabs/skeleton";
-    import type { ModalSettings, ModalComponent, ModalStore } from '@skeletonlabs/skeleton';
-    import { battles } from "$lib/stores.ts";
+    import {getModalStore} from "@skeletonlabs/skeleton";
+    import type {ModalSettings, ModalComponent, ModalStore} from '@skeletonlabs/skeleton';
+    import {battles} from "$lib/stores.ts";
     import type {Battle, saveBattleFormData} from "$lib/types";
 
-    export let battleToSave: Battle;
+    interface Props {
+        battleToSave: Battle
+    }
+
+    const {
+        battleToSave
+    }: Props = $props();
 
     const modalStore: ModalStore = getModalStore();
 
@@ -33,7 +39,7 @@
     }
 </script>
 
-<button type="button" class="btn btn-sm variant-filled-success" on:click={() => handleSaveClick ()}>
-    <span><i class="fa-solid fa-floppy-disk"/></span>
+<button type="button" class="btn btn-sm variant-filled-success" onclick={() => handleSaveClick ()}>
+    <span><i class="fa-solid fa-floppy-disk"></i></span>
     <span>Save as new Battle</span>
 </button>

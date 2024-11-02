@@ -1,6 +1,8 @@
 {
 	"/": [],
 	"/about": [],
+	"/builder": [],
+	"/compendium": [],
 	"/manager": [
 		"src/routes/manager/+page.ts"
 	],

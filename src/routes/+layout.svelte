@@ -40,8 +40,10 @@
         </svelte:fragment>
 
         <span class="flex gap-4 md:text-xl">
+            <a href="/">Home</a>
 			<a href="/about">About</a>
-			<a href="/">Builder</a>
+            <a href="/compendium">Compendium</a>
+			<a href="/builder">Builder</a>
 			<a href="/manager">Manager</a>
 		</span>
 

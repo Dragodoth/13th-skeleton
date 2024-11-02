@@ -10,11 +10,12 @@
     } = $props();
 
 
-    let battleData = $derived(data.battleData);
+    //let battleData = $derived(data.battleData);
+    const managedBattle = $derived($battles.find(i => i.id === data.battleId))
 
 </script>
 
-{#if battleData}
+{#if managedBattle}
     <section class="section">
         {#if $battles.length > 0}
             <TabGroup justify="justify-center">
@@ -30,14 +31,14 @@
     </section>
 
     <section class="section grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
-        {#each battleData.combatants as combatant (combatant.id)}
+        {#each managedBattle.combatants as combatant (combatant.mook ? combatant.mobId : combatant.id)}
             <div class="card">
                 <div class="flex justify-between items-baseline px-2">
                     <header class="card-header h2">{combatant.name}</header>
                     <span>{combatant.source} p.{combatant.page}</span>
                 </div>
                 <section class="card p-2 my-2 variant-ghost">
-                    <HPManager battleId={battleData.id} combatantId={combatant.id}/>
+                    <HPManager battleId={managedBattle.id} combatantId={combatant.id}/>
                     <section class=" card p-4 w-full">
                         <Statblock {combatant}/>
                     </section>

@@ -48,11 +48,18 @@
         <div class="flex gap-2 items-end">
             <span>{currentHP}</span>
             <div class="flex grow flex-col items-center gap-2">
-                {#if combatant.mook}
-                    <p>{combatant.name} Mob {HPIndex + 1}</p>
+                    <p>{combatant.name} {combatant.mook ? "Mob " : ""}{HPIndex + 1}</p>
+                {#if combatant.mook && combatant.mobId}
                     <p>{Math.ceil(currentHP / combatant.hp)} / {combatant.count} mooks</p>
+                    <div class="flex gap-2">
+                        <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
+                                onclick={() => battles.removeMook(battleId, combatant.mobId)}><i class="fa-solid fa-minus"></i>
+                        </button>
+                        <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
+                                onclick={() => battles.addMook(battleId, combatant)}><i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
                 {/if}
-
                 <ProgressBar
                         meter="bg-success-500"
                         track="bg-success-500/30"
@@ -77,5 +84,6 @@
             />
             <button type="button" class="btn btn-sm variant-ghost" onclick={handleHPUpdate}>Update HP</button>
         </div>
+
     </section>
 {/if}

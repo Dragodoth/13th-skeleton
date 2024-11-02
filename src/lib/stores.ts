@@ -118,13 +118,13 @@ function createBattles() {
 
                 const existingCombatant = battle.combatants.find(c => c.id === newCombatant.id);
 
-                const updatedCombatants: Combatant[] = existingCombatant
+                const updatedCombatants: Combatant[] = existingCombatant && !newCombatant.mook
                     ? battle.combatants.map(combatant =>
                         combatant.id === newCombatant.id
                             ? {
                                 ...combatant,
                                 count: combatant.count + 1,
-                                currentHP: combatant.mook ? [combatant.currentHP[0] + newCombatant.hp] : [...combatant.currentHP, newCombatant.hp],
+                                currentHP: [...combatant.currentHP, newCombatant.hp],
                                 cost: 0
                             }
                             : combatant
@@ -133,7 +133,8 @@ function createBattles() {
                         ...newCombatant,
                         count: 1,
                         currentHP: [newCombatant.hp],
-                        cost: 0
+                        cost: 0,
+                        ...(newCombatant.mook && { mobId: Date.now().toString() })
                     }];
 
                 return {...battle, combatants: updateCombatantsCost(updatedCombatants)};
@@ -149,7 +150,7 @@ function createBattles() {
                 if (battle.id !== battleId) return battle;
 
                 const existingCombatant = battle.combatants.find(c => c.id === combatantId);
-                if (!existingCombatant) return battle;
+                if (!existingCombatant || existingCombatant.mook) return battle;
 
                 let updatedCombatants: Combatant[];
 
@@ -177,7 +178,65 @@ function createBattles() {
         });
     };
 
+    const addMook = (battleId: string, newMook: Combatant | undefined): void => {
+        update((currentBattles: Battle[]) => {
+            if (!newMook || !newMook.mook) return currentBattles;
+            return currentBattles.map(battle => {
+                if (battle.id !== battleId) return battle;
 
+                const existingCombatant = battle.combatants.find(c => c.mobId === newMook.mobId);
+                if (!existingCombatant) return battle;
+
+                const updatedCombatants: Combatant[] = battle.combatants.map(combatant =>
+                        combatant.mobId === newMook.mobId
+                            ? {
+                                ...combatant,
+                                count: combatant.count + 1,
+                                currentHP: [combatant.currentHP[0] + combatant.hp],
+                                cost: 0
+                            }
+                            : combatant
+                    )
+
+                return {...battle, combatants: updateCombatantsCost(updatedCombatants)};
+            });
+        });
+    };
+
+    const removeMook = (battleId: string, mookMobId: string | undefined): void => {
+        update((currentBattles: Battle[]) => {
+            if (!mookMobId) return currentBattles;
+            return currentBattles.map(battle => {
+                if (battle.id !== battleId) return battle;
+
+                const existingCombatant = battle.combatants.find(c => c.mobId === mookMobId);
+                if (!existingCombatant || !existingCombatant.mook) return battle;
+
+                let updatedCombatants: Combatant[];
+
+                if (existingCombatant.count > 1) {
+                    updatedCombatants = battle.combatants.map((combatant) =>
+                        combatant.mobId === mookMobId
+                            ? {
+                                ...combatant,
+                                count: combatant.count - 1,
+                                currentHP: [combatant.currentHP[0] - combatant.hp]
+                            }
+                            : combatant
+                    );
+                } else {
+                    updatedCombatants = [
+                        ...battle.combatants.filter(c => c.mobId !== mookMobId),
+                    ];
+                }
+
+                return {
+                    ...battle,
+                    combatants: updateCombatantsCost(updatedCombatants) // Update cost
+                };
+            });
+        });
+    };
 
 // 6. Update combatants for a specific battle by ID
     const updateCombatants = (battleId: string, combatants: Combatant[]): void => {
@@ -244,6 +303,8 @@ function createBattles() {
         updateNameAndDescription,
         addCombatant,
         removeCombatant,
+        addMook,
+        removeMook,
         updateCombatants,
         updateHP,
         calculateTotalCost,

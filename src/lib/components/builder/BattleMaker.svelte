@@ -20,6 +20,8 @@
             totalCost = battles.calculateTotalCost(displayedBattle.combatants);
         }
     })
+
+    console.log(displayedBattle);
 </script>
 
 <section class="card p-4 flex flex-col items-center gap-4 variant-soft">

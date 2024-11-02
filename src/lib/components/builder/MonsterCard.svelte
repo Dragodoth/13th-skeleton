@@ -16,7 +16,12 @@
         index
     }: Props = $props();
 
-    const displayedCombatant = $derived(combatants.find(c => c.id === combatant.id) ?? null);
+    const displayedCombatant = $derived(
+        (
+            combatant.mook
+                ? combatants.find(c => c.mobId === combatant.mobId)
+                : combatants.find(c => c.id === combatant.id)
+        ) ?? null);
 
 </script>
 
@@ -29,12 +34,25 @@
         </div>
         <!-- Actions -->
         <div class="alert-actions">
-            <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                    onclick={() => battles.addCombatant(battleId, combatant)}><i class="fa-solid fa-plus"></i>
-            </button>
-            <button aria-label="addRemoveButton" type="button" class="btn btn-sm variant-ghost"
-                    onclick={() => battles.removeCombatant(battleId, combatant.id)}><i class="fa-solid fa-minus"></i>
-            </button>
+            {#if combatant.mook}
+                <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
+                        onclick={() => battles.addMook(battleId, combatant)}><i class="fa-solid fa-plus"></i>
+                </button>
+            {:else}
+                <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
+                        onclick={() => battles.addCombatant(battleId, combatant)}><i class="fa-solid fa-plus"></i>
+                </button>
+            {/if}
+            {#if combatant.mook && combatant.mobId}
+                <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
+                        onclick={() => battles.removeMook(battleId, combatant.mobId)}><i class="fa-solid fa-minus"></i>
+                </button>
+            {:else}
+                <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
+                        onclick={() => battles.removeCombatant(battleId, combatant.id)}><i class="fa-solid fa-minus"></i>
+                </button>
+            {/if}
+
         </div>
     </section>
 {/if}

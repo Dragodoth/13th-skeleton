@@ -2,5 +2,6 @@
     import SvelteMarkdown from 'svelte-markdown';
     import source from "/README.md?raw";
 </script>
-
-<SvelteMarkdown {source}/>
+<div class="prose-base">
+    <SvelteMarkdown {source}/>
+</div>

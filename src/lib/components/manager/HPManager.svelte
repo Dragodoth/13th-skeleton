@@ -27,12 +27,15 @@
         {#each {length: combatant.mook ? 1: combatant.count} as _, HPIndex}
             <HPBlock {battleId} {combatantId} {HPIndex}/>
         {/each}
+        {#if !combatant.mook}
         <footer class="card-footer">
             <button aria-label="addRemoveButton" type="button" class="btn btn-sm variant-ghost"
                     onclick={() => battles.removeCombatant(battleId, combatant?.id)}><i class="fa-solid fa-minus"></i>
             </button>
             <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                    onclick={() => battles.addCombatant(battleId, combatant)}><i class="fa-solid fa-plus"></i></button>
+                    onclick={() => battles.addCombatant(battleId, combatant)}><i class="fa-solid fa-plus"></i>
+            </button>
         </footer>
+        {/if}
     {/if}
 </div>

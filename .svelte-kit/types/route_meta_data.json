@@ -1,8 +1,14 @@
 {
 	"/": [],
 	"/about": [],
+	"/api/pages": [
+		"src/routes/api/pages/+server.ts"
+	],
 	"/builder": [],
 	"/compendium": [],
+	"/compendium/[...page]": [
+		"src/routes/compendium/[...page]/+page.ts"
+	],
 	"/manager": [
 		"src/routes/manager/+page.ts"
 	],

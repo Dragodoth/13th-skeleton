@@ -1,7 +1,6 @@
 <script lang="ts">
-    import SvelteMarkdown from 'svelte-markdown';
-    import source from "$lib/data/13th Age SRD/13th-Age-Index.md?raw";
+    import source from "$lib/data/13th-Age-SRD/13th-Age-Index.md";
 </script>
 <div class="prose-base">
-    <SvelteMarkdown {source}/>
+    <svelte:component this={source}/>
 </div>

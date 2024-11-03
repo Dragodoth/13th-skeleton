@@ -10,7 +10,7 @@
     import Pagination from '$lib/components/builder/datatable/Pagination.svelte';
 
     // Load local data
-    import data from '$lib/data/13th Age SRD/Compendium/Bestiary/bestiarySRD.json';
+    import data from '$lib/data/13th-Age-SRD/compendium/Bestiary/bestiarySRD.json';
 
     // Import handler from SSD
     import {DataHandler} from '@vincjo/datatables';

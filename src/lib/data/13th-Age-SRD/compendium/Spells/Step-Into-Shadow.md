@@ -1,6 +1,6 @@
 ---
 aliases: [Step into Shadow]
-class: [Chaos Mage]
+classes: [Chaos Mage]
 distance: [Close-quarters]
 level: [3rd level+]
 tags: [13A/Spells/ChaosMage]

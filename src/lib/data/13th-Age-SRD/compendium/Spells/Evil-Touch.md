@@ -1,6 +1,6 @@
 ---
 aliases: [Evil Touch]
-class: [Chaos Mage]
+classes: [Chaos Mage]
 distance: [Close-quarters]
 level: [1st level+]
 tags: [13A/Spells/ChaosMage]

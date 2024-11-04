@@ -5,7 +5,9 @@
 		"src/routes/api/pages/+server.ts"
 	],
 	"/builder": [],
-	"/compendium": [],
+	"/compendium": [
+		"src/routes/compendium/+page.ts"
+	],
 	"/compendium/[...page]": [
 		"src/routes/compendium/[...page]/+page.ts"
 	],

@@ -1,6 +1,6 @@
 ---
 aliases: [The Final Surge]
-class: [Chaos Mage]
+classes: [Chaos Mage]
 distance: [Ranged]
 level: [3rd level+]
 tags: [13A/Spells/ChaosMage]

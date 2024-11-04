@@ -1,7 +1,7 @@
 ---
 aliases:
   - Blarrrrgh
-class:
+classes:
   - Chaos Mage
 distance:
   - Ranged

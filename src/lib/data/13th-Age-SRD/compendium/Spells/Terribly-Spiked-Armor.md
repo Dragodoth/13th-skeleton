@@ -1,7 +1,7 @@
 ---
 aliases:
   - Terribly Spiky Armor
-class:
+classes:
   - Chaos Mage
 distance:
   - Ranged

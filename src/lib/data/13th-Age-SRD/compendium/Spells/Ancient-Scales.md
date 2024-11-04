@@ -1,7 +1,7 @@
 ---
 aliases:
   - Ancient Scales
-class:
+classes:
   - Chaos Mage
 distance:
   - Ranged

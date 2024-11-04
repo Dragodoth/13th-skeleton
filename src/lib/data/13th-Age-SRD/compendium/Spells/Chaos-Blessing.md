@@ -1,7 +1,7 @@
 ---
 aliases:
   - Chaos Blessing
-class:
+classes:
   - Chaos Mage
 distance:
   - Close-Quarters

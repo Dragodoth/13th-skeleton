@@ -1,7 +1,7 @@
 ---
 aliases:
   - Temple Bells
-class:
+classes:
   - Chaos Mage
 distance:
   - Ranged

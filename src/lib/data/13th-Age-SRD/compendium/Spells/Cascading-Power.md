@@ -1,6 +1,6 @@
 ---
 aliases: [Cascading Power]
-class: [Chaos Mage]
+classes: [Chaos Mage]
 distance: [Ranged]
 level: [5th level+]
 tags: [13A/Spells/ChaosMage]

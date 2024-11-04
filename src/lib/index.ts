@@ -3,11 +3,11 @@ export const fetchMarkdownPages = async () => {
     const allPageFiles = import.meta.glob('$lib/data/13th-Age-SRD/compendium/**/*.md');
     const iterablePageFiles = Object.entries(allPageFiles);
 
-    const allPosts = await Promise.all(
+    return await Promise.all(
         iterablePageFiles.map(async ([path, resolver]) => {
             const resolvedModule = await resolver() as any;
             const metadata = resolvedModule?.metadata || {};  // Default to an empty object if metadata is undefined
-            const postPath = path.slice(34, -3);
+            const postPath = path.slice(26, -3);
 
             return {
                 meta: metadata,
@@ -15,7 +15,4 @@ export const fetchMarkdownPages = async () => {
             };
         })
     );
-    console.log(allPosts);
-
-    return allPosts;
 };

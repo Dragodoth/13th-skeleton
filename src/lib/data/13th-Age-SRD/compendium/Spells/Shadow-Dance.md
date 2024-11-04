@@ -1,7 +1,7 @@
 ---
 aliases:
   - Shadow Dance
-class:
+classes:
   - Chaos Mage
 distance:
   - Ranged

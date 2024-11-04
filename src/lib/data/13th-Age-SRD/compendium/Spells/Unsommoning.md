@@ -1,6 +1,6 @@
 ---
 aliases: [Unsummoning]
-class: [Chaos Mage]
+classes: [Chaos Mage]
 distance: [Ranged]
 level: [7th level+]
 tags: [13A/Spells/ChaosMage]

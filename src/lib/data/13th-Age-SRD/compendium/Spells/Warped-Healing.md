@@ -1,6 +1,6 @@
 ---
 aliases: [Warped Healing]
-class: [Chaos Mage]
+classes: [Chaos Mage]
 distance: [Close-Quarters]
 level: [1st level+]
 tags: [13A/Spells/ChaosMage]

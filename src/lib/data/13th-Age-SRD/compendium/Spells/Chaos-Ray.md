@@ -1,6 +1,6 @@
 ---
 aliases: [Chaos Ray]
-class: [Chaos Mage]
+classes: [Chaos Mage]
 distance: [Ranged]
 level: [1st level+]
 tags: [13A/Spells/ChaosMage]

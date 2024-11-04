@@ -6,7 +6,7 @@
 </script>
 
 {#each data.pages as page}
-    <p><a href={page.path}>{page.meta.aliases}</a></p>
+    <p><a href={page.path}>{page.meta?.aliases}</a></p>
 {/each}
 
 

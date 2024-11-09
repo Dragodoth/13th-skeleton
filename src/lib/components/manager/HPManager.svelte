@@ -24,7 +24,7 @@
 <div class="card flex flex-col items-center my-2 p-2 gap-2">
     <header class="card-header">HP Manager</header>
     {#if combatant}
-        {#each {length: combatant.mook ? 1: combatant.count} as _, HPIndex}
+        {#each {length: combatant.mook ? 1: combatant.combatantCount} as _, HPIndex}
             <HPBlock {battleId} {combatantId} {HPIndex}/>
         {/each}
         {#if !combatant.mook}

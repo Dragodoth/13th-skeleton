@@ -1,6 +1,6 @@
-import {derived, writable, get} from 'svelte/store';
-import type {Writable, Readable} from 'svelte/store';
-import type {Persisted, BattleTableRow, Battle, Combatant, Monster} from "$lib/types";
+import type {Readable, Writable} from 'svelte/store';
+import {derived, get, writable} from 'svelte/store';
+import type {Battle, BattleTableRow, Combatant, Monster, Persisted} from "$lib/types";
 import {persisted} from 'svelte-persisted-store';
 
 export const use2E: Writable<boolean> = writable(true);
@@ -118,29 +118,88 @@ function createBattles() {
 
                 const existingCombatant = battle.combatants.find(c => c.id === newCombatant.id);
 
-                const updatedCombatants: Combatant[] = existingCombatant && !newCombatant.mook
-                    ? battle.combatants.map(combatant =>
-                        combatant.id === newCombatant.id
-                            ? {
-                                ...combatant,
-                                count: combatant.count + 1,
-                                currentHP: [...combatant.currentHP, newCombatant.hp],
-                                cost: 0
-                            }
-                            : combatant
-                    )
+                const updatedCombatants: Combatant[] = existingCombatant
+                    ? newCombatant.mook
+                        ? battle.combatants.map((combatant: Combatant) =>
+                            combatant.id === newCombatant.id
+                                ? {
+                                    ...combatant,
+                                    combatantCount: [
+                                        ...combatant.combatantCount,
+                                        {
+                                            id: Date.now().toString(),
+                                            count: 1,
+                                            currentHP: newCombatant.hp,
+
+                                        }
+                                    ],
+                                    cost: 0,
+                                }
+                                : combatant
+                        )
+                        :
+                        battle.combatants.map((combatant: Combatant) =>
+                            combatant.id === newCombatant.id && combatant.combatantCount
+                                ? {
+                                    ...combatant,
+                                    combatantCount:
+                                        [
+                                            ...combatant.combatantCount,
+                                            {
+                                                id: combatant.id,
+                                                currentHP: combatant.hp,
+                                            },
+                                        ],
+                                    cost: 0,
+                                }
+                                : combatant
+                        )
                     : [...battle.combatants, {
                         ...newCombatant,
-                        count: 1,
-                        currentHP: [newCombatant.hp],
+                        combatantCount: [{
+                            id: newCombatant.mook ? Date.now().toString() : newCombatant.id,
+                            ...(newCombatant.mook && {count: 1}),
+                            currentHP: newCombatant.hp,
+                        }],
                         cost: 0,
-                        ...(newCombatant.mook && { mobId: Date.now().toString() })
                     }];
 
                 return {...battle, combatants: updateCombatantsCost(updatedCombatants)};
             });
         });
     };
+
+    // const addCombatant = (battleId: string, newCombatant: Combatant | Monster | undefined): void => {
+    //     update((currentBattles: Battle[]) => {
+    //         if (!newCombatant) return currentBattles;
+    //         return currentBattles.map(battle => {
+    //             if (battle.id !== battleId) return battle;
+    //
+    //             const existingCombatant = battle.combatants.find(c => c.id === newCombatant.id);
+    //
+    //             const updatedCombatants: Combatant[] = existingCombatant && !newCombatant.mook
+    //                 ? battle.combatants.map(combatant =>
+    //                     combatant.id === newCombatant.id
+    //                         ? {
+    //                             ...combatant,
+    //                             count: combatant.count + 1,
+    //                             currentHP: [...combatant.currentHP, newCombatant.hp],
+    //                             cost: 0
+    //                         }
+    //                         : combatant
+    //                 )
+    //                 : [...battle.combatants, {
+    //                     ...newCombatant,
+    //                     count: 1,
+    //                     currentHP: [newCombatant.hp],
+    //                     cost: 0,
+    //                     ...(newCombatant.mook && { mobId: Date.now().toString() })
+    //                 }];
+    //
+    //             return {...battle, combatants: updateCombatantsCost(updatedCombatants)};
+    //         });
+    //     });
+    // };
 
 // 5. Remove a combatant by index in a battle
     const removeCombatant = (battleId: string, combatantId: string | undefined): void => {
@@ -154,13 +213,12 @@ function createBattles() {
 
                 let updatedCombatants: Combatant[];
 
-                if (existingCombatant.count > 1) {
+                if (existingCombatant.combatantCount.length > 1) {
                     updatedCombatants = battle.combatants.map((combatant) =>
                         combatant.id === combatantId
                             ? {
                                 ...combatant,
-                                count: combatant.count - 1,
-                                currentHP: combatant.mook ? [combatant.currentHP[0] - combatant.hp] : combatant.currentHP.slice(0, -1)
+                                combatantCount: combatant.combatantCount.slice(0, -1),
                             }
                             : combatant
                     );
@@ -178,57 +236,62 @@ function createBattles() {
         });
     };
 
-    const addMook = (battleId: string, newMook: Combatant | undefined): void => {
+    const addMook = (battleId: string, newMook: Combatant, mobId: string): void => {
         update((currentBattles: Battle[]) => {
-            if (!newMook || !newMook.mook) return currentBattles;
+            if (!newMook || !newMook.mook || !mobId) return currentBattles;
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
-                const existingCombatant = battle.combatants.find(c => c.mobId === newMook.mobId);
+                const existingCombatant = battle.combatants.find(c => c.id === newMook.id);
                 if (!existingCombatant) return battle;
 
                 const updatedCombatants: Combatant[] = battle.combatants.map(combatant =>
-                        combatant.mobId === newMook.mobId
-                            ? {
-                                ...combatant,
-                                count: combatant.count + 1,
-                                currentHP: [combatant.currentHP[0] + combatant.hp],
-                                cost: 0
-                            }
-                            : combatant
-                    )
+                    combatant.id === newMook.id
+                        ? {
+                            ...combatant,
+                            combatantCount: combatant.combatantCount.map(mob =>
+                                mob.id === mobId
+                                    ? {
+                                        ...mob,
+                                        count: (mob.count || 0) + 1,
+                                        currentHP: mob.currentHP + combatant.hp
+                                    }
+                                    : mob
+                            ),
+                        }
+                        : combatant
+                );
 
                 return {...battle, combatants: updateCombatantsCost(updatedCombatants)};
             });
         });
     };
 
-    const removeMook = (battleId: string, mookMobId: string | undefined): void => {
+    const removeMook = (battleId: string, combatantId: string, mobId: string): void => {
         update((currentBattles: Battle[]) => {
-            if (!mookMobId) return currentBattles;
+            if (!mobId) return currentBattles;
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
-                const existingCombatant = battle.combatants.find(c => c.mobId === mookMobId);
+                const existingCombatant = battle.combatants.find(c => c.id === combatantId);
                 if (!existingCombatant || !existingCombatant.mook) return battle;
 
-                let updatedCombatants: Combatant[];
-
-                if (existingCombatant.count > 1) {
-                    updatedCombatants = battle.combatants.map((combatant) =>
-                        combatant.mobId === mookMobId
-                            ? {
-                                ...combatant,
-                                count: combatant.count - 1,
-                                currentHP: [combatant.currentHP[0] - combatant.hp]
-                            }
-                            : combatant
-                    );
-                } else {
-                    updatedCombatants = [
-                        ...battle.combatants.filter(c => c.mobId !== mookMobId),
-                    ];
-                }
+                const updatedCombatants: Combatant[] = battle.combatants.map(combatant =>
+                    combatant.id === combatantId
+                        ? {
+                            ...combatant,
+                            combatantCount: combatant.combatantCount.map(mob =>
+                                mob.id === mobId
+                                    ? {
+                                        ...mob,
+                                        count: (mob.count || 1) - 1, // Decrement count but keep it minimum 0
+                                        currentHP: mob.currentHP - combatant.hp
+                                    }
+                                    : mob
+                            ).filter(mob => mob.count > 0), // Remove mob entry if count goes to 0
+                        }
+                        : combatant
+                );
 
                 return {
                     ...battle,
@@ -238,12 +301,13 @@ function createBattles() {
         });
     };
 
+
 // 6. Update combatants for a specific battle by ID
     const updateCombatants = (battleId: string, combatants: Combatant[]): void => {
         update((currentBattles: Battle[]) =>
             currentBattles.map(battle =>
                 battle.id === battleId
-                    ? { ...battle, combatants } // creates a new object, triggering reactivity
+                    ? {...battle, combatants: updateCombatantsCost(combatants)} // creates a new object, triggering reactivity
                     : battle
             )
         );
@@ -252,28 +316,43 @@ function createBattles() {
 // Utility functions
 
 // 7. Update HP of a combatant in a battle
-    const updateHP = (battleId: string, combatantId: string, hpIndex: number, newHp: number): void => {
+    const updateHP = (battleId: string, combatantId: string, hpIndex: number, newHp: number, mobId?: string): void => {
         update((battles: Battle[]) => {
             return battles.map(battle => {
-                if (battle.id === battleId) {
-                    const updatedCombatants: Combatant[] = battle.combatants.map((combatant, index) => {
-                        if (combatant.id === combatantId) {
-                            const updatedHPArray = [...combatant.currentHP];
-                            if (combatant.mook){
-                                updatedHPArray[0] = newHp;
-                            } else {
-                                updatedHPArray[hpIndex] = newHp;
-                            }
-                            return {...combatant, currentHP: updatedHPArray};
+                if (battle.id !== battleId) return battle;
+
+                const updatedCombatants: Combatant[] = battle.combatants.map(combatant => {
+                    if (combatant.id !== combatantId) return combatant;
+
+                    const updatedCount = combatant.combatantCount.map((entry, index) => {
+                        if (combatant.mook && mobId && entry.id === mobId) {
+                            return {
+                                ...entry,
+                                currentHP: newHp,
+                            };
                         }
-                        return combatant;
+                        if (!combatant.mook && index === hpIndex) {
+                            return {
+                                ...entry,
+                                currentHP: newHp,
+                            };
+                        }
+                        return entry;
                     });
-                    return {...battle, combatants: updatedCombatants};
-                }
-                return battle;
+                    return {
+                        ...combatant,
+                        combatantCount: updatedCount,
+                    };
+                });
+
+                return {
+                    ...battle,
+                    combatants: updatedCombatants,
+                };
             });
         });
     };
+
 
 // 8. Calculate total cost of combatants
     const calculateTotalCost = (combatants: Combatant[]): number =>
@@ -286,11 +365,29 @@ function createBattles() {
 
             const row = battleTableData.find((item: BattleTableRow) => item.level === combatant.level) ?? null;
             const size = combatant.size === "double strength" ? "large" : combatant.size === "triple strength" ? "huge" : combatant.size;
-            combatant.cost = row && size
-                ? ((row[size as keyof BattleTableRow] as {
-                value: number
-            })?.value ?? 0) * (combatant.role === "mook" ? 0.2 : 1) * combatant.count
-                : 0;
+
+            if (combatant.mook) {
+                combatant.combatantCount = combatant.combatantCount.map(entry => {
+                    const baseCost = row && size
+                        ? ((row[size as keyof BattleTableRow] as { value: number })?.value ?? 0)
+                        : 0;
+
+                    const entryCost = baseCost * 0.2 * (entry.count || 1);
+
+                    return {
+                        ...entry,
+                        mobCost: entryCost,
+                    };
+                });
+
+                combatant.cost = combatant.combatantCount.reduce((total, entry) => total + (entry.mobCost || 0), 0);
+            } else {
+                combatant.cost = row && size
+                    ? ((row[size as keyof BattleTableRow] as {
+                    value: number
+                })?.value ?? 0) * combatant.combatantCount.length
+                    : 0;
+            }
 
             return combatant;
         });

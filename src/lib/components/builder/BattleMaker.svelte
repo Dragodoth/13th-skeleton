@@ -1,7 +1,7 @@
 <script lang="ts">
     import {mEqBudget, playerNumber, battleLevel, battles, displayedBattleId} from "$lib/stores.ts";
     import {ProgressBar} from "@skeletonlabs/skeleton";
-    import MonsterCard from "$lib/components/builder/MonsterCard.svelte";
+    import CombatantCard from "$lib/components/builder/CombatantCard.svelte";
     import SaveBattleButton from "$lib/components/builder/utils/SaveBattleButton.svelte";
     import type {Battle} from "$lib/types.ts";
     import RemoveCombatantsButton from "$lib/components/builder/utils/RemoveCombatantsButton.svelte";
@@ -21,7 +21,7 @@
         }
     })
 
-    console.log(displayedBattle);
+    //$inspect(displayedBattle);
 </script>
 
 <section class="card p-4 flex flex-col items-center gap-4 variant-soft">
@@ -54,9 +54,14 @@
 
         {#if displayedBattle && displayedBattle.combatants.length > 0}
             <div class="p-4 flex flex-wrap gap-4">
-                {#each displayedBattle.combatants as combatant, index (index)}
-                    <MonsterCard battleId={displayedBattle.id} combatants={displayedBattle.combatants} {combatant}
-                                 {index}/>
+                {#each displayedBattle.combatants as combatant}
+                    {#if combatant.mook}
+                        {#each combatant.combatantCount as mob}
+                            <CombatantCard {displayedBattle} combatants={displayedBattle.combatants} {combatant} mobId={mob.id}/>
+                        {/each}
+                        {:else}
+                        <CombatantCard {displayedBattle} combatants={displayedBattle.combatants} {combatant}/>
+                    {/if}
                 {/each}
             </div>
         {:else}

@@ -2,6 +2,7 @@
     const {
         data
     } = $props();
+    //console.log(data)
     //let Content = $state(data.content);
 </script>
 

@@ -7,6 +7,8 @@ export const fetchMarkdownPages = async () => {
     // Convert object entries into an iterable array
     const iterablePageFiles = Object.entries(allPageFiles);
 
+
+
     // Fetch and process each Markdown file
     return await Promise.all(
         iterablePageFiles.map(async ([path, resolver]) => {
@@ -14,17 +16,21 @@ export const fetchMarkdownPages = async () => {
             const resolvedModule = await resolver() as {
                 metadata: Record<string, unknown>;
                 default: SvelteComponent;
-            };;
+            };
 
             const metadata = resolvedModule.metadata;
-            const content = resolvedModule.default;
+            //console.log(resolvedModule.default)
+            const content = resolvedModule.default.toString();
+
+
+            //console.log(content)
 
             // Generate a clean path for each post (adjust slice as needed)
-            const pagePath = path.slice('/src/lib/data/13th-Age-SRD/compendium'.length, -3);
+            const pagePath = path.slice('/src/lib/data/13th-Age-SRD'.length, -3);
 
             return {
                 meta: metadata,
-                content: content,
+                content,
                 path: pagePath,
             };
         })

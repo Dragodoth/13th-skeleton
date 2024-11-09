@@ -40,7 +40,7 @@
         }
     }
 
-    const maxHp = $derived(combatant?.mook ? combatant?.hp * combatant?.count : combatant?.hp)
+    const maxHp = $derived(combatant?.mook ? combatant?.hp * combatant?.combatantCount : combatant?.hp)
 
 </script>
 {#if combatant && currentHP}
@@ -50,7 +50,7 @@
             <div class="flex grow flex-col items-center gap-2">
                     <p>{combatant.name} {combatant.mook ? "Mob " : ""}{HPIndex + 1}</p>
                 {#if combatant.mook && combatant.mobId}
-                    <p>{Math.ceil(currentHP / combatant.hp)} / {combatant.count} mooks</p>
+                    <p>{Math.ceil(currentHP / combatant.hp)} / {combatant.combatantCount} mooks</p>
                     <div class="flex gap-2">
                         <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
                                 onclick={() => battles.removeMook(battleId, combatant.mobId)}><i class="fa-solid fa-minus"></i>

@@ -59,10 +59,13 @@ export type Monster = {
 }
 
 export type Combatant = Monster & {
-    count: number,
-    currentHP: number[],
+    combatantCount: {
+        id: string,
+        count?: number,
+        mobCost?: number,
+        currentHP: number,
+    }[]
     cost: number,
-    mobId?: string,
 };
 
 export type Battle = {

@@ -7,20 +7,22 @@
         battleId: string;
         combatantId: string;
         HPIndex: number;
+        mobId?: string;
     }
 
     const {
         battleId,
         combatantId,
-        HPIndex
+        HPIndex,
+        mobId = ""
     }: Props = $props();
 
-    const combatant: Combatant | null = $derived($battles.find(i => i.id === battleId)?.combatants.find(c => c.id === combatantId) ?? null);
+    const combatant: Combatant | undefined = $derived($battles.find(i => i.id === battleId)?.combatants.find(c => c.id === combatantId) ?? undefined);
 
     let currentHP = $state(0)
     $effect(() => {
             if (combatant) {
-                currentHP = (combatant.mook ? combatant.currentHP[0] : combatant.currentHP[HPIndex]) ?? 0;
+                currentHP = (combatant.combatantCount[HPIndex].currentHP) ?? 0;
             }
         }
     )
@@ -30,33 +32,33 @@
         if (HPInput && combatant && parseFloat(HPInput) && currentHP) {
             if (HPInput.includes("-")) {
                 let newHP: number = currentHP + parseFloat(HPInput);
-                battles.updateHP(battleId, combatantId, HPIndex, newHP);
+                battles.updateHP(battleId, combatantId, HPIndex, newHP, mobId);
             } else if (HPInput.includes("+")) {
                 let newHP: number = currentHP + parseFloat(HPInput);
-                battles.updateHP(battleId, combatantId, HPIndex, newHP);
+                battles.updateHP(battleId, combatantId, HPIndex, newHP, mobId);
             } else {
-                battles.updateHP(battleId, combatantId, HPIndex, parseFloat(HPInput));
+                battles.updateHP(battleId, combatantId, HPIndex, parseFloat(HPInput), mobId);
             }
         }
     }
 
-    const maxHp = $derived(combatant?.mook ? combatant?.hp * combatant?.combatantCount : combatant?.hp)
+    const maxHp = $derived(combatant?.mook ? combatant.hp * (combatant.combatantCount[HPIndex]?.mookCount ?? 1) : combatant?.hp)
 
 </script>
 {#if combatant && currentHP}
-    <section class="card p-2 w-full">
+    <section class="card p-2 w-full variant-ghost">
         <div class="flex gap-2 items-end">
             <span>{currentHP}</span>
             <div class="flex grow flex-col items-center gap-2">
                     <p>{combatant.name} {combatant.mook ? "Mob " : ""}{HPIndex + 1}</p>
-                {#if combatant.mook && combatant.mobId}
-                    <p>{Math.ceil(currentHP / combatant.hp)} / {combatant.combatantCount} mooks</p>
+                {#if combatant.mook}
+                    <p>{Math.ceil(currentHP / combatant.hp)} / {combatant.combatantCount[HPIndex].mookCount} mooks</p>
                     <div class="flex gap-2">
                         <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                                onclick={() => battles.removeMook(battleId, combatant.mobId)}><i class="fa-solid fa-minus"></i>
+                                onclick={() => battles.removeMook(battleId, combatant.id, mobId)}><i class="fa-solid fa-minus"></i>
                         </button>
                         <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                                onclick={() => battles.addMook(battleId, combatant)}><i class="fa-solid fa-plus"></i>
+                                onclick={() => battles.addMook(battleId, combatant, mobId)}><i class="fa-solid fa-plus"></i>
                         </button>
                     </div>
                 {/if}

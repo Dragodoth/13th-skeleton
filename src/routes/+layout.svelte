@@ -8,6 +8,7 @@
     import type {ModalComponent} from "@skeletonlabs/skeleton";
     import ModalSaveBattleForm from "$lib/components/builder/utils/ModalSaveBattleForm.svelte";
     import ModalImportBattleList from "$lib/components/builder/utils/ModalImportBattleList.svelte";
+    import ModalAddCombatant from "$lib/components/manager/ModalAddCombatant.svelte";
     import {use2E} from "$lib/stores.ts";
     import {
         AppBar,
@@ -16,12 +17,15 @@
         RadioItem,
     } from '@skeletonlabs/skeleton';
 
+
     initializeStores()
 
     const modalRegistry: Record<string, ModalComponent> = {
         // Set a unique modal ID, then pass the component reference
         modalComponentModalSaveBattleForm: {ref: ModalSaveBattleForm},
         modalComponentModalImportBattleList: {ref: ModalImportBattleList},
+        modalComponentModalAddCombatant: {ref: ModalAddCombatant},
+
         // ...
     };
 

@@ -1,14 +1,7 @@
 <script lang="ts">
-import { battles} from "$lib/stores.ts";
 import {getModalStore, popup} from "@skeletonlabs/skeleton";
 import type {ModalSettings} from "@skeletonlabs/skeleton";
-import type {Battle, saveBattleFormData} from "$lib/types";
-
-const popupImport = {
-    event: 'click',
-    target: 'popupImport',
-    placement: 'bottom',
-};
+import type {Battle} from "$lib/types";
 
 const modalStore = getModalStore();
 
@@ -50,6 +43,6 @@ function handleImportBattleClick(): void {
 </script>
 
 <button type="button" class="btn btn-sm variant-filled-warning" on:click={handleImportBattleClick}>
-    <span><i class="fa-solid fa-file"/></span>
+    <span><i class="fa-solid fa-file"></i></span>
     <span>Import Battle</span>
 </button>

@@ -1,5 +1,5 @@
 <script>
-import {battles} from "$lib/stores.ts";
+    import {battles} from "$lib/stores.ts";
 </script>
 
 <section class="section grid lg:grid-cols-2 gap-2 ">
@@ -14,7 +14,15 @@ import {battles} from "$lib/stores.ts";
 		                    </span>
                         <div class="flex flex-wrap gap-2 p-2">
                             {#each battleStored.combatants as combatant}
-                                <span class="variant-ghost-secondary p-2 rounded-xl">{combatant.combatantCount}x {combatant.name}</span>
+                                {#if combatant.mook}
+                                    {#each combatant.combatantCount as mob}
+                                        <span class="variant-ghost-secondary p-2 rounded-xl">{mob.mookCount}
+                                            x {combatant.name}</span>
+                                    {/each}
+                                {:else}
+                                    <span class="variant-ghost-secondary p-2 rounded-xl">{combatant.combatantCount.length}
+                                        x {combatant.name}</span>
+                                {/if}
                             {/each}
                         </div>
                     </div>

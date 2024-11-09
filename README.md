@@ -9,6 +9,8 @@ This web app is a way for me to learn web design and to provide some useful tool
 
 # Licenses
 
+Some artwork © 2015 Dean Spencer, used with permission. All rights reserved.
+
 13th skeleton makes usage of content licensed under the Open Game License Version 1.0a, the text of which is reproduced below (including additional required copyright notices).
 
 ## Copyright

@@ -3,7 +3,7 @@
         Accordion,
         AccordionItem
     } from "@skeletonlabs/skeleton";
-    import Datatable from '$lib/components/builder/datatable/MonsterDatatable.svelte';
+    import MonsterDatatable from '$lib/components/builder/datatable/MonsterDatatable.svelte';
     import BattleTable from "$lib/components/builder/BattleTable.svelte";
     import BattleSliders from "$lib/components/builder/BattleSliders.svelte";
     import BattleMaker from "$lib/components/builder/BattleMaker.svelte";
@@ -32,4 +32,4 @@
 
 <BattleMaker />
 
-<Datatable />
+<MonsterDatatable />

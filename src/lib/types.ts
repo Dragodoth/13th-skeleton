@@ -61,7 +61,7 @@ export type Monster = {
 export type Combatant = Monster & {
     combatantCount: {
         id: string,
-        count?: number,
+        mookCount?: number,
         mobCost?: number,
         currentHP: number,
     }[]

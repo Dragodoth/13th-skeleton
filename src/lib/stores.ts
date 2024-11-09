@@ -128,7 +128,7 @@ function createBattles() {
                                         ...combatant.combatantCount,
                                         {
                                             id: Date.now().toString(),
-                                            count: 1,
+                                            mookCount: 1,
                                             currentHP: newCombatant.hp,
 
                                         }
@@ -158,7 +158,7 @@ function createBattles() {
                         ...newCombatant,
                         combatantCount: [{
                             id: newCombatant.mook ? Date.now().toString() : newCombatant.id,
-                            ...(newCombatant.mook && {count: 1}),
+                            ...(newCombatant.mook && {mookCount: 1}),
                             currentHP: newCombatant.hp,
                         }],
                         cost: 0,
@@ -236,7 +236,7 @@ function createBattles() {
         });
     };
 
-    const addMook = (battleId: string, newMook: Combatant, mobId: string): void => {
+    const addMook = (battleId: string, newMook: Combatant | undefined, mobId: string): void => {
         update((currentBattles: Battle[]) => {
             if (!newMook || !newMook.mook || !mobId) return currentBattles;
             return currentBattles.map(battle => {
@@ -253,7 +253,7 @@ function createBattles() {
                                 mob.id === mobId
                                     ? {
                                         ...mob,
-                                        count: (mob.count || 0) + 1,
+                                        mookCount: (mob.mookCount || 0) + 1,
                                         currentHP: mob.currentHP + combatant.hp
                                     }
                                     : mob
@@ -267,16 +267,20 @@ function createBattles() {
         });
     };
 
-    const removeMook = (battleId: string, combatantId: string, mobId: string): void => {
+    const removeMook = (battleId: string, combatantId: string | undefined, mobId: string): void => {
         update((currentBattles: Battle[]) => {
-            if (!mobId) return currentBattles;
+            if (!combatantId || !mobId) return currentBattles;
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
                 const existingCombatant = battle.combatants.find(c => c.id === combatantId);
                 if (!existingCombatant || !existingCombatant.mook) return battle;
 
-                const updatedCombatants: Combatant[] = battle.combatants.map(combatant =>
+                let updatedCombatants: Combatant[];
+
+                if (existingCombatant.combatantCount.some(mob => (mob.mookCount ?? 0) > 1) || existingCombatant.combatantCount.length > 1) {
+                    updatedCombatants = battle.combatants.map(combatant =>
+
                     combatant.id === combatantId
                         ? {
                             ...combatant,
@@ -284,14 +288,19 @@ function createBattles() {
                                 mob.id === mobId
                                     ? {
                                         ...mob,
-                                        count: (mob.count || 1) - 1, // Decrement count but keep it minimum 0
+                                        mookCount: (mob.mookCount || 1) - 1, // Decrement count but keep it minimum 0
                                         currentHP: mob.currentHP - combatant.hp
                                     }
                                     : mob
-                            ).filter(mob => mob.count > 0), // Remove mob entry if count goes to 0
+                            ).filter(mob => (mob.mookCount ?? 0) > 0), // Remove mob entry if count goes to 0
                         }
                         : combatant
                 );
+                } else {
+                    updatedCombatants = [
+                        ...battle.combatants.filter(c => c.id !== combatantId),
+                    ];
+                }
 
                 return {
                     ...battle,
@@ -372,7 +381,7 @@ function createBattles() {
                         ? ((row[size as keyof BattleTableRow] as { value: number })?.value ?? 0)
                         : 0;
 
-                    const entryCost = baseCost * 0.2 * (entry.count || 1);
+                    const entryCost = baseCost * 0.2 * (entry.mookCount || 1);
 
                     return {
                         ...entry,

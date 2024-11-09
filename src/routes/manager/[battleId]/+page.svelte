@@ -3,6 +3,7 @@
     import {battles} from "$lib/stores";
     import Statblock from "$lib/components/manager/Statblock.svelte";
     import HPManager from "$lib/components/manager/HPManager.svelte";
+    import AddCombatantButton from "$lib/components/manager/AddCombatantButton.svelte";
     //export let data;
 
     const {
@@ -31,22 +32,20 @@
     </section>
 
     <section class="section grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
-        {#each managedBattle.combatants as combatant (combatant.mook ? combatant.mobId : combatant.id)}
+        {#each managedBattle.combatants as combatant (combatant.id)}
             <div class="card">
                 <div class="flex justify-between items-baseline px-2">
                     <header class="card-header h2">{combatant.name}</header>
                     <span>{combatant.source} p.{combatant.page}</span>
                 </div>
                 <section class="card p-2 my-2 variant-ghost">
-                    <HPManager battleId={managedBattle.id} combatantId={combatant.id}/>
+                    <HPManager battleId={managedBattle.id} combatantId={combatant.id} {combatant}/>
                     <section class=" card p-4 w-full">
                         <Statblock {combatant}/>
                     </section>
                 </section>
             </div>
         {/each}
-        <div class="card hover:variant-ghost-secondary flex justify-center items-center">
-            <i class="fa-solid fa-plus fa-10x" style="color: rgba(var(--color-surface-500));"></i>
-        </div>
+        <AddCombatantButton/>
     </section>
 {/if}

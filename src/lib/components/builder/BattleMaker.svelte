@@ -36,8 +36,8 @@
                 </select>
             </label>
         </div>
+        <hr class="w-full !border-t-2"/>
     {/if}
-    <hr class="w-full !border-t-2"/>
 
     <header class="card-header h2">
         {displayedBattle?.name ?? 'Skeleton Battle'}
@@ -57,10 +57,10 @@
                 {#each displayedBattle.combatants as combatant}
                     {#if combatant.mook}
                         {#each combatant.combatantCount as mob}
-                            <CombatantCard {displayedBattle} combatants={displayedBattle.combatants} {combatant} mobId={mob.id}/>
+                            <CombatantCard {displayedBattle} {combatant} mobId={mob.id}/>
                         {/each}
                         {:else}
-                        <CombatantCard {displayedBattle} combatants={displayedBattle.combatants} {combatant}/>
+                        <CombatantCard {displayedBattle} {combatant}/>
                     {/if}
                 {/each}
             </div>

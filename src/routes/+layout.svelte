@@ -33,7 +33,7 @@
 
 <Modal components={modalRegistry}/>
 
-<div class="grid h-screen grid-rows-[auto_1fr_auto] overflow-auto">
+<div class="grid h-screen grid-rows-[auto_1fr_auto] overflow-y-auto w-screen">
     <!-- Header -->
     <AppBar slotLead="uppercase md:text-xl" gridColumns="grid-cols-3" slotDefault="place-self-center"
             slotTrail="place-content-end">

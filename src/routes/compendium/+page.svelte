@@ -1,15 +1,27 @@
 <script lang="ts">
-    //import source from "$lib/data/13th-Age-SRD/13th-Age-Index.md";
+    import FolderStructure from "$lib/components/FolderStructure.svelte";
+    import {Accordion, RecursiveTreeView} from "@skeletonlabs/skeleton";
+
     const {
         data
     } = $props();
+
+    const {
+        //pages,
+        folderStructure
+    } = data;
+    console.log(folderStructure);
+
 </script>
+<section>
+    <Accordion>
+        <FolderStructure {folderStructure}/>
+    </Accordion>
+</section>
 
-{#each data.pages as page}
-    <p><a href={page.path}>{page.meta?.aliases}</a></p>
-{/each}
+<!--<RecursiveTreeView nodes={folderStructure} />-->
 
 
-<!--<div class="prose-base">-->
-<!--    <svelte:component this={source}/>-->
-<!--</div>-->
+<!--{#each pages as page}-->
+<!--    <p><a href={page.path}>aliases:{page.meta?.aliases} tags:{page.meta?.tags}</a></p>-->
+<!--{/each}-->

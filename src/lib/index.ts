@@ -1,36 +1,24 @@
-import type { SvelteComponent } from 'svelte'
+import matter from 'gray-matter';
 
 export const fetchMarkdownPages = async () => {
-    // Import all Markdown files from the specified directory
-    const allPageFiles = import.meta.glob('$lib/data/13th-Age-SRD/compendium/**/*.md');
+    const allPageFiles = import.meta.glob('$lib/data/13th-Age-SRD/compendium/**/*.md', {
+        query: '?raw',
+        import: 'default'
+    });
 
-    // Convert object entries into an iterable array
     const iterablePageFiles = Object.entries(allPageFiles);
 
-
-
-    // Fetch and process each Markdown file
     return await Promise.all(
         iterablePageFiles.map(async ([path, resolver]) => {
-            // Dynamically import the module
-            const resolvedModule = await resolver() as {
-                metadata: Record<string, unknown>;
-                default: SvelteComponent;
-            };
+            const markdownContent = await resolver();
 
-            const metadata = resolvedModule.metadata;
-            //console.log(resolvedModule.default)
-            const content = resolvedModule.default.toString();
+            const { data: metadata, content } = matter(markdownContent);
 
-
-            //console.log(content)
-
-            // Generate a clean path for each post (adjust slice as needed)
             const pagePath = path.slice('/src/lib/data/13th-Age-SRD'.length, -3);
 
             return {
                 meta: metadata,
-                content,
+                content: content,
                 path: pagePath,
             };
         })

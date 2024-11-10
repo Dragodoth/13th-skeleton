@@ -1,7 +1,7 @@
 <script lang="ts">
-    import source from "/README.md";
-    let Source = $state(source);
+    import source from "/README.md?raw";
+    import SvelteMarkdown from "svelte-markdown";
 </script>
 <div class="prose-base">
-    <Source />
+    <SvelteMarkdown {source}/>
 </div>

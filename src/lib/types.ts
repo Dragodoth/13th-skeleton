@@ -79,3 +79,23 @@ export type saveBattleFormData = {
     name: string,
     description: string,
 };
+
+export type Metadata = {
+    aliases: string[];
+    created: Date;
+    level: number;
+    publish: Date | null;
+    role: string;
+    statblock: string;
+    strength: string;
+    tags: string[];
+    type: string;
+    updated: Date;
+}
+
+export type MarkdownPage = {
+    meta: Metadata;
+    content: string;
+    path: string;
+}
+

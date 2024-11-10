@@ -6,10 +6,13 @@
 	],
 	"/builder": [],
 	"/compendium": [
-		"src/routes/compendium/+page.ts"
+		"src/routes/compendium/+page.ts",
+		"src/routes/compendium/+layout.ts",
+		"src/routes/compendium/+layout.ts"
 	],
 	"/compendium/[...page]": [
-		"src/routes/compendium/[...page]/+page.ts"
+		"src/routes/compendium/[...page]/+page.ts",
+		"src/routes/compendium/+layout.ts"
 	],
 	"/manager": [
 		"src/routes/manager/+page.ts"

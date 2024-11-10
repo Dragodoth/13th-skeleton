@@ -14,7 +14,7 @@ export const fetchMarkdownPages = async () => {
 
             const { data: metadata, content } = matter(markdownContent);
 
-            const pagePath = path.slice('/src/lib/data/13th-Age-SRD'.length, -3);
+            const pagePath = path.slice('/src/lib/data/13th-Age-SRD'.length);
 
             return {
                 meta: metadata,

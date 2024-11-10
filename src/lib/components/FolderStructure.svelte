@@ -1,38 +1,68 @@
 <script lang="ts">
     import FolderStructure from "$lib/components/FolderStructure.svelte";
-    import {Accordion, AccordionItem} from "@skeletonlabs/skeleton";
-    import type {MarkdownPage} from "$lib/types.ts";
+    import type { FolderStructureType, MarkdownPage } from "$lib/types.ts";
+    import { AccordionItem } from "@skeletonlabs/skeleton";
 
-    const {
-        folderStructure,
-    } = $props();
+    interface Props {
+        folderStructure: FolderStructureType | string;
+    }
 
+    const { folderStructure }: Props = $props();
 
+    // Helper function to sort folder structure: folders first, then .md files
+    function sortFolderStructure(structure: FolderStructureType | string) {
+        // If the structure is a .md file (a string), return it as-is (no further processing)
+        if (typeof structure === "string") {
+            return structure;
+        }
+
+        // Sort entries at the current level: folders first, then .md files
+        return Object.entries(structure)
+            .sort(([a], [b]) => {
+                const isAFile = a.includes(".md");
+                const isBFile = b.includes(".md");
+
+                // If a is a .md file and b is a folder, place b first (folders first)
+                if (isAFile && !isBFile) return 1;
+                // If b is a .md file and a is a folder, place a first (folders first)
+                if (!isAFile && isBFile) return -1;
+                return 0; // If both are the same type (either both .md or both folders), no change
+            })
+            .reduce((sorted, [key, value]) => {
+                // If value is a folder (object), recurse into it to sort its contents
+                sorted[key] = typeof value === 'object' && value !== null
+                    ? sortFolderStructure(value) // Recursively sort the folder structure
+                    : value;
+                return sorted;
+            }, {});
+    }
+
+    //console.log(folderStructure);
+    // Sort the folder structure recursively
+    const sortedFolderStructure = sortFolderStructure(folderStructure) as FolderStructureType;
+    console.log(sortedFolderStructure);
 </script>
 
-{#each Object.entries(folderStructure) as [folderName, folderContent]}
-    {#if Object.keys(folderContent).length > 1}
-        <!-- Folder has children, render as accordion -->
+{#each Object.entries(sortedFolderStructure) as [folderName, folderContent]}
+    {#if folderName.includes(".md")}
+        <!-- Display the .md file path directly -->
+        <p class="p-2 px-4">{folderName.slice(0, -3)}</p>
+    {:else}
         <AccordionItem>
             <svelte:fragment slot="summary">
                 {folderName}
             </svelte:fragment>
             <svelte:fragment slot="content">
                 {#each Object.entries(folderContent) as [childName, childContent]}
-                    {#if Object.keys(childContent).length > 1}
-                        <!-- Child folder with children -->
-                        <FolderStructure {childContent} />
+                    {#if childName.includes(".md")}
+                        <!-- Display the .md file directly -->
+                        <p class="p-2 px-4">{childName.slice(0, -3)}</p>
                     {:else}
-                        <!-- Child with a path (leaf node) - render as link -->
-                        <p><a href={`compendium${childContent.path}`}>{childName}</a></p>
+                        <!-- Pass the folder structure recursively for non-.md entries -->
+                        <FolderStructure folderStructure={childContent} />
                     {/if}
                 {/each}
             </svelte:fragment>
         </AccordionItem>
-    {:else}
-        <!-- Folder is a leaf node (only has path), render as link -->
-        <p><a href={`compendium${folderContent.path}`}>{folderName}</a></p>
     {/if}
 {/each}
-
-

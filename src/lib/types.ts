@@ -99,3 +99,7 @@ export type MarkdownPage = {
     path: string;
 }
 
+export type FolderStructureType = {
+    [key: string]: FolderStructureType | string;
+};
+

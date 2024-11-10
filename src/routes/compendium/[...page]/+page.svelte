@@ -4,7 +4,7 @@
     const {
         data
     } = $props();
-    const source = data.content;
+    const source = $derived(data.content);
 </script>
 
 <SvelteMarkdown {source}/>

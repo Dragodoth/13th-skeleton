@@ -6,24 +6,25 @@ publish:
 tags: [13A/Characters/Classes/Necromancer]
 updated: 2023-05-30
 ---
+## Necromancer
 
-## Ability Scores
+### Ability Scores
 
 Necromancers gain a +2 class bonus to Intelligence or Charisma, as long as it isn’t the same ability you increase with your +2 racial bonus.
 
-## Backgrounds
+### Backgrounds
 
 Possible backgrounds include: failed village priest, archeologist, swamp baron, living dungeon escapee, former necromancer acolyte, death giant servitor, former mummy, reformed outlaw, resurrected Imperial hero, and burnt-out wizard.
 
-## Gear
+### Gear
 
 At 1st level, a necromancer starts with various dark robes or traveling clothes, a dagger, a staff, a few treasured bones or funerary urns, and other miscellaneous items suggested by their backgrounds.
 
-### Gold Pieces
+#### Gold Pieces
 
 Necromancers may start with either 25 gp or `dice: 1d6*10` gp.
 
-### Armor
+#### Armor
 
 | Armor Type | Base AC | Atk Penalty |
 |------------|---------|-------------|
@@ -33,7 +34,7 @@ Necromancers may start with either 25 gp or `dice: 1d6*10` gp.
 | Shield     | 1       | -2 |  
 ^13A-Class-Necromancer-Armor
 
-### Melee Weapons
+#### Melee Weapons
 
 |                  | One-Handed                                | Two-Handed                      |
 | ---------------- | ----------------------------------------- | ------------------------------- |
@@ -42,7 +43,7 @@ Necromancers may start with either 25 gp or `dice: 1d6*10` gp.
 | Heavy or Martial | `dice: 1d8` (-5 atk) longsword, warhammer | `dice: 1d10`(-6 atk) greatsword |  
 ^13A-Class-Necromancer-Melee
 
-### Ranged Weapons
+#### Ranged Weapons
 
 |                  | Thrown                       | Crossbow                            | Bow                           |
 | ---------------- | ---------------------------- | ----------------------------------- | ----------------------------- |
@@ -51,7 +52,7 @@ Necromancers may start with either 25 gp or `dice: 1d6*10` gp.
 | Heavy or Martial | —                            | `dice: 1d8` (-4 atk) heavy crossbow | `dice: 1d8` (-5 atk) longbow  |  
 ^13A-Class-Necromancer-Ranged
 
-## Level Progression
+### Level Progression
 
 | Necromancer        | Total Hit Points  | Total Feats  | 1st level (M) | 3rd level (M) | 5th level (M) | 7th level (M) | 9th level (M) | Level-up Ability Bonuses | Damage Bonus From Ability Score |
 |--------------------|----------------------------|--------------------------------|---------------|---------------|---------------|---------------|---------------|--------------------------|---------------------------------|
@@ -74,7 +75,7 @@ Although not listed on the table, this class gets three talents. It does not get
 
 *You don’t subtract the modifier from your base hp value if you have a negative Constitution modifier.
 
-## Stats
+### Stats
 
 Initiative, AC, PD, MD, Hit Points, Recovery Dice, Feats, and some Talents are level dependent.
 
@@ -95,9 +96,9 @@ Initiative, AC, PD, MD, Hit Points, Recovery Dice, Feats, and some Talents are l
 | Ability Bonus    | +2 Strength or Constitution (different from racial bonus)    |  
 ^13A-Class-Necromancer-Stats
 
-## Basic Attacks
+### Basic Attacks
 
-### Melee Attack
+#### Melee Attack
 
 At-Will  
 **Target:** One enemy  
@@ -105,7 +106,7 @@ At-Will
 **Hit:** WEAPON + Strength damage  
 **Miss:** —
 
-### Ranged Attack
+#### Ranged Attack
 
 At-Will  
 **Target:** One enemy  
@@ -113,96 +114,96 @@ At-Will
 **Hit:** WEAPON + Dexterity damage  
 **Miss:** —
 
-## Class Features
+### Class Features
 
 All necromancers share the following class features.
 
-### Arcane Implements
+#### Arcane Implements
 
 As a character casting arcane magic, your best options for improving your spellcasting are wands and staffs.
 
-### Death’s Master
+#### Death’s Master
 
 All necromancers must spend at least one relationship point with any necromantic icon. (This may be conflicted or negative.) If your one unique thing somehow suggests that you might be free of this requirement, make a case to your GM that this is a way in which you are unique.
 
-### Ritual Magic
+#### Ritual Magic
 
 Necromancers can cast their spells as rituals (see Running the Game, Rituals).
 
-### Spell Choices
+#### Spell Choices
 
 Like other standard spellcasters, you choose the spells you will be able to cast after each full heal-up.
 
-### Summoning
+#### Summoning
 
 Your summoning spells use the standard summoning rules. The following feats enable you to improve your summoning powers.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 Your summoned creatures can add the escalation die to their attacks.
 
-#### Champion Feat
+##### Champion Feat
 
 When you summon mooks, increase the number of mooks you summon by 1.
 
-#### Epic Feat
+##### Epic Feat
 
 The first time one of your non-mook summoned creatures is dropped each battle, roll a normal save. If you succeed, the summoned creature is not slain but instead remains in the battle with 10 hp.
 
-### Wasting Away
+#### Wasting Away
 
 Necromancers are frail, gaunt, parched, skinny, sickly, wasted, cadaverous, dependent on unearthly substances, or partially dead. This isn’t just an aesthetic note—as a necromancer, you must subtract your Constitution modifier from all your necromancer spell attacks if your modifier is positive. In addition, you don’t die until you fail five death saves. Similarly, you don’t succumb to last gasp save effects until you fail the fifth save.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 If your Constitution modifier is negative, add +1 to your necromancer spell attacks.
 
-#### Champion Feat
+##### Champion Feat
 
 You don’t die from damage until your negative hit points equal your maximum hit points, instead of half your maximum.
 
-#### Epic Feat
+##### Epic Feat
 
 One battle per day, you can choose to succeed with death saves on an 11+ instead of a 16+.
 
-## Class Talents
+### Class Talents
 
-### Cackling Soliloquist
+#### Cackling Soliloquist
 
 If you spend your move action, your quick action, *and* your standard action casting a daily spell that ordinarily only requires a standard action—while screaming grandiloquently, cackling maniacally, or megalomaniacally describing the grandeur of your plans and the futility of your enemies’ resistance—the daily spell is recharge 18+ after battle instead of daily, and you can invent a slight improvement to the spell, especially if it’s partly story-oriented, that provides an extra benefit determined by the GM or by you (with GM approval).
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 You gain temporary hit points equal to `dice: 1d6` + your level + Charisma modifier when you use Cackling Soliloquist (double your Charisma modifier at 5th level; triple it at 8th level).
 
-#### Champion Feat
+##### Champion Feat
 
 Your soliloquized spell is now a recharge 16+ after battle instead of 18+.
 
-#### Epic Feat
+##### Epic Feat
 
 Once per day, you can hog the spotlight when using Cackling Soliloquist. When you do, you heal using a free recovery and steal the escalation die, keeping it all to yourself. Until the end of your next turn, you are the only creature—PC, NPC, or monster—that can use the escalation die, *and* you treat the escalation die as if it were an 8. At the end of your next turn, return the escalation die to the table, one point higher than it was when you seized it.
 
-### Dead Wizard
+#### Dead Wizard
 
 You gain the Cantrips class feature from the wizard class. The talent functions like the wizard’s class feature with the following exceptions:
 
 -   You can’t cast *mending*.
 -   Your *light* cantrip has a sickly flicker or a dark edge. Feel free to call it *darklight*.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 You can take a wizard spell in place of one of your necromancer spells of the same level. You can change this spell for a new one you know whenever you take a full heal-up.
 
-#### Champion Feat
+##### Champion Feat
 
 You gain a bonus wizard spell that is at least two levels below your level_**,**_ in addition to the spells you can cast as a necromancer. You can change this spell for a new one you know whenever you take a full heal-up.
 
-#### Epic Feat
+##### Epic Feat
 
 You gain a second bonus wizard spell, but this one can be of your level or lower. You can change this spell for a new one you know whenever you take a full heal-up.
 
-### Death Priest
+#### Death Priest
 
 When you have icon relationship advantages you’re waiting to use during a session, you can interpret them as interactions/public discussions with the spirits of the recent or ancient dead in the area, providing information you require (and possibly, when there’s a complication from a 5 roll, also providing that information to your enemies or otherwise getting you into some type of trouble).
 
@@ -212,19 +213,19 @@ You can’t always rely on the dead to speak the truth, or to know what they are
 
 At 5th level you can use séance two times per day. At 8th level you can use it three times per day.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 Whenever you take a full heal-up, you can choose whether you’d like to move a single point in a relationship with a positively or negatively aligned icon to one of the other icons. Tell a story of what has taken place to cause the shift, unless it’s already obvious from the events of the campaign. When you shift this relationship, the new point must match any current relationships with that icon, but it can be positive, negative, or conflicted if it’s currently the only point you have with that icon.
 
-#### Champion Feat
+##### Champion Feat
 
 You gain a bonus cleric spell that is at least two levels below your level, in addition to the spells you can cast as a necromancer. You can change this spell for a new one you know whenever you take a full heal-up. You can also substitute references to Wisdom with references to Intelligence in the spell.
 
-#### Epic Feat
+##### Epic Feat
 
 You gain the lowest-tier feat, if any, associated with your bonus cleric spell.
 
-### Deathknell
+#### Deathknell
 
 As a quick action, you can drop a nearby enemy that has 5 hp or fewer down to 0 hp. When you drop an enemy using Deathknell, you heal `dice: 1d6` hit points.
 
@@ -238,29 +239,29 @@ You can use Deathknell to drop a mook, but only if it’s the last mook in its m
 
 9th level spell: Drop an enemy with 25 hp or fewer. Heal `dice: 4d8` hit points.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 When you use Deathknell, one of your nearby conscious allies can gain the healing instead of you.
 
-#### Champion Feat
+##### Champion Feat
 
 Double the healing gained from Deathknell when you drop an enemy.
 
-#### Epic Feat
+##### Epic Feat
 
 You can increase the escalation die by 1 instead of healing when you kill a non-mook enemy with Deathknell.
 
-### It’s Complicated
+#### It’s Complicated
 
 When you roll icon relationship dice, the first 6 you roll is a 5 instead.
 
 You gain an extra necromancer spell at the highest spell level you can normally cast (as shown under spells known on the necromancer level progression chart). For example, you would gain an extra 3rd level spell if you’re 4th level, or an extra 5th level spell if you’re 5th level.
 
-#### Champion Feat
+##### Champion Feat
 
 All 6s you roll with relationship dice count as 5s. You gain another extra necromancer spell, but it must be at least two levels lower than your level.
 
-### Redeemer
+#### Redeemer
 
 Undead you summon release holy energy bursts as they drop to 0 hp, dealing a small amount of damage to each enemy engaged with them.
 
@@ -270,19 +271,19 @@ Non-mooks you summon deal holy damage equal to your Charisma modifier x `dice: 1
 
 In story terms, you’re not likely to have a positive relationship with any necromantic icons if you take the Redeemer talent.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 The first time each battle an undead creature you have summoned attacks, it gains an attack bonus equal to your Charisma modifier.
 
-#### Champion Feat
+##### Champion Feat
 
 When one of your summoned undead creatures drops to 0 hp, instead of having it deal holy damage to engaged enemies, you can heal hit points equal to that damage instead.
 
-#### Epic Feat
+##### Epic Feat
 
 You can memorize a single spell that summons undead twice.
 
-### Skeletal Minion
+#### Skeletal Minion
 
 You have a skeleton minion the same level as you that acts as a servant, fights alongside you in battle, and is replaced by a new skeletal minion when it inevitably collapses or is destroyed. It is not a summoned create; summoning rules don’t ap\ply.
 
@@ -290,7 +291,7 @@ Your minion acts on your initiative, taking a standard action, a move action, an
 
 The listed attack and damage values are for melee attacks. Your skeletal minion can’t heal. When it drops to 0 hp, it’s destroyed for that battle. When you take a quick rest, a new (or patched up) skeletal minion will take its place.
 
-#### Level 1 Skeletal Minion
+##### Level 1 Skeletal Minion
 
 **Attack** +6 vs. AC
 
@@ -304,7 +305,7 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 14
 
-#### Level 2 Skeletal Minion
+##### Level 2 Skeletal Minion
 
 **Attack** +7 vs. AC
 
@@ -318,7 +319,7 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 18
 
-#### Level 3 Skeletal Minion
+##### Level 3 Skeletal Minion
 
 **Attack** +9 vs. AC
 
@@ -332,7 +333,7 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 22
 
-#### Level 4 Skeletal Minion
+##### Level 4 Skeletal Minion
 
 **Attack** +10 vs. AC
 
@@ -346,7 +347,7 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 27
 
-#### Level 5 Skeletal Minion
+##### Level 5 Skeletal Minion
 
 **Attack** +11 vs. AC
 
@@ -360,7 +361,7 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 36
 
-#### Level 6 Skeletal Minion
+##### Level 6 Skeletal Minion
 
 **Attack** +13 vs. AC
 
@@ -374,7 +375,7 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 45
 
-#### Level 7 Skeletal Minion
+##### Level 7 Skeletal Minion
 
 **Attack** +14 vs. AC
 
@@ -388,7 +389,7 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 54
 
-#### Level 8 Skeletal Minion
+##### Level 8 Skeletal Minion
 
 **Attack** +15 vs. AC
 
@@ -402,7 +403,7 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 72
 
-#### Level 9 Skeletal Minion
+##### Level 9 Skeletal Minion
 
 **Attack** +17 vs. AC
 
@@ -416,7 +417,7 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 90
 
-#### Level 10 Skeletal Minion
+##### Level 10 Skeletal Minion
 
 **Attack** +18 vs. AC
 
@@ -430,27 +431,27 @@ The listed attack and damage values are for melee attacks. Your skeletal minion 
 
 **HP** 108
 
-#### Skeletal Minion Feats
+##### Skeletal Minion Feats
 
 Like animal companion feats, skeletal minion feats don’t build on each other. You don’t have to take them in a particular order, as long as you qualify for the tier.
 
-##### Adventurer Feats
+###### Adventurer Feats
 
 -   Your skeletal minion now adds the escalation die to its attack rolls.
 -   When an enemy attempts to disengage from the skeletal minion, it takes a penalty to the check equal to the escalation die.
 -   As a quick action, you can set your skeletal minion ablaze, or extinguish the blaze. While it’s flaming, your skeleton minion’s damage dice increase by one size, and it deals fire damage with its melee attacks, but it takes damage equal to your level each time its natural attack roll is odd.
 
-##### Champion Feats
+###### Champion Feats
 
 -   Add a damage die of the same size to your skeletal minion’s damage rolls (for example, `dice: 3d6` becomes 4d6).
 -   Add double your Charisma modifier to your skeletal minion’s hit points. At 8th level, add triple it.  
 -   Add a damage die of the same size to your skeletal minion’s damage rolls (for example, `dice: 4d6`becomes 5d6, and this is cumulative with the champion feat).
 
-##### Epic Feats
+###### Epic Feats
 
 -   Your skeletal minion gains a +2 bonus to all defences.
 
-### Sorta Dead
+#### Sorta Dead
 
 In some ways, you’re dead already. You don’t need to eat or sleep or breathe. You can’t drown in normal water/liquid, though magical gas will still affect you.
 
@@ -458,21 +459,21 @@ When a spell or effect targets or applies to undead, you can decide whether you 
 
 The first time you die each level, roll a normal save, adding your Charisma modifier. If you succeed, you heal using a free recovery instead of dying. If you were dying because of last gasp saves, consider yourself saved from the last gasp problem also.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 You gain *resist poison 16+* and *resist negative energy 16+*.
 
-#### Champion Feat
+##### Champion Feat
 
 The spells *zombie form*, *ghoul form*, *ghost form*, and *vampiric form* all function as recharge 16+ after battle spells for you, though you still memorize them as daily spells.
 
-#### Epic Feat
+##### Epic Feat
 
 No undead creature that is not under the direct command of a necromantic icon can attack you unless you attack it or cast a spell against it first.
 
-## 1st Level Spells
+### 1st Level Spells
 
-### Channel Life
+#### Channel Life
 
 Ranged spell
 
@@ -498,19 +499,19 @@ Once per battle
 
 9th level spell: `dice: 10d12` damage vs. enemy, 30 damage vs. ally.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 You can now cast this spell twice per battle.
 
-#### Champion Feat
+##### Champion Feat
 
 Staggered allies can no longer be an attack target of the spell.
 
-#### Epic Feat
+##### Epic Feat
 
 On a miss, the spell now deals half damage to the target, but there is still no effect on the healing target.
 
-### Chant of Endings
+#### Chant of Endings
 
 Ranged spell
 
@@ -530,19 +531,19 @@ At-Will
 
 9th level spell: `dice: 8d10`damage.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 You can now choose whether or not you want to ignore mooks as targets when you cast the spell.
 
-#### Champion Feat
+##### Champion Feat
 
 Misses now deal damage equal to your level.
 
-#### Epic Feat
+##### Epic Feat
 
 While the escalation die is 4+, you can now target two nearby enemies with the fewest hit points with this spell.
 
-### Command Undead
+#### Command Undead
 
 Ranged spell
 
@@ -562,11 +563,11 @@ Once per battle
 
 9th level spell: Target with 460 hp or fewer.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 A miss doesn’t expend the spell.
 
-#### Champion Feat
+##### Champion Feat
 
 If you wish, the target doesn’t make any attacks while confused. Instead it becomes compliant, answers short questions if possible, and follows other suggestions that don’t lead directly to damaging itself or other creatures. Basically, while confused it becomes a slightly puzzled friend, which may wonder why your other friends are hurting it while it’s trying to be helpful.
 
@@ -574,7 +575,7 @@ If you wish, the target doesn’t make any attacks while confused. Instead it be
 
 The target now adds the escalation die to its attacks while confused by this spell_._
 
-### Death’s Gauntlet
+#### Death’s Gauntlet
 
 Ranged spell
 
@@ -598,19 +599,19 @@ At-Will
 
 9th level spell: `dice: 7d10`damage.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 When a target uses a standard action to end *death’s gauntlet* ongoing damage, it takes negative energy damage equal to your level.
 
-#### Champion Feat
+##### Champion Feat
 
 When you roll a natural even hit against a target with this spell, the ongoing negative energy damage has a hard save (16+).
 
-#### Epic Feat
+##### Epic Feat
 
 The spell can also target MD instead of PD.
 
-### Summon Undead (1st level+)
+#### Summon Undead (1st level+)
 
 Ranged spell
 
@@ -628,40 +629,40 @@ As you cast the spell at higher levels, the mooks you summon vary, as shown belo
 
 9th level spell: `dice: 1d3` + 1 Blackamber skeletal warrior mooks.
 
-#### Champion Feat
+##### Champion Feat
 
 You now summon `dice: 1d4` + 1 mooks when you cast this spell instead of `dice: 1d3` + 1.
 
-#### Epic Feat
+##### Epic Feat
 
 If one or more mooks summoned by the spell survive the battle, you can keep one mook with you until the next battle. Or until someone in the party or the world gets sick of it and slays the thing.
 
-#### Crumbling Skeleton
+##### Crumbling Skeleton
 
 | Normal 1st level Mook Undead  | Initiative: +6 Vulnerability: holy  Sword +6 vs. AC—3 damage  Resist weapons 16+: When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage. | AC PD MD HP | 16 14 10 6 |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|------------|
 
-#### Putrid Zombie
+##### Putrid Zombie
 
 | Normal 3rd level Mook Undead  | Initiative: +2 Vulnerability: holy  Rotting fist +7 vs. AC—5 damage Natural 16+: Both the zombie and its target take `dice: 1d6` damage!  Headshot: A critical hit against a putrid zombie deals triple damage instead of the normal double damage for a crit. | AC PD MD HP | 18 16 12 16 |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Starving Ghoul
+##### Starving Ghoul
 
 | Normal 5th level Mook Undead  | Initiative: +8 Vulnerability: holy  Ripping claws +10 vs. AC—7 damage Natural 16+ The target is vulnerable (attacks vs. it have crit range expanded by 2) to attacks by undead until the end of the ghoul’s next turn.  Pound of flesh: The starving ghoul’s ripping claws attack deals +5 damage against vulnerable targets. | AC PD MD HP | 20 18 14 18 |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Masterless Vampire Spawn
+##### Masterless Vampire Spawn
 
 | Normal 7th level Mook Undead  | Initiative: +11 Vulnerability: holy  Claw +11 vs. AC—14 damage Natural even hit: The vampire spawn can make a fangs attack against the target as a free action.  [Special trigger] Fangs +15 vs. AC—7 damage, and a humanoid target is weakened (–4 attack and defences) until the end of the masterless vampire spawn’s next turn | AC PD MD HP | 22 19 17 24 |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Blackamber Skeletal Warrior
+##### Blackamber Skeletal Warrior
 
 | Normal 9th level Mook Undead  | Initiative: +15 Vulnerability: holy  Shortsword +15 vs. AC—28 damage Natural 16+: Each Blackamber skeletal warrior in the battle moves up `dice: 1d4` points in initiative order. Natural even miss: 10 damage.  R: Javelin +13 vs. AC—24 damage  Press advantage: The warrior deals +1d10 damage with its attacks against enemies that have a lower initiative than it.  Resist weapons 16+: When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage. | AC PD MD HP | 26 20 22 25 |
 |--------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-### Terror
+#### Terror
 
 Ranged spell
 
@@ -683,19 +684,19 @@ Daily
 
 9th level spell: Target with 300 hp or fewer, `dice: 8d10`damage on a miss.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 When you miss with this spell, you regain it after the battle.
 
-#### Champion Feat
+##### Champion Feat
 
 Increase the hit point threshold of targets by 50 hp.
 
-#### Epic Feat
+##### Epic Feat
 
 The target also takes the miss damage each time it fails a save against the effect.
 
-### Unholy Blast
+#### Unholy Blast
 
 Ranged spell
 
@@ -719,19 +720,19 @@ Daily
 
 9th level spell: `dice: 2d8*10` damage.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 The spell can now target faraway enemies.
 
-#### Champion Feat
+##### Champion Feat
 
 The spell’s damage dice increase to d12s.
 
-#### Epic Feat
+##### Epic Feat
 
 The spell now targets two nearby enemies, but you can’t attack the same target twice as you work through the misses and hits.
 
-### Zombie Form
+#### Zombie Form
 
 Ranged spell
 
@@ -751,9 +752,9 @@ Daily
 
 9th level spell: 210 temporary hit points.
 
-## 3rd Level Spells
+### 3rd Level Spells
 
-### The Bones Beneath
+#### The Bones Beneath
 
 Ranged spell
 
@@ -779,27 +780,27 @@ The new mooks take their turn immediately after your turn.
 
 This isn’t a summoning spell, so the mooks created by this spell don’t count as summoned mooks.
 
-#### Just-ripped-free Skeleton Mook (3rd)
+##### Just-ripped-free Skeleton Mook (3rd)
 
 | Normal 3rd level Mook Undead  | Initiative: +8 Vulnerability: holy  Sword or axe or whatever +8 vs. AC—5 damage  Resist weapons 16+: When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage. | AC PD MD HP | 18 16 12 11 |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Just-ripped-free Skeleton Mook (5th)
+##### Just-ripped-free Skeleton Mook (5th)
 
 | Normal 3rd level Mook Undead  | Initiative: +10 Vulnerability: holy  Sword or axe or whatever +10 vs. AC—8 damage  Resist weapons 16+: When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage. | AC PD MD HP | 20 18 14 18 |
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Just-ripped-free Skeleton Mook (7th)
+##### Just-ripped-free Skeleton Mook (7th)
 
 | Normal 3rd level Mook Undead  | Initiative: +12 Vulnerability: holy  Sword or axe or whatever +12 vs. AC—16 damage  Resist weapons 16+: When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage. | AC PD MD HP | 22 20 16 27 |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Just-ripped-free Skeleton Mook (9th)
+##### Just-ripped-free Skeleton Mook (9th)
 
 | Normal 3rd level Mook Undead  | Initiative: +14 Vulnerability: holy  Sword or axe or whatever +14 vs. AC—28 damage  Resist weapons 16+: When a weapon attack targets this creature, the attacker must roll a natural 16+ on the attack roll or it only deals half damage. | AC PD MD HP | 24 22 18 44 |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-### Circle of Death
+#### Circle of Death
 
 Ranged spell
 
@@ -825,7 +826,7 @@ Daily
 
 9th level spell: `dice: 4d6`x 10 damage to an enemy, `dice: 3d10`damage to an ally.
 
-### Ghoul Form
+#### Ghoul Form
 
 Ranged spell
 
@@ -843,7 +844,7 @@ The target also only gains half the normal amount from healing effects, no matte
 
 9th level spell: The target also rolls an icon relationship die with any necromantic icon, choosing whether the relationship is positive or negative.
 
-### Negative Energy Shield
+#### Negative Energy Shield
 
 Close-quarters spell
 
@@ -859,7 +860,7 @@ Daily
 
 9th level spell: `dice: 2d8*10` damage.
 
-### Ray of Enfeeblement
+#### Ray of Enfeeblement
 
 Ranged spell
 
@@ -879,19 +880,19 @@ Daily
 
 9th level spell: `dice: 2d10*10` damage.
 
-#### Adventurer Feat
+##### Adventurer Feat
 
 The spell can now target an enemy with any number of hit points while the escalation die is 3+.
 
-#### Champion Feat
+##### Champion Feat
 
 The save against weakened is now a hard save (16+).
 
-#### Epic Feat
+##### Epic Feat
 
 On a miss, the target is also dazed (save ends).
 
-### Speak with Dead
+#### Speak with Dead
 
 Ranged spell
 
@@ -911,7 +912,7 @@ Variable
 
 9th level spell: Questions can now be phrased to receive one to two sentence answers, targeting corpses/heads or skeletal remains of almost any age.
 
-### Summon Horror (3rd level+)
+#### Summon Horror (3rd level+)
 
 Ranged spell
 
@@ -927,27 +928,27 @@ As you cast the spell at higher levels, the creature you summon varies, as shown
 
 9th level spell: You can now summon a greater wight.
 
-#### Summoned Ghoul
+##### Summoned Ghoul
 
 | Normal 3rd level Spoiler Undead  | Initiative: +8 Vulnerability: holy  Claws and bite +8 vs. AC—8 damage Natural even hit: The target is vulnerable (attacks vs. it have crit range expanded by 2) to attacks by undead until the end of the ghoul’s next turn.  Pound of flesh: The ghoul’s claws and bite attack deals +4 damage against vulnerable targets.  Infected bite: Any creature that is slain by a ghoul and not consumed will rise as a ghoul the next night. | AC PD MD HP | 18 16 12 20 |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Summoned Wight
+##### Summoned Wight
 
 | Normal 5th level Spoiler Undead  | Initiative: +8 Vulnerability: holy  Sword +10 vs. AC—14 damage Natural even hit or miss: Unless the wight is staggered, the attack also deals 8 ongoing negative energy damage. | AC PD MD HP | 22 18 14 32 |
 |----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Summoned Barrow Wight
+##### Summoned Barrow Wight
 
 | Normal 7th level Spoiler Undead  | Initiative: +10 Vulnerability: holy  Sword +12 vs. AC—21 damage Natural even hit or miss: Unless the barrow wight is staggered, the attack also deals 13 ongoing negative energy damage. | AC PD MD HP | 24 20 16 52 |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Summoned Greater Wight
+##### Summoned Greater Wight
 
 | Normal 9th level Spoiler Undead  | Initiative: +12 Vulnerability: holy  Attack +14 vs AC—40 damage Natural even hit or miss: Unless the greater wight is staggered, the attack also deals 20 ongoing negative energy damage. | AC PD MD HP | 26 22 18 90 |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-### Wave of Decay
+#### Wave of Decay
 
 Ranged spell
 
@@ -965,17 +966,17 @@ The effect ends at the end of the battle, when you drop to 0 hp, or when your *w
 
 9th level spell: `dice: 5d12` damage.
 
-#### Champion Feat
+##### Champion Feat
 
 The spell no longer ends when you drop to 0 hit points or below; instead it ends when you fail a death save.
 
-#### Epic Feat
+##### Epic Feat
 
 The spell no longer ends when you use it to drop an enemy to 0 hit points; it now ends when it drops a second enemy to 0 hit points.
 
-## 5th Level Spells
+### 5th Level Spells
 
-### Death’s Call
+#### Death’s Call
 
 Ranged spell
 
@@ -989,15 +990,15 @@ Quick action to cast
 
 9th level spell: If the chosen creature is *not* the next creature in the battle to drop to 0 hp, you still gain 30 temporary hit points.
 
-#### Champion Feat
+##### Champion Feat
 
 The recovery is now free.
 
-#### Epic Feat
+##### Epic Feat
 
 If your choice was wrong, you don’t expend the spell and can cast it later this battle. A second failed choice expends the spell.
 
-### Rotting Curse
+#### Rotting Curse
 
 Ranged spell
 
@@ -1015,7 +1016,7 @@ Daily
 
 9th level spell: 80 ongoing damage on a hit, with fail increments/miss damage of 40.
 
-### Summon Wraith (5th level+)
+#### Summon Wraith (5th level+)
 
 Ranged spell
 
@@ -1029,21 +1030,21 @@ As you cast the spell at higher levels, you summon multiple wraiths. Stats for t
 
 9th level spell: You can now summon two greater wraiths.
 
-#### Epic Feat
+##### Epic Feat
 
 When you cast *summon wraith* while the escalation die is 3+, you summon three wraiths or greater wraiths instead of two.
 
-#### Summoned Wraith
+##### Summoned Wraith
 
 | Normal 5th level Spoiler Undead  | Initiative: +10 Vulnerability: holy  Ice-cold ghost blade +10 vs. PD—14 negative energy damage Natural 16+: The target is also weakened until the end of its next turn.  C: Spiraling assault +10 vs. PD (1d3 nearby enemies)—10 negative energy damage, and after the attack the wraith teleports to and engages with one target it hit Limited use: The wraith can use spiraling assault only when the escalation die is even.  Flight: The wraith hovers and zooms about.  Ghostly: This creature has resist damage 16+ to all damage (yes, even holy damage) except force damage, which damages it normally. A wraith can move through solid objects, but it can’t end its movement inside them. | AC PD MD HP | 19 14 17 33 |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-#### Summoned Greater Wraith
+##### Summoned Greater Wraith
 
 | Normal 7th level Spoiler Undead  | Initiative: +12 Vulnerability: holy  Ice-cold ghost blade +12 vs. PD—20 negative energy damage Natural 16+: The target is also weakened until the end of its next turn.  C: Spiraling assault +10 vs. PD (1d3 nearby enemies)—15 negative energy damage, and after the attack the wraith teleports to and engages with one target it hit Limited use: The wraith can use spiraling assault only when the escalation die is even.  Flight: The wraith hovers and zooms about.  Ghostly: This creature has resist damage 16+ to all damage (yes, even holy damage) except force damage, which damages it normally. A wraith can move through solid objects, but it can’t end its movement inside them. | AC PD MD HP | 21 16 19 47 |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|-------------|
 
-### You Know What to Do
+#### You Know What to Do
 
 Ranged spell
 
@@ -1061,17 +1062,17 @@ Daily
 
 9th level spell: Targets with 260 hp or fewer.
 
-#### Champion Feat
+##### Champion Feat
 
 The crit range for attacks a confused target makes against itself expands by 4.
 
-#### Epic Feat
+##### Epic Feat
 
 Increase the hit point threshold of targets by 40 hp.
 
-## 7th Level Spells
+### 7th Level Spells
 
-### Cone of Corruption
+#### Cone of Corruption
 
 Ranged spell
 
@@ -1089,7 +1090,7 @@ Daily
 
 9th level spell: `dice: 2d8*10` damage.
 
-### Feigned Defeat
+#### Feigned Defeat
 
 Close-quarters spell
 
@@ -1101,7 +1102,7 @@ Quick action to cast
 
 9th level spell: You lose `dice: 10d12` hit points.
 
-### Ghost Form
+#### Ghost Form
 
 Ranged spell
 
@@ -1115,17 +1116,17 @@ The target also only gains half the normal amount from healing effects, no matte
 
 9th level spell: While in ghost form, you can move through solid objects, but you can’t end your movement inside them.
 
-#### Champion Feat
+##### Champion Feat
 
 You can now target a nearby willing ally with the spell instead of yourself.
 
-#### Epic Feat
+##### Epic Feat
 
 You can now target up to two nearby willing allies (including you).
 
-## 9th Level Spells
+### 9th Level Spells
 
-### Finger of Death
+#### Finger of Death
 
 Ranged spell
 
@@ -1141,7 +1142,7 @@ Daily
 
 ***Epic Feat:*** You can now target an enemy with 320 hp or fewer.
 
-### The Last of the Wine
+#### The Last of the Wine
 
 Ranged spell
 
@@ -1157,7 +1158,7 @@ Daily
 
 **Miss:** Half damage.
 
-### Vampiric Form
+#### Vampiric Form
 
 Ranged spell
 
@@ -1171,35 +1172,35 @@ Daily
 
 **Natural Odd Hit:** The target is weakened until the end of its next turn.
 
-## Summoning Rules
+### Summoning Rules
 
 These general rules also apply to the druid’s Elemental Caster class talent.
 
-### Standard Action Spells
+#### Standard Action Spells
 
 Casting a summoning spell generally requires a standard action. The creature(s) you summon appears next to you, though feats or powers might enable you to summon it nearby instead.
 
-### Duration
+#### Duration
 
 A summoned creature fights for you until the end of the battle or until it drops to 0 hit points. At 0 hp, summoned creatures are slain and removed from the battle.
 
-### One Summoning Spell at a time
+#### One Summoning Spell at a time
 
 Each spellcaster can have only a single summoning spell active at a time. If all the creatures from an earlier summoning spell have been slain, you’re free to cast another. Alternatively, you can dismiss your own previously summoned creatures as a quick action to clear the way for a new summoning spell.
 
-### Halfway there
+#### Halfway there
 
 Summoned creatures are not the same as real creatures. They’re partly real, partly magical. Their abilities don’t always match the capabilities of the creatures that the adventurers encounter *for real*. Sometimes this is reflected in a summoned creature’s attacks or abilities. It’s always reflected in a summoned creature’s hit points.
 
-### Hit Points
+#### Hit Points
 
 Each summoned creature stat block indicates its base hit points. Starting hit points for summoned creatures are nearly always lower than hit points for non-summoned versions of the same creature. Some class feats might increase the hit points of summoned creatures.
 
-### Actions on Arrival
+#### Actions on Arrival
 
 The turn you summon a creature, that creature takes its turn immediately after your turn in initiative order. During its turn, the summoned creature can act like any other creature, taking a standard, move, and quick action. The summoned creature continues to take its turn immediately after you (even if your initiative order changes) until the end of the battle.
 
-### Escalation Die
+#### Escalation Die
 
 As a rule, summoned creatures don’t benefit from the escalation die. A summoned creature can add the escalation die to attacks, however, if *you use a quick action* to give it orders or magical reinforcement. The summoned creature then gets to use the escalation die until the start of your next turn, including for opportunity attacks and other attacks that it gets to make during other creatures’ turns.
 
@@ -1207,18 +1208,18 @@ For example, during the turn you summon the creature, you use a quick action aft
 
 If you’ve summoned a mob of mooks, a single quick action lets every member of the mob use the escalation die.
 
-### Allies
+#### Allies
 
 Summoned creatures generally count as your allies (for roleplaying as well as for resolving effects).
 
-### No Recoveries, Bad Healing
+#### No Recoveries, Bad Healing
 
 Summoned creatures don’t have recoveries. If you cast a healing spell on a summoned creature that requires the use of a recovery, the summoned creature heals hit points equal to your level. If you use an effect that would heal a summoned creature without using a recovery, the summoned creature only heals half the normal hit points of the effect. Temporary hit points still work normally.
 
-### No Nastier Specials
+#### No Nastier Specials
 
 Creatures you summon don’t use nastier specials.
 
-### Spell or Creature
+#### Spell or Creature
 
 When a summoning spell is cast, it’s definitely a spell. After casting the spell, a summoned creature is a creature.

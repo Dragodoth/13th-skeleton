@@ -4,14 +4,12 @@
     import FolderStructure from "$lib/components/FolderStructure.svelte";
     import {Accordion} from "@skeletonlabs/skeleton";
 
-    const {
-        folderStructure
-    } = data;
+    const folderStructure = $state(data.folderStructure);
 
 </script>
 
-<section class="grid grid-cols-2 md:grid-cols-[auto_1fr_auto] gap-4">
-    <aside class="card p-2">
+<section class="grid grid-cols-[16rem_1fr] gap-4">
+    <aside class="card p-2 sticky top-4 h-screen overflow-y-auto text-sm">
         <Accordion>
             <FolderStructure {folderStructure}/>
         </Accordion>
@@ -22,4 +20,3 @@
         </article>
     </main>
 </section>
-

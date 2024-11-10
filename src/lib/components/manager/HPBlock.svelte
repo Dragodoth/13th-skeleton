@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {ProgressBar} from "@skeletonlabs/skeleton";
+    import {ProgressBar, Ratings} from "@skeletonlabs/skeleton";
     import type {Combatant} from "$lib/types";
     import {battles} from "$lib/stores";
 
@@ -49,10 +49,18 @@
     <section class="card p-2 w-full variant-ghost">
         <div class="flex gap-2 items-end">
             <span>{currentHP}</span>
-            <div class="flex grow flex-col items-center gap-2">
+            <div class="flex grow flex-col flex-wrap items-center gap-2">
                     <p>{combatant.name} {combatant.mook ? "Mob " : ""}{HPIndex + 1}</p>
                 {#if combatant.mook}
                     <p>{Math.ceil(currentHP / combatant.hp)} / {combatant.combatantCount[HPIndex].mookCount} mooks</p>
+<!--                    <Ratings value={Math.ceil(currentHP / combatant.hp)} max={combatant.combatantCount[HPIndex].mookCount}>-->
+<!--                        <svelte:fragment slot="empty">-->
+<!--                            <i class="fa-solid fa-skull-crossbones"></i>-->
+<!--                        </svelte:fragment>-->
+<!--                        <svelte:fragment slot="full">-->
+<!--                            <i class="fa-solid fa-skull"></i>-->
+<!--                        </svelte:fragment>-->
+<!--                    </Ratings>-->
                     <div class="flex gap-2">
                         <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
                                 onclick={() => battles.removeMook(battleId, combatant.id, mobId)}><i class="fa-solid fa-minus"></i>

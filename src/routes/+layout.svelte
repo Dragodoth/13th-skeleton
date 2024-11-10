@@ -1,21 +1,25 @@
 <script lang="ts">
     import '../app.postcss';
     import '@fortawesome/fontawesome-free/css/all.min.css';
-    import {computePosition, autoUpdate, offset, shift, flip, arrow} from '@floating-ui/dom';
-    import {storePopup, initializeStores, Modal} from '@skeletonlabs/skeleton';
-
-    storePopup.set({computePosition, autoUpdate, offset, shift, flip, arrow});
+    import {arrow, autoUpdate, computePosition, flip, offset, shift} from '@floating-ui/dom';
     import type {ModalComponent} from "@skeletonlabs/skeleton";
+    import {
+        AppBar,
+        initializeStores,
+        LightSwitch,
+        Modal,
+        RadioGroup,
+        RadioItem,
+        storePopup
+    } from '@skeletonlabs/skeleton';
     import ModalSaveBattleForm from "$lib/components/builder/utils/ModalSaveBattleForm.svelte";
     import ModalImportBattleList from "$lib/components/builder/utils/ModalImportBattleList.svelte";
     import ModalAddCombatant from "$lib/components/manager/ModalAddCombatant.svelte";
     import {use2E} from "$lib/stores.ts";
-    import {
-        AppBar,
-        LightSwitch,
-        RadioGroup,
-        RadioItem,
-    } from '@skeletonlabs/skeleton';
+
+    storePopup.set({computePosition, autoUpdate, offset, shift, flip, arrow});
+
+    let {children} = $props();
 
 
     initializeStores()
@@ -35,11 +39,11 @@
 
 <div class="grid h-screen grid-rows-[auto_1fr_auto] overflow-y-auto w-screen">
     <!-- Header -->
-    <AppBar slotLead="uppercase md:text-xl" gridColumns="grid-cols-3" slotDefault="place-self-center"
+    <AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotLead="uppercase md:text-xl"
             slotTrail="place-content-end">
         <svelte:fragment slot="lead">
 			<span>
-                <i class="fa-solid fa-skull"></i>	13th Skeleton
+                <i class="fa-regular fa-skull"></i>	13th Skeleton
 			</span>
         </svelte:fragment>
 
@@ -64,7 +68,7 @@
     </AppBar>
     <!-- Main -->
     <main class=" p-4 space-y-4">
-        <slot/>
+        {@render children()}
     </main>
     <!-- Footer -->
     <AppBar>(footer)</AppBar>

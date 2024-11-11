@@ -2,7 +2,7 @@
     import type {SvelteComponent} from 'svelte';
     import {ListBox, ListBoxItem, getModalStore} from '@skeletonlabs/skeleton';
     import {battles} from "$lib/stores.ts";
-    import type {Battle} from "$lib/types";
+    import type {Battle} from "$lib/types.ts";
 
     export let parent: SvelteComponent;
 

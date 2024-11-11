@@ -2,9 +2,9 @@
     import {mEqBudget, playerNumber, battleLevel, battles, displayedBattleId} from "$lib/stores.ts";
     import {ProgressBar} from "@skeletonlabs/skeleton";
     import CombatantCard from "$lib/components/builder/CombatantCard.svelte";
-    import SaveBattleButton from "$lib/components/builder/utils/SaveBattleButton.svelte";
+    import SaveBattleButton from "$lib/components/utils/SaveBattleButton.svelte";
     import type {Battle} from "$lib/types.ts";
-    import RemoveCombatantsButton from "$lib/components/builder/utils/RemoveCombatantsButton.svelte";
+    import RemoveCombatantsButton from "$lib/components/utils/RemoveCombatantsButton.svelte";
 
     if (!$battles.find(b => b.id === $displayedBattleId)) {
         $displayedBattleId = $battles[0].id;

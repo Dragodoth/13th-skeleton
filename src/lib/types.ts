@@ -32,6 +32,7 @@ export type Action = {
     name: string,
     desc: string,
     traits?: Trait[],
+    [key: string]: any,
 }
 
 export type Monster = {
@@ -56,6 +57,7 @@ export type Monster = {
     page?: number,
     source?: string,
     mook?: string,
+    [key: string]: any,
 }
 
 export type Combatant = Monster & {
@@ -102,4 +104,3 @@ export type MarkdownPage = {
 export type FolderStructureType = {
     [key: string]: FolderStructureType | string;
 };
-

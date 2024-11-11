@@ -3,7 +3,8 @@
     import {battles} from "$lib/stores";
     import Statblock from "$lib/components/manager/Statblock.svelte";
     import HPManager from "$lib/components/manager/HPManager.svelte";
-    import AddCombatantButton from "$lib/components/manager/AddCombatantButton.svelte";
+    import AddCombatantButton from "$lib/components/utils/AddCombatantButton.svelte";
+    import AddCustomCombatantButton from "$lib/components/utils/AddCustomCombatantButton.svelte";
     //export let data;
 
     const {
@@ -46,6 +47,7 @@
                 </section>
             </div>
         {/each}
-        <AddCombatantButton/>
+<!--        <AddCombatantButton/>-->
+      <AddCustomCombatantButton/>
     </section>
 {/if}

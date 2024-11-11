@@ -1,5 +1,5 @@
 <script lang="ts">
-    import InvertedColorImage from "$lib/components/InvertedColorImage.svelte";
+    import InvertedColorImage from "$lib/components/utils/InvertedColorImage.svelte";
 
     const cardCSS = "card flex flex-col items-center variant-ghost-surface";
     const headerCSS = "card-header h1 uppercase p-4 text-center";

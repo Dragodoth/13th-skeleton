@@ -1,7 +1,7 @@
 <script lang="ts">
     let { children, data } = $props();
 
-    import FolderStructure from "$lib/components/FolderStructure.svelte";
+    import FolderStructure from "$lib/components/utils/FolderStructure.svelte";
     import {Accordion} from "@skeletonlabs/skeleton";
 
     const folderStructure = $state(data.folderStructure);

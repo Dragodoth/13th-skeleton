@@ -1,7 +1,7 @@
 <script lang="ts">
 import {getModalStore, popup} from "@skeletonlabs/skeleton";
 import type {ModalSettings} from "@skeletonlabs/skeleton";
-import type {Battle} from "$lib/types";
+import type {Battle} from "$lib/types.ts";
 
 const modalStore = getModalStore();
 

@@ -1,5 +1,5 @@
 <script lang="ts">
-    import FolderStructure from "$lib/components/FolderStructure.svelte";
+    import FolderStructure from "$lib/components/utils/FolderStructure.svelte";
     import type {FolderStructureType} from "$lib/types.ts";
     import {AccordionItem} from "@skeletonlabs/skeleton";
 

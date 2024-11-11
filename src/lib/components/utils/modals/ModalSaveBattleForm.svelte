@@ -3,7 +3,7 @@
     // Stores
     import {getModalStore} from '@skeletonlabs/skeleton';
     import {battles} from "$lib/stores.ts";
-    import type {saveBattleFormData} from "$lib/types";
+    import type {saveBattleFormData} from "$lib/types.ts";
 
     // Props
     /** Exposes parent props to this component. */

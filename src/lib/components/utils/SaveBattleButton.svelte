@@ -2,7 +2,7 @@
     import {getModalStore} from "@skeletonlabs/skeleton";
     import type {ModalSettings, ModalComponent, ModalStore} from '@skeletonlabs/skeleton';
     import {battles} from "$lib/stores.ts";
-    import type {Battle, saveBattleFormData} from "$lib/types";
+    import type {Battle, saveBattleFormData} from "$lib/types.ts";
 
     interface Props {
         battleToSave: Battle

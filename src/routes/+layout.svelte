@@ -12,10 +12,11 @@
         RadioItem,
         storePopup
     } from '@skeletonlabs/skeleton';
-    import ModalSaveBattleForm from "$lib/components/builder/utils/ModalSaveBattleForm.svelte";
-    import ModalImportBattleList from "$lib/components/builder/utils/ModalImportBattleList.svelte";
-    import ModalAddCombatant from "$lib/components/manager/ModalAddCombatant.svelte";
+    import ModalSaveBattleForm from "$lib/components/utils/modals/ModalSaveBattleForm.svelte";
+    import ModalImportBattleList from "$lib/components/utils/modals/ModalImportBattleList.svelte";
+    import ModalAddCombatant from "$lib/components/utils/modals/ModalAddCombatant.svelte";
     import {use2E} from "$lib/stores.ts";
+    import ModalSaveCustomMonster from "$lib/components/utils/modals/ModalSaveCustomMonster.svelte";
 
     storePopup.set({computePosition, autoUpdate, offset, shift, flip, arrow});
 
@@ -29,6 +30,7 @@
         modalComponentModalSaveBattleForm: {ref: ModalSaveBattleForm},
         modalComponentModalImportBattleList: {ref: ModalImportBattleList},
         modalComponentModalAddCombatant: {ref: ModalAddCombatant},
+        modalComponentSaveCustomMonster: {ref: ModalSaveCustomMonster},
 
         // ...
     };

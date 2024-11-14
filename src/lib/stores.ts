@@ -427,3 +427,30 @@ function createBattles() {
 export const battles = createBattles();
 
 export const displayedBattleId: Writable<string> = persisted('displayedBattleId', '');
+
+function createCustomMonsterStorage() {
+    const customMonsterStorage: Persisted<Monster[]> = persisted('customMonsterStorage', [])
+    const {update, set} = customMonsterStorage;
+
+    const addMonster = (monster: Monster) => {
+        update((currentStorage: Monster[]) => {
+            return [...currentStorage, monster];
+        })
+    }
+
+    const removeMonster = (monsterId: string) => {
+        update((currentStorage: Monster[]) => {
+            const updatedStorage: Monster[] = currentStorage.filter((monster: Monster) => monster.id !== monsterId);
+            return [...updatedStorage];
+        })
+    }
+
+    return {
+        ...customMonsterStorage,
+        addMonster,
+        removeMonster,
+        removeAllMonsters: () => set([])
+    }
+}
+
+export const  customMonsterStorage = createCustomMonsterStorage();

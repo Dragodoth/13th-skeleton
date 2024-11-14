@@ -1,6 +1,7 @@
 <script lang="ts">
     import {getModalStore, type ModalSettings} from "@skeletonlabs/skeleton";
-    import type {Monster, saveBattleFormData} from "$lib/types.ts";
+    import type {Monster} from "$lib/types.ts";
+    import {customMonsterStorage} from "$lib/stores.ts";
 
     const modalStore = getModalStore();
 
@@ -9,18 +10,17 @@
             const modal: ModalSettings = {
                 type: 'component',
                 component: 'modalComponentSaveCustomMonster',
-                title: 'Add Combatant',
-                body: 'Choose a combatant to add to battle.',
-                response: (r: saveBattleFormData) => {
-                    resolve(r as saveBattleFormData);
+                response: (r: Monster) => {
+                    resolve(r as Monster);
                 }
             };
             modalStore.trigger(modal);
         })
             .then((r) => {
-                const formData = r as Monster;
-                if (formData) {
-                    console.log(formData);
+                const customMonster = {...r as Monster};
+                if (customMonster) {
+                    customMonsterStorage.addMonster(customMonster);
+                    console.log($customMonsterStorage);
                 }
 
             })

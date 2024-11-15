@@ -4,7 +4,9 @@
 	"/api/pages": [
 		"src/routes/api/pages/+server.ts"
 	],
-	"/builder": [],
+	"/builder": [
+		"src/routes/builder/+page.ts"
+	],
 	"/compendium": [
 		"src/routes/compendium/+page.ts",
 		"src/routes/compendium/+layout.ts",
@@ -13,6 +15,9 @@
 	"/compendium/[...page]": [
 		"src/routes/compendium/[...page]/+page.ts",
 		"src/routes/compendium/+layout.ts"
+	],
+	"/customMonsters": [
+		"src/routes/customMonsters/+page.ts"
 	],
 	"/manager": [
 		"src/routes/manager/+page.ts"

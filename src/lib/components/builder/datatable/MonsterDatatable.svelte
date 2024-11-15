@@ -9,19 +9,27 @@
     import RowCount from '$lib/components/builder/datatable/RowCount.svelte';
     import Pagination from '$lib/components/builder/datatable/Pagination.svelte';
 
-    // Load local data
-    import data from '$lib/data/13th-Age-SRD/compendium/Bestiary/bestiarySRD.json';
+    interface Props {
+        monsters: Monster[];
+        clickHandler: Function;
+    }
+
+    const {
+        monsters,
+        clickHandler
+    }: Props = $props()
 
     // Import handler from SSD
     import {DataHandler} from '@vincjo/datatables';
     import type {Monster} from "$lib/types";
     import type {Readable} from "svelte/store";
+    import type {MouseEventHandler} from "svelte/elements";
 
     // Init data handler - CLIENT
-    const handler = new DataHandler(data, {rowsPerPage: 5});
+    const handler = new DataHandler(monsters, {rowsPerPage: 5});
     const rows: Readable<Monster[]> = handler.getRows();
 
-    let battleId = $derived($displayedBattleId);
+
     let displayedBattle = $derived($battles.find(b => b.id === $displayedBattleId) ?? null);
 
 </script>
@@ -53,7 +61,7 @@
         <tbody>
         {#each $rows as row}
             {#if displayedBattle && displayedBattle.combatants.find(c => c.id === row.id)}
-                <tr onclick={() => battles.addCombatant(battleId, row)} class="table-row-checked">
+                <tr onclick={() => clickHandler(row)} class="table-row-checked">
                     <td>{row.name}</td>
                     <td>{row.level}</td>
                     <td>{row.size}</td>
@@ -62,7 +70,7 @@
                     <td>{row.source} p.{row.page}</td>
                 </tr>
             {:else}
-                <tr onclick={() => battles.addCombatant(battleId, row)}>
+                <tr onclick={() => clickHandler(row)}>
                     <td>{row.name}</td>
                     <td>{row.level}</td>
                     <td>{row.size}</td>

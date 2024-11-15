@@ -9,11 +9,11 @@
 	<input
 			class="input text-sm w-full"
 			type="text"
-			placeholder="Filter"
+			placeholder={filterBy}
 			bind:value
 			on:input={() => {
 			if (filterBy) {
-				const filterValue = isNaN(Number(value)) ? value : Number(value);
+				const filterValue = value === "" ? undefined : isNaN(Number(value)) ? value : Number(value);
 				handler.filter(filterValue, filterBy);
 			}
 		}}

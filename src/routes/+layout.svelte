@@ -15,7 +15,7 @@
     import ModalSaveBattleForm from "$lib/components/utils/modals/ModalSaveBattleForm.svelte";
     import ModalImportBattleList from "$lib/components/utils/modals/ModalImportBattleList.svelte";
     import ModalAddCombatant from "$lib/components/utils/modals/ModalAddCombatant.svelte";
-    import {use2E} from "$lib/stores.ts";
+    import {customMonsterStorage, use2E} from "$lib/stores.ts";
     import ModalSaveCustomMonster from "$lib/components/utils/modals/ModalSaveCustomMonster.svelte";
 
     storePopup.set({computePosition, autoUpdate, offset, shift, flip, arrow});
@@ -31,7 +31,6 @@
         modalComponentModalImportBattleList: {ref: ModalImportBattleList},
         modalComponentModalAddCombatant: {ref: ModalAddCombatant},
         modalComponentSaveCustomMonster: {ref: ModalSaveCustomMonster},
-
         // ...
     };
 
@@ -55,6 +54,9 @@
             <a href="/compendium">Compendium</a>
 			<a href="/builder">Builder</a>
 			<a href="/manager">Manager</a>
+            {#if $customMonsterStorage.length > 0}
+                <a href="/customMonsters">Custom Monsters</a>
+            {/if}
 		</span>
 
         <svelte:fragment slot="trail">

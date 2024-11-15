@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import {
         Accordion,
         AccordionItem
@@ -7,6 +7,20 @@
     import BattleTable from "$lib/components/builder/BattleTable.svelte";
     import BattleSliders from "$lib/components/builder/BattleSliders.svelte";
     import BattleMaker from "$lib/components/builder/BattleMaker.svelte";
+    import {battles, displayedBattleId} from "$lib/stores.ts";
+    import type {Monster} from "$lib/types.ts";
+
+    const {
+        data
+    } = $props();
+
+    const battleId = $derived($displayedBattleId);
+
+    function clickHandler (monster: Monster) {
+        battles.addCombatant(battleId, monster)
+    }
+
+    const { monsters } = data;
 </script>
 
 <div class="card variant-soft">
@@ -32,4 +46,4 @@
 
 <BattleMaker />
 
-<MonsterDatatable />
+<MonsterDatatable {monsters} {clickHandler} />

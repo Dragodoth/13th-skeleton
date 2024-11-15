@@ -42,7 +42,7 @@
                 <section class="card p-2 my-2 variant-ghost">
                     <HPManager battleId={managedBattle.id} combatantId={combatant.id} {combatant}/>
                     <section class=" card p-4 w-full">
-                        <Statblock {combatant}/>
+                        <Statblock data={combatant}/>
                     </section>
                 </section>
             </div>

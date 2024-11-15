@@ -56,7 +56,7 @@ export type Monster = {
     basename: string,
     page?: number,
     source?: string,
-    mook?: string,
+    mook?: boolean,
     [key: string]: any,
 }
 

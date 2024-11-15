@@ -32,6 +32,7 @@
         role: "troop",
         size: "normal",
         type: "humanoid",
+        source: "Custom",
     });
 
     function handleAddTraitFormClick(key: string, actionIndex?: number) {

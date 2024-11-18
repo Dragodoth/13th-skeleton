@@ -5,45 +5,43 @@
 
     interface Props {
         battleId: string;
-        combatantId: string;
+        combatant: Combatant;
         HPIndex: number;
         mobId?: string;
     }
 
     const {
         battleId,
-        combatantId,
+        combatant,
         HPIndex,
         mobId = ""
     }: Props = $props();
 
-    const combatant: Combatant | undefined = $derived($battles.find(i => i.id === battleId)?.combatants.find(c => c.id === combatantId) ?? undefined);
+    // $effect(() => {
+    //         if (combatant) {
+    //             currentHP = (combatant.combatantCount[HPIndex].currentHP) ?? 0;
+    //         }
+    //     }
+    // )
+    console.log(combatant)
 
-    let currentHP = $state(0)
-    $effect(() => {
-            if (combatant) {
-                currentHP = (combatant.combatantCount[HPIndex].currentHP) ?? 0;
-            }
-        }
-    )
     let HPInput: string | undefined = $state();
+    let currentHP = $derived(combatant.combatantCount[HPIndex].currentHP)
+    const maxHp = $derived(combatant?.mook ? combatant.hp * (combatant.combatantCount[HPIndex].mookCount ?? 1) : combatant?.hp)
 
     function handleHPUpdate() {
         if (HPInput && combatant && parseFloat(HPInput) && currentHP) {
             if (HPInput.includes("-")) {
                 let newHP: number = currentHP + parseFloat(HPInput);
-                battles.updateHP(battleId, combatantId, HPIndex, newHP, mobId);
+                battles.updateHP(battleId, combatant.id, HPIndex, newHP, mobId);
             } else if (HPInput.includes("+")) {
                 let newHP: number = currentHP + parseFloat(HPInput);
-                battles.updateHP(battleId, combatantId, HPIndex, newHP, mobId);
+                battles.updateHP(battleId, combatant.id, HPIndex, newHP, mobId);
             } else {
-                battles.updateHP(battleId, combatantId, HPIndex, parseFloat(HPInput), mobId);
+                battles.updateHP(battleId, combatant.id, HPIndex, parseFloat(HPInput), mobId);
             }
         }
     }
-
-    const maxHp = $derived(combatant?.mook ? combatant.hp * (combatant.combatantCount[HPIndex]?.mookCount ?? 1) : combatant?.hp)
-
 </script>
 {#if combatant && currentHP}
     <section class="card p-2 w-full variant-ghost">
@@ -73,7 +71,7 @@
                 <ProgressBar
                         meter="bg-success-500"
                         track="bg-success-500/30"
-                        bind:value={currentHP}
+                        value={currentHP}
                         max={maxHp}
                 />
             </div>

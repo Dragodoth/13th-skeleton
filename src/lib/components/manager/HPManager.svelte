@@ -4,17 +4,14 @@
     import type {Combatant} from "$lib/types";
     import {battles} from "$lib/stores";
     import {Accordion, AccordionItem} from "@skeletonlabs/skeleton";
-    import BattleSliders from "$lib/components/builder/BattleSliders.svelte";
 
     interface Props {
         battleId: string;
-        combatantId: string;
         combatant: Combatant;
     }
 
     const {
         battleId,
-        combatantId,
         combatant
     }: Props = $props();
 
@@ -29,7 +26,7 @@
             <div class="card flex flex-col p-2 items-center gap-2">
                 {#if combatant}
                     {#each combatant.combatantCount as _, HPIndex}
-                        <HPBlock {battleId} {combatantId} {HPIndex} mobId={combatant.combatantCount[HPIndex].id}/>
+                        <HPBlock {battleId} {combatant} {HPIndex} mobId={combatant.combatantCount[HPIndex].id}/>
                     {/each}
                     <footer class="card-footer">
                         {#if !combatant.mook}

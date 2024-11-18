@@ -18,9 +18,8 @@
         })
             .then((r) => {
                 const customMonster = {...r as Monster};
-                if (customMonster) {
+                if (Object.keys(customMonster).length != 0) {
                     customMonsterStorage.addMonster(customMonster);
-                    console.log($customMonsterStorage);
                 }
 
             })

@@ -23,7 +23,6 @@
     import {DataHandler} from '@vincjo/datatables';
     import type {Monster} from "$lib/types";
     import type {Readable} from "svelte/store";
-    import type {MouseEventHandler} from "svelte/elements";
 
     // Init data handler - CLIENT
     const handler = new DataHandler(monsters, {rowsPerPage: 5});

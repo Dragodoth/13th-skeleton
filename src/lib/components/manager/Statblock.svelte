@@ -1,21 +1,62 @@
 <script lang="ts">
     import type {Combatant, Monster} from "$lib/types";
     import {Accordion, AccordionItem} from "@skeletonlabs/skeleton";
-    import ActionCards from "$lib/components/manager/ActionCards.svelte";
-    import TraitCards from "$lib/components/manager/TraitCards.svelte";
+    import type {Snippet} from "svelte";
+    import type {Action, Trait} from "$lib/types";
 
     interface Props {
-        data: Combatant | Monster
+        data: Combatant | Monster;
     }
 
     const {
-        data
+        data,
     }: Props = $props();
 
     const blockCSS = "-indent-5 ml-5";
     const divCSS = "flex flex-wrap variant-ghost-surface p-2 my-1 gap-1 rounded-xl w-full";
     const textCSS = "text-xl";
 </script>
+
+{#snippet actionCard(actions: Action[])}
+    <ul class="list">
+        {#each actions as action}
+            <li>
+                <div class={divCSS}>
+                    <p class={blockCSS}>
+                        <span class="font-bold">{action.name}</span> - <span>{action.desc}</span>
+                    </p>
+                    {#if action.traits}
+                        <ul class="list">
+                            {#each action.traits as trait}
+                                <li>
+                                    <p class={blockCSS}>
+                                        <span class="italic">{trait.name}:</span>
+                                        <span>{trait.desc}</span>
+                                    </p>
+                                </li>
+                            {/each}
+                        </ul>
+                    {/if}
+                </div>
+            </li>
+        {/each}
+    </ul>
+{/snippet}
+
+{#snippet traitCard(traits: Trait[])}
+    <ul class="list">
+        {#each traits as trait}
+            <li>
+                <div class={divCSS}>
+                    <p class={blockCSS}>
+                        <span class="italic">{trait.name}:</span>
+                        <span>{trait.desc}</span>
+                    </p>
+                </div>
+            </li>
+        {/each}
+    </ul>
+{/snippet}
 
 <section class="flex flex-col w-full gap-2">
     <div class="grid grid-cols-2 gap-2">
@@ -45,12 +86,12 @@
                 </svelte:fragment>
                 <svelte:fragment slot="content">
                     {#if data.actions}
-                        <ActionCards actions={data.actions} {divCSS} {blockCSS}/>
+                        {@render actionCard(data.actions)}
                     {/if}
 
                     {#if data.triggered_actions}
                         <span class="{textCSS}">Special triggers</span>
-                        <ActionCards actions={data.triggered_actions} {divCSS} {blockCSS}/>
+                        {@render actionCard(data.triggered_actions)}
                     {/if}
                 </svelte:fragment>
             </AccordionItem>
@@ -62,7 +103,7 @@
                     <span class={textCSS}>Traits</span>
                 </svelte:fragment>
                 <svelte:fragment slot="content">
-                    <TraitCards traits={data.traits} {divCSS} {blockCSS}/>
+                    {@render traitCard(data.traits)}
                 </svelte:fragment>
             </AccordionItem>
         {/if}
@@ -73,7 +114,7 @@
                     <span class={textCSS}>Nastier Specials</span>
                 </svelte:fragment>
                 <svelte:fragment slot="content">
-                    <TraitCards traits={data.nastier_traits} {divCSS} {blockCSS}/>
+                    {@render traitCard(data.nastier_traits)}
                 </svelte:fragment>
             </AccordionItem>
         {/if}

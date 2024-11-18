@@ -24,9 +24,9 @@
 }) as [folderName, folderContent]}
     {#if folderName.includes(".md")}
         <!-- Display the .md file path directly -->
-        <p class="p-2 px-4"><a href={folderContent.toString().slice(0, -3)} class="link">{folderName.slice(0, -3)}</a></p>
+        <p class="p-2 variant-soft-surface rounded-container-token"><a href={folderContent.toString().slice(0, -3)} class="link">{folderName.slice(0, -3)}</a></p>
     {:else}
-        <AccordionItem >
+        <AccordionItem regionPanel="space-y-2" padding="py-2 px-1">
             <svelte:fragment slot="summary">
                 {folderName}
             </svelte:fragment>

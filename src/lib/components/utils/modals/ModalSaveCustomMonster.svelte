@@ -20,19 +20,17 @@
     let formData: Monster = $state({
         name: "Skeleton",
         ac: 0,
-        basename: "",
         hp: 0,
         id: Date.now().toString(),
         initiative: 0,
         level: 0,
-        levelOrdinal: "",
         md: 0,
         pd: 0,
-        preview: "",
         role: "troop",
         size: "normal",
         type: "humanoid",
         source: "Custom",
+        mook: false,
     });
 
     function handleAddTraitFormClick(key: string, actionIndex?: number) {
@@ -173,6 +171,20 @@
     {/if}
 {/snippet}
 
+{#snippet textForm(type: string, key: string)}
+    <label class="label">
+        <span>{type}</span>
+        <input class="input" type="text" bind:value={formData[key]} placeholder={key}>
+    </label>
+{/snippet}
+
+{#snippet numberForm(type: string, key: string)}
+    <label class="label">
+        <span>{type}</span>
+        <input class="input" type="number" bind:value={formData[key]} placeholder={key}>
+    </label>
+{/snippet}
+
 {#if $modalStore[0]}
     <div class="card p-4 w-modal-wide shadow-xl space-y-4 max-h-screen overflow-auto">
         <header class="text-2xl font-bold">Custom Monster</header>
@@ -181,47 +193,24 @@
         <form class="modal-form border border-surface-500 p-4 space-y-4 rounded-container-token">
             <div class="flex flex-col items-start xl:flex-row gap-2">
                 <div class="flex gap-2 shrink">
-                    <div class="flex flex-col gap-1">
+                    <div class="flex flex-col gap-2 items-center">
+                        {@render textForm("Name", "name")}
+                        {@render textForm("Size", "size")}
+                        {@render numberForm("Level", "level")}
+                        {@render textForm("Role", "role")}
+                        {@render textForm("Type", "type")}
+                        {@render numberForm("Initiative", "initiative")}
                         <label class="label">
-                            <span>Name</span>
-                            <input class="input" type="text" bind:value={formData.name} placeholder="Enter name..."/>
-                        </label>
-                        <label class="label">
-                            <span>Size</span>
-                            <input class="input" type="text" bind:value={formData.size} placeholder="Enter size..."/>
-                        </label>
-                        <label class="label">
-                            <span>Level</span>
-                            <input class="input" type="text" bind:value={formData.level} placeholder="Enter level..."/>
-                        </label>
-                        <label class="label">
-                            <span>Role</span>
-                            <input class="input" type="text" bind:value={formData.role} placeholder="Enter role..."/>
-                        </label>
-                        <label class="label">
-                            <span>Initiative</span>
-                            <input class="input" type="text" bind:value={formData.initiative}
-                                   placeholder="Enter initiative..."/>
+                            <input class="checkbox" type="checkbox" bind:checked={formData.mook}>
+                            <span>Mook</span>
                         </label>
                     </div>
                     <div class="flex flex-col justify-around p-2 text-xl variant-ghost-surface rounded-3xl">
-                            <label class="label">
-                                <span>AC</span>
-                                <input class="input" type="text" bind:value={formData.ac} placeholder="Enter ac..."/>
-                            </label>
-                            <label class="label">
-                                <span>PD</span>
-                                <input class="input" type="text" bind:value={formData.pd} placeholder="Enter pd..."/>
-                            </label>
-                            <label class="label">
-                                <span>MD</span>
-                                <input class="input" type="text" bind:value={formData.md} placeholder="Enter md..."/>
-                            </label>
-                            <label class="label">
-                                <span>HP</span>
-                                <input class="input" type="text" bind:value={formData.hp} placeholder="Enter hp..."/>
-                            </label>
-                        </div>
+                        {@render numberForm("AC", "ac")}
+                        {@render numberForm("PD", "pd")}
+                        {@render numberForm("MD", "md")}
+                        {@render numberForm("HP", "hp")}
+                    </div>
                 </div>
                 <div class="card p-2 flex flex-col gap-2 xl:w-1/2 w-full">
                     <Accordion>

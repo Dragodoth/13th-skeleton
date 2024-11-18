@@ -1,9 +1,10 @@
 <script lang="ts">
-    import MonsterDatatable from "$lib/components/builder/datatable/MonsterDatatable.svelte";
     import type {Monster} from "$lib/types.ts";
     import {getModalStore, type ModalComponent, type ModalSettings} from "@skeletonlabs/skeleton";
     import ModalShowStatblock from "$lib/components/utils/modals/ModalShowStatblock.svelte";
     import {customMonsterStorage} from "$lib/stores.ts";
+    import StatblockGrid from "$lib/components/manager/StatblockGrid.svelte";
+    import AddCustomCombatantButton from "$lib/components/utils/AddCustomCombatantButton.svelte";
 
     const modalStore = getModalStore();
 
@@ -29,4 +30,6 @@
 
 </script>
 
-<MonsterDatatable {monsters} {clickHandler}/>
+<StatblockGrid data={monsters}>
+    <AddCustomCombatantButton/>
+</StatblockGrid>

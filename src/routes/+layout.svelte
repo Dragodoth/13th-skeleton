@@ -15,7 +15,7 @@
     import ModalSaveBattleForm from "$lib/components/utils/modals/ModalSaveBattleForm.svelte";
     import ModalImportBattleList from "$lib/components/utils/modals/ModalImportBattleList.svelte";
     import ModalAddCombatant from "$lib/components/utils/modals/ModalAddCombatant.svelte";
-    import {customMonsterStorage, use2E} from "$lib/stores.ts";
+    import {use2E} from "$lib/stores.ts";
     import ModalSaveCustomMonster from "$lib/components/utils/modals/ModalSaveCustomMonster.svelte";
 
     storePopup.set({computePosition, autoUpdate, offset, shift, flip, arrow});
@@ -38,7 +38,7 @@
 
 <Modal components={modalRegistry}/>
 
-<div class="grid h-screen grid-rows-[auto_1fr_auto] overflow-y-auto w-screen">
+<div class="grid h-screen grid-rows-[auto_1fr_auto] overflow-auto">
     <!-- Header -->
     <AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotLead="uppercase md:text-xl"
             slotTrail="place-content-end">
@@ -54,9 +54,7 @@
             <a href="/compendium">Compendium</a>
 			<a href="/builder">Builder</a>
 			<a href="/manager">Manager</a>
-            {#if $customMonsterStorage.length > 0}
-                <a href="/customMonsters">Custom Monsters</a>
-            {/if}
+            <a href="/customMonsters">Custom Monsters</a>
 		</span>
 
         <svelte:fragment slot="trail">

@@ -40,7 +40,7 @@ export type Monster = {
     name: string,
     size: string,
     level: number,
-    levelOrdinal: string,
+    levelOrdinal?: string,
     role: string,
     type: string,
     initiative: number | string,
@@ -52,13 +52,13 @@ export type Monster = {
     pd: number,
     md: number,
     hp: number,
-    preview: string,
-    basename: string,
+    preview?: string,
+    basename?: string,
     page?: number,
     source?: string,
     mook?: boolean,
     [key: string]: any,
-}
+};
 
 export type Combatant = Monster & {
     combatantCount: {
@@ -70,6 +70,14 @@ export type Combatant = Monster & {
     cost: number,
 };
 
+export function isCombatant(obj: any): obj is Combatant {
+    return (
+        typeof obj === 'object' &&
+        obj !== null &&
+        Array.isArray(obj.combatantCount) &&
+        typeof obj.cost === 'number'
+    );
+}
 export type Battle = {
     id: string,
     name: string,

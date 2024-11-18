@@ -26,11 +26,11 @@
 {#if $modalStore[0]}
     <div class="card p-4 w-modal-wide shadow-xl space-y-4 max-h-screen overflow-auto">
         <header class="text-2xl font-bold">Custom Monster Statblock</header>
-        <button aria-label="deleteCustomMonster"
-                onclick={() => {
-                customMonsterStorage.removeMonster(monsterId);
-                parent.onClose
-            }}><i class="fa-solid fa-trash"></i></button>
+<!--        <button aria-label="deleteCustomMonster"-->
+<!--                onclick={() => {-->
+<!--                customMonsterStorage.removeMonster(monsterId);-->
+<!--                parent.onClose-->
+<!--            }}><i class="fa-solid fa-trash"></i></button>-->
         <Statblock data={monster}/>
 
         <!-- prettier-ignore -->

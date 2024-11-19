@@ -20,8 +20,9 @@
 
     storePopup.set({computePosition, autoUpdate, offset, shift, flip, arrow});
 
-    let {children} = $props();
-
+    let {
+        children
+    } = $props();
 
     initializeStores()
 
@@ -40,6 +41,7 @@
         showNav = !showNav;
     }
 
+    const linkClass = "hover:text-primary-500";
 </script>
 
 <Modal components={modalRegistry}/>
@@ -49,25 +51,24 @@
     <AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotLead="uppercase md:text-xl"
             slotTrail="place-content-end">
         <svelte:fragment slot="lead">
-			<span>
+			<a href="/">
                 <i class="fa-regular fa-skull"></i>	13th Skeleton
-			</span>
+			</a>
         </svelte:fragment>
 
-        <span class="lg:flex gap-4 xl:text-xl hidden text-nowrap">
-            <a href="/">Home</a>
-			<a href="/about">About</a>
-            <a href="/compendium">Compendium</a>
+        <nav class="lg:flex gap-4 xl:text-xl hidden text-nowrap items-center">
+			<a href="/about" class={linkClass}>About</a>
+            <a href="/compendium" class={linkClass}>Compendium</a>
             <span class="flex flex-col items-center">
                 Battle
                 <span class="flex gap-4 text-lg">
-                    <a href="/builder">Builder</a>
-			        <a href="/manager">Manager</a>
+                    <a href="/builder" class={linkClass}>Builder</a>
+			        <a href="/manager" class={linkClass}>Manager</a>
                 </span>
             </span>
 
-            <a href="/customMonsters">Custom Monsters</a>
-		</span>
+            <a href="/customMonsters" class={linkClass}>Custom Monsters</a>
+		</nav>
 
         <button aria-label="navHamburger" class="lg:hidden" onclick={handleNavClick}><i class="fa-solid fa-bars"></i>
         </button>
@@ -86,11 +87,6 @@
     <header class="p-2">
         <nav class="list-nav card p-2 {showNav ? 'flex lg:hidden' : 'hidden'}">
             <ul class="w-full">
-                <li>
-                    <a href="/">
-                        <span class="flex-auto">Home</span>
-                    </a>
-                </li>
                 <li>
                     <a href="/about">
                         <span class="flex-auto">About</span>
@@ -138,7 +134,14 @@
         {@render children()}
     </main>
     <!-- Footer -->
-    <AppBar>(footer)</AppBar>
+    <AppBar>
+        <svelte:fragment slot="lead">
+            icon
+        </svelte:fragment>
+        <svelte:fragment slot="trail">
+            stuff
+        </svelte:fragment>
+    </AppBar>
 </div>
 
 

@@ -21,27 +21,29 @@
 
 <section class="section grid lg:grid-cols-2 xl:grid-cols-3 gap-6">
     {#each data as combatant (combatant.id)}
-        <div class="card">
-            <div class="flex justify-between items-baseline px-2">
+        <div class="card flex flex-col gap-2 items-end">
+            <div class="flex justify-between items-baseline px-2 gap-2 w-full">
                 <header class="card-header h2">{combatant.name}</header>
                 <span>{combatant.source} {combatant.source === "Custom" || !combatant.page ? "" : "p." + combatant.page }</span>
-                {#if combatant.source === "Custom"}
+            </div>
+            {#if combatant.source === "Custom"}
+                <div>
                     <button class="btn variant-ghost" onclick={() => customMonsterStorage.removeMonster(combatant.id)}>
                         <span class="space-x-1">
                             <i class="fa-solid fa-trash"></i>
                             Delete Monster
                         </span>
                     </button>
-                {/if}
-            </div>
-            <section class="card p-2 my-2 variant-ghost">
+                </div>
+            {/if}
+            <div class="card p-2 my-2 variant-ghost">
                 {#if battleId && isCombatant(combatant)}
                     <HPManager battleId={battleId} {combatant} />
                 {/if}
                 <section class=" card p-4 w-full">
                     <Statblock data={combatant}/>
                 </section>
-            </section>
+            </div>
         </div>
     {/each}
     {#if children}

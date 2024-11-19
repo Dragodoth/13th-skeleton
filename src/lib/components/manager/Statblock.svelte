@@ -68,7 +68,7 @@
             </span>
             <span class="p">Initiative: {data.initiative}</span>
         </div>
-        <div class="flex justify-around items-center text-xl variant-ghost-surface rounded-3xl grow">
+        <div class="flex justify-around items-center text-xl lg:text-2xl variant-ghost-surface rounded-3xl grow">
             <div class="flex flex-col">
                 <span>AC {data.ac}</span>
                 <span>PD {data.pd}</span>

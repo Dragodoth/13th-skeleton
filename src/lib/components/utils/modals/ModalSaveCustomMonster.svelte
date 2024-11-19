@@ -30,8 +30,20 @@
         size: "normal",
         type: "humanoid",
         source: "Custom",
-        mook: false,
     });
+
+    $effect(() => {
+        formData.mook = formData.role === "mook";
+    })
+
+    const selectOptions: {
+        size: string[];
+        role: string[];
+        [key: string]: any,
+    } = {
+        size: ["double-strength", "elite", "huge", "large", "normal", "triple-strength", "weakling"],
+        role: ["archer", "blocker", "caster", "leader", "mook", "spoiler", "troop", "wrecker"],
+    }
 
     function handleAddTraitFormClick(key: string, actionIndex?: number) {
         const sampleTrait: Trait = {name: "", desc: ""};
@@ -59,7 +71,7 @@
 
     function handleAddActionFormClick(key: string) {
 
-        const sampleAction: Action = {name: "", desc: "", traits: [{name: "", desc: ""}] as Trait[]};
+        const sampleAction: Action = {name: "", desc: "", traits: [] as Trait[]};
 
         let updatedFormData = {...formData};
 
@@ -172,17 +184,34 @@
 {/snippet}
 
 {#snippet textForm(type: string, key: string)}
-    <label class="label">
-        <span>{type}</span>
-        <input class="input" type="text" bind:value={formData[key]} placeholder={key}>
-    </label>
+    <div class="w-full">
+        <label class="label w-full">
+            <span>{type}</span>
+            <input class="input" type="text" bind:value={formData[key]} placeholder={key}>
+        </label>
+    </div>
 {/snippet}
 
 {#snippet numberForm(type: string, key: string)}
-    <label class="label">
-        <span>{type}</span>
-        <input class="input" type="number" bind:value={formData[key]} placeholder={key}>
-    </label>
+    <div class="w-full">
+        <label class="label">
+            <span>{type}</span>
+            <input class="input" type="number" bind:value={formData[key]} placeholder={key}>
+        </label>
+    </div>
+{/snippet}
+
+{#snippet selectForm(type: string, key: string)}
+    <div class="w-full">
+        <label class="label">
+            <span>{type}</span>
+            <select class="select" bind:value={formData[key]}>
+                {#each selectOptions[key] as option}
+                    <option value={option}>{option}</option>
+                {/each}
+            </select>
+        </label>
+    </div>
 {/snippet}
 
 {#if $modalStore[0]}
@@ -192,20 +221,24 @@
         <!-- Enable for debugging: -->
         <form class="modal-form border border-surface-500 p-4 space-y-4 rounded-container-token">
             <div class="flex flex-col items-start xl:flex-row gap-2">
-                <div class="flex gap-2 shrink">
+                <div class="flex gap-4">
                     <div class="flex flex-col gap-2 items-center">
                         {@render textForm("Name", "name")}
-                        {@render textForm("Size", "size")}
                         {@render numberForm("Level", "level")}
-                        {@render textForm("Role", "role")}
+                        {@render selectForm("Size", "size")}
+                        <div class="flex gap-2 items-baseline w-full">
+                            <!--{@render textForm("Role", "role")}-->
+                            {@render selectForm("Role", "role")}
+                            <label class="label">
+                                <span>Mook</span>
+                                <input class="checkbox" type="checkbox" bind:checked={formData.mook}>
+                            </label>
+                        </div>
                         {@render textForm("Type", "type")}
                         {@render numberForm("Initiative", "initiative")}
-                        <label class="label">
-                            <input class="checkbox" type="checkbox" bind:checked={formData.mook}>
-                            <span>Mook</span>
-                        </label>
+
                     </div>
-                    <div class="flex flex-col justify-around p-2 text-xl variant-ghost-surface rounded-3xl">
+                    <div class="flex flex-col p-4 text-xl variant-ghost-surface rounded-3xl h-full ">
                         {@render numberForm("AC", "ac")}
                         {@render numberForm("PD", "pd")}
                         {@render numberForm("MD", "md")}

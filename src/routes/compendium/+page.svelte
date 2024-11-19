@@ -7,5 +7,6 @@
     const source = data.page.content;
 
 </script>
-
-<SvelteMarkdown {source}/>
+<article class="prose dark:prose-invert max-w-none lg:prose-lg">
+    <SvelteMarkdown {source}/>
+</article>

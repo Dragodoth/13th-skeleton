@@ -2,7 +2,7 @@
     import '../app.postcss';
     import '@fortawesome/fontawesome-free/css/all.min.css';
     import {arrow, autoUpdate, computePosition, flip, offset, shift} from '@floating-ui/dom';
-    import type {ModalComponent} from "@skeletonlabs/skeleton";
+    import {Accordion, AccordionItem, type ModalComponent} from "@skeletonlabs/skeleton";
     import {
         AppBar,
         initializeStores,
@@ -34,6 +34,12 @@
         // ...
     };
 
+    let showNav = $state(false)
+
+    const handleNavClick = () => {
+        showNav = !showNav;
+    }
+
 </script>
 
 <Modal components={modalRegistry}/>
@@ -48,28 +54,87 @@
 			</span>
         </svelte:fragment>
 
-        <span class="flex gap-4 md:text-xl">
+        <span class="lg:flex gap-4 xl:text-xl hidden text-nowrap">
             <a href="/">Home</a>
 			<a href="/about">About</a>
             <a href="/compendium">Compendium</a>
-			<a href="/builder">Builder</a>
-			<a href="/manager">Manager</a>
+            <span class="flex flex-col items-center">
+                Battle
+                <span class="flex gap-4 text-lg">
+                    <a href="/builder">Builder</a>
+			        <a href="/manager">Manager</a>
+                </span>
+            </span>
+
             <a href="/customMonsters">Custom Monsters</a>
 		</span>
 
+        <button aria-label="navHamburger" class="lg:hidden" onclick={handleNavClick}><i class="fa-solid fa-bars"></i>
+        </button>
+
         <svelte:fragment slot="trail">
-            <div class="flex flex-col items-center">
-                <p>Rules</p>
+            <label class="flex flex-col items-center">
+                <span>Rules</span>
                 <RadioGroup active="variant-filled-primary" hover="hover:variant-soft-primary" padding="px-3 py-1">
                     <RadioItem bind:group={$use2E} name="1E" value={false}>1E</RadioItem>
                     <RadioItem bind:group={$use2E} name="2E" value={true}>2E</RadioItem>
                 </RadioGroup>
-            </div>
+            </label>
             <LightSwitch/>
         </svelte:fragment>
     </AppBar>
+    <header class="p-2">
+        <nav class="list-nav card p-2 {showNav ? 'flex lg:hidden' : 'hidden'}">
+            <ul class="w-full">
+                <li>
+                    <a href="/">
+                        <span class="flex-auto">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/about">
+                        <span class="flex-auto">About</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/compendium">
+                        <span class="flex-auto">Compendium</span>
+                    </a>
+                </li>
+                <li>
+                    <Accordion>
+                        <AccordionItem>
+                            <svelte:fragment slot="summary">
+                                Battle
+                            </svelte:fragment>
+                            <svelte:fragment slot="content">
+                                <ul class="w-full">
+                                    <li>
+                                        <a href="/builder">
+                                            Builder
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/manager">
+                                            Manager
+                                        </a>
+                                    </li>
+                                </ul>
+                            </svelte:fragment>
+                        </AccordionItem>
+                    </Accordion>
+                <li>
+                    <a href="/customMonsters">
+                        <span class="flex-auto">Custom Monsters</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
     <!-- Main -->
-    <main class=" p-4 space-y-4">
+    <main class="p-4 space-y-4">
         {@render children()}
     </main>
     <!-- Footer -->

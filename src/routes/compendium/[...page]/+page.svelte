@@ -15,5 +15,7 @@
 {#if monster && source.includes("```statblock")}
     <Statblock data={monster}/>
 {:else}
-    <SvelteMarkdown {source}/>
+    <article class="prose dark:prose-invert max-w-none lg:prose-lg">
+        <SvelteMarkdown {source}/>
+    </article>
 {/if}

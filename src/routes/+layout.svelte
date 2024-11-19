@@ -41,6 +41,7 @@
         showNav = !showNav;
     }
 
+
     const linkClass = "hover:text-primary-500";
 </script>
 

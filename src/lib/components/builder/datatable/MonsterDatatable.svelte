@@ -1,5 +1,5 @@
 <script lang="ts">
-    import {battles, displayedBattleId} from "$lib/stores.ts";
+    import {battle} from "$lib/stores.ts";
 
     // Import local datatable components
     import ThSort from '$lib/components/builder/datatable/ThSort.svelte';
@@ -29,7 +29,7 @@
     const rows: Readable<Monster[]> = handler.getRows();
 
 
-    let displayedBattle = $derived($battles.find(b => b.id === $displayedBattleId) ?? null);
+    let displayedBattle = $derived($battle);
 
 </script>
 <div class="overflow-x-auto space-y-4">

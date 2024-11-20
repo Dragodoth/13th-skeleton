@@ -7,17 +7,17 @@
     import BattleTable from "$lib/components/builder/BattleTable.svelte";
     import BattleSliders from "$lib/components/builder/BattleSliders.svelte";
     import BattleMaker from "$lib/components/builder/BattleMaker.svelte";
-    import {battles, displayedBattleId} from "$lib/stores.ts";
+    import {battle} from "$lib/stores.ts";
     import type {Monster} from "$lib/types.ts";
 
     const {
         data
     } = $props();
 
-    const battleId = $derived($displayedBattleId);
+    const battleId = $derived($battle);
 
     function clickHandler (monster: Monster) {
-        battles.addCombatant(battleId, monster)
+        battle.addCombatant(monster)
     }
 
     const { monsters } = data;

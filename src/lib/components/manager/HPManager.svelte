@@ -2,7 +2,7 @@
     import HPBlock from "$lib/components/manager/HPBlock.svelte";
 
     import type {Combatant} from "$lib/types";
-    import {battles} from "$lib/stores";
+    import {battleStorage} from "$lib/stores";
     import {Accordion, AccordionItem} from "@skeletonlabs/skeleton";
 
     interface Props {
@@ -31,12 +31,12 @@
                     <footer class="card-footer">
                         {#if !combatant.mook}
                             <button aria-label="addRemoveButton" type="button" class="btn btn-sm variant-ghost"
-                                    onclick={() => battles.removeCombatant(battleId, combatant.id)}><i
+                                    onclick={() => battleStorage.removeCombatant(battleId, combatant.id)}><i
                                     class="fa-solid fa-minus"></i>
                             </button>
                         {/if}
                         <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                                onclick={() => battles.addCombatant(battleId, combatant)}><i
+                                onclick={() => battleStorage.addCombatant(battleId, combatant)}><i
                                 class="fa-solid fa-plus"></i>
                         </button>
                     </footer>

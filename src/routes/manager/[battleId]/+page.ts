@@ -1,4 +1,4 @@
-import {battles} from "$lib/stores.ts";
+import {battleStorage} from "$lib/stores.ts";
 import {get} from "svelte/store";
 
 export const load =  ({params}) => {

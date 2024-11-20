@@ -1,16 +1,14 @@
 <script lang="ts">
     import type {Combatant} from "$lib/types";
-    import {battles} from "$lib/stores.ts";
+    import {battle, battleStorage} from "$lib/stores.ts";
 
     interface Props {
-        battleId: string;
         combatants: Combatant[];
         combatant: Combatant;
         index: number;
     }
 
     const {
-        battleId,
         combatants,
         combatant,
         index
@@ -36,20 +34,20 @@
         <div class="alert-actions">
             {#if combatant.mook}
                 <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                        onclick={() => battles.addMook(battleId, combatant)}><i class="fa-solid fa-plus"></i>
+                        onclick={() => battle.addMook(combatant)}><i class="fa-solid fa-plus"></i>
                 </button>
             {:else}
                 <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                        onclick={() => battles.addCombatant(battleId, combatant)}><i class="fa-solid fa-plus"></i>
+                        onclick={() => battle.addCombatant(combatant)}><i class="fa-solid fa-plus"></i>
                 </button>
             {/if}
             {#if combatant.mook && combatant.mobId}
                 <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                        onclick={() => battles.removeMook(battleId, combatant.mobId)}><i class="fa-solid fa-minus"></i>
+                        onclick={() => battle.removeMook(combatant.mobId)}><i class="fa-solid fa-minus"></i>
                 </button>
             {:else}
                 <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                        onclick={() => battles.removeCombatant(battleId, combatant.id)}><i class="fa-solid fa-minus"></i>
+                        onclick={() => battle.removeCombatant(combatant.id)}><i class="fa-solid fa-minus"></i>
                 </button>
             {/if}
 

@@ -1,10 +1,10 @@
 <script>
-    import {battles} from "$lib/stores.ts";
+    import {battleStorage} from "$lib/stores.ts";
 </script>
 
 <section class="section grid lg:grid-cols-2 gap-2 ">
-    {#if $battles.length > 0}
-        {#each $battles as battleStored, i (i)}
+    {#if $battleStorage.length > 0}
+        {#each $battleStorage as battleStored, i (i)}
             <a href="/manager/{battleStored.id}">
                 <div class="card flex justify-between p-4 variant-ghost">
                     <div class="flex flex-col items-center gap-1 w-full">
@@ -26,11 +26,10 @@
                             {/each}
                         </div>
                     </div>
-                    {#if $battles.length > 1}
-                        <button aria-label="removeBattleButton" on:click={() => battles.removeBattle(i)}>
+            
+                        <button aria-label="removeBattleButton" on:click={() => battleStorage.removeBattle(i)}>
                             <i class="fa-solid fa-trash"></i>
                         </button>
-                    {/if}
                 </div>
             </a>
         {/each}

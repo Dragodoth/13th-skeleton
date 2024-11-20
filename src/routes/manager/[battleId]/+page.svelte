@@ -1,6 +1,6 @@
 <script lang="ts">
     import {TabAnchor, TabGroup} from "@skeletonlabs/skeleton";
-    import {battles} from "$lib/stores";
+    import {battleStorage} from "$lib/stores";
     import Statblock from "$lib/components/manager/Statblock.svelte";
     import HPManager from "$lib/components/manager/HPManager.svelte";
     import AddCombatantButton from "$lib/components/utils/AddCombatantButton.svelte";
@@ -12,15 +12,15 @@
         data
     } = $props();
 
-    const managedBattle = $derived($battles.find(i => i.id === data.battleId))
+    const managedBattle = $derived($battleStorage.find(i => i.id === data.battleId))
 
 </script>
 
 {#if managedBattle}
     <section class="section">
-        {#if $battles.length > 0}
+        {#if $battleStorage.length > 0}
             <TabGroup justify="justify-center">
-                {#each $battles as battle}
+                {#each $battleStorage as battle}
                     <TabAnchor href="/manager/{battle.id}">
                         {battle.name}
                     </TabAnchor>

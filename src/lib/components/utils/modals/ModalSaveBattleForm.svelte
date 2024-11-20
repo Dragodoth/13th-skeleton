@@ -2,7 +2,7 @@
     import type {SvelteComponent} from 'svelte';
     // Stores
     import {getModalStore} from '@skeletonlabs/skeleton';
-    import {battles} from "$lib/stores.ts";
+    import {battleStorage} from "$lib/stores.ts";
     import type {saveBattleFormData} from "$lib/types.ts";
 
     // Props
@@ -51,10 +51,10 @@
                           placeholder='First battle in ...'></textarea>
             </label>
 
-            {#if $battles.length > 0}
-                <span>{$battles.length} Saved Battles</span>
+            {#if $battleStorage.length > 0}
+                <span>{$battleStorage.length} Saved Battles</span>
                 <div class="card flex flex-col p-4 gap-2 max-h-[200px] overflow-auto">
-                {#each $battles as battleStored, i (i)}
+                {#each $battleStorage as battleStored, i (i)}
                         <div class="card flex justify-between p-2 variant-ghost">
                             <div class="flex flex-col items-center gap-1 w-full">
                                 <span class="flex flex-col items-center gap-1">

@@ -1,6 +1,6 @@
 <script lang="ts">
     import type {Battle, Combatant} from "$lib/types";
-    import {battles, displayedBattleId} from "$lib/stores.ts";
+    import {battle} from "$lib/stores.ts";
 
     interface Props {
         displayedBattle: Battle;
@@ -33,10 +33,10 @@
             <!-- Actions -->
             <div class="alert-actions">
                 <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                        onclick={() => battles.addMook(displayedBattle.id, displayedCombatant, mobId)}><i class="fa-solid fa-plus"></i>
+                        onclick={() => battle.addMook(displayedCombatant, mobId)}><i class="fa-solid fa-plus"></i>
                 </button>
                 <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                        onclick={() => battles.removeMook(displayedBattle.id, displayedCombatant?.id, mobId)}><i
+                        onclick={() => battle.removeMook(displayedCombatant?.id, mobId)}><i
                         class="fa-solid fa-minus"></i>
                 </button>
             </div>
@@ -48,10 +48,10 @@
             <!-- Actions -->
             <div class="alert-actions">
                 <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                        onclick={() => battles.addCombatant(displayedBattle.id, displayedCombatant)}><i class="fa-solid fa-plus"></i>
+                        onclick={() => battle.addCombatant(displayedCombatant)}><i class="fa-solid fa-plus"></i>
                 </button>
                 <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                        onclick={() => battles.removeCombatant(displayedBattle.id, displayedCombatant?.id)}><i
+                        onclick={() => battle.removeCombatant(displayedCombatant?.id)}><i
                         class="fa-solid fa-minus"></i>
                 </button>
             </div>

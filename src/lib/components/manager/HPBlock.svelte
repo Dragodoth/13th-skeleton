@@ -1,7 +1,7 @@
 <script lang="ts">
     import {ProgressBar, Ratings} from "@skeletonlabs/skeleton";
     import type {Combatant} from "$lib/types";
-    import {battles} from "$lib/stores";
+    import {battleStorage} from "$lib/stores";
 
     interface Props {
         battleId: string;
@@ -33,12 +33,12 @@
         if (HPInput && combatant && parseFloat(HPInput) && currentHP) {
             if (HPInput.includes("-")) {
                 let newHP: number = currentHP + parseFloat(HPInput);
-                battles.updateHP(battleId, combatant.id, HPIndex, newHP, mobId);
+                battleStorage.updateHP(battleId, combatant.id, HPIndex, newHP, mobId);
             } else if (HPInput.includes("+")) {
                 let newHP: number = currentHP + parseFloat(HPInput);
-                battles.updateHP(battleId, combatant.id, HPIndex, newHP, mobId);
+                battleStorage.updateHP(battleId, combatant.id, HPIndex, newHP, mobId);
             } else {
-                battles.updateHP(battleId, combatant.id, HPIndex, parseFloat(HPInput), mobId);
+                battleStorage.updateHP(battleId, combatant.id, HPIndex, parseFloat(HPInput), mobId);
             }
         }
     }
@@ -61,10 +61,10 @@
 <!--                    </Ratings>-->
                     <div class="flex gap-2">
                         <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                                onclick={() => battles.removeMook(battleId, combatant.id, mobId)}><i class="fa-solid fa-minus"></i>
+                                onclick={() => battleStorage.removeMook(battleId, combatant.id, mobId)}><i class="fa-solid fa-minus"></i>
                         </button>
                         <button aria-label="addCombatantButton" type="button" class="btn btn-sm variant-ghost"
-                                onclick={() => battles.addMook(battleId, combatant, mobId)}><i class="fa-solid fa-plus"></i>
+                                onclick={() => battleStorage.addMook(battleId, combatant, mobId)}><i class="fa-solid fa-plus"></i>
                         </button>
                     </div>
                 {/if}

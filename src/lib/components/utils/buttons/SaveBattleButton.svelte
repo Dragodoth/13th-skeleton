@@ -25,7 +25,6 @@
                         formData.name,
                         formData.description,
                     );
-                    console.log($battleStorage);
                 }
             })
             .catch((error) => {

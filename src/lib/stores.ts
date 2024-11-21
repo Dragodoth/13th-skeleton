@@ -98,9 +98,13 @@ function createBattle() {
                                 combatantCount: [
                                     ...combatant.combatantCount,
                                     {
-                                        id: Date.now().toString(),
+                                        mobId: Date.now().toString(),
                                         mookCount: 1,
                                         currentHP: newCombatant.hp,
+                                        initiativeTotal: 10 +
+                                            (typeof newCombatant.initiative === "number"
+                                                ? newCombatant.initiative
+                                                : 0)
                                     }
                                 ],
                                 cost: 0,
@@ -116,8 +120,11 @@ function createBattle() {
                                     [
                                         ...combatant.combatantCount,
                                         {
-                                            id: combatant.id,
                                             currentHP: combatant.hp,
+                                            initiativeTotal: 10 +
+                                            (typeof newCombatant.initiative === "number"
+                                                ? newCombatant.initiative
+                                                : 0)
                                         },
                                     ],
                                 cost: 0,
@@ -127,9 +134,13 @@ function createBattle() {
                 : [...currentBattle.combatants, {
                     ...newCombatant,
                     combatantCount: [{
-                        id: newCombatant.mook ? Date.now().toString() : newCombatant.id,
+                        ...(newCombatant.mook && { mobId: Date.now().toString()}),
                         ...(newCombatant.mook && { mookCount: 1 }),
                         currentHP: newCombatant.hp,
+                        initiativeTotal: 10 +
+                                            (typeof newCombatant.initiative === "number"
+                                                ? newCombatant.initiative
+                                                : 0)
                     }],
                     cost: 0,
                 }];
@@ -181,7 +192,7 @@ function createBattle() {
                     ? {
                         ...combatant,
                         combatantCount: combatant.combatantCount.map(mob =>
-                            mob.id === mobId
+                            mob.mobId === mobId
                                 ? {
                                     ...mob,
                                     mookCount: (mob.mookCount || 0) + 1,
@@ -216,7 +227,7 @@ function createBattle() {
                         ? {
                             ...combatant,
                             combatantCount: combatant.combatantCount.map(mob =>
-                                mob.id === mobId
+                                mob.mobId === mobId
                                     ? {
                                         ...mob,
                                         mookCount: (mob.mookCount || 1) - 1,
@@ -235,7 +246,7 @@ function createBattle() {
 
             return {
                 ...currentBattle,
-                combatants: battleStorage.updateCombatantsCost(updatedCombatants) // Update cost
+                combatants: updateCombatantsCost(updatedCombatants) // Update cost
             };
         });
     };
@@ -256,7 +267,7 @@ function createBattle() {
             const battleTableData: BattleTableRow[] = get(battleTable);
 
             const row = battleTableData.find((item: BattleTableRow) => item.level === combatant.level) ?? null;
-            const size = combatant.size === "double strength" ? "large" : combatant.size === "triple strength" ? "huge" : combatant.size;
+            const size = combatant.size === "double strength" || "double-strength" ? "large" : combatant.size === "triple strength" || "triple-strength" ? "huge" : combatant.size;
 
             if (combatant.mook) {
                 combatant.combatantCount = combatant.combatantCount.map(entry => {
@@ -317,7 +328,7 @@ function createBattleStorage() {
         update((currentBattles: Battle[]) => {
             return [
                 ...currentBattles,
-                { id: Date.now().toString(), name: newName, description: newDescription, combatants: battle.combatants }
+                { id: battle.id, name: newName, description: newDescription, combatants: battle.combatants }
             ];
         });
     };
@@ -360,9 +371,13 @@ function createBattleStorage() {
                                     combatantCount: [
                                         ...combatant.combatantCount,
                                         {
-                                            id: Date.now().toString(),
+                                            mobId: Date.now().toString(),
                                             mookCount: 1,
                                             currentHP: newCombatant.hp,
+                                            initiativeTotal: 10 +
+                                                (typeof newCombatant.initiative === "number"
+                                                    ? newCombatant.initiative
+                                                    : 0)
 
                                         }
                                     ],
@@ -379,8 +394,11 @@ function createBattleStorage() {
                                         [
                                             ...combatant.combatantCount,
                                             {
-                                                id: combatant.id,
                                                 currentHP: combatant.hp,
+                                                initiativeTotal: 10 +
+                                                    (typeof newCombatant.initiative === "number"
+                                                        ? newCombatant.initiative
+                                                        : 0)
                                             },
                                         ],
                                     cost: 0,
@@ -390,14 +408,18 @@ function createBattleStorage() {
                     : [...battle.combatants, {
                         ...newCombatant,
                         combatantCount: [{
-                            id: newCombatant.mook ? Date.now().toString() : newCombatant.id,
+                            ...(newCombatant.mook && { mobId: Date.now().toString()}),
                             ...(newCombatant.mook && { mookCount: 1 }),
                             currentHP: newCombatant.hp,
+                            initiativeTotal: 10 +
+                                (typeof newCombatant.initiative === "number"
+                                    ? newCombatant.initiative
+                                    : 0)
                         }],
                         cost: 0,
                     }];
 
-                return { ...battle, combatants: updateCombatantsCost(updatedCombatants) };
+                return { ...battle, combatants: updatedCombatants };
             });
         });
     };
@@ -431,7 +453,7 @@ function createBattleStorage() {
 
                 return {
                     ...battle,
-                    combatants: updateCombatantsCost(updatedCombatants) // Update cost
+                    combatants: updatedCombatants // Update cost
                 };
             });
         });
@@ -451,7 +473,7 @@ function createBattleStorage() {
                         ? {
                             ...combatant,
                             combatantCount: combatant.combatantCount.map(mob =>
-                                mob.id === mobId
+                                mob.mobId === mobId
                                     ? {
                                         ...mob,
                                         mookCount: (mob.mookCount || 0) + 1,
@@ -463,7 +485,7 @@ function createBattleStorage() {
                         : combatant
                 );
 
-                return { ...battle, combatants: updateCombatantsCost(updatedCombatants) };
+                return { ...battle, combatants: updatedCombatants };
             });
         });
     };
@@ -486,14 +508,14 @@ function createBattleStorage() {
                             ? {
                                 ...combatant,
                                 combatantCount: combatant.combatantCount.map(mob =>
-                                    mob.id === mobId
+                                    mob.mobId === mobId
                                         ? {
                                             ...mob,
-                                            mookCount: (mob.mookCount || 1) - 1, // Decrement count but keep it minimum 0
+                                            mookCount: (mob.mookCount || 1) - 1,
                                             currentHP: mob.currentHP - combatant.hp
                                         }
                                         : mob
-                                ).filter(mob => (mob.mookCount ?? 0) > 0), // Remove mob entry if count goes to 0
+                                ).filter(mob => (mob.mookCount ?? 0) > 0),
                             }
                             : combatant
                     );
@@ -505,7 +527,7 @@ function createBattleStorage() {
 
                 return {
                     ...battle,
-                    combatants: updateCombatantsCost(updatedCombatants) // Update cost
+                    combatants: updatedCombatants
                 };
             });
         });
@@ -517,7 +539,7 @@ function createBattleStorage() {
         update((currentBattles: Battle[]) =>
             currentBattles.map(battle =>
                 battle.id === battleId
-                    ? { ...battle, combatants: updateCombatantsCost(combatants) } // creates a new object, triggering reactivity
+                    ? { ...battle, combatants: combatants }
                     : battle
             )
         );
@@ -535,7 +557,7 @@ function createBattleStorage() {
                     if (combatant.id !== combatantId) return combatant;
 
                     const updatedCount = combatant.combatantCount.map((entry, index) => {
-                        if (combatant.mook && mobId && entry.id === mobId) {
+                        if (combatant.mook && mobId && entry.mobId === mobId) {
                             return {
                                 ...entry,
                                 currentHP: newHp,
@@ -566,39 +588,76 @@ function createBattleStorage() {
 
 
     // 9. Update combatant costs based on battle table data
-    function updateCombatantsCost(combatants: Combatant[]): Combatant[] {
-        return combatants.map(combatant => {
-            const battleTableData: BattleTableRow[] = get(battleTable);
+    // function updateCombatantsCost(combatants: Combatant[]): Combatant[] {
+    //     return combatants.map(combatant => {
+    //         const battleTableData: BattleTableRow[] = get(battleTable);
 
-            const row = battleTableData.find((item: BattleTableRow) => item.level === combatant.level) ?? null;
-            const size = combatant.size === "double strength" ? "large" : combatant.size === "triple strength" ? "huge" : combatant.size;
+    //         const row = battleTableData.find((item: BattleTableRow) => item.level === combatant.level) ?? null;
+    //         const size = combatant.size === "double strength" || "double-strength" ? "large" : combatant.size === "triple strength" || "triple-strength" ? "huge" : combatant.size;
+    //         console.log(combatant, size)
+    //         if (combatant.mook) {
+    //             combatant.combatantCount = combatant.combatantCount.map(entry => {
+    //                 const baseCost = row && size
+    //                     ? ((row[size as keyof BattleTableRow] as { value: number })?.value ?? 0)
+    //                     : 0;
 
-            if (combatant.mook) {
-                combatant.combatantCount = combatant.combatantCount.map(entry => {
-                    const baseCost = row && size
-                        ? ((row[size as keyof BattleTableRow] as { value: number })?.value ?? 0)
-                        : 0;
+    //                 const entryCost = baseCost * 0.2 * (entry.mookCount || 1);
 
-                    const entryCost = baseCost * 0.2 * (entry.mookCount || 1);
+    //                 return {
+    //                     ...entry,
+    //                     mobCost: entryCost,
+    //                 };
+    //             });
 
+    //             combatant.cost = combatant.combatantCount.reduce((total, entry) => total + (entry.mobCost || 0), 0);
+    //         } else {
+    //             combatant.cost = row && size
+    //                 ? ((row[size as keyof BattleTableRow] as {
+    //                     value: number
+    //                 })?.value ?? 0) * combatant.combatantCount.length
+    //                 : 0;
+    //         }
+
+    //         return combatant;
+    //     });
+    // }
+
+    const updateInitiative = (battleId: string, combatantId: string, index: number, newInitiative: number, mobId?: string): void => {
+        update((battles: Battle[]) => {
+            return battles.map(battle => {
+                if (battle.id !== battleId) return battle;
+
+                const updatedCombatants: Combatant[] = battle.combatants.map(combatant => {
+                    if (combatant.id !== combatantId) return combatant;
+
+                    const updatedCount = combatant.combatantCount.map((entry, index) => {
+                        if (combatant.mook && mobId && entry.mobId === mobId) {
+                            return {
+                                ...entry,
+                                initiativeTotal: newInitiative,
+                            };
+                        }
+                        if (!combatant.mook && index === index) {
+                            return {
+                                ...entry,
+                                initiativeTotal: newInitiative,
+                            };
+                        }
+                        return entry;
+                    });
                     return {
-                        ...entry,
-                        mobCost: entryCost,
+                        ...combatant,
+                        combatantCount: updatedCount,
                     };
                 });
 
-                combatant.cost = combatant.combatantCount.reduce((total, entry) => total + (entry.mobCost || 0), 0);
-            } else {
-                combatant.cost = row && size
-                    ? ((row[size as keyof BattleTableRow] as {
-                        value: number
-                    })?.value ?? 0) * combatant.combatantCount.length
-                    : 0;
-            }
-
-            return combatant;
+                return {
+                    ...battle,
+                    combatants: updatedCombatants,
+                };
+            });
         });
-    }
+    };
 
     return {
         ...battleStorage,
@@ -611,7 +670,8 @@ function createBattleStorage() {
         removeMook,
         updateCombatants,
         updateHP,
-        updateCombatantsCost,
+        updateInitiative,
+        //updateCombatantsCost,
         removeAllBattles: () => set([]),
     };
 }

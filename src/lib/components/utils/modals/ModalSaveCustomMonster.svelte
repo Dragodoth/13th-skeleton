@@ -359,26 +359,6 @@
 
                         <AccordionItem open>
                             <svelte:fragment slot="summary">
-                                <span class="text-xl">Special triggers</span>
-                            </svelte:fragment>
-                            <svelte:fragment slot="content">
-                                {@render actionForm(
-                                    formData,
-                                    "triggered_actions",
-                                )}
-                                <button
-                                    class="btn variant-ringed-surface"
-                                    onclick={() =>
-                                        handleAddActionFormClick(
-                                            "triggered_actions",
-                                        )}
-                                    >Add Special Trigger
-                                </button>
-                            </svelte:fragment>
-                        </AccordionItem>
-
-                        <AccordionItem open>
-                            <svelte:fragment slot="summary">
                                 <span class="text-xl">Traits</span>
                             </svelte:fragment>
                             <svelte:fragment slot="content">
@@ -393,6 +373,26 @@
                                     onclick={() =>
                                         handleAddTraitFormClick("traits")}
                                     >Add Trait
+                                </button>
+                            </svelte:fragment>
+                        </AccordionItem>
+
+                        <AccordionItem open>
+                            <svelte:fragment slot="summary">
+                                <span class="text-xl">Special triggers</span>
+                            </svelte:fragment>
+                            <svelte:fragment slot="content">
+                                {@render actionForm(
+                                    formData,
+                                    "triggered_actions",
+                                )}
+                                <button
+                                    class="btn variant-ringed-surface"
+                                    onclick={() =>
+                                        handleAddActionFormClick(
+                                            "triggered_actions",
+                                        )}
+                                    >Add Special Trigger
                                 </button>
                             </svelte:fragment>
                         </AccordionItem>

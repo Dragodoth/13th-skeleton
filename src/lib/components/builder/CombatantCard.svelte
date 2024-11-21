@@ -26,14 +26,14 @@
             <div class="alert-message">
                 <h3 class="h3">
                     Mob of {displayedCombatant.combatantCount.find(
-                        (c) => c.id === mobId,
+                        (c) => c.mobId === mobId,
                     )?.mookCount}
                     x {displayedCombatant.name}
                 </h3>
                 <p>
                     Cost: {parseFloat(
                         displayedCombatant.combatantCount
-                            .find((c) => c.id === mobId)
+                            .find((c) => c.mobId === mobId)
                             ?.mobCost?.toFixed(1) ?? "0",
                     )}
                 </p>
@@ -41,7 +41,7 @@
             <!-- Actions -->
             <div class="alert-actions">
                 <button
-                    aria-label="addCombatantButton"
+                  aria-label="addCombatantButton"
                     type="button"
                     class="btn btn-sm variant-ghost"
                     onclick={() => battle.addMook(displayedCombatant, mobId)}

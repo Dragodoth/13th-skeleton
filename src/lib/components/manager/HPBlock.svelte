@@ -12,8 +12,6 @@
 
     const { battleId, combatant, HPIndex, mobId = "" }: Props = $props();
 
-    console.log(combatant);
-
     let HPInput: string | undefined = $state();
     let currentHP = $derived(combatant.combatantCount[HPIndex].currentHP);
     const maxHp = $derived(

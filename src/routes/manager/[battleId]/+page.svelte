@@ -4,12 +4,15 @@
     import AddCombatantButton from "$lib/components/utils/buttons/AddCombatantButton.svelte";
     import AddCustomCombatantButton from "$lib/components/utils/buttons/AddCustomCombatantButton.svelte";
     import StatblockGrid from "$lib/components/manager/StatblockGrid.svelte";
+    import Initiative from "$lib/components/manager/Initiative.svelte";
 
     const { data } = $props();
 
     const managedBattle = $derived(
         $battleStorage.find((i) => i.id === data.battleId),
     );
+    console.log(managedBattle)
+    
 </script>
 
 {#if managedBattle}
@@ -26,6 +29,8 @@
             No Battles stored!
         {/if}
     </nav>
+
+    <Initiative {managedBattle}/>
 
     <StatblockGrid data={managedBattle.combatants} battleId={managedBattle.id}>
         <!-- <AddCombatantButton /> -->

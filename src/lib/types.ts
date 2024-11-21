@@ -62,10 +62,11 @@ export type Monster = {
 
 export type Combatant = Monster & {
     combatantCount: {
-        id: string,
+        mobId?: string,
         mookCount?: number,
         mobCost?: number,
         currentHP: number,
+        initiativeTotal: number,
     }[]
     cost: number,
 };
@@ -112,3 +113,11 @@ export type MarkdownPage = {
 export type FolderStructureType = {
     [key: string]: FolderStructureType | string;
 };
+
+export type InitiativeCombatant = {
+    id: string;
+    index: number;
+    mobId?: string;
+    name: string;
+    initiative: number;
+}

@@ -40,7 +40,7 @@
                                         combatant.id,
                                     )}
                                 ><i class="fa-solid fa-minus"></i>
-                            </button>
+                      mobId    </button>
                         {/if}
                         <button
                             aria-label="addCombatantButton"

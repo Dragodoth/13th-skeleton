@@ -94,7 +94,7 @@
                         );
                         battleStorage.updateNameAndDescription(
                             displayedBattle.id,
-                            displayedBattle.name,
+                            displayedBattlmobIdname,
                             displayedBattle.description,
                         );
                     }}

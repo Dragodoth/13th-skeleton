@@ -52,7 +52,7 @@
                 <span>Battle description</span>
                 <textarea
                     class="textarea"
-                    rows="1"
+                    rows="2"
                     bind:value={formData.description}
                     placeholder="First battle in ..."></textarea>
             </label>

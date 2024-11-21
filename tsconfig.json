@@ -13,12 +13,12 @@
     "moduleResolution": "bundler",
     "lib": [
       "es2022"
-    ],
-    "include": [
+    ]
+  },
+  "include": [
       "src/**/*.svelte",
       "src/**/*.md",
       "src/**/*.ts",
       "src/**/*.d.ts"
-    ]
-  }
+    ],
 }

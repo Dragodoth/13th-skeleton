@@ -1,19 +1,17 @@
 <script lang="ts">
-    import type {Combatant, Monster} from "$lib/types";
-    import {Accordion, AccordionItem} from "@skeletonlabs/skeleton";
-    import type {Snippet} from "svelte";
-    import type {Action, Trait} from "$lib/types";
+    import type { Combatant, Monster } from "$lib/types";
+    import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
+    import type { Action, Trait } from "$lib/types";
 
     interface Props {
         data: Combatant | Monster;
     }
 
-    const {
-        data,
-    }: Props = $props();
+    const { data }: Props = $props();
 
     const blockCSS = "-indent-5 ml-5";
-    const divCSS = "flex flex-wrap variant-ghost-surface p-2 my-1 gap-1 rounded-xl w-full";
+    const divCSS =
+        "flex flex-wrap variant-ghost-surface p-2 my-1 gap-1 rounded-xl w-full";
     const textCSS = "text-xl";
 </script>
 
@@ -23,14 +21,16 @@
             <li>
                 <div class={divCSS}>
                     <p class={blockCSS}>
-                        <span class="font-bold">{action.name}</span> - <span>{action.desc}</span>
+                        <span class="font-bold">{action.name}</span> -
+                        <span>{action.desc}</span>
                     </p>
                     {#if action.traits}
                         <ul class="list">
                             {#each action.traits as trait}
                                 <li>
                                     <p class={blockCSS}>
-                                        <span class="italic">{trait.name}:</span>
+                                        <span class="italic"
+                                            >{trait.name}:</span>
                                         <span>{trait.desc}</span>
                                     </p>
                                 </li>
@@ -63,12 +63,14 @@
         <div class="flex flex-col gap-1">
             <span class="h1">{data.name}</span>
             <span class="p italic">
-                {data.size} {data.levelOrdinal ?? data.level} level {data.role}
+                {data.size}
+                {data.levelOrdinal ?? data.level} level {data.role}
                 [{data.type.toUpperCase()}]
             </span>
             <span class="p">Initiative: {data.initiative}</span>
         </div>
-        <div class="flex justify-around items-center text-xl lg:text-2xl variant-ghost-surface rounded-3xl grow">
+        <div
+            class="flex justify-around items-center text-xl lg:text-2xl variant-ghost-surface rounded-3xl grow">
             <div class="flex flex-col">
                 <span>AC {data.ac}</span>
                 <span>PD {data.pd}</span>
@@ -90,7 +92,7 @@
                     {/if}
 
                     {#if data.triggered_actions}
-                        <span class="{textCSS}">Special triggers</span>
+                        <span class={textCSS}>Special triggers</span>
                         {@render actionCard(data.triggered_actions)}
                     {/if}
                 </svelte:fragment>

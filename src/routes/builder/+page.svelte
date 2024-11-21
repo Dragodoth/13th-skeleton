@@ -1,23 +1,18 @@
 <script lang="ts">
-    import {
-        Accordion,
-        AccordionItem
-    } from "@skeletonlabs/skeleton";
-    import MonsterDatatable from '$lib/components/builder/datatable/MonsterDatatable.svelte';
+    import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
+    import MonsterDatatable from "$lib/components/builder/datatable/MonsterDatatable.svelte";
     import BattleTable from "$lib/components/builder/BattleTable.svelte";
     import BattleSliders from "$lib/components/builder/BattleSliders.svelte";
     import BattleMaker from "$lib/components/builder/BattleMaker.svelte";
-    import {battle} from "$lib/stores.ts";
-    import type {Monster} from "$lib/types.ts";
+    import { battle } from "$lib/stores.ts";
+    import type { Monster } from "$lib/types.ts";
 
-    const {
-        data
-    } = $props();
+    const { data } = $props();
 
     const battleId = $derived($battle);
 
-    function clickHandler (monster: Monster) {
-        battle.addCombatant(monster)
+    function clickHandler(monster: Monster) {
+        battle.addCombatant(monster);
     }
 
     const { monsters } = data;

@@ -1,17 +1,13 @@
 <script lang="ts">
-    import type {Trait} from "$lib/types.ts";
+    import type { Trait } from "$lib/types.ts";
 
     interface Props {
-        traits: Trait[],
+        traits: Trait[];
         divCSS: string;
         blockCSS: string;
     }
 
-    const {
-        traits,
-        divCSS,
-        blockCSS
-    }: Props = $props();
+    const { traits, divCSS, blockCSS }: Props = $props();
 </script>
 
 <ul class="list">

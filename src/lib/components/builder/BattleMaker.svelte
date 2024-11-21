@@ -8,10 +8,10 @@
     } from "$lib/stores.ts";
     import { ProgressBar } from "@skeletonlabs/skeleton";
     import CombatantCard from "$lib/components/builder/CombatantCard.svelte";
-    import SaveBattleButton from "$lib/components/utils/SaveBattleButton.svelte";
+    import SaveBattleButton from "$lib/components/utils/buttons/SaveBattleButton.svelte";
     import type { Battle } from "$lib/types.ts";
-    import RemoveCombatantsButton from "$lib/components/utils/ResetBattle.svelte";
-    import ImportBattleButton from "../utils/ImportBattleButton.svelte";
+    import ImportBattleButton from "../utils/buttons/ImportBattleButton.svelte";
+    import ConfirmButtonModal from "../utils/buttons/ConfirmButtonModal.svelte";
 
     const displayedBattle: Battle = $derived($battle);
     let totalCost = $state(0);
@@ -25,13 +25,11 @@
             totalCost = battle.calculateTotalCost(displayedBattle.combatants);
         }
     });
-    console.log(displayedBattle)
 </script>
 
 <section class="card p-4 flex flex-col items-center gap-4 variant-soft">
     {#if $battleStorage.length > 0}
         <ImportBattleButton />
-        <hr class="w-full !border-t-2" />
     {/if}
 
     <label class="label">
@@ -69,12 +67,11 @@
                     {#if combatant.mook}
                         {#each combatant.combatantCount as mob}
                             <CombatantCard
-                                {displayedBattle}
-                                {combatant}
+                                combatantId={combatant.id}
                                 mobId={mob.id} />
                         {/each}
                     {:else}
-                        <CombatantCard {displayedBattle} {combatant} />
+                        <CombatantCard combatantId={combatant.id} />
                     {/if}
                 {/each}
             </div>
@@ -88,10 +85,9 @@
         <hr class="w-full !border-t-2" />
         <footer class="card-footer flex gap-4 items-center">
             {#if $battleStorage.find((b) => b.id === displayedBattle.id)}
-                <button
-                    type="button"
-                    class="btn btn-sm variant-filled-warning"
-                    onclick={() => {
+                <ConfirmButtonModal
+                    title="Overwrite this battle in storage?"
+                    handleConfirm={() => {
                         battleStorage.updateCombatants(
                             displayedBattle.id,
                             displayedBattle.combatants,
@@ -101,13 +97,18 @@
                             displayedBattle.name,
                             displayedBattle.description,
                         );
-                    }}>
-                    <span><i class="fa-solid fa-pen"></i></span>
-                    <span>Update Battle</span>
-                </button>
+                    }}
+                    buttonCSS="btn-sm variant-filled-warning"
+                    buttonIconCSS="fa-solid fa-pen"
+                    buttonText="Update Battle" />
             {/if}
-            <SaveBattleButton battleToSave={displayedBattle} />
-            <RemoveCombatantsButton />
+            <SaveBattleButton />
+            <ConfirmButtonModal
+                title="Reset battle?"
+                handleConfirm={() => battle.resetBattle()}
+                buttonCSS="btn-sm variant-filled-error"
+                buttonIconCSS="fa-solid fa-trash"
+                buttonText="Reset Battle" />
         </footer>
     {/if}
 </section>

@@ -1,17 +1,13 @@
 <script lang="ts">
-    import type {Action} from "$lib/types.ts";
+    import type { Action } from "$lib/types.ts";
 
     interface Props {
-        actions: Action[],
+        actions: Action[];
         divCSS: string;
         blockCSS: string;
     }
 
-    const {
-        actions,
-        divCSS,
-        blockCSS
-    }: Props = $props();
+    const { actions, divCSS, blockCSS }: Props = $props();
 </script>
 
 <ul class="list">
@@ -19,7 +15,8 @@
         <li>
             <div class={divCSS}>
                 <p class={blockCSS}>
-                    <span class="font-bold">{action.name}</span> - <span>{action.desc}</span>
+                    <span class="font-bold">{action.name}</span> -
+                    <span>{action.desc}</span>
                 </p>
                 {#if action.traits}
                     <ul class="list">

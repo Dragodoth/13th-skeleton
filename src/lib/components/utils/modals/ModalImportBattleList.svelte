@@ -1,43 +1,55 @@
 <script lang="ts">
-    import type {SvelteComponent} from 'svelte';
-    import {ListBox, ListBoxItem, getModalStore} from '@skeletonlabs/skeleton';
-    import {battleStorage} from "$lib/stores.ts";
-    import type {Battle} from "$lib/types.ts";
+    import type { SvelteComponent } from "svelte";
+    import {
+        ListBox,
+        ListBoxItem,
+        getModalStore,
+    } from "@skeletonlabs/skeleton";
+    import { battleStorage } from "$lib/stores.ts";
 
     export let parent: SvelteComponent;
 
-    let flavor = 'chocolate';
+    let flavor = "chocolate";
     let battleToImport = $battleStorage[0].id;
     const modalStore = getModalStore();
 
     function onFormSubmit(): void {
-        const selectedBattle = $battleStorage.find(battle => battle.id === battleToImport);
+        const selectedBattle = $battleStorage.find(
+            (battle) => battle.id === battleToImport,
+        );
         if ($modalStore[0].response) $modalStore[0].response(selectedBattle);
         modalStore.close();
     }
 
-    const cBase = 'card p-4 w-modal shadow-xl space-y-4';
-    const cHeader = 'text-2xl font-bold';
+    const cBase = "card p-4 w-modal shadow-xl space-y-4";
+    const cHeader = "text-2xl font-bold";
 </script>
 
 {#if $modalStore[0]}
     <div class="modal-example-form {cBase}">
-        <header class={cHeader}>{$modalStore[0].title ?? '(title missing)'}</header>
-        <article>{$modalStore[0].body ?? '(body missing)'}</article>
+        <header class={cHeader}>
+            {$modalStore[0].title ?? "(title missing)"}
+        </header>
+        <article>{$modalStore[0].body ?? "(body missing)"}</article>
 
         <ListBox class="border border-surface-500 p-4 rounded-container-token">
             {#each $battleStorage as battleStored, i (i)}
-                <ListBoxItem rounded="" active="variant-ghost" bind:group={battleToImport} name={battleStored.id}
-                             value={battleStored.id}>
+                <ListBoxItem
+                    rounded=""
+                    active="variant-ghost"
+                    bind:group={battleToImport}
+                    name={battleStored.id}
+                    value={battleStored.id}>
                     <div class="flex justify-between p-2 m-4">
                         <div class="flex flex-col items-center gap-1 w-full">
                             <span class="flex flex-col flex-auto items-center">
-			                    <h1>{battleStored.name}</h1>
-			                    <span>{battleStored.description}</span>
-		                    </span>
+                                <h1>{battleStored.name}</h1>
+                                <span>{battleStored.description}</span>
+                            </span>
                             <div class="flex flex-wrap gap-2 p-2">
                                 {#each battleStored.combatants as combatant}
-                                    <span class="variant-ghost p-2 rounded-xl">{combatant.count}x {combatant.name}</span>
+                                    <span class="variant-ghost p-2 rounded-xl"
+                                        >{combatant.count}x {combatant.name}</span>
                                 {/each}
                             </div>
                         </div>
@@ -47,8 +59,10 @@
         </ListBox>
 
         <footer class="modal-footer {parent.regionFooter}">
-            <button class="btn {parent.buttonNeutral}" on:click={parent.onClose}>{parent.buttonTextCancel}</button>
-            <button class="btn {parent.buttonPositive}" on:click={onFormSubmit}>Import Battle</button>
+            <button class="btn {parent.buttonNeutral}" on:click={parent.onClose}
+                >{parent.buttonTextCancel}</button>
+            <button class="btn {parent.buttonPositive}" on:click={onFormSubmit}
+                >Import Battle</button>
         </footer>
     </div>
 {/if}

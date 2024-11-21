@@ -402,38 +402,6 @@ function createBattleStorage() {
         });
     };
 
-    // const addCombatant = (battleId: string, newCombatant: Combatant | Monster | undefined): void => {
-    //     update((currentBattles: Battle[]) => {
-    //         if (!newCombatant) return currentBattles;
-    //         return currentBattles.map(battle => {
-    //             if (battle.id !== battleId) return battle;
-    //
-    //             const existingCombatant = battle.combatants.find(c => c.id === newCombatant.id);
-    //
-    //             const updatedCombatants: Combatant[] = existingCombatant && !newCombatant.mook
-    //                 ? battle.combatants.map(combatant =>
-    //                     combatant.id === newCombatant.id
-    //                         ? {
-    //                             ...combatant,
-    //                             count: combatant.count + 1,
-    //                             currentHP: [...combatant.currentHP, newCombatant.hp],
-    //                             cost: 0
-    //                         }
-    //                         : combatant
-    //                 )
-    //                 : [...battle.combatants, {
-    //                     ...newCombatant,
-    //                     count: 1,
-    //                     currentHP: [newCombatant.hp],
-    //                     cost: 0,
-    //                     ...(newCombatant.mook && { mobId: Date.now().toString() })
-    //                 }];
-    //
-    //             return {...battle, combatants: updateCombatantsCost(updatedCombatants)};
-    //         });
-    //     });
-    // };
-
     // 5. Remove a combatant by index in a battle
     const removeCombatant = (battleId: string, combatantId: string | undefined): void => {
         update((currentBattles: Battle[]) => {

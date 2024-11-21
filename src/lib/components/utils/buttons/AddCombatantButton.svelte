@@ -1,6 +1,5 @@
 <script lang="ts">
     import { getModalStore, type ModalSettings } from "@skeletonlabs/skeleton";
-    import type { Battle } from "$lib/types.ts";
 
     const modalStore = getModalStore();
 

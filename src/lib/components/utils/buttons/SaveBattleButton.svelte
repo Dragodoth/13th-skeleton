@@ -1,18 +1,8 @@
 <script lang="ts">
     import { getModalStore } from "@skeletonlabs/skeleton";
-    import type {
-        ModalSettings,
-        ModalComponent,
-        ModalStore,
-    } from "@skeletonlabs/skeleton";
-    import { battleStorage } from "$lib/stores.ts";
-    import type { Battle, saveBattleFormData } from "$lib/types.ts";
-
-    interface Props {
-        battleToSave: Battle;
-    }
-
-    const { battleToSave }: Props = $props();
+    import type { ModalSettings, ModalStore } from "@skeletonlabs/skeleton";
+    import { battleStorage, battle } from "$lib/stores.ts";
+    import type { saveBattleFormData } from "$lib/types.ts";
 
     const modalStore: ModalStore = getModalStore();
 
@@ -31,7 +21,7 @@
                 const formData = r as saveBattleFormData;
                 if (formData) {
                     battleStorage.saveBattle(
-                        battleToSave,
+                        $battle,
                         formData.name,
                         formData.description,
                     );

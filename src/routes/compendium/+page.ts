@@ -1,4 +1,4 @@
-import type {MarkdownPage} from "$lib/types.ts";
+import type { MarkdownPage } from "$lib/types.ts";
 
 export const load = async ({ fetch }) => {
     const response = await fetch(`/api/pages`);

@@ -1,6 +1,21 @@
 <script lang="ts">
     import { getModalStore, type ModalSettings } from "@skeletonlabs/skeleton";
-    import { battle } from "$lib/stores.ts";
+
+    interface Props {
+        title: string;
+        handleConfirm: Function;
+        buttonCSS: string;
+        buttonIconCSS: string;
+        buttonText: string;
+    }
+
+    const {
+        title,
+        handleConfirm,
+        buttonCSS,
+        buttonIconCSS,
+        buttonText,
+    }: Props = $props();
 
     const modalStore = getModalStore();
 
@@ -9,7 +24,7 @@
             const modal: ModalSettings = {
                 type: "confirm",
                 // Data
-                title: "Reset battle?",
+                title: title,
                 body: "This cannot be undone.",
                 // TRUE if confirm pressed, FALSE if cancel pressed
                 response: (r: boolean) => resolve(r),
@@ -17,7 +32,7 @@
             modalStore.trigger(modal);
         }).then((r: boolean) => {
             if (r) {
-                battle.resetBattle();
+                handleConfirm();
             }
         });
     }
@@ -25,8 +40,8 @@
 
 <button
     type="button"
-    class="btn btn-sm variant-filled-error"
+    class="btn {buttonCSS}"
     onclick={handleRemoveCombatantsClick}>
-    <span><i class="fa-solid fa-trash"></i></span>
-    <span>Reset Battle</span>
+    <span><i class={buttonIconCSS}></i></span>
+    <span>{buttonText}</span>
 </button>

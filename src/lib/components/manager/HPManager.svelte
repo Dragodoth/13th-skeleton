@@ -26,7 +26,7 @@
                             {battleId}
                             {combatant}
                             {HPIndex}
-                            mobId={combatant.combatantCount[HPIndex].id} />
+                            mobId={combatant.combatantCount[HPIndex].mobId} />
                     {/each}
                     <footer class="card-footer">
                         {#if !combatant.mook}

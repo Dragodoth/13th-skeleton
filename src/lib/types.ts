@@ -120,4 +120,5 @@ export type InitiativeCombatant = {
     mobId?: string;
     name: string;
     initiative: number;
+    hasActed: string;
 }

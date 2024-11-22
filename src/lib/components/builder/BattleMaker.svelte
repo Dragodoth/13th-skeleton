@@ -68,7 +68,7 @@
                         {#each combatant.combatantCount as mob}
                             <CombatantCard
                                 combatantId={combatant.id}
-                                mobId={mob.id} />
+                                mobId={mob.mobId} />
                         {/each}
                     {:else}
                         <CombatantCard combatantId={combatant.id} />
@@ -94,7 +94,7 @@
                         );
                         battleStorage.updateNameAndDescription(
                             displayedBattle.id,
-                            displayedBattlmobIdname,
+                            displayedBattle.name,
                             displayedBattle.description,
                         );
                     }}

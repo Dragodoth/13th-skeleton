@@ -11,8 +11,6 @@
     const managedBattle = $derived(
         $battleStorage.find((i) => i.id === data.battleId),
     );
-    console.log(managedBattle)
-    
 </script>
 
 {#if managedBattle}

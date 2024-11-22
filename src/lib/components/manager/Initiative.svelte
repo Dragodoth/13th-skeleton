@@ -13,38 +13,53 @@
     $effect(() => {
         initiativeCombatants = managedBattle.combatants
             .flatMap((combatant) => {
-                let index = 0;
+                let index = -1;
                 return combatant.combatantCount.map((count) => {
                     index += 1;
                     return {
                         id: combatant.id,
                         index: index,
                         mobId: count?.mobId,
-                        name: `${combatant.name} ${index}`,
+                        name: `${combatant.name} ${index + 1}`,
                         initiative: count.initiativeTotal,
+                        hasActed: "",
                     };
                 });
             })
             .sort((a, b) => b.initiative - a.initiative);
     });
 
-    function handleInitiativeClick(combatantId: string, index: number, newInitiative: number, mobId?: string): void {
+    function handleInitiativeClick(combatantId: string, combatantIndex: number, newInitiative: number, mobId?: string): void {
         if (mobId){
-            battleStorage.updateInitiative(managedBattle.id, combatantId, index, newInitiative, mobId);
+            battleStorage.updateInitiative(managedBattle.id, combatantId, combatantIndex, newInitiative, mobId);
         } else {
-            battleStorage.updateInitiative(managedBattle.id, combatantId, index, newInitiative);
+            battleStorage.updateInitiative(managedBattle.id, combatantId, combatantIndex, newInitiative);
+            console.log(managedBattle.id, combatantId, combatantIndex, newInitiative, mobId)
         }
         
     }
+
+    let hasActed = $state();
+
+    const handleNameClick = (id: string) => {
+        if (initiativeCombatants) {
+            const combatant = initiativeCombatants.find(c => c.mobId === id);
+            if (combatant){
+                combatant.hasActed = combatant.hasActed === "" ? "variant-soft-error" : "";
+            }
+        }
+    };
+
 </script>
+
 
 {#if initiativeCombatants}
     <section>
         <div class="flex gap-2 flex-wrap">
             {#each initiativeCombatants as combatant}
-                <div class="card p-2 flex gap-2 items-center">
+                <div class="card p-2 flex gap-2 items-center {combatant.hasActed}">
                     <div class="flex flex-col items-center">
-                        <span class="">{combatant.name}</span>
+                        <button class="" onclick={() => handleNameClick(combatant.mobId)}>{combatant.name}</button>
                         <div class="flex gap-2">
                             <input
                                 class="input w-20 h-10"

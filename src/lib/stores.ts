@@ -267,8 +267,7 @@ function createBattle() {
             const battleTableData: BattleTableRow[] = get(battleTable);
 
             const row = battleTableData.find((item: BattleTableRow) => item.level === combatant.level) ?? null;
-            const size = combatant.size === "double strength" || "double-strength" ? "large" : combatant.size === "triple strength" || "triple-strength" ? "huge" : combatant.size;
-
+            const size = combatant.size === "double strength" || combatant.size === "double-strength" ? "large" : combatant.size === "triple strength" || combatant.size === "triple-strength" ? "huge" : combatant.size
             if (combatant.mook) {
                 combatant.combatantCount = combatant.combatantCount.map(entry => {
                     const baseCost = row && size
@@ -622,7 +621,7 @@ function createBattleStorage() {
     //     });
     // }
 
-    const updateInitiative = (battleId: string, combatantId: string, index: number, newInitiative: number, mobId?: string): void => {
+    const updateInitiative = (battleId: string, combatantId: string, combatantIndex: number, newInitiative: number, mobId?: string): void => {
         update((battles: Battle[]) => {
             return battles.map(battle => {
                 if (battle.id !== battleId) return battle;
@@ -632,12 +631,13 @@ function createBattleStorage() {
 
                     const updatedCount = combatant.combatantCount.map((entry, index) => {
                         if (combatant.mook && mobId && entry.mobId === mobId) {
+                            console.log(newInitiative)
                             return {
                                 ...entry,
                                 initiativeTotal: newInitiative,
                             };
                         }
-                        if (!combatant.mook && index === index) {
+                        if (!combatant.mook && combatantIndex === index) {
                             return {
                                 ...entry,
                                 initiativeTotal: newInitiative,

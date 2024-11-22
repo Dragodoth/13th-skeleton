@@ -12,7 +12,7 @@
     const battleId = $derived($battle);
 
     function clickHandler(monster: Monster) {
-        battle.addCombatant(monster);
+        battle.addEnemy(monster);
     }
 
     const { monsters } = data;

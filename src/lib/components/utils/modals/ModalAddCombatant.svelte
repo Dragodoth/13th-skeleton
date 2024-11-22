@@ -22,7 +22,7 @@
 
         <div class="space-y-4 overflow-auto">
             <MonsterDatatable monsters={monstersSRD} clickHandler={
-                battleStorage.addCombatant} />
+                battleStorage.addEnemy} />
         </div>
         <footer class="modal-footer {parent.regionFooter}">
             <button class="btn {parent.buttonNeutral}" on:click={parent.onClose}

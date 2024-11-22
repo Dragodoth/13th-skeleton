@@ -19,7 +19,7 @@
 
     const modalStore = getModalStore();
 
-    function handleRemoveCombatantsClick() {
+    function handleClick() {
         new Promise<boolean>((resolve) => {
             const modal: ModalSettings = {
                 type: "confirm",
@@ -41,7 +41,7 @@
 <button
     type="button"
     class="btn {buttonCSS}"
-    onclick={handleRemoveCombatantsClick}>
+    onclick={handleClick}>
     <span><i class={buttonIconCSS}></i></span>
     <span>{buttonText}</span>
 </button>

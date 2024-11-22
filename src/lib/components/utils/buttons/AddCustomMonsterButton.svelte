@@ -5,7 +5,7 @@
 
     const modalStore = getModalStore();
 
-    function handleAddCombatantClick(): void {
+    function handleAddMonsterClick(): void {
         new Promise((resolve) => {
             const modal: ModalSettings = {
                 type: "component",
@@ -31,8 +31,8 @@
 <button
     type="button"
     class="card hover:variant-ghost-secondary flex justify-center items-center"
-    aria-label="addCombatantCard"
-    on:click={handleAddCombatantClick}>
+    aria-label="addMonsterCard"
+    on:click={handleAddMonsterClick}>
     <i
         class="fa-solid fa-plus fa-10x"
         style="color: rgba(var(--color-surface-500));"></i>

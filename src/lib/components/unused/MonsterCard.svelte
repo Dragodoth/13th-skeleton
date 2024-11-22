@@ -1,10 +1,10 @@
 <script lang="ts">
-    import type {Combatant} from "$lib/types";
+    import type {Enemy} from "$lib/types";
     import {battle, battleStorage} from "$lib/stores.ts";
 
     interface Props {
-        combatants: Combatant[];
-        combatant: Combatant;
+        combatants: Enemy[];
+        combatant: Enemy;
         index: number;
     }
 

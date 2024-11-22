@@ -60,22 +60,24 @@ export type Monster = {
     [key: string]: any,
 };
 
-export type Combatant = Monster & {
-    combatantCount: {
-        mobId?: string,
-        mookCount?: number,
-        mobCost?: number,
-        currentHP: number,
-        initiativeTotal: number,
-    }[]
+export type Combatant = {
+    combatantId: string,
+    mookCount?: number,
+    mobCost?: number,
+    currentHP: number,
+    initiativeTotal: number,
+}
+
+export type Enemy = Monster & {
+    combatants: Combatant[]
     cost: number,
 };
 
-export function isCombatant(obj: any): obj is Combatant {
+export function isEnemy(obj: any): obj is Enemy {
     return (
         typeof obj === 'object' &&
         obj !== null &&
-        Array.isArray(obj.combatantCount) &&
+        Array.isArray(obj.combatants) &&
         typeof obj.cost === 'number'
     );
 }
@@ -83,7 +85,7 @@ export type Battle = {
     id: string,
     name: string,
     description: string,
-    combatants: Combatant[],
+    enemies: Enemy[],
 }
 
 export type saveBattleFormData = {
@@ -116,9 +118,8 @@ export type FolderStructureType = {
 
 export type InitiativeCombatant = {
     id: string;
-    index: number;
-    mobId?: string;
+    mook?: boolean;
+    combatantId: string;
     name: string;
     initiative: number;
-    hasActed: string;
 }

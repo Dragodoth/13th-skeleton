@@ -7,7 +7,7 @@
         battleStorage,
     } from "$lib/stores.ts";
     import { ProgressBar } from "@skeletonlabs/skeleton";
-    import CombatantCard from "$lib/components/builder/CombatantCard.svelte";
+    import EnemyCard from "$lib/components/builder/EnemyCard.svelte";
     import SaveBattleButton from "$lib/components/utils/buttons/SaveBattleButton.svelte";
     import type { Battle } from "$lib/types.ts";
     import ImportBattleButton from "../utils/buttons/ImportBattleButton.svelte";
@@ -18,11 +18,11 @@
 
     $effect(() => {
         if ($battleLevel) {
-            const updatedCombatants = battle.updateCombatantsCost(
-                displayedBattle.combatants,
+            const updatedEnemies = battle.updateEnemiesCost(
+                displayedBattle.enemies,
             );
-            battle.updateCombatants(updatedCombatants);
-            totalCost = battle.calculateTotalCost(displayedBattle.combatants);
+            battle.updateEnemies(updatedEnemies);
+            totalCost = battle.calculateTotalCost(displayedBattle.enemies);
         }
     });
 </script>
@@ -61,17 +61,17 @@
             value={totalCost}
             max={$mEqBudget[$playerNumber]} />
 
-        {#if displayedBattle && displayedBattle.combatants.length > 0}
+        {#if displayedBattle && displayedBattle.enemies.length > 0}
             <div class="p-4 flex flex-wrap gap-4">
-                {#each displayedBattle.combatants as combatant}
-                    {#if combatant.mook}
-                        {#each combatant.combatantCount as mob}
-                            <CombatantCard
-                                combatantId={combatant.id}
-                                mobId={mob.mobId} />
+                {#each displayedBattle.enemies as enemy}
+                    {#if enemy.mook}
+                        {#each enemy.combatants as combatant}
+                            <EnemyCard
+                                enemyId={enemy.id}
+                                combatantId={combatant.combatantId} />
                         {/each}
                     {:else}
-                        <CombatantCard combatantId={combatant.id} />
+                        <EnemyCard enemyId={enemy.id} />
                     {/if}
                 {/each}
             </div>
@@ -81,16 +81,16 @@
                 battle.</span>
         {/if}
     </section>
-    {#if displayedBattle.combatants.length > 0}
+    {#if displayedBattle.enemies.length > 0}
         <hr class="w-full !border-t-2" />
         <footer class="card-footer flex gap-4 items-center">
             {#if $battleStorage.find((b) => b.id === displayedBattle.id)}
                 <ConfirmButtonModal
                     title="Overwrite this battle in storage?"
                     handleConfirm={() => {
-                        battleStorage.updateCombatants(
+                        battleStorage.updateEnemies(
                             displayedBattle.id,
-                            displayedBattle.combatants,
+                            displayedBattle.enemies,
                         );
                         battleStorage.updateNameAndDescription(
                             displayedBattle.id,

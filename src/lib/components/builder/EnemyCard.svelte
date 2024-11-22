@@ -1,39 +1,38 @@
 <script lang="ts">
-    import type { Battle, Combatant } from "$lib/types";
+    import type { Battle, Enemy } from "$lib/types";
     import { battle } from "$lib/stores.ts";
 
     interface Props {
-        combatantId: string;
-        mobId?: string;
+        enemyId: string;
+        combatantId?: string;
     }
 
-    const { combatantId, mobId = "" }: Props = $props();
+    const { enemyId, combatantId = "" }: Props = $props();
 
     const displayedBattle: Battle = $derived($battle);
-    let displayedCombatant: Combatant | undefined = $state();
+    let displayedEnemy: Enemy | undefined = $state();
 
     $effect(() => {
-        displayedCombatant = displayedBattle.combatants.find(
-            (c) => c.id === combatantId,
+        displayedEnemy = displayedBattle.enemies.find(
+            (enemy) => enemy.id === enemyId,
         );
     });
 </script>
 
-{#if displayedCombatant}
+{#if displayedEnemy}
     <section class="alert variant-ghost flex flex-row gap-2">
-        <!-- Message -->
-        {#if displayedCombatant.mook && mobId}
+        {#if displayedEnemy.mook && combatantId}
             <div class="alert-message">
                 <h3 class="h3">
-                    Mob of {displayedCombatant.combatantCount.find(
-                        (c) => c.mobId === mobId,
+                    Mob of {displayedEnemy.combatants.find(
+                        (enemy) => enemy.combatantId === combatantId,
                     )?.mookCount}
-                    x {displayedCombatant.name}
+                    x {displayedEnemy.name}
                 </h3>
                 <p>
                     Cost: {parseFloat(
-                        displayedCombatant.combatantCount
-                            .find((c) => c.mobId === mobId)
+                        displayedEnemy.combatants
+                            .find((enemy) => enemy.combatantId === combatantId)
                             ?.mobCost?.toFixed(1) ?? "0",
                     )}
                 </p>
@@ -41,43 +40,43 @@
             <!-- Actions -->
             <div class="alert-actions">
                 <button
-                  aria-label="addCombatantButton"
+                  aria-label="addEnemyButton"
                     type="button"
                     class="btn btn-sm variant-ghost"
-                    onclick={() => battle.addMook(displayedCombatant, mobId)}
+                    onclick={() => battle.addMook(displayedEnemy, combatantId)}
                     ><i class="fa-solid fa-plus"></i>
                 </button>
                 <button
-                    aria-label="addCombatantButton"
+                    aria-label="addEnemyButton"
                     type="button"
                     class="btn btn-sm variant-ghost"
                     onclick={() =>
-                        battle.removeMook(displayedCombatant?.id, mobId)}
+                        battle.removeMook(displayedEnemy?.id, combatantId)}
                     ><i class="fa-solid fa-minus"></i>
                 </button>
             </div>
         {:else}
             <div class="alert-message">
                 <h3 class="h3">
-                    {displayedCombatant.combatantCount.length}x {displayedCombatant.name}
+                    {displayedEnemy.combatants.length}x {displayedEnemy.name}
                 </h3>
-                <p>Cost: {parseFloat(displayedCombatant.cost.toFixed(1))}</p>
+                <p>Cost: {parseFloat(displayedEnemy.cost.toFixed(1))}</p>
             </div>
             <!-- Actions -->
             <div class="alert-actions">
                 <button
-                    aria-label="addCombatantButton"
+                    aria-label="addEnemyButton"
                     type="button"
                     class="btn btn-sm variant-ghost"
-                    onclick={() => battle.addCombatant(displayedCombatant)}
+                    onclick={() => battle.addEnemy(displayedEnemy)}
                     ><i class="fa-solid fa-plus"></i>
                 </button>
                 <button
-                    aria-label="addCombatantButton"
+                    aria-label="addEnemyButton"
                     type="button"
                     class="btn btn-sm variant-ghost"
                     onclick={() =>
-                        battle.removeCombatant(displayedCombatant?.id)}
+                        battle.removeEnemy(displayedEnemy?.id)}
                     ><i class="fa-solid fa-minus"></i>
                 </button>
             </div>

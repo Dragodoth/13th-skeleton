@@ -74,20 +74,20 @@
                                 </span>
                                 <div
                                     class="flex flex-wrap justify-center gap-1 p-2">
-                                    {#each battleStored.combatants as combatant}
-                                        {#if combatant.mook}
-                                            {#each combatant.combatantCount as mob}
+                                    {#each battleStored.enemies as enemy}
+                                        {#if enemy.mook}
+                                            {#each enemy.combatants as combatant}
                                                 <span
                                                     class="variant-ghost-secondary p-2 rounded-xl text-sm"
-                                                    >{mob.mookCount}
-                                                    x {combatant.name}</span>
+                                                    >{combatant.mookCount}
+                                                    x {enemy.name}</span>
                                             {/each}
                                         {:else}
                                             <span
                                                 class="variant-ghost-secondary p-2 rounded-xl text-sm"
-                                                >{combatant.combatantCount
+                                                >{enemy.combatants
                                                     .length}
-                                                x {combatant.name}</span>
+                                                x {enemy.name}</span>
                                         {/if}
                                     {/each}
                                 </div>

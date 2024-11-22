@@ -1,58 +1,56 @@
 <script lang="ts">
     import HPBlock from "$lib/components/manager/HPBlock.svelte";
 
-    import type { Combatant } from "$lib/types";
+    import type { Enemy } from "$lib/types";
     import { battleStorage } from "$lib/stores";
     import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
 
     interface Props {
         battleId: string;
-        combatant: Combatant;
+        enemy: Enemy;
     }
 
-    const { battleId, combatant }: Props = $props();
+    const { battleId, enemy }: Props = $props();
 </script>
 
-<Accordion>
-    <AccordionItem open>
-        <svelte:fragment slot="summary">
-            <h2>HP Manager</h2>
-        </svelte:fragment>
-        <svelte:fragment slot="content">
-            <div class="card flex flex-col p-2 items-center gap-2">
-                {#if combatant}
-                    {#each combatant.combatantCount as _, HPIndex}
-                        <HPBlock
-                            {battleId}
-                            {combatant}
-                            {HPIndex}
-                            mobId={combatant.combatantCount[HPIndex].mobId} />
-                    {/each}
-                    <footer class="card-footer">
-                        {#if !combatant.mook}
+<Accordion padding="p-2" regionControl="h3">
+    <span class="h2">{enemy.name}</span>
+    <div class="card">
+        <AccordionItem open>
+            <svelte:fragment slot="summary">HP Manager</svelte:fragment>
+            <svelte:fragment slot="content">
+                <div
+                    class="flex flex-col p-2 items-center gap-2 max-h-screen overflow-auto">
+                    {#if enemy}
+                        {#each enemy.combatants as combatant}
+                            <HPBlock {battleId} {enemy} {combatant} />
+                        {/each}
+                    {/if}
+                    <div>
+                        {#if !enemy.mook}
                             <button
-                                aria-label="addRemoveButton"
+                                aria-label="addEnemyButton"
                                 type="button"
                                 class="btn btn-sm variant-ghost"
                                 onclick={() =>
-                                    battleStorage.removeCombatant(
+                                    battleStorage.removeEnemy(
                                         battleId,
-                                        combatant.id,
+                                        enemy.id,
                                     )}
                                 ><i class="fa-solid fa-minus"></i>
-                      mobId    </button>
+                            </button>
                         {/if}
                         <button
-                            aria-label="addCombatantButton"
+                            aria-label="addEnemyButton"
                             type="button"
                             class="btn btn-sm variant-ghost"
                             onclick={() =>
-                                battleStorage.addCombatant(battleId, combatant)}
+                                battleStorage.addEnemy(battleId, enemy)}
                             ><i class="fa-solid fa-plus"></i>
                         </button>
-                    </footer>
-                {/if}
-            </div>
-        </svelte:fragment>
-    </AccordionItem>
+                    </div>
+                </div>
+            </svelte:fragment>
+        </AccordionItem>
+    </div>
 </Accordion>

@@ -2,7 +2,7 @@
     import { TabAnchor, TabGroup } from "@skeletonlabs/skeleton";
     import { battleStorage } from "$lib/stores";
     import AddCombatantButton from "$lib/components/utils/buttons/AddCombatantButton.svelte";
-    import AddCustomCombatantButton from "$lib/components/utils/buttons/AddCustomCombatantButton.svelte";
+    import AddCustomCombatantButton from "$lib/components/utils/buttons/AddCustomMonsterButton.svelte";
     import StatblockGrid from "$lib/components/manager/StatblockGrid.svelte";
     import Initiative from "$lib/components/manager/Initiative.svelte";
 
@@ -30,7 +30,7 @@
 
     <Initiative {managedBattle}/>
 
-    <StatblockGrid data={managedBattle.combatants} battleId={managedBattle.id}>
+    <StatblockGrid data={managedBattle.enemies} battleId={managedBattle.id}>
         <!-- <AddCombatantButton /> -->
         <AddCustomCombatantButton />
     </StatblockGrid>

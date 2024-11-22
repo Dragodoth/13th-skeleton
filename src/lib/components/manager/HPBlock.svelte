@@ -1,73 +1,69 @@
 <script lang="ts">
     import { ProgressBar, Ratings } from "@skeletonlabs/skeleton";
-    import type { Combatant } from "$lib/types";
+    import type { Combatant, Enemy } from "$lib/types";
     import { battleStorage } from "$lib/stores";
 
     interface Props {
         battleId: string;
+        enemy: Enemy;
         combatant: Combatant;
-        HPIndex: number;
-        mobId?: string;
     }
 
-    const { battleId, combatant, HPIndex, mobId = "" }: Props = $props();
+    const { battleId, enemy, combatant }: Props = $props();
 
     let HPInput: string | undefined = $state();
-    let currentHP = $derived(combatant.combatantCount[HPIndex].currentHP);
+    let currentHP = $derived(combatant.currentHP);
     const maxHp = $derived(
-        combatant?.mook
-            ? combatant.hp * (combatant.combatantCount[HPIndex].mookCount ?? 1)
-            : combatant?.hp,
+        enemy?.mook ? enemy.hp * (combatant.mookCount ?? 1) : enemy?.hp,
     );
 
     function handleHPUpdate() {
-        if (HPInput && combatant && parseFloat(HPInput) && currentHP) {
+        if (HPInput && enemy && parseFloat(HPInput) && currentHP) {
             if (HPInput.includes("-")) {
                 let newHP: number = currentHP + parseFloat(HPInput);
                 battleStorage.updateHP(
                     battleId,
-                    combatant.id,
-                    HPIndex,
+                    enemy.id,
                     newHP,
-                    mobId,
+                    combatant.combatantId,
                 );
             } else if (HPInput.includes("+")) {
                 let newHP: number = currentHP + parseFloat(HPInput);
                 battleStorage.updateHP(
                     battleId,
-                    combatant.id,
-                    HPIndex,
+                    enemy.id,
                     newHP,
-                    mobId,
+                    combatant.combatantId,
                 );
             } else {
                 battleStorage.updateHP(
                     battleId,
-                    combatant.id,
-                    HPIndex,
+                    enemy.id,
                     parseFloat(HPInput),
-                    mobId,
+                    combatant.combatantId,
                 );
             }
         }
     }
 </script>
 
-{#if combatant && currentHP}
+{#if enemy && currentHP}
     <section class="card p-2 w-full variant-ghost">
         <div class="flex gap-2 items-end">
             <span>{currentHP}</span>
             <div class="flex grow flex-col flex-wrap items-center gap-2">
                 <p>
-                    {combatant.name}
-                    {combatant.mook ? "Mob " : ""}{HPIndex + 1}
+                    {enemy.name}
+                    {enemy.mook ? "Mob " : ""}{enemy.combatants.indexOf(
+                        combatant,
+                    ) + 1}
                 </p>
-                {#if combatant.mook}
+                {#if enemy.mook}
                     <p>
-                        {Math.ceil(currentHP / combatant.hp)} / {combatant
-                            .combatantCount[HPIndex].mookCount} mooks
+                        {Math.ceil(currentHP / enemy.hp)} / {combatant.mookCount}
+                        mooks
                     </p>
-                    <!--                    <Ratings value={Math.ceil(currentHP / combatant.hp)} max={combatant.combatantCount[HPIndex].mookCount}>-->
+                    <!--                    <Ratings value={Math.ceil(currentHP / enemy.hp)} max={enemy.combatantCount[HPIndex].mookCount}>-->
                     <!--                        <svelte:fragment slot="empty">-->
                     <!--                            <i class="fa-solid fa-skull-crossbones"></i>-->
                     <!--                        </svelte:fragment>-->
@@ -77,26 +73,26 @@
                     <!--                    </Ratings>-->
                     <div class="flex gap-2">
                         <button
-                            aria-label="addCombatantButton"
+                            aria-label="removeMookButton"
                             type="button"
                             class="btn btn-sm variant-ghost"
                             onclick={() =>
                                 battleStorage.removeMook(
                                     battleId,
-                                    combatant.id,
-                                    mobId,
+                                    enemy.id,
+                                    combatant.combatantId,
                                 )}
                             ><i class="fa-solid fa-minus"></i>
                         </button>
                         <button
-                            aria-label="addCombatantButton"
+                            aria-label="addMookButton"
                             type="button"
                             class="btn btn-sm variant-ghost"
                             onclick={() =>
                                 battleStorage.addMook(
                                     battleId,
-                                    combatant,
-                                    mobId,
+                                    enemy,
+                                    combatant.combatantId,
                                 )}
                             ><i class="fa-solid fa-plus"></i>
                         </button>
@@ -123,9 +119,11 @@
                     }
                 }} />
             <button
+                aria-label="updateHPButton"
                 type="button"
                 class="btn btn-sm variant-ghost"
-                onclick={handleHPUpdate}>Update HP</button>
+                onclick={handleHPUpdate}
+                ><i class="fa-solid fa-pen"></i></button>
         </div>
     </section>
 {/if}

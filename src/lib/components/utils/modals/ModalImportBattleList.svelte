@@ -47,9 +47,9 @@
                                 <span>{battleStored.description}</span>
                             </span>
                             <div class="flex flex-wrap gap-2 p-2">
-                                {#each battleStored.combatants as combatant}
+                                {#each battleStored.enemies as enemy}
                                     <span class="variant-ghost p-2 rounded-xl"
-                                        >{combatant.count}x {combatant.name}</span>
+                                        >{enemy.count}x {enemy.name}</span>
                                 {/each}
                             </div>
                         </div>

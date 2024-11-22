@@ -3,11 +3,11 @@
 
     const modalStore = getModalStore();
 
-    function handleAddCombatantClick(): void {
+    function handleAddEnemyClick(): void {
         const modal: ModalSettings = {
             type: "component",
-            component: "modalComponentModalAddCombatant",
-            title: "Add Combatant",
+            component: "modalComponentModalAddEnemy",
+            title: "Add Enemy",
             body: "Choose a combatant to add to battle.",
         };
         modalStore.trigger(modal);
@@ -17,8 +17,8 @@
 <button
     type="button"
     class="card hover:variant-ghost-secondary flex justify-center items-center"
-    aria-label="addCombatantCard"
-    on:click={handleAddCombatantClick}>
+    aria-label="addEnemyCard"
+    on:click={handleAddEnemyClick}>
     <i
         class="fa-solid fa-plus fa-10x"
         style="color: rgba(var(--color-surface-500));"></i>

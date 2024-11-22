@@ -1,10 +1,12 @@
 <script lang="ts">
-    import type { Combatant, Monster } from "$lib/types";
+    import type { Enemy, Monster } from "$lib/types";
     import { Accordion, AccordionItem } from "@skeletonlabs/skeleton";
     import type { Action, Trait } from "$lib/types";
+    import ConfirmButtonModal from "../utils/buttons/ConfirmButtonModal.svelte";
+    import { customMonsterStorage } from "$lib/stores";
 
     interface Props {
-        data: Combatant | Monster;
+        data: Enemy | Monster;
     }
 
     const { data }: Props = $props();
@@ -59,6 +61,20 @@
 {/snippet}
 
 <section class="flex flex-col w-full gap-2">
+    <div class="flex justify-between">
+        <span>{data.source} {data.page ? `p.${data.page}` : ""}</span>
+        {#if data.source === "Custom"}
+            <div>
+                <ConfirmButtonModal
+                    title="Delete custom monster?"
+                    handleConfirm={() =>
+                        customMonsterStorage.removeMonster(data.id)}
+                    buttonCSS="btn-sm variant-ghost"
+                    buttonIconCSS="fa-solid fa-trash"
+                    buttonText="Delete monster" />
+            </div>
+        {/if}
+    </div>
     <div class="grid grid-cols-2 gap-2">
         <div class="flex flex-col gap-1">
             <span class="h1">{data.name}</span>

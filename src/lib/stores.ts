@@ -1,6 +1,6 @@
 import type { Readable, Writable } from 'svelte/store';
 import { derived, get, writable } from 'svelte/store';
-import type { Battle, BattleTableRow, Combatant, Monster, Persisted } from "$lib/types";
+import type { Battle, BattleTableRow, Combatant, Enemy, InitiativeCombatant, Monster, Persisted } from "$lib/types";
 import { persisted } from 'svelte-persisted-store';
 
 export const use2E: Writable<boolean> = persisted("use2E", true);
@@ -73,7 +73,7 @@ function createBattle() {
         id: Date.now().toString(),
         name: "Skeleton Battle",
         description: "",
-        combatants: [] as Combatant[],
+        enemies: [] as Enemy[],
     });
     const { set, update } = battle;
 
@@ -85,191 +85,170 @@ function createBattle() {
         });
     }
 
-    const addCombatant = (newCombatant: Combatant | Monster | undefined): void => {
+    const addEnemy = (newEnemy: Enemy | Monster | undefined): void => {
         update((currentBattle: Battle) => {
-            if (!newCombatant) return currentBattle;
-            const existingCombatant = currentBattle.combatants.find(c => c.id === newCombatant.id);
-            const updatedCombatants: Combatant[] = existingCombatant
-                ? newCombatant.mook
-                    ? currentBattle.combatants.map((combatant: Combatant) =>
-                        combatant.id === newCombatant.id
-                            ? {
-                                ...combatant,
-                                combatantCount: [
-                                    ...combatant.combatantCount,
-                                    {
-                                        mobId: Date.now().toString(),
-                                        mookCount: 1,
-                                        currentHP: newCombatant.hp,
-                                        initiativeTotal: 10 +
-                                            (typeof newCombatant.initiative === "number"
-                                                ? newCombatant.initiative
-                                                : 0)
-                                    }
-                                ],
-                                cost: 0,
-                            }
-                            : combatant
-                    )
-                    :
-                    currentBattle.combatants.map((combatant: Combatant) =>
-                        combatant.id === newCombatant.id && combatant.combatantCount
-                            ? {
-                                ...combatant,
-                                combatantCount:
-                                    [
-                                        ...combatant.combatantCount,
-                                        {
-                                            currentHP: combatant.hp,
-                                            initiativeTotal: 10 +
-                                            (typeof newCombatant.initiative === "number"
-                                                ? newCombatant.initiative
-                                                : 0)
-                                        },
-                                    ],
-                                cost: 0,
-                            }
-                            : combatant
-                    )
-                : [...currentBattle.combatants, {
-                    ...newCombatant,
-                    combatantCount: [{
-                        ...(newCombatant.mook && { mobId: Date.now().toString()}),
-                        ...(newCombatant.mook && { mookCount: 1 }),
-                        currentHP: newCombatant.hp,
+            if (!newEnemy) return currentBattle;
+            const existingEnemy = currentBattle.enemies.find(enemy => enemy.id === newEnemy.id);
+            const updatedEnemies: Enemy[] = existingEnemy
+                ? currentBattle.enemies.map((enemy: Enemy) =>
+                    enemy.id === newEnemy.id
+                        ? {
+                            ...enemy,
+                            combatants: [
+                                ...enemy.combatants,
+                                {
+                                    combatantId: Date.now().toString(),
+                                    ...(newEnemy.mook && { mookCount: 1 }),
+                                    currentHP: newEnemy.hp,
+                                    initiativeTotal: 10 +
+                                        (typeof newEnemy.initiative === "number"
+                                            ? newEnemy.initiative
+                                            : 0)
+                                }
+                            ],
+                            cost: 0,
+                        }
+                        : enemy
+                )
+                : [...currentBattle.enemies, {
+                    ...newEnemy,
+                    combatants: [{
+                        combatantId: Date.now().toString(),
+                        ...(newEnemy.mook && { mookCount: 1 }),
+                        currentHP: newEnemy.hp,
                         initiativeTotal: 10 +
-                                            (typeof newCombatant.initiative === "number"
-                                                ? newCombatant.initiative
-                                                : 0)
+                            (typeof newEnemy.initiative === "number"
+                                ? newEnemy.initiative
+                                : 0)
                     }],
                     cost: 0,
                 }];
-            return { ...currentBattle, combatants: updateCombatantsCost(updatedCombatants) };
+            return { ...currentBattle, enemies: updateEnemiesCost(updatedEnemies) };
         });
     };
 
-    const removeCombatant = (combatantId: string | undefined): void => {
+    const removeEnemy = (enemyId: string | undefined): void => {
         update((currentBattle: Battle) => {
-            if (!combatantId) return currentBattle;
+            if (!enemyId) return currentBattle;
 
-            const existingCombatant = currentBattle.combatants.find(c => c.id === combatantId);
-            if (!existingCombatant || existingCombatant.mook) return currentBattle;
+            const existingEnemy = currentBattle.enemies.find(enemy => enemy.id === enemyId);
+            if (!existingEnemy || existingEnemy.mook) return currentBattle;
 
-            let updatedCombatants: Combatant[];
+            let updatedEnemies: Enemy[];
 
-            if (existingCombatant.combatantCount.length > 1) {
-                updatedCombatants = currentBattle.combatants.map((combatant) =>
-                    combatant.id === combatantId
+            if (existingEnemy.combatants.length > 1) {
+                updatedEnemies = currentBattle.enemies.map((enemy) =>
+                    enemy.id === enemyId
                         ? {
-                            ...combatant,
-                            combatantCount: combatant.combatantCount.slice(0, -1),
+                            ...enemy,
+                            combatants: enemy.combatants.slice(0, -1),
                         }
-                        : combatant
+                        : enemy
                 );
             } else {
-                updatedCombatants = [
-                    ...currentBattle.combatants.filter(c => c.id !== combatantId),
+                updatedEnemies = [
+                    ...currentBattle.enemies.filter(enemy => enemy.id !== enemyId),
                 ];
             }
 
             return {
                 ...currentBattle,
-                combatants: updateCombatantsCost(updatedCombatants)
+                enemies: updateEnemiesCost(updatedEnemies)
             };
         });
     };
 
-    const addMook = (newMook: Combatant | undefined, mobId: string): void => {
+    const addMook = (newMook: Enemy | undefined, combatantId: string): void => {
         update((currentBattle: Battle) => {
-            if (!newMook || !newMook.mook || !mobId) return currentBattle;
+            if (!newMook || !newMook.mook || !combatantId) return currentBattle;
 
 
-            const existingCombatant = currentBattle.combatants.find(c => c.id === newMook.id);
-            if (!existingCombatant) return currentBattle;
+            const existingEnemy = currentBattle.enemies.find(enemy => enemy.id === newMook.id);
+            if (!existingEnemy) return currentBattle;
 
-            const updatedCombatants: Combatant[] = currentBattle.combatants.map(combatant =>
-                combatant.id === newMook.id
+            const updatedEnemies: Enemy[] = currentBattle.enemies.map(enemy =>
+                enemy.id === newMook.id
                     ? {
-                        ...combatant,
-                        combatantCount: combatant.combatantCount.map(mob =>
-                            mob.mobId === mobId
+                        ...enemy,
+                        combatants: enemy.combatants.map(combatant =>
+                            combatant.combatantId === combatantId
                                 ? {
-                                    ...mob,
-                                    mookCount: (mob.mookCount || 0) + 1,
-                                    currentHP: mob.currentHP + combatant.hp
+                                    ...combatant,
+                                    mookCount: (combatant.mookCount || 0) + 1,
+                                    currentHP: combatant.currentHP + enemy.hp
                                 }
-                                : mob
+                                : combatant
                         ),
                     }
-                    : combatant
+                    : enemy
             );
 
             return {
                 ...currentBattle,
-                combatants: updateCombatantsCost(updatedCombatants)
+                enemies: updateEnemiesCost(updatedEnemies)
             };
         });
     };
 
-    const removeMook = (combatantId: string | undefined, mobId: string): void => {
+    const removeMook = (enemyId: string | undefined, combatantId: string): void => {
         update((currentBattle: Battle) => {
-            if (!combatantId || !mobId) return currentBattle;
+            if (!enemyId || !combatantId) return currentBattle;
 
-            const existingCombatant = currentBattle.combatants.find(c => c.id === combatantId);
-            if (!existingCombatant || !existingCombatant.mook) return currentBattle;
+            const existingEnemy = currentBattle.enemies.find(enemy => enemy.id === enemyId);
+            if (!existingEnemy || !existingEnemy.mook) return currentBattle;
 
-            let updatedCombatants: Combatant[];
+            let updatedEnemies: Enemy[];
 
-            if (existingCombatant.combatantCount.some(mob => (mob.mookCount ?? 0) > 1) || existingCombatant.combatantCount.length > 1) {
-                updatedCombatants = currentBattle.combatants.map(combatant =>
+            if (existingEnemy.combatants.some(combatant => (combatant.mookCount ?? 0) > 1) || existingEnemy.combatants.length > 1) {
+                updatedEnemies = currentBattle.enemies.map(enemy =>
 
-                    combatant.id === combatantId
+                    enemy.id === enemyId
                         ? {
-                            ...combatant,
-                            combatantCount: combatant.combatantCount.map(mob =>
-                                mob.mobId === mobId
+                            ...enemy,
+                            combatants: enemy.combatants.map(combatant =>
+                                combatant.combatantId === combatantId
                                     ? {
-                                        ...mob,
-                                        mookCount: (mob.mookCount || 1) - 1,
-                                        currentHP: mob.currentHP - combatant.hp
+                                        ...combatant,
+                                        mookCount: (combatant.mookCount || 1) - 1,
+                                        currentHP: combatant.currentHP - enemy.hp
                                     }
-                                    : mob
-                            ).filter(mob => (mob.mookCount ?? 0) > 0),
+                                    : combatant
+                            ).filter(combatant => (combatant.mookCount ?? 0) > 0),
                         }
-                        : combatant
+                        : enemy
                 );
             } else {
-                updatedCombatants = [
-                    ...currentBattle.combatants.filter(c => c.id !== combatantId),
+                updatedEnemies = [
+                    ...currentBattle.enemies.filter(enemy => enemy.id !== enemyId),
                 ];
             }
 
             return {
                 ...currentBattle,
-                combatants: updateCombatantsCost(updatedCombatants) // Update cost
+                enemies: updateEnemiesCost(updatedEnemies) // Update cost
             };
         });
     };
 
-    const updateCombatants = (combatants: Combatant[]): void => {
+    const updateEnemies = (combatants: Enemy[]): void => {
         update((currentBattle: Battle) => {
-            return { ...currentBattle, combatants: updateCombatantsCost(combatants) }
+            return { ...currentBattle, enemies: updateEnemiesCost(combatants) }
         }
         )
     };
 
-    const calculateTotalCost = (combatants: Combatant[]): number =>
-        parseFloat(combatants.reduce((sum, combatant) => sum + combatant.cost, 0).toFixed(1));
+    const calculateTotalCost = (combatants: Enemy[]): number =>
+        parseFloat(combatants.reduce((sum, enemy) => sum + enemy.cost, 0).toFixed(1));
 
 
-    function updateCombatantsCost(combatants: Combatant[]): Combatant[] {
-        return combatants.map(combatant => {
+    function updateEnemiesCost(combatants: Enemy[]): Enemy[] {
+        return combatants.map(enemy => {
             const battleTableData: BattleTableRow[] = get(battleTable);
 
-            const row = battleTableData.find((item: BattleTableRow) => item.level === combatant.level) ?? null;
-            const size = combatant.size === "double strength" || combatant.size === "double-strength" ? "large" : combatant.size === "triple strength" || combatant.size === "triple-strength" ? "huge" : combatant.size
-            if (combatant.mook) {
-                combatant.combatantCount = combatant.combatantCount.map(entry => {
+            const row = battleTableData.find((item: BattleTableRow) => item.level === enemy.level) ?? null;
+            const size = enemy.size === "double strength" || enemy.size === "double-strength" ? "large" : enemy.size === "triple strength" || enemy.size === "triple-strength" ? "huge" : enemy.size
+            if (enemy.mook) {
+                enemy.combatants = enemy.combatants.map(entry => {
                     const baseCost = row && size
                         ? ((row[size as keyof BattleTableRow] as { value: number })?.value ?? 0)
                         : 0;
@@ -282,34 +261,34 @@ function createBattle() {
                     };
                 });
 
-                combatant.cost = combatant.combatantCount.reduce((total, entry) => total + (entry.mobCost || 0), 0);
+                enemy.cost = enemy.combatants.reduce((total, entry) => total + (entry.mobCost || 0), 0);
             } else {
-                combatant.cost = row && size
+                enemy.cost = row && size
                     ? ((row[size as keyof BattleTableRow] as {
                         value: number
-                    })?.value ?? 0) * combatant.combatantCount.length
+                    })?.value ?? 0) * enemy.combatants.length
                     : 0;
             }
 
-            return combatant;
+            return enemy;
         });
     }
 
     return {
         ...battle,
         importBattle,
-        addCombatant,
-        removeCombatant,
+        addEnemy,
+        removeEnemy,
         addMook,
         removeMook,
-        updateCombatants,
+        updateEnemies,
         calculateTotalCost,
-        updateCombatantsCost,
+        updateEnemiesCost,
         resetBattle: () => set({
             id: Date.now().toString(),
             name: "Skeleton Battle",
             description: "",
-            combatants: [] as Combatant[],
+            enemies: [] as Enemy[],
         })
     }
 }
@@ -327,7 +306,7 @@ function createBattleStorage() {
         update((currentBattles: Battle[]) => {
             return [
                 ...currentBattles,
-                { id: battle.id, name: newName, description: newDescription, combatants: battle.combatants }
+                { id: battle.id, name: newName, description: newDescription, enemies: battle.enemies }
             ];
         });
     };
@@ -350,195 +329,176 @@ function createBattleStorage() {
         });
     };
 
-    // Combatant functions
+    // Enemy functions
 
-    // 4. Add a new combatant or update existing combatant count in a battle
-    const addCombatant = (battleId: string, newCombatant: Combatant | Monster | undefined): void => {
+    // 4. Add a new enemy or update existing enemy count in a battle
+    const addEnemy = (battleId: string, newEnemy: Enemy | Monster | undefined): void => {
         update((currentBattles: Battle[]) => {
-            if (!newCombatant) return currentBattles;
+            if (!newEnemy) return currentBattles;
+
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
-                const existingCombatant = battle.combatants.find(c => c.id === newCombatant.id);
+                const existingEnemy = battle.enemies.find(enemy => enemy.id === newEnemy.id);
 
-                const updatedCombatants: Combatant[] = existingCombatant
-                    ? newCombatant.mook
-                        ? battle.combatants.map((combatant: Combatant) =>
-                            combatant.id === newCombatant.id
-                                ? {
-                                    ...combatant,
-                                    combatantCount: [
-                                        ...combatant.combatantCount,
-                                        {
-                                            mobId: Date.now().toString(),
-                                            mookCount: 1,
-                                            currentHP: newCombatant.hp,
-                                            initiativeTotal: 10 +
-                                                (typeof newCombatant.initiative === "number"
-                                                    ? newCombatant.initiative
-                                                    : 0)
+                const updatedEnemies: Enemy[] = existingEnemy
+                    ? battle.enemies.map((enemy: Enemy) =>
+                        enemy.id === newEnemy.id
+                            ? {
+                                ...enemy,
+                                combatants: [
+                                    ...enemy.combatants,
+                                    {
+                                        combatantId: Date.now().toString(),
+                                        ...(newEnemy.mook && { mookCount: 1 }),
+                                        currentHP: newEnemy.hp,
+                                        initiativeTotal: 10 +
+                                            (typeof newEnemy.initiative === "number"
+                                                ? newEnemy.initiative
+                                                : 0)
 
-                                        }
-                                    ],
-                                    cost: 0,
-                                }
-                                : combatant
-                        )
-                        :
-                        battle.combatants.map((combatant: Combatant) =>
-                            combatant.id === newCombatant.id && combatant.combatantCount
-                                ? {
-                                    ...combatant,
-                                    combatantCount:
-                                        [
-                                            ...combatant.combatantCount,
-                                            {
-                                                currentHP: combatant.hp,
-                                                initiativeTotal: 10 +
-                                                    (typeof newCombatant.initiative === "number"
-                                                        ? newCombatant.initiative
-                                                        : 0)
-                                            },
-                                        ],
-                                    cost: 0,
-                                }
-                                : combatant
-                        )
-                    : [...battle.combatants, {
-                        ...newCombatant,
-                        combatantCount: [{
-                            ...(newCombatant.mook && { mobId: Date.now().toString()}),
-                            ...(newCombatant.mook && { mookCount: 1 }),
-                            currentHP: newCombatant.hp,
+                                    }
+                                ],
+                                cost: 0,
+                            }
+                            : enemy
+                    )
+
+                    : [...battle.enemies, {
+                        ...newEnemy,
+                        combatants: [{
+                            combatantId: Date.now().toString(),
+                            ...(newEnemy.mook && { mookCount: 1 }),
+                            currentHP: newEnemy.hp,
                             initiativeTotal: 10 +
-                                (typeof newCombatant.initiative === "number"
-                                    ? newCombatant.initiative
+                                (typeof newEnemy.initiative === "number"
+                                    ? newEnemy.initiative
                                     : 0)
                         }],
                         cost: 0,
                     }];
 
-                return { ...battle, combatants: updatedCombatants };
+                return { ...battle, enemies: updatedEnemies };
             });
         });
     };
 
-    // 5. Remove a combatant by index in a battle
-    const removeCombatant = (battleId: string, combatantId: string | undefined): void => {
+    // 5. Remove a enemy by index in a battle
+    const removeEnemy = (battleId: string, enemyId: string | undefined): void => {
         update((currentBattles: Battle[]) => {
-            if (!combatantId) return currentBattles;
+            if (!enemyId) return currentBattles;
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
-                const existingCombatant = battle.combatants.find(c => c.id === combatantId);
-                if (!existingCombatant || existingCombatant.mook) return battle;
+                const existingEnemy = battle.enemies.find(enemy => enemy.id === enemyId);
+                if (!existingEnemy || existingEnemy.mook) return battle;
 
-                let updatedCombatants: Combatant[];
+                let updatedEnemies: Enemy[];
 
-                if (existingCombatant.combatantCount.length > 1) {
-                    updatedCombatants = battle.combatants.map((combatant) =>
-                        combatant.id === combatantId
+                if (existingEnemy.combatants.length > 1) {
+                    updatedEnemies = battle.enemies.map((enemy) =>
+                        enemy.id === enemyId
                             ? {
-                                ...combatant,
-                                combatantCount: combatant.combatantCount.slice(0, -1),
+                                ...enemy,
+                                combatants: enemy.combatants.slice(0, -1),
                             }
-                            : combatant
+                            : enemy
                     );
                 } else {
-                    updatedCombatants = [
-                        ...battle.combatants.filter(c => c.id !== combatantId),
+                    updatedEnemies = [
+                        ...battle.enemies.filter(enemy => enemy.id !== enemyId),
                     ];
                 }
 
                 return {
                     ...battle,
-                    combatants: updatedCombatants // Update cost
+                    enemies: updatedEnemies // Update cost
                 };
             });
         });
     };
 
-    const addMook = (battleId: string, newMook: Combatant | undefined, mobId: string): void => {
+    const addMook = (battleId: string, newMook: Enemy | undefined, combatantId: string): void => {
         update((currentBattles: Battle[]) => {
-            if (!newMook || !newMook.mook || !mobId) return currentBattles;
+            if (!newMook || !newMook.mook || !combatantId) return currentBattles;
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
-                const existingCombatant = battle.combatants.find(c => c.id === newMook.id);
-                if (!existingCombatant) return battle;
+                const existingEnemy = battle.enemies.find(enemy => enemy.id === newMook.id);
+                if (!existingEnemy) return battle;
 
-                const updatedCombatants: Combatant[] = battle.combatants.map(combatant =>
-                    combatant.id === newMook.id
+                const updatedEnemies: Enemy[] = battle.enemies.map(enemy =>
+                    enemy.id === newMook.id
                         ? {
-                            ...combatant,
-                            combatantCount: combatant.combatantCount.map(mob =>
-                                mob.mobId === mobId
+                            ...enemy,
+                            combatants: enemy.combatants.map(combatant =>
+                                combatant.combatantId === combatantId
                                     ? {
-                                        ...mob,
-                                        mookCount: (mob.mookCount || 0) + 1,
-                                        currentHP: mob.currentHP + combatant.hp
+                                        ...combatant,
+                                        mookCount: (combatant.mookCount || 0) + 1,
+                                        currentHP: combatant.currentHP + enemy.hp
                                     }
-                                    : mob
+                                    : combatant
                             ),
                         }
-                        : combatant
+                        : enemy
                 );
 
-                return { ...battle, combatants: updatedCombatants };
+                return { ...battle, enemies: updatedEnemies };
             });
         });
     };
 
-    const removeMook = (battleId: string, combatantId: string | undefined, mobId: string): void => {
+    const removeMook = (battleId: string, enemyId: string | undefined, combatantId: string): void => {
         update((currentBattles: Battle[]) => {
-            if (!combatantId || !mobId) return currentBattles;
+            if (!enemyId || !combatantId) return currentBattles;
             return currentBattles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
-                const existingCombatant = battle.combatants.find(c => c.id === combatantId);
-                if (!existingCombatant || !existingCombatant.mook) return battle;
+                const existingEnemy = battle.enemies.find(enemy => enemy.id === enemyId);
+                if (!existingEnemy || !existingEnemy.mook) return battle;
 
-                let updatedCombatants: Combatant[];
+                let updatedEnemies: Enemy[];
 
-                if (existingCombatant.combatantCount.some(mob => (mob.mookCount ?? 0) > 1) || existingCombatant.combatantCount.length > 1) {
-                    updatedCombatants = battle.combatants.map(combatant =>
+                if (existingEnemy.combatants.some(combatant => (combatant.mookCount ?? 0) > 1) || existingEnemy.combatants.length > 1) {
+                    updatedEnemies = battle.enemies.map(enemy =>
 
-                        combatant.id === combatantId
+                        enemy.id === enemyId
                             ? {
-                                ...combatant,
-                                combatantCount: combatant.combatantCount.map(mob =>
-                                    mob.mobId === mobId
+                                ...enemy,
+                                combatants: enemy.combatants.map(combatant =>
+                                    combatant.combatantId === combatantId
                                         ? {
-                                            ...mob,
-                                            mookCount: (mob.mookCount || 1) - 1,
-                                            currentHP: mob.currentHP - combatant.hp
+                                            ...combatant,
+                                            mookCount: (combatant.mookCount || 1) - 1,
+                                            currentHP: combatant.currentHP - enemy.hp
                                         }
-                                        : mob
-                                ).filter(mob => (mob.mookCount ?? 0) > 0),
+                                        : combatant
+                                ).filter(combatant => (combatant.mookCount ?? 0) > 0),
                             }
-                            : combatant
+                            : enemy
                     );
                 } else {
-                    updatedCombatants = [
-                        ...battle.combatants.filter(c => c.id !== combatantId),
+                    updatedEnemies = [
+                        ...battle.enemies.filter(enemy => enemy.id !== enemyId),
                     ];
                 }
 
                 return {
                     ...battle,
-                    combatants: updatedCombatants
+                    enemies: updatedEnemies
                 };
             });
         });
     };
 
 
-    // 6. Update combatants for a specific battle by ID
-    const updateCombatants = (battleId: string, combatants: Combatant[]): void => {
+    // 6. Update enemies for a specific battle by ID
+    const updateEnemies = (battleId: string, enemies: Enemy[]): void => {
         update((currentBattles: Battle[]) =>
             currentBattles.map(battle =>
                 battle.id === battleId
-                    ? { ...battle, combatants: combatants }
+                    ? { ...battle, enemies: enemies }
                     : battle
             )
         );
@@ -546,39 +506,32 @@ function createBattleStorage() {
 
     // Utility functions
 
-    // 7. Update HP of a combatant in a battle
-    const updateHP = (battleId: string, combatantId: string, hpIndex: number, newHp: number, mobId?: string): void => {
+    // 7. Update HP of a enemy in a battle
+    const updateHP = (battleId: string, enemyId: string, newHp: number, combatantId: string): void => {
         update((battles: Battle[]) => {
             return battles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
-                const updatedCombatants: Combatant[] = battle.combatants.map(combatant => {
-                    if (combatant.id !== combatantId) return combatant;
+                const updatedEnemies: Enemy[] = battle.enemies.map(enemy => {
+                    if (enemy.id !== enemyId) return enemy;
 
-                    const updatedCount = combatant.combatantCount.map((entry, index) => {
-                        if (combatant.mook && mobId && entry.mobId === mobId) {
-                            return {
-                                ...entry,
+                    const updatedCombatants = enemy.combatants.map(combatant =>
+                        combatant.combatantId === combatantId ?
+                            {
+                                ...combatant,
                                 currentHP: newHp,
-                            };
-                        }
-                        if (!combatant.mook && index === hpIndex) {
-                            return {
-                                ...entry,
-                                currentHP: newHp,
-                            };
-                        }
-                        return entry;
-                    });
+                            }
+                            : combatant
+                    );
                     return {
-                        ...combatant,
-                        combatantCount: updatedCount,
+                        ...enemy,
+                        combatants: updatedCombatants,
                     };
                 });
 
                 return {
                     ...battle,
-                    combatants: updatedCombatants,
+                    enemies: updatedEnemies,
                 };
             });
         });
@@ -586,16 +539,16 @@ function createBattleStorage() {
 
 
 
-    // 9. Update combatant costs based on battle table data
-    // function updateCombatantsCost(combatants: Combatant[]): Combatant[] {
-    //     return combatants.map(combatant => {
+    // 9. Update enemy costs based on battle table data
+    // function updateEnemiesCost(enemies: Enemy[]): Enemy[] {
+    //     return enemies.map(enemy => {
     //         const battleTableData: BattleTableRow[] = get(battleTable);
 
-    //         const row = battleTableData.find((item: BattleTableRow) => item.level === combatant.level) ?? null;
-    //         const size = combatant.size === "double strength" || "double-strength" ? "large" : combatant.size === "triple strength" || "triple-strength" ? "huge" : combatant.size;
-    //         console.log(combatant, size)
-    //         if (combatant.mook) {
-    //             combatant.combatantCount = combatant.combatantCount.map(entry => {
+    //         const row = battleTableData.find((item: BattleTableRow) => item.level === enemy.level) ?? null;
+    //         const size = enemy.size === "double strength" || "double-strength" ? "large" : enemy.size === "triple strength" || "triple-strength" ? "huge" : enemy.size;
+    //         console.log(enemy, size)
+    //         if (enemy.mook) {
+    //             enemy.combatants = enemy.combatants.map(entry => {
     //                 const baseCost = row && size
     //                     ? ((row[size as keyof BattleTableRow] as { value: number })?.value ?? 0)
     //                     : 0;
@@ -608,52 +561,45 @@ function createBattleStorage() {
     //                 };
     //             });
 
-    //             combatant.cost = combatant.combatantCount.reduce((total, entry) => total + (entry.mobCost || 0), 0);
+    //             enemy.cost = enemy.combatants.reduce((total, entry) => total + (entry.mobCost || 0), 0);
     //         } else {
-    //             combatant.cost = row && size
+    //             enemy.cost = row && size
     //                 ? ((row[size as keyof BattleTableRow] as {
     //                     value: number
-    //                 })?.value ?? 0) * combatant.combatantCount.length
+    //                 })?.value ?? 0) * enemy.combatants.length
     //                 : 0;
     //         }
 
-    //         return combatant;
+    //         return enemy;
     //     });
     // }
 
-    const updateInitiative = (battleId: string, combatantId: string, combatantIndex: number, newInitiative: number, mobId?: string): void => {
+    const updateInitiative = (battleId: string, enemyId: string, newInitiative: number, combatantId: string): void => {
         update((battles: Battle[]) => {
             return battles.map(battle => {
                 if (battle.id !== battleId) return battle;
 
-                const updatedCombatants: Combatant[] = battle.combatants.map(combatant => {
-                    if (combatant.id !== combatantId) return combatant;
+                const updatedEnemies: Enemy[] = battle.enemies.map(enemy => {
+                    if (enemy.id !== enemyId) return enemy;
 
-                    const updatedCount = combatant.combatantCount.map((entry, index) => {
-                        if (combatant.mook && mobId && entry.mobId === mobId) {
-                            console.log(newInitiative)
-                            return {
-                                ...entry,
+                    const updatedCombatants = enemy.combatants.map(combatant =>
+                        combatant.combatantId === combatantId ?
+                            {
+                                ...combatant,
                                 initiativeTotal: newInitiative,
-                            };
-                        }
-                        if (!combatant.mook && combatantIndex === index) {
-                            return {
-                                ...entry,
-                                initiativeTotal: newInitiative,
-                            };
-                        }
-                        return entry;
-                    });
+                            }
+                            : combatant
+                    );
                     return {
-                        ...combatant,
-                        combatantCount: updatedCount,
+                        ...enemy,
+                        combatants: updatedCombatants,
                     };
                 });
 
+
                 return {
                     ...battle,
-                    combatants: updatedCombatants,
+                    enemies: updatedEnemies,
                 };
             });
         });
@@ -664,14 +610,14 @@ function createBattleStorage() {
         saveBattle,
         removeBattle,
         updateNameAndDescription,
-        addCombatant,
-        removeCombatant,
+        addEnemy,
+        removeEnemy,
         addMook,
         removeMook,
-        updateCombatants,
+        updateEnemies,
         updateHP,
         updateInitiative,
-        //updateCombatantsCost,
+        //updateEnemiesCost,
         removeAllBattles: () => set([]),
     };
 }
@@ -706,3 +652,47 @@ function createCustomMonsterStorage() {
 }
 
 export const customMonsterStorage = createCustomMonsterStorage();
+
+function createHeroCombatants() {
+    const heroCombatants: Persisted<InitiativeCombatant[]> = persisted("heroCombatants", []);
+    const { update, set } = heroCombatants;
+
+    const addCombatant = (newCombatant: InitiativeCombatant) => {
+        update((currentCombatants: InitiativeCombatant[]) => {
+            return [...currentCombatants, newCombatant]
+        })
+    }
+
+    const removeCombatant = (combatantId: string) => {
+        update((currentCombatants: InitiativeCombatant[]) => {
+            const updatedCombatants = [
+                ...currentCombatants.filter(combatant => combatant.combatantId !== combatantId),
+            ];
+            return [...updatedCombatants]
+        })
+    }
+
+    const updateInitiative = (newInitiative: number, combatantId: string): void => {
+        update((currentCombatants: InitiativeCombatant[]) => {
+            console.log(currentCombatants.find(combatant => combatant.combatantId === combatantId))
+            return currentCombatants.map(combatant =>
+                combatant.combatantId === combatantId ?
+                    {
+                        ...combatant,
+                        initiative: newInitiative,
+                    }
+                    : combatant
+            );
+        });
+    }
+
+    return {
+        ...heroCombatants,
+        addCombatant,
+        removeCombatant,
+        updateInitiative,
+        removeCombatants: () => set([]),
+    }
+}
+
+export const heroCombatants = createHeroCombatants();

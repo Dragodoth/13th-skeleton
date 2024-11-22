@@ -59,7 +59,7 @@
         </thead>
         <tbody>
         {#each $rows as row}
-            {#if displayedBattle && displayedBattle.combatants.find(c => c.id === row.id)}
+            {#if displayedBattle && displayedBattle.enemies.find(c => c.id === row.id)}
                 <tr onclick={() => clickHandler(row)} class="table-row-checked">
                     <td>{row.name}</td>
                     <td>{row.level}</td>
